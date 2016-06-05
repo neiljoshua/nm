@@ -1,0 +1,276 @@
+/*-----Reset------*/
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: 'Raleway',sans-serif,Arial, helvetica; text-align: center;	}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}		
+header, section {
+	padding: 50px 20px;
+}	
+/*--Structure--*/
+
+.wrapper{
+	display: block;
+	width: 100%;
+}
+
+.green {
+	color: #00ced1;
+}
+
+section h1{
+	text-transform: uppercase;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	color: #00A3A3;
+}
+
+/* menues and header section starts here.*/
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    background-color:rgba(13,12,12,0.7);
+	z-index:9999;
+	border-bottom: 1px solid #F0F8FF;
+	opacity: 1.9;
+}
+
+nav i {
+	display: none;
+}
+
+nav ul{
+	max-width: 1280px;
+	float: right;
+	padding-right: 50px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+nav li a{
+	margin: 0 auto;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	width: 70px;
+	padding: 20px 10px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.color-menu {
+    background-color:#66cccc;
+    border: none;
+}
+
+header nav ul a:hover {
+	background-color: #66cccc;
+}
+
+.active-menu{
+    visibility: visible;
+    transition: opacity 0.38s ease 0s;
+    opacity: 1;
+}
+
+header {
+	top: 0;
+	left: 0;	
+	margin-top: 0;
+	background: url(../images/main01.jpg)center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 1;	
+}
+
+header h1 {
+	padding-top: 17%;
+}
+
+header h1, header p {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+header button {
+	max-width: 232px;
+	display: block;
+	margin: 30px auto;
+	padding: 20px 25px;
+	border-radius: 2%;
+	background-color:rgba(13,12,12,0.7);
+	border: 2px solid #66cccc;
+}
+
+header button a{
+	font-size: 25px;
+	padding: 22px 25px;
+	text-decoration: none;
+	font-weight: 300;	
+	color: #fff;
+}
+
+header button a:hover{
+	background: none;
+	color: #A9A9A9;
+}
+
+/*-Columns-*/
+.col {
+	width: 31.3%;
+	float: left;
+	padding: 0 1%;
+}
+
+#work .col img{
+	width: 98%;	
+	border: 3px solid #0086b3;
+}
+
+#work .col h1,p {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/*- About section-*/
+
+#about{
+	background-color: #e1eaea ;
+}
+
+#about .col {
+	width: 45%;
+	max-height: 550px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#about .col img{
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+}
+
+#about .col p{
+	padding: 20px;
+}
+
+/*- contact section-*/
+
+#contact .col {
+	width: 44%;
+	padding: 0 20px;	
+}
+
+#contact .social{
+	display: block;
+	float: left;
+	width: 96%;
+	padding: 2%;
+	color: #00ced1;
+	overflow:hidden;
+}
+#contact .social i{
+	display: inline-block;
+    font-size: 25px;
+    margin: 20px 10px;
+    border-radius: 50%;
+    background-color: #00ced1;
+    color: #fff;
+}
+
+#contact .social i:hover{
+	opacity: 0.8;
+	background-color: #001c32;
+}
+
+#contact-slider {
+	z-index: -1;
+}
+
+#contact-slider .item img {
+	margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+#contact .col label, #contact .col input{
+	display: block;
+	outline: none;
+}
+
+#contact .col label {
+	font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 5px;
+    text-align: left;
+}
+
+#contact .col input {
+	border-style: none;
+	width: 90%;
+	padding: 0 1%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #D3D3D3;
+}
+
+#contact .col .colorbox {
+	float: right;
+	width: 155px;
+	color: #00ced1;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#contact .col input[type=submit] {
+	border-style: none;
+	background-color: inherit;
+	display: inline-block;
+	width: 50%;
+}
+
+/*- Footer section-*/
+
+
+footer{
+	background-color: #031111;
+}
+
+footer .map{
+	width:100%;
+	height: 200px;
+}
+
+footer h1, footer p{
+	font-size: 13px;
+	padding: 30px 0;
+	color: #f7f7f7;
+}
+
+.clearfix{
+	clear: both;
+}

@@ -1,0 +1,129 @@
+/*-- CSS responsive --*/
+
+@media screen and (max-width: 768px) { 
+	
+    .wrapper{
+		overflow: hidden;
+    }
+    header{
+		height: 840px;
+	}
+
+    header nav{
+		max-height: 60px;
+		padding: 0;
+		background:#0d0d0d;
+	}
+
+	header nav i {
+		display: block;
+		top:0;
+		left: 0;
+		float: none;
+		position: fixed;
+		background:#0d0d0d;
+		font-size:34px;
+		text-align: left;
+		padding: 10px;
+		opacity: 1;
+	}
+	nav ul {
+		width: 100%;
+		float: none;
+		margin-top: 61px;
+		opacity: 0;
+		visibility: hidden;
+		background:#0d0d0d;
+	}
+
+	nav li {
+		width:100%;
+		border-top: 1px solid #fff;
+		text-align: center;
+	}
+
+	header nav li a {
+		width: 100%;
+		font-size: 14px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	header h1 {
+    	padding-top: 40%;
+	}	
+
+	header nav ul a:hover {
+		transition: opacity 0.38s ease 0.38s;
+    	opacity: 0;
+	}
+
+	#about .col{
+		float:none;
+	}
+
+	#about .col {
+		width: 98%;
+	} 
+
+	#about .col p{
+		margin-top: 20px;
+	}
+
+	#contact .col{
+		float: none;
+		width: 98%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#contact .col img{
+		margin: 0 auto;
+	}
+
+	#contact .col label {
+		text-align: center;
+	}
+
+	#contact .col .colorbox {
+		float:none;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (max-width: 640px) { 
+	.container, section {
+		height: auto;
+	}
+
+	.active-menu{
+		background-color: #181818;
+	}
+}
+
+@media screen and (max-width: 480px) { 
+
+	header.container, header{
+		height: 650px;
+	}
+
+	header nav, .col ,#about .col,#work .col img, #about .col, #about .col img, #contact .col  {
+	    float: none;
+	    width: 100%;
+	    padding-right: 0;
+	    padding-left: 0;
+
+	}
+
+	
+
+	#about .col img{ 
+		width: 98%;
+	}
+
+	#about .col p {
+		margin-top: 1%;
+	}
+
+}
