@@ -116,14 +116,16 @@
 
 	}
 
-	
-
 	#about .col img{ 
 		width: 98%;
 	}
 
 	#about .col p {
 		margin-top: 1%;
+	}
+
+	#contact .social i{
+		font-size: 20px;
 	}
 
 }
