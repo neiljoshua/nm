@@ -29,8 +29,10 @@ function windowScroll(){
         var sT = $(this).scrollTop();
             if (sT >= 200) {
                 $('nav').addClass('color-menu');
+                $('nav ul li a:hover').addClass('moved');
             }else {
                 $('nav').removeClass('color-menu');
+                $('nav ul li a:hover').removeClass('moved');
             }
   });
 }
