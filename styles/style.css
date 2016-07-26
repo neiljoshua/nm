@@ -73,13 +73,17 @@ nav li a{
 	font-weight: 600;
 }
 
+header nav ul a:hover, header nav ul a:active {
+	background-color: #66cccc;
+}
+
+header nav.color-menu ul a:hover, header nav.color-menu ul a:active{
+	background-color: #010601;
+}
+
 .color-menu {
     background-color:#66cccc;
     border: none;
-}
-
-header nav ul a:hover {
-	background-color: #66cccc;
 }
 
 .active-menu{
