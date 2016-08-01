@@ -154,6 +154,9 @@ header button a:hover{
 	padding-bottom: 10px;
 }
 
+.col img{
+	height: 300px;
+}
 /*- About section-*/
 
 #about{

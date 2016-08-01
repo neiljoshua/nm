@@ -40,11 +40,11 @@ windowScroll();
 function aboutSlider(){
   $("#contact-slider").owlCarousel({
       navigation : false, // Show next and prev buttons
-      slideSpeed : 200,
-      paginationSpeed : 400,
+      slideSpeed : 100,
+      paginationSpeed : 200,
       singleItem:true, 
       autoPlay: true,
-      pagination: false,
+      pagination: true,
   });
 }
 
