@@ -27,34 +27,34 @@
 				<nav> 
 					<i class="demo-icon icon-menu"></i>
 					<ul>
-	  	    		    <li><a href="#top-header">NM</a></li>
-		   			    <li><a href="#work">Work</a></li>
+	  	    		    <li><a href="#top-header">Home</a></li>
+		   			    <li><a href="#portfolio">Portfolio</a></li>
 					    <li><a href="#about">About</a></li>
 					    <li><a href="#contact">Contact</a></li>
 		  		 	</ul>
 				</nav>	
 				<h1> Neil J. Malpartida</h1>
 				<p> Web Developer </p>
-				<button><a href="#work">Explore</a></button>
+				<a href="#portfolio" class="explore">Explore</a>
 			</header>	
 			
-			<section id="work" >		
-					<h1>Portfolio</h1>
+			<section id="portfolio" >		
+					<h2>Portfolio</h2>
 					<div class="col">
-	               		<a href="http://www.brandi.neiljoshua.com"><img src="images/about3.jpg" alt="Brandi Project" ></a>
-	      				<h1> Brandi </h1>
+	               		<a href="http://www.brandi.neiljoshua.com" target="_blank" ><img src="images/about3.jpg" alt="Brandi Project" ></a>
+	      				<h2> Brandi </h2>
 	      				<p>Brandi Responsive Design</p>
 	      			</div>	
 
 	      			<div class="col">
-	               		<a href="http://weather.neiljoshua.com/"><img src="images/weatherapp.png" alt="Weather App"></a>
-	      				<h1> Weather Web App </h1>
+	               		<a href="http://weather.neiljoshua.com/" target="_blank" ><img src="images/weatherapp.jpg" alt="Weather App"></a>
+	      				<h2> Weather Web App </h2>
 	      				<p>Beta Weather App</p>
 	      			</div>	
 
 	      			<div class="col">
-	               		<img src="images/phone.jpg" alt="coming soon">
-	      				<h1> Daily blog</h1>
+	               		<a href="#" target="_blank"> <img src="images/phone.jpg" alt="coming soon"> </a>
+	      				<h2> Daily blog</h2>
 	      				<p>Coming soon</p>
 	      			</div>	
 	      			<div class="clearfix"></div>
@@ -62,11 +62,11 @@
 
 		
 			<section id="about" >
-				<h1>About Neil</h1>
 				<div class="col">
                		<img src="images/me.jpg">
       			</div>	
       			<div class="col">
+					<h2>About Neil</h2>
       				<p>I am a web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript; and inhaling a wide variety of potentially useful information through a few hundred RSS feeds. I build websites that delight and inform.
 
 					I am curious, and I enjoy projects that challenge me to learn something new and stretch in a different direction. I do my best to stay on top of changes in the state of the art so that I can meet challenges with tools well suited to the job at hand. The list of projects I follow on Twitter will give you a good idea of the types of tools I prefer to be using, and my list will give you a glimpse into the reading material I find interesting enough to share.</p>
@@ -76,7 +76,7 @@
 		
 			
 			<section id="contact">
-				<h1>Drop me a line!</h1>
+				<h2>Drop me a line!</h2>
 
 				<div class="col">
 					 <div id="contact-slider" class="owl-carousel owl-theme">
@@ -94,34 +94,31 @@
                			</label>
                			<label for="email">Email:
                				<input name="user_email" type="text"  id="email" placeholder="johnsmith@example.com" required />
+               				<p class="error">Invalid Email</p>
                			</label>
                			<label for="message">Message:
                				<input name="user_message" type="text"  id="message" placeholder="Say Hello!" required />
                			</label>
-               			
-                        <div class="colorbox"> 
-                            <i class="demo-icon icon-mail-1"></i>
-                       		<input name="user_submit" type="submit" value="Send Message"/>
-                        </div>     
+               			<button type="submit"> Submit </button>
                		</form>
+               		<div class="success">
+               			<p>Thank You!</p>
+               			<button class="close-success">Close</button>
+               		</div>
                 </div>    
+                <div class="clear-fix"></div>
         		<div class="social">	
-                  <i class="demo-icon icon-behance"></i>
-                  <i class="demo-icon icon-twitter"></i>
-                  <i class="demo-icon icon-dribbble"></i>
-                  <i class="demo-icon icon-forrst"></i> 
-                  <i class="demo-icon icon-gplus"></i>
+                  <i class="icon-twitter"></i>
+                  <i class="icon-twitter"></i>
                 </div>  
                 <div class="clearfix"></div> 
             </section>
 
 		    <footer>
 		    	<!-- <div id="googleMap" class="map"></div>--> 
-		    	<h1> &copy; Designed and developed by NeilJoshua  &mdash;  Email: neiljoshua@me.com</h1>
+		    	<h2> &copy; Designed and developed by Neil Joshua  &mdash;  Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a></h2>
 		    </footer>	
 	    </div>
-	    
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
 
 	</body>
 </html>
