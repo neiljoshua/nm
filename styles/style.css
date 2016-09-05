@@ -39,6 +39,7 @@ header, section {
 
 section h2{
 	text-transform: uppercase;
+	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #00A3A3;
 }
@@ -163,8 +164,8 @@ header .explore:hover{
 	padding-bottom: 20px;
 }
 
-.col a:hover img {
-	transform:  scale(1.02);
+.col a:hover img, .social i:hover {
+	transform: scale(1.04);
 	transition: transform .3s ease;
 }
 /*- About section-*/
@@ -220,7 +221,7 @@ header .explore:hover{
 	margin-top: 50px;
 }
 
-#contact .social i:hover{
+#contact .social i:hover {
 	opacity: 0.8;
 	background-color: #001c32;
 }
