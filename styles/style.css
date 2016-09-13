@@ -22,6 +22,22 @@ html, body {
 header, section {
 	padding: 50px 20px;
 }	
+
+h1, h2, h3, p {
+	-webkit-animation: show-elemet 1.8s ease;
+    -moz-animation: show-elemet 1.8s ease;
+    -ms-animation: show-elemet 1.8s ease;
+    -o-animation: show-elemet 1.8s ease;
+    animation: show-elemet 1.8s ease;
+}
+
+a {
+	-webkit-animation: show-elemet 2.8s ease;
+    -moz-animation: show-elemet 2.8s ease;
+    -ms-animation: show-elemet 2.8s ease;
+    -o-animation: show-elemet 2.8s ease;
+    animation: show-elemet 2.8s ease;
+}
 /*--Structure--*/
 
 .wrapper{
