@@ -113,7 +113,6 @@ window.validateEmail = function( emails ) {
   $('.close-success').on('click', function(e) {
     e.preventDefault();
     $('.success').fadeTo(400, 0);
-    // body...
   })
 
   // Nav links on scroll
@@ -145,19 +144,5 @@ window.validateEmail = function( emails ) {
         $("#nav a:first").addClass("active")
     }
 }).scroll();
-
-  //Instagram Feed 
-
-  // $.ajax({
-  //   url : 'https://api.instagram.com/v1/users/self/media/recent/?access_token=30193863.a62eb01.fe820a8a0f224cb2bce7c002cd8cd669&count=9',
-  //   dataType : "jsonp",
-  //   success : function(results) {
-  //   for(var i = 0; i< results.data.length; i++ ){
-  //       var imageInsta = results.data[i].images.standard_resolution.url;
-  //       $('.grid').append('<img src="' + imageInsta + '"/>');
-  //   }
-  //   }
-  // })
-
 
 }); // End of doc ready.  
