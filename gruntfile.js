@@ -7,9 +7,8 @@ grunt.initConfig({
 	  target: {
 	    files: [{
 	      expand: true,
-	      cwd: 'styles',
-	      src: ['*.css', '!*.min.css'],
-	      dest: 'styles',
+	      src: ['src/css/*.css'],
+	      dest: '',
 	      ext: '.min.css'
 	    }]
 	  }
@@ -17,8 +16,8 @@ grunt.initConfig({
 
 	uglify: {
 	  files: { 
-        src: 'js/*.js',  // source files mask
-        dest: 'jsm/',    // destination folder
+        src: 'src/js/*.js',  // source files mask
+        dest: '',    // destination folder
         expand: true,    // allow dynamic building
         flatten: true,   // remove all unnecessary nesting
         ext: '.min.js'   // replace .js to .min.js
