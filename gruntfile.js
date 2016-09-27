@@ -3,15 +3,21 @@ module.exports = function(grunt) {
 // Project configuration.
 grunt.initConfig({
  // Tasks
-	cssmin: {
-	  target: {
-	    files: [{
-	      expand: true,
-	      src: ['src/css/*.css'],
-	      dest: '',
-	      ext: '.min.css'
-	    }]
-	  }
+	// cssmin: {
+	//   target: {
+	//     files: [{
+	//       expand: true,
+	//       src: ['src/css/*.css'],
+	//       dest: '',
+	//       ext: '.min.css'
+	//     }]
+	//   }
+	// },
+	concat:{
+		css: {
+			src:'src/css/*.css',
+			dest: 'style.css'
+		}
 	},
 
 	uglify: {
@@ -28,10 +34,10 @@ grunt.initConfig({
 
 // Load the plugin that provides the "uglify" task.
 grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-concat');
 
 // Default task(s).
-grunt.registerTask('default', ['uglify', 'cssmin']);
+grunt.registerTask('default', ['uglify', 'concat']);
 
 }
  
