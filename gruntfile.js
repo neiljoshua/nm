@@ -1,33 +1,23 @@
 module.exports = function(grunt) {
-  
 // Project configuration.
 grunt.initConfig({
  // Tasks
-	// cssmin: {
-	//   target: {
-	//     files: [{
-	//       expand: true,
-	//       src: ['src/css/*.css'],
-	//       dest: '',
-	//       ext: '.min.css'
-	//     }]
-	//   }
-	// },
-	concat:{
-		css: {
-			src:'src/css/*.css',
-			dest: 'style.css'
-		}
-	},
+	concat: {
+    dist: {
+      src: ['src/css/animate.css', 'src/css/style.css', 
+      		'src/css/responsive.css', 'src/css/fontello.css',
+      		'src/css/owl.carousel.css', 'src/css/owl.theme.css'],
+      dest: 'styles.css',
+    },
+  },
 
 	uglify: {
-	  files: { 
-        src: 'src/js/*.js',  // source files mask
-        dest: '',    // destination folder
-        expand: true,    // allow dynamic building
-        flatten: true,   // remove all unnecessary nesting
-        ext: '.min.js'   // replace .js to .min.js
-	  }
+	  my_target: {
+      files: {
+        'nm.min.js': ['src/js/nm.js'],
+        'plugins.min.js': ['src/js/plugins/*.min.js']
+      }
+    }
 	}
 
 });
@@ -37,7 +27,7 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-concat');
 
 // Default task(s).
-grunt.registerTask('default', ['uglify', 'concat']);
+grunt.registerTask('default', ['concat', 'uglify']);
 
 }
  
