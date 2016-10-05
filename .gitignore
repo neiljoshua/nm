@@ -3,3 +3,8 @@
 # Node Package Manager
 node_modules
 npm_log
+
+#Sass files
+.sass-cache
+sass
+nm1.css
