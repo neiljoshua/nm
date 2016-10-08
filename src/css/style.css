@@ -56,8 +56,8 @@ a {
 /* line 10, ../sass/hamburger.scss */
 .c-hamburger {
   display: none;
-  float: right;
-  position: relative;
+  right: 0;
+  position: fixed;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -164,6 +164,9 @@ a {
 	clear: both;
 }
 
+section {
+	padding-top: 60px;
+}
 section h2{
 	text-transform: uppercase;
 	padding-top: 30px;

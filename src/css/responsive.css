@@ -17,7 +17,7 @@
 	nav{
 		visibility: hidden;
 		background: white;
-		position: absolute;
+		position: fixed;
 		background: black;
 		height: 0;
 		top: 0;
@@ -69,6 +69,7 @@
 
 	#about .col {
 		width: 100%;
+		padding: 0;
 	} 
 
 	#about .col p{
@@ -93,6 +94,12 @@
 	#contact .col .colorbox {
 		float:none;
 		margin: 0 auto;
+	}
+
+	#contact form{
+		width: 90%;
+   		margin: 0 auto;
+   		padding-top: 30px;
 	}
 }
 
@@ -135,12 +142,6 @@
 
 	#contact .social i{
 		font-size: 20px;
-	}
-
-	#contact form{
-		width: 90%;
-   		margin: 0 auto;
-   		padding-top: 30px;
 	}
 
 	#contact-slider {
