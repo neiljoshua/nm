@@ -2,6 +2,7 @@
 
 # Node Package Manager
 node_modules/
+node_modelus
 npm_log
 
 #Sass files
