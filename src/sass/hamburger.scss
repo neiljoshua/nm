@@ -1,0 +1,84 @@
+%animation {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+
+%animation-active{
+  transition-delay: 0s, 0.3s;
+}
+
+.c-hamburger {
+    display: none;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    &:focus {
+      outline: none;
+    }
+    span {
+      display: block;
+      position: absolute;
+      top: 32px;
+      left: 12px;
+      right: 15px;
+      height: 5px;
+      background: white;
+      &::before, &::after{
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: $white;
+        content: "";
+      }
+      &::before {
+        top: -12px;
+      }
+      &::after{
+        bottom: -12px;
+      }
+    }  
+}
+
+.c-hamburger--rot {
+    background-color: #ff3264;
+    span {
+      transition: background 0s 0.3s;
+      &::before{
+        @extend %animation;
+        transition-property: top, transform;
+      }
+      &::after{}
+        @extend %animation;
+        transition-property: bottom, transform;
+    }
+}
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active {
+    background-color: $blue;
+    span {
+      background: none;
+      &::before{}
+        top: 0;
+        transform: rotate(45deg);
+        @extend %animation-active;
+      &::after{
+        bottom: 0;
+        transform: rotate(-45deg);
+        @extend %animation-active;
+      }
+    }
+}

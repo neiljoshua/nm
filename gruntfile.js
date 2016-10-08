@@ -2,6 +2,16 @@ module.exports = function(grunt) {
 // Project configuration.
 grunt.initConfig({
  // Tasks
+ compass: {
+    dist: {
+      options: {
+        sassDir: 'src/sass/',
+        specify: 'src/sass/nm1.scss',
+        cssDir: 'src/css'
+      }
+    }
+  },
+
 	concat: {
     dist: {
       src: ['src/css/animate.css', 'src/css/style.css', 
@@ -18,16 +28,25 @@ grunt.initConfig({
         'plugins.min.js': ['src/js/plugins/*.min.js']
       }
     }
-	}
+	},
+
+  watch: {
+    css: {
+      files: ['src/sass/*.scss'],
+      tasks: ['compass']
+    }
+  }
 
 });
 
 // Load the plugin that provides the "uglify" task.
-grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-compass');
+// grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-concat');
+grunt.loadNpmTasks('grunt-contrib-uglify');
 
 // Default task(s).
-grunt.registerTask('default', ['concat', 'uglify']);
-
+grunt.registerTask('default', [ 'concat', 'uglify']);
+grunt.registerTask('dev', ['compass']);
 }
  
