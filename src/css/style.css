@@ -19,9 +19,9 @@ html, body {
 	height: 100%;
 }
 
-header, section {
+/*header, section {
 	padding: 50px 20px;
-}	
+}*/	
 
 h1, h2, h3, p {
 	-webkit-animation: show-elemet 1.8s ease;
@@ -40,6 +40,117 @@ a {
 }
 /*--Structure--*/
 
+/*Hamburger*/
+
+/* line 1, ../sass/hamburger.scss */
+.c-hamburger--rot span::before, .c-hamburger--rot span {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+/* line 6, ../sass/hamburger.scss */
+.c-hamburger--rot.is-active span, .c-hamburger--rot.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+/* line 10, ../sass/hamburger.scss */
+.c-hamburger {
+  display: none;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+/* line 27, ../sass/hamburger.scss */
+.c-hamburger:focus {
+  outline: none;
+}
+/* line 30, ../sass/hamburger.scss */
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 15px;
+  right: 15px;
+  height: 2px;
+  background: white;
+}
+/* line 38, ../sass/hamburger.scss */
+.c-hamburger span::before, .c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+/* line 47, ../sass/hamburger.scss */
+.c-hamburger span::before {
+  top: -8px;
+}
+/* line 50, ../sass/hamburger.scss */
+.c-hamburger span::after {
+  bottom: -8px;
+}
+
+.c-hamburger--htx {
+  background-color: black;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #66cccc;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+/*End of Hamburger*/
 .wrapper{
 	display: block;
 	width: 100%;
@@ -53,6 +164,9 @@ a {
 	clear: both;
 }
 
+section {
+	padding-top: 60px;
+}
 section h2{
 	text-transform: uppercase;
 	padding-top: 30px;
@@ -68,13 +182,9 @@ nav {
 	left: 0;
 	width: 100%;
     background-color:rgba(13,12,12,0.7);
-	z-index:9999;
+	z-index:10;
 	border-bottom: 1px solid #F0F8FF;
 	opacity: 1;
-}
-
-nav i {
-	display: none;
 }
 
 nav ul{
@@ -128,6 +238,7 @@ header {
 	-o-background-size: cover;
 	background-size: cover;
 	opacity: 1;	
+	padding-bottom: 20px;
 }
 
 header h1 {
@@ -188,6 +299,7 @@ header .explore:hover{
 
 #about{
 	background-color: #e1eaea ;
+	padding-bottom: 30px;
 }
 
 #about .col {
@@ -205,9 +317,15 @@ header .explore:hover{
 	padding-top: 80px;
 }
 
+<<<<<<< HEAD
 #about .col p {
 	margin-top: 0;
 	padding-top: 0;
+=======
+#about .col p{
+	margin-top: 0;
+    padding-top: 0;
+>>>>>>> convert_to_sass
 }
 
 /*- contact section-*/

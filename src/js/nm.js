@@ -14,20 +14,22 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
   });
-  
-$('header nav i').on('click', function(){
-  $('header nav ul').toggleClass('active-menu');
-})
 
+$('.c-hamburger').on('click', function(e){
+    e.preventDefault();
+      $(this).toggleClass('is-active');
+      $('nav').toggleClass('active');
+  });
+  
 $('header nav a').on('click', function(){
-  $('header nav ul').removeClass('active-menu');
-  $(this).addClass('active-menu');
+  $('nav').removeClass('active');
 })
 
 function windowScroll(){
   $(window).scroll (function () {
         var sT = $(this).scrollTop();
-            if (sT >= 200) {
+        var vWidth = $(window).width();
+            if (sT >= 200 && wWidth >= 768 )  {
                 $('nav').addClass('color-menu');
             }else {
                 $('nav').removeClass('color-menu');
