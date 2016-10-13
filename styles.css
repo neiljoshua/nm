@@ -350,11 +350,9 @@ header .explore:hover{
 	max-width: 400px;
 	max-height: 400px;
 	margin: 0 auto;
-	padding-top: 80px;
 }
 
 #about .col p{
-	margin-top: 0;
     padding-top: 0;
 }
 
@@ -377,6 +375,8 @@ header .explore:hover{
 	margin: 0 auto;
 	width: 200px;
 	color: #00ced1;
+	clear: both;
+	padding-bottom: 20px;
 }
 #contact .social i{
 	display: inline-block;
@@ -389,6 +389,7 @@ header .explore:hover{
 }
 
 #contact-form {
+	clear: both;
 	margin-top: 20%;
 	margin-bottom: 20%;
 }
@@ -472,7 +473,7 @@ input:focus:-ms-input-placeholder {
 }
 
 button {
-	margin: 50px;
+	margin: 30px;
     padding: 10px 30px;
     font-size: 13px;
     border-radius: 5px;
@@ -601,6 +602,7 @@ footer a {
 	}
 
 	#contact .col{
+		clear: both;
 		float: none;
 		width: 100%;
 		padding: 0;
@@ -623,7 +625,7 @@ footer a {
 	#contact form{
 		width: 90%;
    		margin: 0 auto;
-   		padding-top: 30px;
+   		padding-top: 50px;
 	}
 }
 

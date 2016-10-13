@@ -131,32 +131,32 @@ window.validateEmail = function( emails ) {
 
   // Nav links on scroll
 
-  $(window).scroll(function () {
-    var e = $(window).scrollTop(),
-        t = $("header").height() - 50;
-        // console.log(e);
-        // console.log(t);
-    if (e >= t) {
-        // $("header").css({
-        //     "margin-top": 50
-        // });
-        console.log('passed header');
-        $("body > section").each(function (t) {
-          console.log(t);
-          console.log('hey');
-            if ($(this).position().top - 1 <= e - $(this).height() + 50) {
-              console.log('active');
-                $("#nav a.active").removeClass("active");
-                $("#nav a").eq(t).addClass("active")
-            }
-        })
-    } else {
-        $(".welcome").css({
-            "margin-top": 0
-        });
-        $("#nav a.active").removeClass("active");
-        $("#nav a:first").addClass("active")
-    }
-}).scroll();
+//   $(window).scroll(function () {
+//     var e = $(window).scrollTop(),
+//         t = $("header").height() - 50;
+//         // console.log(e);
+//         // console.log(t);
+//     if (e >= t) {
+//         // $("header").css({
+//         //     "margin-top": 50
+//         // });
+//         console.log('passed header');
+//         $("body > section").each(function (t) {
+//           console.log(t);
+//           console.log('hey');
+//             if ($(this).position().top - 1 <= e - $(this).height() + 50) {
+//               console.log('active');
+//                 $("#nav a.active").removeClass("active");
+//                 $("#nav a").eq(t).addClass("active")
+//             }
+//         })
+//     } else {
+//         $(".welcome").css({
+//             "margin-top": 0
+//         });
+//         $("#nav a.active").removeClass("active");
+//         $("#nav a:first").addClass("active")
+//     }
+// }).scroll();
 
 }); // End of doc ready.  
