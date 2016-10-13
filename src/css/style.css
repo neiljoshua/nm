@@ -19,10 +19,6 @@ html, body {
 	height: 100%;
 }
 
-/*header, section {
-	padding: 50px 20px;
-}*/	
-
 h1, h2, h3, p {
 	-webkit-animation: show-elemet 1.8s ease;
     -moz-animation: show-elemet 1.8s ease;
@@ -324,6 +320,12 @@ header .explore:hover{
 
 /*- contact section-*/
 
+#contact .col .grid img {
+	width: 30%;
+	float: left;
+	padding: 5px;
+}
+
 #contact .col {
 	width: 44%;
 	padding: 0 20px;	
@@ -333,21 +335,22 @@ header .explore:hover{
 #contact .social{
 	display: block;
 	margin: 0 auto;
-	width: 140px;
+	width: 200px;
 	color: #00ced1;
 }
 #contact .social i{
 	display: inline-block;
     font-size: 20px;
-    margin: 20px 10px;
+    margin: 10px;
     border-radius: 50%;
-    background-color: #00ced1;
+    background-color: #66cccc;
     color: #fff;
     padding: 10px;
 }
 
 #contact-form {
-	margin-top: 50px;
+	margin-top: 20%;
+	margin-bottom: 20%;
 }
 
 #contact .social i:hover {
