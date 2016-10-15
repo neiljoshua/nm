@@ -7,3 +7,8 @@ npm_log
 
 #Sass files
 .sass-cache
+
+
+#Git flow
+gitflow-installer.sh
+gitflow/ 

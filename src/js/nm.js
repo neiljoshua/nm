@@ -25,19 +25,18 @@ $('header nav a').on('click', function(){
   $('nav').removeClass('active');
 })
 
-function windowScroll(){
-  $(window).scroll (function () {
-        var sT = $(this).scrollTop();
-        var vWidth = $(window).width();
-            if (sT >= 200 && wWidth >= 768 )  {
-                $('nav').addClass('color-menu');
-            }else {
-                $('nav').removeClass('color-menu');
-            }
-  });
-}
+// function windowScroll(){
+//   $(window).scroll (function () {
+//         var sT = $(this).scrollTop();
+//             if (sT >= 200 )  {
+//                 $('nav').addClass('color-menu');
+//             }else {
+//                 $('nav').removeClass('color-menu');
+//             }
+//   });
+// }
 
-windowScroll();
+// windowScroll();
 
 function aboutSlider(){
   $("#contact-slider").owlCarousel({
@@ -51,6 +50,19 @@ function aboutSlider(){
 }
 
 aboutSlider();
+
+ //Instagram Feed 
+
+  $.ajax({
+    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=9',
+    dataType : "jsonp",
+    success : function(results) {
+      for(var i = 0; i< results.data.length; i++ ){
+          var imageInsta = results.data[i].images.standard_resolution.url;
+          $('.grid').append('<img src="' + imageInsta + '"/>');
+      }
+    }
+  });
 
 $('form').submit(function(e) {
 
@@ -119,32 +131,32 @@ window.validateEmail = function( emails ) {
 
   // Nav links on scroll
 
-  $(window).scroll(function () {
-    var e = $(window).scrollTop(),
-        t = $("header").height() - 50;
-        // console.log(e);
-        // console.log(t);
-    if (e >= t) {
-        // $("header").css({
-        //     "margin-top": 50
-        // });
-        console.log('passed header');
-        $("body > section").each(function (t) {
-          console.log(t);
-          console.log('hey');
-            if ($(this).position().top - 1 <= e - $(this).height() + 50) {
-              console.log('active');
-                $("#nav a.active").removeClass("active");
-                $("#nav a").eq(t).addClass("active")
-            }
-        })
-    } else {
-        $(".welcome").css({
-            "margin-top": 0
-        });
-        $("#nav a.active").removeClass("active");
-        $("#nav a:first").addClass("active")
-    }
-}).scroll();
+//   $(window).scroll(function () {
+//     var e = $(window).scrollTop(),
+//         t = $("header").height() - 50;
+//         // console.log(e);
+//         // console.log(t);
+//     if (e >= t) {
+//         // $("header").css({
+//         //     "margin-top": 50
+//         // });
+//         console.log('passed header');
+//         $("body > section").each(function (t) {
+//           console.log(t);
+//           console.log('hey');
+//             if ($(this).position().top - 1 <= e - $(this).height() + 50) {
+//               console.log('active');
+//                 $("#nav a.active").removeClass("active");
+//                 $("#nav a").eq(t).addClass("active")
+//             }
+//         })
+//     } else {
+//         $(".welcome").css({
+//             "margin-top": 0
+//         });
+//         $("#nav a.active").removeClass("active");
+//         $("#nav a:first").addClass("active")
+//     }
+// }).scroll();
 
 }); // End of doc ready.  

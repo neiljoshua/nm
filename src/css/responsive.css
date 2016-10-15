@@ -78,6 +78,7 @@
 	}
 
 	#contact .col{
+		clear: both;
 		float: none;
 		width: 100%;
 		padding: 0;
@@ -100,7 +101,7 @@
 	#contact form{
 		width: 90%;
    		margin: 0 auto;
-   		padding-top: 30px;
+   		padding-top: 50px;
 	}
 }
 
