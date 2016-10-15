@@ -308,16 +308,15 @@ header .explore:hover{
 
 /*-Columns-*/
 .col {
-	width: 31.3%;
+	width: 33.3%;
 	float: left;
-	padding: 0 1%;
 	margin-bottom: 20px;
 }
 
 #portfolio .col img {
-	width: 98%;	
+	width: 90%;	
 	border: 3px solid #0086b3;
-	margin-bottom: 20px;
+	margin: 0 auto;
 	height: auto;
 }
 
@@ -339,30 +338,24 @@ header .explore:hover{
 }
 
 #about .col {
-	width: 45%;
+	width: 48%;
 	max-height: 550px;
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-bottom: 20px;
 }
 
-#about .col img{
-	max-width: 400px;
-	max-height: 400px;
-	margin: 0 auto;
+#about .col .grid {
+	width: 100%;
 }
 
-#about .col p{
-    padding-top: 0;
+#about .col .grid img {
+	width: 33%;
+	height: auto;
+	float: left;
 }
 
 /*- contact section-*/
-
-#contact .col .grid img {
-	width: 30%;
-	float: left;
-	padding: 5px;
-}
 
 #contact .col {
 	width: 44%;
@@ -370,33 +363,11 @@ header .explore:hover{
 	position: relative;
 }
 
-#contact .social{
-	display: block;
-	margin: 0 auto;
-	width: 200px;
-	color: #00ced1;
-	clear: both;
-	padding-bottom: 20px;
-}
-#contact .social i{
-	display: inline-block;
-    font-size: 20px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #66cccc;
-    color: #fff;
-    padding: 10px;
-}
-
 #contact-form {
+	display: block;
+	width: 90%;
+	margin: 20px auto;
 	clear: both;
-	margin-top: 20%;
-	margin-bottom: 20%;
-}
-
-#contact .social i:hover {
-	opacity: 0.8;
-	background-color: #001c32;
 }
 
 #contact-slider {
@@ -411,19 +382,19 @@ header .explore:hover{
     max-height: 300px;
 }
 
-#contact .col label, #contact .col input{
+#contact label, #contact input{
 	display: block;
 	outline: none;
 }
 
-#contact .col label {
+#contact label {
 	font-weight: 600;
     font-size: 13px;
     margin-bottom: 10px;
     text-align: left;
 }
 
-#contact .col input {
+#contact input {
 	border-style: none;
 	width: 100%;
 	padding-bottom: 10px;
@@ -488,14 +459,6 @@ button:hover {
 	cursor: pointer;
 }
 
-#contact .col .colorbox {
-	float: right;
-	width: 155px;
-	color: #00ced1;
-	font-weight: 400;
-	font-size: 20px;
-}
-
 #contact .col input[type=submit] {
 	border-style: none;
 	background-color: inherit;
@@ -507,13 +470,18 @@ button:hover {
 
 
 footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #031111;
 	height: auto;
 }
 
+footer h2 {
+	width: 40%;
+}
+
 footer h2, footer p{
 	font-size: 13px;
-	padding: 40px 0;
 	color: #f7f7f7;
 	margin-bottom: 0px;
 }
@@ -521,6 +489,27 @@ footer h2, footer p{
 footer a {
 	color: #fff;
 	text-transform: lowercase;
+}
+
+.social{
+	width: 200px;
+	color: #00ced1;
+}
+
+.social i{
+	display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #66cccc;
+    color: #fff;
+    padding: 10px;
+}
+
+.social i:hover {
+	opacity: 0.8;
+	background-color: #fff;
+	color: #66cccc;
 }
 
 /*-- CSS responsive --*/

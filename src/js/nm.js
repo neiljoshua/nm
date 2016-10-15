@@ -54,7 +54,7 @@ aboutSlider();
  //Instagram Feed 
 
   $.ajax({
-    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=9',
+    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=8',
     dataType : "jsonp",
     success : function(results) {
       for(var i = 0; i< results.data.length; i++ ){
