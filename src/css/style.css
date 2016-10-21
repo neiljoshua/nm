@@ -38,18 +38,15 @@ a {
 
 /*Hamburger*/
 
-/* line 1, ../sass/hamburger.scss */
 .c-hamburger--rot span::before, .c-hamburger--rot span {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
 }
 
-/* line 6, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span, .c-hamburger--rot.is-active span::after {
   transition-delay: 0s, 0.3s;
 }
 
-/* line 10, ../sass/hamburger.scss */
 .c-hamburger {
   display: none;
   right: 0;
@@ -68,11 +65,11 @@ a {
   cursor: pointer;
   transition: background 0.3s;
 }
-/* line 27, ../sass/hamburger.scss */
+
 .c-hamburger:focus {
   outline: none;
 }
-/* line 30, ../sass/hamburger.scss */
+
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -82,7 +79,7 @@ a {
   height: 2px;
   background: white;
 }
-/* line 38, ../sass/hamburger.scss */
+
 .c-hamburger span::before, .c-hamburger span::after {
   position: absolute;
   display: block;
@@ -92,11 +89,11 @@ a {
   background-color: #fff;
   content: "";
 }
-/* line 47, ../sass/hamburger.scss */
+
 .c-hamburger span::before {
   top: -8px;
 }
-/* line 50, ../sass/hamburger.scss */
+
 .c-hamburger span::after {
   bottom: -8px;
 }
@@ -298,7 +295,7 @@ header .explore:hover{
 }
 
 #about .col {
-	width: 48%;
+	width: 47%;
 	max-height: 550px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -306,15 +303,21 @@ header .explore:hover{
 }
 
 #about .col .grid {
-	width: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 15px;
 }
 
 #about .col .grid img {
-	width: 33%;
-	height: auto;
-	float: left;
+	width: 30.5%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
 }
 
+#about .col .grid img:hover {
+
+}	
 /*- contact section-*/
 
 #contact .col {
@@ -325,7 +328,7 @@ header .explore:hover{
 
 #contact-form {
 	display: block;
-	width: 90%;
+	width: 70%;
 	margin: 20px auto;
 	clear: both;
 }
@@ -437,7 +440,9 @@ footer{
 }
 
 footer h2 {
-	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+    text-align: left;
 }
 
 footer h2, footer p{
@@ -451,15 +456,18 @@ footer a {
 	text-transform: lowercase;
 }
 
-.social{
-	width: 200px;
-	color: #00ced1;
+.social {
+    display: inline-block;
+	width: 40%;
+    color: #00ced1;
+    vertical-align: middle;
+    text-align: right;
 }
 
 .social i{
 	display: inline-block;
     font-size: 20px;
-    margin: 10px;
+    margin-left: 10px;
     border-radius: 50%;
     background-color: #66cccc;
     color: #fff;

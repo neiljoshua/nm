@@ -39,14 +39,16 @@ $('header nav a').on('click', function(){
 // windowScroll();
 
 function aboutSlider(){
-  $("#contact-slider").owlCarousel({
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 100,
-      paginationSpeed : 200,
-      singleItem:true, 
-      autoPlay: true,
-      pagination: true,
-  });
+  // $("#about-slider").owlCarousel({
+  //     navigation : false, // Show next and prev buttons
+  //     slideSpeed : 100,
+  //     paginationSpeed : 200,
+  //     items: 9,
+  //     autoPlay: true,
+  //     pagination: true,
+  //     lazyLoad: true
+  // });
+  console.log('test');
 }
 
 aboutSlider();
@@ -54,12 +56,13 @@ aboutSlider();
  //Instagram Feed 
 
   $.ajax({
-    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=8',
+    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=6',
     dataType : "jsonp",
     success : function(results) {
       for(var i = 0; i< results.data.length; i++ ){
           var imageInsta = results.data[i].images.standard_resolution.url;
           $('.grid').append('<img src="' + imageInsta + '"/>');
+          //$('#about-slider')
       }
     }
   });
