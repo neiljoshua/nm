@@ -36,114 +36,32 @@ a {
 }
 /*--Structure--*/
 
-/*Hamburger*/
 
-.c-hamburger--rot span::before, .c-hamburger--rot span {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--rot.is-active span, .c-hamburger--rot.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
-
-.c-hamburger {
-  display: none;
-  right: 0;
+.home {
+  display: block;
+  left: 0;
+  color: #fff;
+  background-color: none;
   position: fixed;
   overflow: hidden;
-  margin: 0;
   padding: 0;
   width: 50px;
   height: 50px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
+  font-size: 20px;
+  text-decoration: none;
   border: none;
   cursor: pointer;
+  line-height: 50px;
   transition: background 0.3s;
+  border-radius: 4px;
+  font-weight: 100;
+  z-index: 30;
+
 }
 
-.c-hamburger:focus {
-  outline: none;
+.home a {
+	z-index: 34;
 }
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 23px;
-  left: 15px;
-  right: 15px;
-  height: 2px;
-  background: white;
-}
-
-.c-hamburger span::before, .c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-}
-
-.c-hamburger span::before {
-  top: -8px;
-}
-
-.c-hamburger span::after {
-  bottom: -8px;
-}
-
-.c-hamburger--htx {
-  background-color: black;
-}
-
-.c-hamburger--htx span {
-  transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform;
-}
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform;
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active {
-  background-color: #66cccc;
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
-/*End of Hamburger*/
 .wrapper{
 	display: block;
 	width: 100%;
@@ -203,7 +121,7 @@ nav li a{
 }
 
 header nav ul a:hover, header nav ul a:active {
-	background-color: #66cccc;
+	color: #66cccc;
 }
 
 header nav.color-menu ul a:hover, header nav.color-menu ul a:active{
@@ -225,7 +143,7 @@ header {
 	top: 0;
 	left: 0;	
 	margin-top: 0;
-	background: url(/src/images/main01.jpg)center center; 
+	background: url(/src/images/hero1.jpg)center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -235,7 +153,7 @@ header {
 }
 
 header h1 {
-	padding-top: 17%;
+	padding-top: 30%;
 }
 
 header h1, header p {
@@ -244,23 +162,17 @@ header h1, header p {
 	font-weight: 600;
 }
 
-
 header a.explore {
-	max-width: 232px;
-	display: block;
-	margin: 30px auto;
-	padding: 20px 25px;
-	border-radius: 10px;
-	background-color:rgba(13,12,12,0.7);
-	border: 1px solid #66cccc;
-	font-size: 25px;
-	text-decoration: none;
-	font-weight: 300;	
-	color: #fff;
-}
-
-header .explore:hover{
-	color: #66cccc;
+    max-width: 150px;
+    display: block;
+    margin: 80px auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: rgba(13,12,12,0.7);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+    color: #fff;
 }
 
 /*-Columns-*/
@@ -283,7 +195,7 @@ header .explore:hover{
 	padding-bottom: 20px;
 }
 
-.col a:hover img, .social i:hover {
+.col a:hover img, .social i:hover, header a.explore:hover, header nav.color-menu ul a:hover, header nav.color-menu ul a:active {
 	transform: scale(1.04);
 	transition: transform .3s ease;
 }
@@ -302,21 +214,19 @@ header .explore:hover{
 	margin-bottom: 20px;
 }
 
-#about .col .grid {
-    width: 100%;
-    overflow: hidden;
-    padding-left: 15px;
-}
 
-#about .col .grid img {
-	width: 30.5%;
+#grid-slider .item img {
+    display: block;
+    width: 90%;
     height: auto;
-    float: left;
-    margin-right: 10px;
+    margin: 0 auto;
+    max-height: 350px;
+    transition: transform .4s ease;
 }
 
-#about .col .grid img:hover {
-
+#grid-slider .item img:hover {
+	transform: scale(1.5);
+	transition: transform .4s ease;
 }	
 /*- contact section-*/
 
@@ -331,18 +241,6 @@ header .explore:hover{
 	width: 70%;
 	margin: 20px auto;
 	clear: both;
-}
-
-#contact-slider {
-	z-index: -1;
-}
-
-#contact-slider .item img {
-	margin: 0 auto;
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    max-height: 300px;
 }
 
 #contact label, #contact input{

@@ -14,9 +14,9 @@ grunt.initConfig({
 
 	concat: {
     dist: {
-      src: ['src/css/animate.css', 'src/css/style.css', 
-      		'src/css/responsive.css', 'src/css/fontello.css',
-      		'src/css/owl.carousel.css', 'src/css/owl.theme.css'],
+      src: ['src/css/owl.carousel.css', 'src/css/owl.theme.css',
+          'src/css/animate.css', 'src/css/fontello.css',  
+      		'src/css/style.css','src/css/responsive.css' ],
       dest: 'styles.css',
     },
   },
