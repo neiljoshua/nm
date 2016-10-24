@@ -2,114 +2,34 @@
 
 @media screen and (max-width: 768px) { 
 
-	/*Hamburger*/
+	#top-header {
+		margin: 0 10px;
+	}
 
-.c-hamburger--rot span::before, .c-hamburger--rot span {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
+	/* Hamburger active state, i.e. menu open */
+	.c-hamburger--htx.is-active, .home.is-active {
+	  background-color: #66cccc;
+	}
 
-.c-hamburger--rot.is-active span, .c-hamburger--rot.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
+	.c-hamburger--htx.is-active span {
+	  background: none;
+	}
 
-.c-hamburger {
-  display: none;
-  right: 0;
-  position: fixed;
-  overflow: hidden;
-  margin: 10px;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  border-radius: 4px;
-}
+	.c-hamburger--htx.is-active span::before {
+	  top: 0;
+	  transform: rotate(45deg);
+	}
 
-.c-hamburger:focus {
-  outline: none;
-}
+	.c-hamburger--htx.is-active span::after {
+	  bottom: 0;
+	  transform: rotate(-45deg);
+	}
 
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 23px;
-  left: 15px;
-  right: 15px;
-  height: 2px;
-  background: #fff;
-}
-
-.c-hamburger span::before, .c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-}
-
-.c-hamburger span::before {
-  top: -8px;
-}
-
-.c-hamburger span::after {
-  bottom: -8px;
-}
-
-.c-hamburger--htx {
-  background-color: black;
-}
-
-.c-hamburger--htx span {
-  transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform;
-}
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform;
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active, .home.is-active {
-  background-color: #66cccc;
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
-/*End of Hamburger*/
+	.c-hamburger--htx.is-active span::before,
+	.c-hamburger--htx.is-active span::after {
+	  transition-delay: 0s, 0.3s;
+	}
+	/*End of Hamburger*/
 
 	.home {
 		background-color: #000;
@@ -125,9 +45,6 @@
     .wrapper{
 		overflow: hidden;
     }
-    header{
-		height: 580px;
-	}
 
 	nav{
 		visibility: hidden;
@@ -138,14 +55,14 @@
 		top: 0;
 		opacity: 0;
 		overflow: hidden;
-		transition: all .5s ease-in .2s;
+		transition: all .5s ease-in 0.3s;
 	}
 
 	nav.active{
 		visibility: visible;
 		height: 100%;
 		opacity: 1;
-		transition: all .5s ease-in .2s;
+		transition: all .5s ease-in 0.3s;
 	}
 
 	nav ul {
@@ -169,7 +86,7 @@
 	}
 
 	header h1 {
-    	padding-top: 40%;
+    	padding-top: 32%;
 	}	
 
 	header nav ul a:hover {
@@ -259,10 +176,6 @@
 
 @media screen and (max-width: 480px) { 
 
-	header.container, header{
-		height: 650px;
-	}
-
 	header nav, .col ,#about .col,#work .col img, #about .col, #about .col img, #contact .col  {
 	    float: none;
 	    width: 100%;
@@ -271,7 +184,13 @@
 
 	}
 
+	header h1 {
+	    padding-top: 62%;
+	}
 	
+	header a.explore {
+		margin: 100px auto;
+	}
 
 	#about .col img{ 
 		width: 94%;

@@ -23,11 +23,20 @@ $(document).ready(function() {
         $('.home').toggleClass('is-active');
     });
     
-  $('header nav a').on('click', function(){
+  $('header nav a').on('click', function() {
     $('nav').removeClass('active');
     $('.c-hamburger').toggleClass('is-active');
     $('.home').toggleClass('is-active');
   })
+
+  $('.home').on('click', function() {
+    var homeClick = $(this);
+    if ( homeClick.hasClass('is-active')){
+      $('nav').removeClass('active');
+      $('.c-hamburger').toggleClass('is-active');
+      $('.home').toggleClass('is-active');
+    }
+  });
 
 $(window).resize( function () {
 
@@ -79,7 +88,6 @@ $(window).resize( function () {
       }
       $('#grid-slider').owlCarousel({
           item: 1,
-          navigation : true, // Show next and prev buttons
           slideSpeed : 200,
           paginationSpeed : 400,
           singleItem:true, 
