@@ -96,10 +96,6 @@
 		transition: all .3s ease;
 	}
 
-	#grid-slider .item img{
-		max-width: 300px;
-	}
-
 	#portfolio .col {
 		width: 49.9%;
 	}
