@@ -43,11 +43,8 @@ $(window).resize( function () {
   var wWidth = $(window).width();
   var navActive = $('.home');
   if (wWidth > 768){
-    console.log('window width', wWidth);
-    console.log(navActive);
       if ( navActive.hasClass('is-active') ) {
         navActive.removeClass('is-active');
-        console.log('nav has active class!!!');
         $('nav').removeClass('active');
         $('.c-hamburger--htx').removeClass('is-active');
       } 

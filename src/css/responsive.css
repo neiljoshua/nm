@@ -3,7 +3,7 @@
 @media screen and (max-width: 768px) { 
 
 	#top-header {
-		margin: 0 10px;
+		margin: 10px;
 	}
 
 	/* Hamburger active state, i.e. menu open */
@@ -94,6 +94,10 @@
 		color:#66cccc;
 		transform: scale(1.06);
 		transition: all .3s ease;
+	}
+
+	#grid-slider .item img{
+		max-width: 300px;
 	}
 
 	#portfolio .col {
@@ -190,6 +194,10 @@
 	
 	header a.explore {
 		margin: 100px auto;
+	}
+
+	#grid-slider .item img{
+		max-width: 200px;
 	}
 
 	#about .col img{ 
