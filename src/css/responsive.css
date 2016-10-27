@@ -86,7 +86,7 @@
 	}
 
 	header h1 {
-    	padding-top: 32%;
+    	padding-top: 42%;
 	}	
 
 	header nav ul a:hover {
@@ -113,16 +113,17 @@
 		margin: 20px;
 	}
 
+	#about .col img{
+		width: 70%;
+		margin-bottom: 0;
+	}
+
 	#contact .col{
 		clear: both;
 		float: none;
 		width: 100%;
 		padding: 0;
 		margin: 20px 0;
-	}
-
-	#contact .col img{
-		margin: 0 auto;
 	}
 
 	#contact .col label {
@@ -157,10 +158,6 @@
 
 @media screen and (max-width: 640px) { 
 
-	.active-menu{
-		background-color: #181818;
-	}
-
 	#portfolio .col {
 		width: 100%;
 	}
@@ -185,19 +182,19 @@
 	}
 
 	header h1 {
-	    padding-top: 62%;
+	    padding-top: 65%;
+	}
+
+	header p, header h1 {
+		font-size: 35px;
 	}
 	
 	header a.explore {
 		margin: 100px auto;
 	}
 
-	#grid-slider .item img{
-		max-width: 200px;
-	}
-
 	#about .col img{ 
-		width: 94%;
+		width: 90%;
 	}
 
 	#about .col p {

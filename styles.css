@@ -545,26 +545,23 @@ header nav.color-menu ul a:hover, header nav.color-menu ul a:active{
 }
 
 header {
-	top: 0;
-	left: 0;	
-	margin-top: 0;
-	background: url(/src/images/hero1.jpg) no-repeat center center; 
+	background: url(/src/images/hero1.jpg) center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity: 1;	
-	padding-bottom: 20px;
+	padding-bottom: 5%;
 }
 
 header h1 {
-	padding-top: 15%;
+	padding-top: 22%;
 }
 
 header h1, header p {
-	color: #fff;
-	font-size: 35px;
-	font-weight: 600;
+	color: #FFD700;
+	font-size: 50px;
+	font-weight: 200;
+	padding-bottom: 0;
 }
 
 header a.explore {
@@ -578,6 +575,10 @@ header a.explore {
     text-decoration: none;
     font-weight: 100;
     color: #fff;
+}
+
+header a.explore:hover {
+	color: #f9e515;
 }
 
 /*-Columns-*/
@@ -619,12 +620,15 @@ header a.explore {
 	margin-bottom: 20px;
 }
 
+#about .col p {
+	margin-top: 0;
+	padding-top: 0;
+}
 
-#grid-slider .item img {
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 250px;
-    margin: 0 auto;
+
+#about .col img {
+	margin: 15% auto;
+	width: 90%;
 }
 	
 /*- contact section-*/
@@ -865,7 +869,7 @@ footer a {
 	}
 
 	header h1 {
-    	padding-top: 32%;
+    	padding-top: 42%;
 	}	
 
 	header nav ul a:hover {
@@ -892,16 +896,17 @@ footer a {
 		margin: 20px;
 	}
 
+	#about .col img{
+		width: 70%;
+		margin-bottom: 0;
+	}
+
 	#contact .col{
 		clear: both;
 		float: none;
 		width: 100%;
 		padding: 0;
 		margin: 20px 0;
-	}
-
-	#contact .col img{
-		margin: 0 auto;
 	}
 
 	#contact .col label {
@@ -936,10 +941,6 @@ footer a {
 
 @media screen and (max-width: 640px) { 
 
-	.active-menu{
-		background-color: #181818;
-	}
-
 	#portfolio .col {
 		width: 100%;
 	}
@@ -964,19 +965,19 @@ footer a {
 	}
 
 	header h1 {
-	    padding-top: 62%;
+	    padding-top: 65%;
+	}
+
+	header p, header h1 {
+		font-size: 35px;
 	}
 	
 	header a.explore {
 		margin: 100px auto;
 	}
 
-	#grid-slider .item img{
-		max-width: 200px;
-	}
-
 	#about .col img{ 
-		width: 94%;
+		width: 90%;
 	}
 
 	#about .col p {
