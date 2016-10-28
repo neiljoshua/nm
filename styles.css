@@ -524,7 +524,7 @@ header nav li a:hover, header nav li a:active, header .home:hover {
 }
 
 header {
-	background: url(/src/images/hero.jpg) center center; 
+	background: url(/src/images/hero2.jpg) center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -549,7 +549,7 @@ header h1, header p {
 header a.explore {
     max-width: 150px;
     display: block;
-    margin: 100px auto;
+    margin: 110px auto;
     padding: 10px 0px;
     border-radius: 10px;
     background-color: rgba(13,12,12,0.8);
@@ -583,7 +583,7 @@ header a.explore:hover {
 	padding-bottom: 20px;
 }
 
-.col a:hover img, .social i:hover, header a.explore:hover, header nav.color-menu ul a:hover, header nav.color-menu ul a:active {
+.col a:hover img, .social i:hover, header nav.color-menu ul a:hover, header nav.color-menu ul a:active {
 	transform: scale(1.04);
 	transition: transform .3s ease;
 }
