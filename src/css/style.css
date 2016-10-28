@@ -20,19 +20,19 @@ html, body {
 }
 
 h1, h2, h3, p {
-	-webkit-animation: show-elemet 1.8s ease;
-    -moz-animation: show-elemet 1.8s ease;
-    -ms-animation: show-elemet 1.8s ease;
-    -o-animation: show-elemet 1.8s ease;
-    animation: show-elemet 1.8s ease;
+	-webkit-animation: show-elemet 0.8s ease 0.3s;
+    -moz-animation: show-elemet 0.8s ease 0.3s;
+    -ms-animation: show-elemet 0.8s ease 0.3s;
+    -o-animation: show-elemet 0.8s ease 0.3s;
+    animation: show-elemet 0.8s ease 0.3s;
 }
 
 a {
-	-webkit-animation: show-elemet 2.8s ease;
-    -moz-animation: show-elemet 2.8s ease;
-    -ms-animation: show-elemet 2.8s ease;
-    -o-animation: show-elemet 2.8s ease;
-    animation: show-elemet 2.8s ease;
+	-webkit-animation: show-elemet 1.2s ease 0.4s;
+    -moz-animation: show-elemet 1.2s ease 0.4s;
+    -ms-animation: show-elemet  1.2s ease 0.4s;
+    -o-animation: show-elemet  1.2s ease 0.4s;
+    animation: show-elemet  1.2s ease 0.4s;
 }
 /*--Structure--*/
 
@@ -137,13 +137,9 @@ a {
   transition: background 0.3s;
   border-radius: 4px;
   font-weight: 100;
-  z-index: 30;
-
+  z-index: 4;
 }
 
-.home a {
-	z-index: 34;
-}
 .wrapper{
 	display: block;
 	width: 100%;
@@ -174,10 +170,8 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-    background-color:rgba(13,12,12,0.7);
-	z-index:10;
+    background-color: #000;
 	border-bottom: 1px solid #F0F8FF;
-	opacity: 1;
 }
 
 nav ul{
@@ -190,7 +184,7 @@ nav li {
 	margin: 0 auto;
 }
 
-nav li a{
+nav li a {
 	margin: 0 auto;
 	text-decoration: none;
 	display: block;
@@ -201,31 +195,17 @@ nav li a{
 	font-weight: 600;
 }
 
-header nav ul a:hover, header nav ul a:active {
+header nav li a:hover, header nav li a:active, header .home:hover {
 	color: #66cccc;
 }
 
-header nav.color-menu ul a:hover, header nav.color-menu ul a:active{
-	background-color: #010601;
-}
-
-.color-menu {
-    background-color:#66cccc;
-    border: none;
-}
-
-.active-menu{
-    visibility: visible;
-    transition: opacity 0.38s ease 0s;
-    opacity: 1;
-}
-
 header {
-	background: url(/src/images/hero1.jpg) center center; 
+	background: url(/src/images/hero.jpg) center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-color: #000;
 	padding-bottom: 5%;
 }
 
@@ -234,10 +214,12 @@ header h1 {
 }
 
 header h1, header p {
-	color: #FFD700;
+	display: block;
+	color: #fff;
 	font-size: 50px;
-	font-weight: 200;
+	font-weight: 800;
 	padding-bottom: 0;
+	z-index: 4;
 }
 
 header a.explore {
@@ -254,7 +236,7 @@ header a.explore {
 }
 
 header a.explore:hover {
-	color: #f9e515;
+	color: #66cccc;
 }
 
 /*-Columns-*/
@@ -303,7 +285,7 @@ header a.explore:hover {
 
 
 #about .col img {
-	margin: 15% auto;
+	margin: 15px auto;
 	width: 90%;
 }
 	
@@ -322,7 +304,7 @@ header a.explore:hover {
 	clear: both;
 }
 
-#contact label, #contact input{
+#contact label, #contact input {
 	display: block;
 	outline: none;
 }
