@@ -703,6 +703,9 @@ button {
 
 button:hover {
 	cursor: pointer;
+	background-color: #000;
+	transform: scale(1.04);
+	transition: transform .3s ease;
 }
 
 #contact .col input[type=submit] {
