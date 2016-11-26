@@ -39,7 +39,7 @@ grunt.initConfig({
 
 });
 
-// Load the plugin that provides the "uglify" task.
+// Load the plugin that provides the tasks.
 grunt.loadNpmTasks('grunt-contrib-compass');
 // grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-concat');
