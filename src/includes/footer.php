@@ -1,7 +1,9 @@
-		    <footer>
-		    	<!-- <div id="googleMap" class="map"></div>--> 
-		    	<h2> &copy; Designed and developed by Neil Joshua  &mdash;  Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
-		    	</h2>
+		    
+		    	<div class="copyright">
+		    		<h2> &copy; Designed and developed by Neil Joshua </h2> 
+			    	<p>Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a> </p>
+		    	</div>
+		    	
         		<div class="social">	
                   <a href="http://twitter.com/NeilJMV"><i class="icon-twitter"></i></a>
                   <a href="http://www.linkedin.com/in/neiljoshua"><i class="icon-linkedin-squared"></i></a>

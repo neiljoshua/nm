@@ -14,8 +14,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 40px;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -30,25 +30,25 @@
     span {
       display: block;
       position: absolute;
-      top: 32px;
-      left: 12px;
-      right: 15px;
-      height: 5px;
+      top: 18px;
+      left: 10px;
+      right: 10px;
+      height: 4px;
       background: white;
       &::before, &::after{
         position: absolute;
         display: block;
         left: 0;
         width: 100%;
-        height: 5px;
+        height: 4px;
         background-color: $white;
         content: "";
       }
       &::before {
-        top: -12px;
+        top: -10px;
       }
       &::after{
-        bottom: -12px;
+        bottom: -10px;
       }
     }  
 }

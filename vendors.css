@@ -1,0 +1,324 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+@-webkit-keyframes show-elemet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes show-elemet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes show-elemet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes show-elemet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show-elemet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../src/font/fontello.eot?36536519');
+  src: url('../src/font/fontello.eot?36536519#iefix') format('embedded-opentype'),
+       url('../src/font/fontello.woff2?36536519') format('woff2'),
+       url('../src/font/fontello.woff?36536519') format('woff'),
+       url('../src/font/fontello.ttf?36536519') format('truetype'),
+       url('../src/font/fontello.svg?36536519#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?36536519#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-align-center:before { content: '\e800'; } /* '' */
+.icon-dribbble:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e803'; } /* '' */
+.icon-gplus:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e805'; } /* '' */
+.icon-feather:before { content: '\e806'; } /* '' */
+.icon-megaphone:before { content: '\e807'; } /* '' */
+.icon-pencil:before { content: '\e808'; } /* '' */
+.icon-behance:before { content: '\e809'; } /* '' */
+.icon-forrst:before { content: '\e80a'; } /* '' */
+.icon-mail:before { content: '\e80b'; } /* '' */
+.icon-trophy:before { content: '\e80c'; } /* '' */
+.icon-rocket:before { content: '\e80d'; } /* '' */
+.icon-users:before { content: '\e80e'; } /* '' */
+.icon-clock:before { content: '\e80f'; } /* '' */
+.icon-mail-1:before { content: '\e810'; } /* '' */
+.icon-right:before { content: '\e811'; } /* '' */
+.icon-eye:before { content: '\e812'; } /* '' */
+.icon-desktop:before { content: '\e813'; } /* '' */
+.icon-wifi:before { content: '\e814'; } /* '' */
+.icon-signal:before { content: '\e815'; } /* '' */
+.icon-tablet:before { content: '\e816'; } /* '' */
+.icon-mobile:before { content: '\e817'; } /* '' */
+.icon-globe:before { content: '\e818'; } /* '' */
+.icon-suitcase:before { content: '\e819'; } /* '' */
+.icon-off:before { content: '\e81a'; } /* '' */
+.icon-beaker:before { content: '\e81b'; } /* '' */
+.icon-linkedin-squared:before { content: '\e81c'; } /* '' */
+.icon-lastfm:before { content: '\e81d'; } /* '' */
+.icon-desktop-1:before { content: '\e81e'; } /* '' */
+.icon-laptop:before { content: '\e81f'; } /* '' */
+.icon-tablet-1:before { content: '\e820'; } /* '' */
+.icon-mobile-1:before { content: '\e821'; } /* '' */
+.icon-flow-merge:before { content: '\e822'; } /* '' */
+.icon-camera:before { content: '\e823'; } /* '' */
+.icon-video-chat:before { content: '\e824'; } /* '' */
+.icon-gmail:before { content: '\e825'; } /* '' */
+.icon-wrench:before { content: '\e826'; } /* '' */
+.icon-feather-1:before { content: '\e827'; } /* '' */
+.icon-wifi-1:before { content: '\e828'; } /* '' */
+.icon-wifi-outline:before { content: '\e829'; } /* '' */
+.icon-menu:before { content: '\e82a'; } /* '' */
+.icon-video:before { content: '\e82b'; } /* '' */
+.icon-down-open:before { content: '\e82c'; } /* '' */
+.icon-up-open:before { content: '\e82d'; } /* '' */
+.icon-temperature:before { content: '\e82e'; } /* '' */
+.icon-compass:before { content: '\e82f'; } /* '' */
+.icon-fahrenheit:before { content: '\e830'; } /* '' */
+.icon-clouds-flash-alt:before { content: '\e831'; } /* '' */
+.icon-sunrise:before { content: '\e832'; } /* '' */
+.icon-sun:before { content: '\e833'; } /* '' */
+.icon-moon:before { content: '\e834'; } /* '' */
+.icon-mist:before { content: '\e835'; } /* '' */
+.icon-wind:before { content: '\e836'; } /* '' */
+.icon-cloud-sun:before { content: '\e837'; } /* '' */
+.icon-cloud-moon:before { content: '\e838'; } /* '' */
+.icon-fog-sun:before { content: '\e839'; } /* '' */
+.icon-fog-moon:before { content: '\e83a'; } /* '' */
+.icon-fog-cloud:before { content: '\e83b'; } /* '' */
+.icon-fog:before { content: '\e83c'; } /* '' */
+.icon-cloud:before { content: '\e83d'; } /* '' */
+.icon-cloud-flash:before { content: '\e83e'; } /* '' */
+.icon-cloud-flash-alt:before { content: '\e83f'; } /* '' */
+.icon-drizzle:before { content: '\e840'; } /* '' */
+.icon-rain:before { content: '\e841'; } /* '' */
+.icon-windy:before { content: '\e842'; } /* '' */
+.icon-windy-rain:before { content: '\e843'; } /* '' */
+.icon-snow:before { content: '\e844'; } /* '' */
+.icon-snow-alt:before { content: '\e845'; } /* '' */
+.icon-snow-heavy:before { content: '\e846'; } /* '' */
+.icon-hail:before { content: '\e847'; } /* '' */
+.icon-clouds:before { content: '\e848'; } /* '' */
+.icon-clouds-flash:before { content: '\e849'; } /* '' */
+.icon-instagram:before { content: '\f31e'; } /* '' */
+.icon-instagram-1:before { content: '\f32d'; } /* '' */
