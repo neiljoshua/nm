@@ -54,7 +54,7 @@
 }
 
 .c-hamburger--rot {
-    background-color: #ff3264;
+    background-color: $white;
     span {
       transition: background 0s 0.3s;
       &::before{
@@ -71,11 +71,12 @@
     background-color: $blue;
     span {
       background: none;
-      &::before{}
+      &::before {
         top: 0;
         transform: rotate(45deg);
         @extend %animation-active;
-      &::after{
+      }
+      &::after {
         bottom: 0;
         transform: rotate(-45deg);
         @extend %animation-active;
