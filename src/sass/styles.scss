@@ -146,6 +146,9 @@ header.portfolio-nav, footer.portfolio-footer {
 	}
 	p{
 		font-size: 18px;
+		margin-right: 20px;
+		margin-left: 20px;
+		line-height: 150%;
 	}
 	h1, p{
 		margin-bottom: 40px;
@@ -158,7 +161,12 @@ header.portfolio-nav, footer.portfolio-footer {
 	margin: 50px auto;
 	overflow: hidden;
 	clear: both;
-	padding-top: 50px;
+	padding: 50px 0;
+	border-bottom: 1px dotted #ddd;
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
 }
 
 .portfolio-image {
@@ -171,6 +179,7 @@ header.portfolio-nav, footer.portfolio-footer {
 			width: 98%;
 			max-height: 600px;
 			border: 2px solid #999;
+			margin-bottom: 50px;
 		}
 	}
 }
