@@ -1,48 +1,63 @@
 section {
-	max-width: 700px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
-.form-copy {
-	margin: 60px auto;
+.contact-form {
+	width: 90%;
+	margin: 80px auto;
+    padding: 25px 15px 25px 10px;
+    border: 2px solid $darkgray;
 }
 
-input[type="text"], select {
+input[type="text"], select, textarea {
 	font-family: $oxygen;
 	font-size: 14px;
 }
 
 input[type="text"] {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid $gray;
 	width: 320px;
 	padding: 10px 0;
 }
 
+
 select {
 	width: 320px;
 	background-color: $blue;
-	color: $white;
+	color: $black;
 	padding: 10px 0;
 	margin-top: 15px;
 }
 
 fieldset {
+	margin-top:50px;
+	margin-bottom: 40px;
 	*:first-child {
 		margin-right: 40px;
 	}
 }
 
+textarea {
+    display: block;
+    width: 100%;
+	border: 1px solid;
+    padding-bottom: 70px;
+    margin: 50px auto 0;
+    max-width: 675px;
+}
+
 button {
 	margin: 40px auto;
 	width: 200px;
-	border: 1px solid #fff;
-	color: $white;
+	border: 1px solid $black;
+	color: $black;
 	padding: 15px 0;
 	text-transform: uppercase;
 
 	&:hover {
-		background-color: $white;
-		color: $blue;
+		background-color: $gray;
+		color: $white;
 		transition: background-color 0.6s;
 	}
 }

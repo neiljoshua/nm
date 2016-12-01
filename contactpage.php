@@ -10,27 +10,27 @@
 		</ul>
 	</nav>		
 </header>	
-<div class="site-content contact">	
 
-	<h2>Drop me a line!</h2>
-	<form id="contact-form" class="contact-form" action="contact.php" method="post">
-		<label for="name">Name:
-			<input  name="user_name" type="text" id="name" placeholder="John Smith" required />
-		</label>
-		<label for="email">Email:
-			<input name="user_email" type="text"  id="email" placeholder="johnsmith@example.com" required />
-			<p class="error">Invalid Email</p>
-		</label>
-		<label for="message">Message:
-			<input name="user_message" type="text"  id="message" placeholder="Say Hello!" required />
-		</label>
-		<button type="submit"> Submit </button>
-	</form>
-	<div class="success">
-		<p>Thank You!</p>
-		<button class="close-success">Close</button>
-	</div>   
+<div class="site-content">	
 
+	<div class="hero contact-hero">
+		<h1 class="center"> Drop me a line!</h1>
+	</div>	
+	
+	<section>
+		<form id="inquiry" class="contact-form">
+			<fieldset>
+				<input type="text" name="first-name" placeholder="First Name">
+				<input type="text" name="last-name" placeholder="Last Name">
+			</fieldset>
+			<fieldset>
+				<input type="text" name="email" placeholder="Email">
+				<input type="text" name="phone" placeholder="Phone">
+			</fieldset>
+			<textarea> </textarea>
+			<button>Submit</button>
+		</form>
+	</section>	
 </div> 
 <footer class="portfolio-footer">
 <?php

@@ -65,13 +65,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="email"],
 input[type="text"],
-button {
+button,
+textarea {
   border: 0;
   background: none;
   outline: 0;
 }
 
-/* line 61, ../sass/reset.scss */
+/* line 62, ../sass/reset.scss */
 input[type="button"],
 input[type="submit"],
 button {
@@ -81,55 +82,73 @@ button {
 
 /* line 1, ../sass/form.scss */
 section {
-  max-width: 700px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* line 6, ../sass/form.scss */
-.form-copy {
-  margin: 60px auto;
+.contact-form {
+  width: 90%;
+  margin: 80px auto;
+  padding: 25px 15px 25px 10px;
+  border: 2px solid #F7F7F7;
 }
 
-/* line 10, ../sass/form.scss */
-input[type="text"], select {
+/* line 13, ../sass/form.scss */
+input[type="text"], select, textarea {
   font-family: "Oxygen";
   font-size: 14px;
 }
 
-/* line 15, ../sass/form.scss */
+/* line 18, ../sass/form.scss */
 input[type="text"] {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #595959;
   width: 320px;
   padding: 10px 0;
 }
 
-/* line 21, ../sass/form.scss */
+/* line 25, ../sass/form.scss */
 select {
   width: 320px;
   background-color: #000033;
-  color: #fff;
+  color: #000;
   padding: 10px 0;
   margin-top: 15px;
 }
 
-/* line 30, ../sass/form.scss */
+/* line 33, ../sass/form.scss */
+fieldset {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+/* line 36, ../sass/form.scss */
 fieldset *:first-child {
   margin-right: 40px;
 }
 
-/* line 35, ../sass/form.scss */
+/* line 41, ../sass/form.scss */
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  padding-bottom: 70px;
+  margin: 50px auto 0;
+  max-width: 675px;
+}
+
+/* line 50, ../sass/form.scss */
 button {
   margin: 40px auto;
   width: 200px;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #000;
+  color: #000;
   padding: 15px 0;
   text-transform: uppercase;
 }
-/* line 43, ../sass/form.scss */
+/* line 58, ../sass/form.scss */
 button:hover {
-  background-color: #fff;
-  color: #000033;
+  background-color: #595959;
+  color: #fff;
   transition: background-color 0.6s;
 }
 
@@ -382,9 +401,9 @@ header.portfolio-nav, footer.portfolio-footer {
 }
 /* line 147, ../sass/styles.scss */
 .page-title p {
-  font-size: 18px;
-  margin-right: 20px;
-  margin-left: 20px;
+  font-size: 24px;
+  margin-right: 40px;
+  margin-left: 40px;
   line-height: 150%;
 }
 /* line 153, ../sass/styles.scss */
@@ -439,7 +458,7 @@ header.portfolio-nav, footer.portfolio-footer {
 }
 /* line 196, ../sass/styles.scss */
 .portfolio-text p {
-  font-size: 13px;
+  font-size: 15px;
   padding: 20px;
   letter-spacing: 1.2px;
   line-height: 150%;
@@ -459,11 +478,11 @@ header.portfolio-nav, footer.portfolio-footer {
 /** About section**/
 /* line 216, ../sass/styles.scss */
 .about-hero {
-  background: url("/src/images/cityview.jpg") no-repeat;
+  background: url("/src/images/cityview1.jpg") no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 75vh;
   background-color: #000;
 }
 /* line 223, ../sass/styles.scss */
@@ -487,13 +506,13 @@ header.portfolio-nav, footer.portfolio-footer {
 }
 /* line 239, ../sass/styles.scss */
 .about-content h2 {
-  line-space: 2px;
+  letter-spacing: 2px;
   font-weight: 400;
   font-size: 33px;
 }
 /* line 244, ../sass/styles.scss */
 .about-content p {
-  line-space: 1.5px;
+  letter-spacing: 1.5px;
   line-height: 150%;
   font-size: 22px;
   font-weight: 300;
@@ -501,44 +520,38 @@ header.portfolio-nav, footer.portfolio-footer {
 
 /** Contact Page**/
 /* line 255, ../sass/styles.scss */
-.contact {
-  margin: 80px 0 40px;
-  padding-top: 50px;
-  color: #000;
+.contact-hero {
+  padding: 0;
+  margin: 0;
+  height: 75vh;
 }
 /* line 259, ../sass/styles.scss */
-.contact h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-space: 3px;
+.contact-hero h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 3px;
   margin-bottom: 50px;
-}
-
-/* line 267, ../sass/styles.scss */
-.contact-form {
-  width: 80%;
-  margin: 50px auto;
-  padding: 50px 0;
 }
 
 /* Media Queries */
 @media (max-width: 980px) {
-  /* line 276, ../sass/styles.scss */
+  /* line 273, ../sass/styles.scss */
   header {
     padding-bottom: 50px;
   }
 
-  /* line 280, ../sass/styles.scss */
+  /* line 277, ../sass/styles.scss */
   .hero {
     max-width: 980px;
   }
 
-  /* line 284, ../sass/styles.scss */
+  /* line 281, ../sass/styles.scss */
   .site-nav {
     display: none;
   }
 
-  /* line 287, ../sass/styles.scss */
+  /* line 284, ../sass/styles.scss */
   .c-hamburger {
     position: fixed;
     right: 40px;
@@ -548,36 +561,36 @@ header.portfolio-nav, footer.portfolio-footer {
   }
 }
 @media (max-width: 768px) {
-  /* line 300, ../sass/styles.scss */
+  /* line 297, ../sass/styles.scss */
   body a.home {
     left: 20px;
   }
 
-  /* line 305, ../sass/styles.scss */
+  /* line 302, ../sass/styles.scss */
   .hero {
     max-width: 760px;
   }
 
-  /* line 310, ../sass/styles.scss */
+  /* line 307, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 45px;
   }
-  /* line 313, ../sass/styles.scss */
+  /* line 310, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 30px;
   }
 
-  /* line 318, ../sass/styles.scss */
+  /* line 315, ../sass/styles.scss */
   .site-header {
     padding: 20px;
   }
 
-  /* line 322, ../sass/styles.scss */
+  /* line 319, ../sass/styles.scss */
   .c-hamburger {
     right: 20px;
   }
 
-  /* line 326, ../sass/styles.scss */
+  /* line 323, ../sass/styles.scss */
   .row {
     width: 98%;
     margin: 30px auto;
@@ -587,43 +600,43 @@ header.portfolio-nav, footer.portfolio-footer {
   }
 }
 @media (max-width: 600px) {
-  /* line 338, ../sass/styles.scss */
+  /* line 335, ../sass/styles.scss */
   header {
     padding-bottom: 30px;
   }
 
-  /* line 342, ../sass/styles.scss */
+  /* line 339, ../sass/styles.scss */
   body a.home, .c-hamburger {
     top: 10px;
   }
 
-  /* line 346, ../sass/styles.scss */
+  /* line 343, ../sass/styles.scss */
   .c-hamburger {
     right: 10px;
     width: 50px;
   }
 
-  /* line 351, ../sass/styles.scss */
+  /* line 348, ../sass/styles.scss */
   .center {
     width: 100%;
   }
 
-  /* line 356, ../sass/styles.scss */
+  /* line 353, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 30px;
   }
-  /* line 359, ../sass/styles.scss */
+  /* line 356, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 15px;
   }
 
-  /* line 364, ../sass/styles.scss */
+  /* line 361, ../sass/styles.scss */
   footer .copyright, footer .social {
     float: none;
     margin: 0;
     padding-bottom: 10px;
   }
-  /* line 368, ../sass/styles.scss */
+  /* line 365, ../sass/styles.scss */
   footer .copyright h2, footer .copyright p, footer .copyright a, footer .social h2, footer .social p, footer .social a {
     text-align: center;
   }
