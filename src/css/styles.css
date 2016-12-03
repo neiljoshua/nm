@@ -315,7 +315,7 @@ a {
 /* line 68, ../sass/styles.scss */
 .hero {
   position: relative;
-  background: url("/src/images/hero2.jpg") no-repeat;
+  background: url("/src/images/hero2.jpg") center center no-repeat;
   background-size: cover;
   background-color: #000;
   height: 100vh;
@@ -428,25 +428,23 @@ header.portfolio-nav, footer.portfolio-footer {
 
 /* line 172, ../sass/styles.scss */
 .portfolio-image {
-  float: left;
   width: 70%;
 }
-/* line 175, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .portfolio-image a {
   display: block;
   width: 100%;
 }
-/* line 178, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .portfolio-image a img {
   width: 98%;
   max-height: 600px;
   margin-bottom: 50px;
 }
 
-/* line 186, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 .portfolio-text {
   width: 30%;
-  float: left;
 }
 /* line 189, ../sass/styles.scss */
 .portfolio-text h2 {
@@ -465,52 +463,61 @@ header.portfolio-nav, footer.portfolio-footer {
 }
 
 /* line 204, ../sass/styles.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 208, ../sass/styles.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 212, ../sass/styles.scss */
 .site-content, .title, .portfolio-text {
   color: #000;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 .portfolio-footer {
   position: relative;
   color: #fff;
 }
 
 /** About section**/
-/* line 216, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .about-hero {
-  background: url("/src/images/cityview1.jpg") no-repeat;
+  background: url("/src/images/cityview1.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 55vh;
   background-color: #000;
 }
-/* line 223, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .about-hero h1 {
-  font-weight: 400;
-  font-size: 45px;
+  font-weight: 600;
+  font-size: 35px;
   color: #fff;
-  line-space: 5px;
+  letter-spacing: 6px;
 }
 
-/* line 231, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .about-content {
   margin: 40px 0;
   padding: 40px 0;
 }
-/* line 234, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 .about-content h2, .about-content p {
   margin: 40px 0;
   padding-right: 60px;
   padding-left: 60px;
 }
-/* line 239, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .about-content h2 {
   letter-spacing: 2px;
-  font-weight: 400;
   font-size: 33px;
 }
-/* line 244, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .about-content p {
   letter-spacing: 1.5px;
   line-height: 150%;
@@ -519,13 +526,13 @@ header.portfolio-nav, footer.portfolio-footer {
 }
 
 /** Contact Page**/
-/* line 255, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .contact-hero {
   padding: 0;
   margin: 0;
-  height: 75vh;
+  height: 55vh;
 }
-/* line 259, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .contact-hero h1 {
   color: #fff;
   font-weight: 300;
@@ -534,24 +541,35 @@ header.portfolio-nav, footer.portfolio-footer {
   margin-bottom: 50px;
 }
 
+/* line 276, ../sass/styles.scss */
+.contact-hero, .about-hero {
+  overflow: hidden;
+}
+/* line 278, ../sass/styles.scss */
+.contact-hero h1, .about-hero h1 {
+  width: 100%;
+  padding: 400px;
+  background: rgba(0, 0, 0, 0.52);
+}
+
 /* Media Queries */
 @media (max-width: 980px) {
-  /* line 273, ../sass/styles.scss */
+  /* line 288, ../sass/styles.scss */
   header {
     padding-bottom: 50px;
   }
 
-  /* line 277, ../sass/styles.scss */
+  /* line 292, ../sass/styles.scss */
   .hero {
     max-width: 980px;
   }
 
-  /* line 281, ../sass/styles.scss */
+  /* line 296, ../sass/styles.scss */
   .site-nav {
     display: none;
   }
 
-  /* line 284, ../sass/styles.scss */
+  /* line 299, ../sass/styles.scss */
   .c-hamburger {
     position: fixed;
     right: 40px;
@@ -561,36 +579,36 @@ header.portfolio-nav, footer.portfolio-footer {
   }
 }
 @media (max-width: 768px) {
-  /* line 297, ../sass/styles.scss */
+  /* line 312, ../sass/styles.scss */
   body a.home {
     left: 20px;
   }
 
-  /* line 302, ../sass/styles.scss */
+  /* line 317, ../sass/styles.scss */
   .hero {
     max-width: 760px;
   }
 
-  /* line 307, ../sass/styles.scss */
+  /* line 322, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 45px;
   }
-  /* line 310, ../sass/styles.scss */
+  /* line 325, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 30px;
   }
 
-  /* line 315, ../sass/styles.scss */
+  /* line 330, ../sass/styles.scss */
   .site-header {
     padding: 20px;
   }
 
-  /* line 319, ../sass/styles.scss */
+  /* line 334, ../sass/styles.scss */
   .c-hamburger {
     right: 20px;
   }
 
-  /* line 323, ../sass/styles.scss */
+  /* line 338, ../sass/styles.scss */
   .row {
     width: 98%;
     margin: 30px auto;
@@ -598,45 +616,114 @@ header.portfolio-nav, footer.portfolio-footer {
     clear: both;
     padding-top: 30px;
   }
+
+  /* line 346, ../sass/styles.scss */
+  .portfolio-image, .portfolio-text {
+    width: 100%;
+  }
+
+  /* line 350, ../sass/styles.scss */
+  .pull-right, .pull-left {
+    float: none;
+  }
+
+  /* line 354, ../sass/styles.scss */
+  fieldset *:first-child {
+    margin-right: 20px;
+  }
+
+  /* line 358, ../sass/styles.scss */
+  input[type="text"] {
+    width: 235px;
+  }
+
+  /* line 362, ../sass/styles.scss */
+  textarea {
+    max-width: 485px;
+  }
 }
 @media (max-width: 600px) {
-  /* line 335, ../sass/styles.scss */
+  /* line 370, ../sass/styles.scss */
+  section {
+    margin: 0;
+  }
+
+  /* line 374, ../sass/styles.scss */
   header {
     padding-bottom: 30px;
   }
 
-  /* line 339, ../sass/styles.scss */
+  /* line 378, ../sass/styles.scss */
   body a.home, .c-hamburger {
     top: 10px;
   }
 
-  /* line 343, ../sass/styles.scss */
+  /* line 382, ../sass/styles.scss */
   .c-hamburger {
     right: 10px;
     width: 50px;
   }
 
-  /* line 348, ../sass/styles.scss */
+  /* line 387, ../sass/styles.scss */
   .center {
     width: 100%;
   }
 
-  /* line 353, ../sass/styles.scss */
+  /* line 392, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 30px;
   }
-  /* line 356, ../sass/styles.scss */
+  /* line 395, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 15px;
   }
 
-  /* line 361, ../sass/styles.scss */
+  /* line 402, ../sass/styles.scss */
+  .about-hero h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  /* line 408, ../sass/styles.scss */
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  /* line 412, ../sass/styles.scss */
+  .contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 418, ../sass/styles.scss */
+  fieldset {
+    margin: 0;
+  }
+  /* line 420, ../sass/styles.scss */
+  fieldset *:first-child {
+    margin: 0;
+  }
+
+  /* line 425, ../sass/styles.scss */
+  input[type="text"] {
+    padding: 25px 0;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  /* line 431, ../sass/styles.scss */
+  input[type="text"], textarea {
+    width: 90%;
+  }
+
+  /* line 435, ../sass/styles.scss */
   footer .copyright, footer .social {
     float: none;
     margin: 0;
     padding-bottom: 10px;
   }
-  /* line 365, ../sass/styles.scss */
+  /* line 439, ../sass/styles.scss */
   footer .copyright h2, footer .copyright p, footer .copyright a, footer .social h2, footer .social p, footer .social a {
     text-align: center;
   }
