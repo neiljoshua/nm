@@ -1,14 +1,10 @@
+<?php $thisPage="contactpage"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="portfolio-nav">
-	<nav class="site-nav "> 
-		<ul>
-			<li><a href="portfolio">Portfolio</a></li>
-		    <li><a href="about">About</a></li>
-		    <li><a href="contactpage">Contact</a></li>
-		</ul>
-	</nav>		
+<header>
+	<?php include('src/includes/navigation.php')
+?>		
 </header>	
 
 <div class="site-content">	
@@ -18,16 +14,16 @@
 	</div>	
 	
 	<section>
-		<form id="inquiry" class="contact-form">
+		<form id="contact-form" class="contact-form">
 			<fieldset>
-				<input type="text" name="first-name" placeholder="First Name">
-				<input type="text" name="last-name" placeholder="Last Name">
+				<input type="text" name="user-name" placeholder="First Name" required>
+				<input type="text" name="user-last-name" placeholder="Last Name" required>
 			</fieldset>
 			<fieldset>
-				<input type="text" name="email" placeholder="Email">
-				<input type="text" name="phone" placeholder="Phone">
+				<input type="text" name="user-email" placeholder="Email" required>
+				<input type="text" name="user-phone" placeholder="Phone">
 			</fieldset>
-			<textarea> </textarea>
+			<textarea name="user-message" required> </textarea>
 			<button>Submit</button>
 		</form>
 	</section>	

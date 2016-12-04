@@ -1,14 +1,10 @@
+<?php $thisPage="about"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="portfolio-nav">
-	<nav class="site-nav "> 
-		<ul>
-			<li><a href="portfolio">Portfolio</a></li>
-		    <li><a href="about">About</a></li>
-		    <li><a href="contactpage">Contact</a></li>
-		</ul>
-	</nav>		
+<header>
+	<?php include('src/includes/navigation.php')
+?>	
 </header>	
 
 <div class="site-content">
@@ -19,6 +15,7 @@
 
 	<div class="about-content">
 		<h2>About Neil</h2>
+		<img src="/src/images/neilj.jpg">
 		<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily related to front end develop but I am working on more PHP projects to strengthen my back end skills.
 		</p>
 		
