@@ -7,6 +7,7 @@
 
 /** General page layout**/
 
+
 body{
 	font-family: $oxygen;
 	color: $white;
@@ -14,12 +15,16 @@ body{
 	
 	a.home {
 		position: fixed;
-	    top: 20px;
-	    left: 40px;
+		height: 40px;
+		width: 40px;
+	    top: 10px;
+	    left: 10px;
 	    text-decoration: none;
 	    color: #fff;
-	    font-size: 250%;
+	    font-size: 30px;
 	    z-index: 100;
+	    line-height: 40px;
+	    border-radius:5px;
 	}
 }
 
@@ -27,8 +32,8 @@ header{
 	position: fixed;
 	top: 0;
 	width:100%;
-	padding-top: 30px;	
-	padding-bottom: 30px;
+	padding-top: 20px;	
+	padding-bottom: 20px;
 	z-index: 50;
 }
 
@@ -36,21 +41,26 @@ a {
 	text-decoration: none;
 	color: $white;
 	&:hover, &:active {
-		color: $gray;
+		color: $silver;
 	}
 }
 
+
 /** HomePage **/
+
 
 .site-content {
 	width:100%;
 	clear: both;
 	@include animation('show-elemet 1.3s ease-in');
 }
+
 .site-nav {
 	#currentpage{
 		a {
-			color: $gray;
+			font-weight: 600;
+			color: $silver;
+			border-bottom: 1px solid $silver;
 		}
 	}
 	display: block;
@@ -64,10 +74,12 @@ a {
 			display: inline-block;
 			margin-left: 30px;
 			a {
-				font-size: 150%;
+				color: $white;
+				font-size: 125%;
 				letter-spacing: 4px;
 				&:hover, &:active {
-					color: $gray;
+					color: $silver;
+					border-bottom: 1px solid $silver;
 				}
 			}
 		}
@@ -115,9 +127,17 @@ footer {
 	.copyright{
 		float: left;
 		margin-left: 50px;
-		h2, p {
+		h3, p {
 			text-align: left;
 			margin-bottom: 10px;
+		}
+		a{
+			&:hover{
+				color: $white;
+			}
+		}
+		span {
+			font-size: 60%;
 		}
 	}
 	.social{
@@ -136,12 +156,15 @@ footer {
 			color: $white;
 			&:hover {
 				color: $gray;
+				border-bottom: none;
 			}	
 		}
 	}
 }
 
+
 /** Portfolio Layout **/
+
 
 header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	background-color: $black;
@@ -151,21 +174,21 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 .page-title {
 	margin-top: 80px;
 	padding-top: 50px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	h1{ 
 		font-weight: 600;
 		font-size: 35px;
 	}
 	p{
-		font-size: 24px;
-		margin-right: 40px;
-		margin-left: 40px;
+		max-width: 620px;
+		margin: 0 auto;
+		text-align: center;
 		line-height: 150%;
+		font-size: 24px;
 	}
 	h1, p{
 		margin-bottom: 40px;
 	}
-
 }
 
 .row {
@@ -177,7 +200,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	border-bottom: 1px dotted #ddd;
 	&:last-child {
 		border-bottom: none;
-		padding-bottom: 0;
+		padding-bottom: 20px;
 	}
 }
 
@@ -192,8 +215,11 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 			margin-bottom: 50px;
 		}
 	}
+	.wordpress-site {
+		border: 1px solid $silver;
+		width: 98%;
+	}
 }
-
 
 .portfolio-text {
 	width: 30%;
@@ -202,13 +228,21 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 		margin-top: 20px;
 		margin-bottom: 30px;
 		font-weight: 600;
-		letter-spacing: 2px;
+		letter-spacing: 2.5px;
+		span {
+		color: $silver;
+		}
 	}
-	p{
-		font-size: 15px;
-		padding: 20px;
-		letter-spacing: 1.2px;
-		line-height: 150%;
+	
+	ul{
+		text-align: center;
+		li {
+			margin-bottom: 10px;
+			margin-left: 10px;
+			font-size: 15px;
+			letter-spacing: 2px;
+			line-height: 150%;
+		}
 	}
 }
 
@@ -222,7 +256,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 .site-content, .title, .portfolio-text {
 	color: $black;
-
 }
 
 .portfolio-footer {
@@ -230,10 +263,12 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	color: $white;
 }
 
+
 /** About section**/
 
+
 .about-hero {
-	background: url('/src/images/cityview1.jpg') center center no-repeat;
+	background: url('/src/images/cityview.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 	width: 100%;
@@ -249,8 +284,8 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 }
 
 .about-content {
-	margin: 40px 0;
-	padding: 40px 0;
+	margin: 20px 0;
+	padding: 20px 0;
 	h2, p {
 		margin: 40px 0;
 		padding-right: 60px;
@@ -276,6 +311,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 /** Contact Page**/
 
+
 .contact-hero {
 	padding: 0;
 	margin: 0;
@@ -298,7 +334,9 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	}
 }
 
+
 /* Media Queries */
+
 
 @include media(large) {
 
@@ -318,9 +356,15 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 		}
 	}
 
+	.c-hamburger {
+		position: fixed;
+	    right: 10px;
+	    top: 10px;
+	    display: block;
+	    z-index: 100;
+	}
+
 	.home, .c-hamburger {
-		height: 40px;
-	    width: 42px;
 	    border-radius: 5px;
 	    background-color: $black;
 	    opacity: 0.6;
@@ -332,38 +376,45 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 		left: 0;
 	}
 
-
 	.hero {
 		max-width: 980px;
 	}
 
 	.site-nav {
+			visibility: hidden;
 			float: none;
 			position: absolute;
 			display: block;
 			top: 50%;
 			transform: translateY(-50%);
 			width: 100%;
+			&.active{
+				visibility: visible;
+			}
 			ul{
 				display: block;
 				float: none;
+				#currentpage {
+					a {
+						font-size: 200%;
+						color: $white;
+						border: none;
+					}
+				}
 				li{
 					display: block;
 					margin-left: 0;
 					margin-bottom: 35px;
-					a{
+					a {
 						font-size: 200%;
+						color: $gray;
+						&:hover{
+							color: $white;
+							border: none;
+						}
 					}
 				}
-			}	
-	}
-
-	.c-hamburger {
-		position: fixed;
-	    right: 40px;
-	    top: 20px;
-	    display: block;
-	    z-index: 100;
+			}
 	}
 
 }
@@ -393,10 +444,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	padding: 20px;
 	}
 	
-	.c-hamburger {
-		right: 20px;
-	}
-
 	.row {
 		width: 98%;
 		margin: 30px auto;
@@ -406,7 +453,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	}
 
 	.portfolio-image, .portfolio-text {
-	width: 100%;
+		width: 100%;
 	}
 
 	.pull-right, .pull-left {
@@ -435,14 +482,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 	header {
 		padding-bottom: 30px;
-	}
-
-	body a.home, .c-hamburger {
-		top: 10px;
-	}
-
-	.c-hamburger {
-	    right: 10px;
 	}
 
 	.center {
@@ -497,7 +536,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 		float: none;
 		margin: 0;
 		padding-bottom: 10px;
-		h2, p, a {
+		h3, p, a {
 			text-align: center;
 		}
 	}

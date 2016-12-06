@@ -5,9 +5,9 @@ $(document).ready(function() {
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 10) {
-            $('.home, header, .c-hamburger').addClass('button-background-color');
+            $('header').addClass('button-background-color');
         } else {
-            $('.home, header, .c-hamburger').removeClass('button-background-color');
+            $('header').removeClass('button-background-color');
         }
     });
   }

@@ -1,6 +1,6 @@
 		    
 		    	<div class="copyright">
-		    		<h2> &copy; Designed and developed by Neil Joshua </h2> 
+		    		<h3> <span>&copy;</span> Designed and developed by Neil Joshua </h3> 
 			    	<p>Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a> </p>
 		    	</div>
 		    	
