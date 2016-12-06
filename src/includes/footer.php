@@ -1,11 +1,13 @@
-		    <footer>
-		    	<!-- <div id="googleMap" class="map"></div>--> 
-		    	<h2> &copy; Designed and developed by Neil Joshua  &mdash;  Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
-		    	</h2>
+		    
+		    	<div class="copyright">
+		    		<h3> <span>&copy;</span> Designed and developed by Neil Joshua </h3> 
+			    	<p>Email: <a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a> </p>
+		    	</div>
+		    	
         		<div class="social">	
-                  <a href="http://twitter.com/NeilJMV"><i class="icon-twitter"></i></a>
-                  <a href="http://www.linkedin.com/in/neiljoshua"><i class="icon-linkedin-squared"></i></a>
-                  <a href="http://www.instagram.com/neiljoshua/"><i class="demo-icon icon-instagram"></i></a>
+                  <a href="http://twitter.com/NeilJMV" target="_blank"><i class="icon-twitter"></i></a>
+                  <a href="http://www.linkedin.com/in/neiljoshua" target="_blank"><i class="icon-linkedin-squared"></i></a>
+                  <a href="http://www.instagram.com/neiljoshua/" target="_blank"><i class="demo-icon icon-instagram"></i></a>
                 </div>  
 		    </footer>	
 	    </div>

@@ -1,0 +1,544 @@
+@import 'reset';
+@import 'variables';
+@import 'form';
+@import 'mixin';
+@import 'hamburger';
+
+
+/** General page layout**/
+
+
+body{
+	font-family: $oxygen;
+	color: $white;
+	text-align: center;
+	
+	a.home {
+		position: fixed;
+		height: 40px;
+		width: 40px;
+	    top: 10px;
+	    left: 10px;
+	    text-decoration: none;
+	    color: #fff;
+	    font-size: 30px;
+	    z-index: 100;
+	    line-height: 40px;
+	    border-radius:5px;
+	}
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width:100%;
+	padding-top: 20px;	
+	padding-bottom: 20px;
+	z-index: 50;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+	&:hover, &:active {
+		color: $silver;
+	}
+}
+
+
+/** HomePage **/
+
+
+.site-content {
+	width:100%;
+	clear: both;
+	@include animation('show-elemet 1.3s ease-in');
+}
+
+.site-nav {
+	#currentpage{
+		a {
+			font-weight: 600;
+			color: $silver;
+			border-bottom: 1px solid $silver;
+		}
+	}
+	display: block;
+	float: right;
+	margin-right: 50px;
+	ul {
+		display: inline-block;
+		float: left;
+		list-style: none;
+		li{
+			display: inline-block;
+			margin-left: 30px;
+			a {
+				color: $white;
+				font-size: 125%;
+				letter-spacing: 4px;
+				&:hover, &:active {
+					color: $silver;
+					border-bottom: 1px solid $silver;
+				}
+			}
+		}
+	}
+}	
+
+.hero {
+	position: relative;
+	background: url('/src/images/hero.jpg') center center no-repeat;
+	background-size: cover;
+	background-color: $black;
+	height: 100vh;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.center.hero-text {
+	@include animation('show-elemet 0.7s ease-in');
+
+	h1, p {
+	margin-bottom: 40px;
+	font-weight: 400;
+	}
+	h1 {
+		font-size: 52px;
+	}
+	p {
+		font-size: 30px;
+	}
+}	
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	z-index: 5;
+	overflow:hidden;
+	.copyright{
+		float: left;
+		margin-left: 50px;
+		h3, p {
+			text-align: left;
+			margin-bottom: 10px;
+		}
+		a{
+			&:hover{
+				color: $white;
+			}
+		}
+		span {
+			font-size: 60%;
+		}
+	}
+	.social{
+		float: right;
+		margin-right: 50px;
+	}
+}
+
+.social {
+	a {
+		display: inline-block;
+		margin-left: 20px;
+		i {
+			display: block;
+			font-size: 25px;
+			color: $white;
+			&:hover {
+				color: $gray;
+				border-bottom: none;
+			}	
+		}
+	}
+}
+
+
+/** Portfolio Layout **/
+
+
+header.portfolio-nav, footer.portfolio-footer, .button-background-color {
+	background-color: $black;
+	opacity: 0.8;
+}
+
+.page-title {
+	margin-top: 80px;
+	padding-top: 50px;
+	letter-spacing: 1px;
+	h1{ 
+		font-weight: 600;
+		font-size: 35px;
+	}
+	p{
+		max-width: 620px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 150%;
+		font-size: 24px;
+	}
+	h1, p{
+		margin-bottom: 40px;
+	}
+}
+
+.row {
+	width: 90%;
+	margin: 50px auto;
+	overflow: hidden;
+	clear: both;
+	padding: 50px 0;
+	border-bottom: 1px dotted #ddd;
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 20px;
+	}
+}
+
+.portfolio-image {
+	width: 70%;
+	a{
+		display: block;
+		width:100%;
+		img {
+			width: 98%;
+			max-height: 600px;
+			margin-bottom: 50px;
+		}
+	}
+	.wordpress-site {
+		border: 1px solid $silver;
+		width: 98%;
+	}
+}
+
+.portfolio-text {
+	width: 30%;
+	h2 {
+		font-size: 18px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-weight: 600;
+		letter-spacing: 2.5px;
+		span {
+		color: $silver;
+		}
+	}
+	
+	ul{
+		text-align: center;
+		li {
+			margin-bottom: 10px;
+			margin-left: 10px;
+			font-size: 15px;
+			letter-spacing: 2px;
+			line-height: 150%;
+		}
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.site-content, .title, .portfolio-text {
+	color: $black;
+}
+
+.portfolio-footer {
+	position: relative;
+	color: $white;
+}
+
+
+/** About section**/
+
+
+.about-hero {
+	background: url('/src/images/cityview.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 55vh;
+	background-color: $black;
+	
+	h1 {
+		font-weight: 600;
+		font-size: 35px;
+		color: $white;
+		letter-spacing: 6px;
+	}
+}
+
+.about-content {
+	margin: 20px 0;
+	padding: 20px 0;
+	h2, p {
+		margin: 40px 0;
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	img{
+		margin: 40px auto;
+		border-radius: 220px;
+		height: 200px;
+	}
+	h2 {
+		letter-spacing: 2px;
+		font-size: 33px;
+	}
+	p {
+		letter-spacing: 1.5px;
+		line-height: 150%;
+		font-size: 22px;
+		font-weight: 300;
+	}
+}
+
+
+/** Contact Page**/
+
+
+.contact-hero {
+	padding: 0;
+	margin: 0;
+	height: 55vh;
+	h1 {
+		color: $white;
+		font-weight: 300;
+		font-size: 40px;
+		letter-spacing: 3px;
+		margin-bottom: 50px;
+	}
+}
+
+.contact-hero, .about-hero {
+	overflow: hidden;
+	h1 {
+		width: 100%;
+		padding: 400px;
+		background: rgba(0 , 0, 0, 0.32);
+	}
+}
+
+
+/* Media Queries */
+
+
+@include media(large) {
+
+	header {
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		background-color: $black;
+		margin: 0;
+		transition: all .5s ease-in .2s;
+		&.active {
+			visibility: visible;
+			bottom: 0;
+			height: 100%;
+			opacity: 1;
+			transition: all .5s ease-in;
+		}
+	}
+
+	.c-hamburger {
+		position: fixed;
+	    right: 10px;
+	    top: 10px;
+	    display: block;
+	    z-index: 100;
+	}
+
+	.home, .c-hamburger {
+	    border-radius: 5px;
+	    background-color: $black;
+	    opacity: 0.6;
+	}
+
+	.fixed{
+		position:fixed;
+		right: 0;
+		left: 0;
+	}
+
+	.hero {
+		max-width: 980px;
+	}
+
+	.site-nav {
+			visibility: hidden;
+			float: none;
+			position: absolute;
+			display: block;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			&.active{
+				visibility: visible;
+			}
+			ul{
+				display: block;
+				float: none;
+				#currentpage {
+					a {
+						font-size: 200%;
+						color: $white;
+						border: none;
+					}
+				}
+				li{
+					display: block;
+					margin-left: 0;
+					margin-bottom: 35px;
+					a {
+						font-size: 200%;
+						color: $gray;
+						&:hover{
+							color: $white;
+							border: none;
+						}
+					}
+				}
+			}
+	}
+
+}
+
+@include media(tablet) {
+
+	body{
+		a.home {
+			left: 20px;
+		}
+	}
+
+	.hero {
+		max-width: 760px;
+	}
+
+	.center.hero-text {
+		h1{
+			font-size: 45px;
+		}
+		p {
+			font-size: 30px;
+		}
+	}
+
+	.site-header {
+	padding: 20px;
+	}
+	
+	.row {
+		width: 98%;
+		margin: 30px auto;
+		overflow: hidden;
+		clear: both;
+		padding-top: 30px;
+	}
+
+	.portfolio-image, .portfolio-text {
+		width: 100%;
+	}
+
+	.pull-right, .pull-left {
+		float: none;
+	}
+
+	fieldset *:first-child {
+    	margin-right: 20px;
+	}
+	
+	input[type="text"] {
+		width: 235px;
+	}
+
+	textarea {
+		max-width: 485px;
+	}
+
+}
+
+@include media(mobile) {
+
+	section {
+		margin: 0;
+	}
+
+	header {
+		padding-bottom: 30px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	.center.hero-text {
+		h1{
+			font-size: 30px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+
+
+	.about-hero {
+		h1{
+			font-size:25px;
+			letter-spacing: 2px;
+		}
+	}
+
+	.about-content h2 {
+		font-size: 30px;
+	}
+
+	.contact-form {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}	
+
+	fieldset {
+		margin: 0;
+		*:first-child {
+			margin: 0;
+		}
+	}
+
+	input[type="text"] {
+    	padding: 25px 0;
+    	margin: 10px 0;
+	}
+
+	input[type="text"], textarea {
+		width: 90%;
+	}
+
+	footer .copyright, footer .social {
+		float: none;
+		margin: 0;
+		padding-bottom: 10px;
+		h3, p, a {
+			text-align: center;
+		}
+	}
+
+}
+
