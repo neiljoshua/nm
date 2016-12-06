@@ -1,11 +1,3 @@
-# BEGIN (mt) controlled settings
-<IfModule !mod_fcgid.c>
-  AddHandler php-stable .php
-</IfModule>
-<IfModule mod_fcgid.c>
-  AddHandler fcgid-script .php
-  <Files *.php>
-    Options +ExecCGI
-  </Files>
-</IfModule>
-# END (mt) controlled settings
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

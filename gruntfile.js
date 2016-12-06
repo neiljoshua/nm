@@ -6,18 +6,17 @@ grunt.initConfig({
     dist: {
       options: {
         sassDir: 'src/sass/',
-        specify: 'src/sass/nm1.scss',
-        cssDir: 'src/css'
+        specify: 'src/sass/styles.scss',
+        cssDir: 'src/css/'
       }
     }
   },
 
 	concat: {
     dist: {
-      src: ['src/css/owl.carousel.css', 'src/css/owl.theme.css',
-          'src/css/animate.css', 'src/css/fontello.css',  
-      		'src/css/style.css','src/css/responsive.css' ],
-      dest: 'styles.css',
+      src: ['src/css/vendors/owl.carousel.css', 'src/css/vendors/owl.theme.css',
+          'src/css/vendors/animate.css', 'src/css/vendors/fontello.css'],
+      dest: 'vendors.css',
     },
   },
 
@@ -39,14 +38,14 @@ grunt.initConfig({
 
 });
 
-// Load the plugin that provides the "uglify" task.
+// Load the plugin that provides the tasks.
 grunt.loadNpmTasks('grunt-contrib-compass');
-// grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 
 // Default task(s).
-grunt.registerTask('default', [ 'concat', 'uglify']);
+grunt.registerTask('default', [ 'concat', 'uglify', 'watch']);
 grunt.registerTask('dev', ['compass']);
 }
  

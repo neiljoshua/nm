@@ -1,13 +1,12 @@
 .DS_Store
+html/
 
 # Node Package Manager
 node_modules/
-node_modules
 npm_log
 
 #Sass files
 .sass-cache
-
 
 #Git flow
 gitflow-installer.sh
