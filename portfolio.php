@@ -29,7 +29,7 @@
 				<li>JavaScript</li>
 				<li>AJAX</li>
 				<li>JSON</li>
-				<li>Wunderground API</li>
+				<li>Weather Underground API</li>
 			</ul>
 		</div>
 	</div>	
