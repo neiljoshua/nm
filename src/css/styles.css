@@ -338,7 +338,7 @@ a:hover, a:active {
 /* line 89, ../sass/styles.scss */
 .hero {
   position: relative;
-  background: url("/src/images/hero2.jpg") center center no-repeat;
+  background: url("/src/images/hero.jpg") center center no-repeat;
   background-size: cover;
   background-color: #000;
   height: 100vh;
@@ -822,21 +822,20 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
   input[type="text"] {
     padding: 25px 0;
     margin: 10px 0;
-    font-size: 18px;
   }
 
-  /* line 531, ../sass/styles.scss */
+  /* line 530, ../sass/styles.scss */
   input[type="text"], textarea {
     width: 90%;
   }
 
-  /* line 535, ../sass/styles.scss */
+  /* line 534, ../sass/styles.scss */
   footer .copyright, footer .social {
     float: none;
     margin: 0;
     padding-bottom: 10px;
   }
-  /* line 539, ../sass/styles.scss */
+  /* line 538, ../sass/styles.scss */
   footer .copyright h3, footer .copyright p, footer .copyright a, footer .social h3, footer .social p, footer .social a {
     text-align: center;
   }

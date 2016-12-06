@@ -88,7 +88,7 @@ a {
 
 .hero {
 	position: relative;
-	background: url('/src/images/hero2.jpg') center center no-repeat;
+	background: url('/src/images/hero.jpg') center center no-repeat;
 	background-size: cover;
 	background-color: $black;
 	height: 100vh;
@@ -525,7 +525,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	input[type="text"] {
     	padding: 25px 0;
     	margin: 10px 0;
-    	font-size: 18px;
 	}
 
 	input[type="text"], textarea {

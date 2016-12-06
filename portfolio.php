@@ -22,14 +22,14 @@
 	   	<div class="portfolio-text pull-right">
 			<h2> Brandi </h2>
 			<ul>
+				<li>Single page dsesign</li>
 				<li>Responsive</li>
 				<li>HMTL5</li>
 				<li>CSS3</li>
 				<li>JavaScript</li>
 				<li>AJAX</li>
 				<li>JSON</li>
-				<li>Weather Underground API</li>
-				<li>Single page design</li>
+				<li>Wunderground API</li>
 			</ul>
 		</div>
 	</div>	
@@ -57,7 +57,7 @@
 
 	<div class="row">
 		<div class="portfolio-image pull-left">
-	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/tarapoto1.jpg" alt="tarapoto Resort" ></a>
+	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/tarapoto.jpg" alt="tarapoto Resort" ></a>
 	   	</div>	
 
 	   	<div class="portfolio-text pull-right">
@@ -76,7 +76,7 @@
 
 	<div class="row">
 		<div class="portfolio-image pull-right">
-	   		<a href="#" class="wordpress-site"><img src="src/images/sanisidro.jpg" alt="Wordpress" ></a>
+	   		<a href="#"><img src="src/images/building.jpg" alt="Wordpress" ></a>
 	   	</div>	
 
 	   	<div class="portfolio-text pull-left">
