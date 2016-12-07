@@ -10,7 +10,7 @@
 
 	<div class="page-title">
 		<h1 >Portfolio</h1>
-		<p> Some projects below may have been developed as prototype for demostration purposes.</p>
+		<p> Some projects below may have been developed as prototypes or for demostration purposes.</p>
 	</div>
 
 	<div class="row">
@@ -29,7 +29,6 @@
 				<li>JavaScript</li>
 				<li>AJAX</li>
 				<li>JSON</li>
-				<li>Weather Underground API</li>
 			</ul>
 		</div>
 	</div>	
