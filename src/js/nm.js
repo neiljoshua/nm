@@ -37,123 +37,72 @@ $(document).ready(function() {
 
 });   
 
-//Instagram Feed 
+  // Form Validation
+  window.validateEmail = function( emails ) {
 
-  $.ajax({
-    url : 'https://api.instagram.com/v1/users/30193863/media/recent/?access_token=3637633428.a62eb01.ecaefb0ff4664d879594ee6912bc44b6&count=6',
-    dataType : "jsonp",
-    success : function(results) {
-          var items = [];
-      for(var i = 0; i< results.data.length; i++ ){
-          var imageInsta = results.data[i].images.standard_resolution.url;
-          $('#grid-slider').append('<div class="item"><img src="' + imageInsta + '" alt="slide' +(i+1)+'"/></div>');
+    var errors       = 0;
+    var emailArray   = (emails == null) ? [] :emails.split(',');
+    var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    $(emailArray).each(function(index, email){
+      if( !expression.test( email.trim() ) ){
+        errors++;
       }
-      $('#grid-slider').owlCarousel({
-          item: 1,
-          slideSpeed : 200,
-          paginationSpeed : 400,
-          singleItem:true, 
-          autoPlay: true,
-          stopOnHover: true,
-      });
-    }
-  });
+    });
 
-  $('#contact-form').submit(function(e) {
+    if( errors > 0 ){
+      return false;
+    }else{
+      return true;
+    }
+
+  }
+
+  //Sending form
+
+  $('form').submit(function(e) {
 
       e.preventDefault();
 
       var $form  = $(this);
       console.log($form);
-      var $email = $("user-email");
+      var $email = $('user-email');
       console.log($email);
       if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
         $email.parent().addClass('invalid');
         $(".error").fadeTo(400, 1);
+        console.log('error');
 
       } else {
+      console.log('passing values');  
 
       $email.parent().removeClass('invalid')
       $(".error").fadeTo(400, 0);
 
        var url = "contact.php"; // the script where you handle the form input.
-
+       console.log(url);
         $.ajax({
            type: "POST",
            url: url,
-           data: $("#contact-form").serialize(),
+           data: $('form').serialize(),
            success: function(data)
            {
                  $('.success').fadeTo(400, 1);
                  $('form input').val('');
+                 $('textarea').val('');
            }
          });
         return false;
       }
   });
 
-  // Form Validation
-  window.validateEmail = function( emails ) {
+  
 
-        var errors       = 0;
-        var emailArray   = (emails == null) ? [] :emails.split(',');
-        var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  $('.close-success').on('click', function(e) {
+    e.preventDefault();
+    $('.success').fadeTo(400, 0);
+  })
 
-        $(emailArray).each(function(index, email){
-
-          if( !expression.test( email.trim() ) ){
-
-            errors++;
-
-          }
-
-        });
-
-        if( errors > 0 ){
-
-          return false;
-
-        }else{
-
-          return true;
-
-        }
-
-    }
-
-    $('.close-success').on('click', function(e) {
-      e.preventDefault();
-      $('.success').fadeTo(400, 0);
-    })
-
-  // Nav links on scroll
-
-//   $(window).scroll(function () {
-//     var e = $(window).scrollTop(),
-//         t = $("header").height() - 50;
-//         // console.log(e);
-//         // console.log(t);
-//     if (e >= t) {
-//         // $("header").css({
-//         //     "margin-top": 50
-//         // });
-//         console.log('passed header');
-//         $("body > section").each(function (t) {
-//           console.log(t);
-//           console.log('hey');
-//             if ($(this).position().top - 1 <= e - $(this).height() + 50) {
-//               console.log('active');
-//                 $("#nav a.active").removeClass("active");
-//                 $("#nav a").eq(t).addClass("active")
-//             }
-//         })
-//     } else {
-//         $(".welcome").css({
-//             "margin-top": 0
-//         });
-//         $("#nav a.active").removeClass("active");
-//         $("#nav a:first").addClass("active")
-//     }
-// }).scroll();
+  
 
 }); // End of doc ready.  

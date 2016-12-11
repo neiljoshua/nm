@@ -20,10 +20,10 @@
 				<input type="text" name="user-last-name" placeholder="Last Name" required>
 			</fieldset>
 			<fieldset>
-				<input type="text" name="user-email" placeholder="Email" required>
+				<input type="text" name="user-email" placeholder="you@yourwebsite.com" required>
 				<input type="text" name="user-phone" placeholder="Phone">
 			</fieldset>
-			<textarea name="user-message" required> </textarea>
+			<textarea id="user-message-text" name="user-message" required> </textarea>
 			<button>Submit</button>
 		</form>
 	</section>	
