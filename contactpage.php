@@ -14,7 +14,7 @@
 	</div>	
 	
 	<section>
-		<form id="contact-form" class="contact-form">
+		<form id="contact-form" action="contact.php" method="POST" >
 			<fieldset>
 				<input type="text" name="user-name" placeholder="First Name" required>
 				<input type="text" name="user-last-name" placeholder="Last Name" required>

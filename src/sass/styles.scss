@@ -314,8 +314,9 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 
 .contact-hero {
-	padding: 0;
-	margin: 0;
+	background: url('/src/images/typewriter.jpg') center center no-repeat;
+	background-size: cover;
+	background-color: $black;
 	height: 55vh;
 	h1 {
 		color: $white;

@@ -66,15 +66,10 @@ $(document).ready(function() {
       var $form  = $(this);
       console.log($form);
       var $email = $('user-email');
-      console.log($email);
       if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
         $email.parent().addClass('invalid');
         $(".error").fadeTo(400, 1);
-        console.log('error');
-
       } else {
-      console.log('passing values');  
-
       $email.parent().removeClass('invalid')
       $(".error").fadeTo(400, 0);
 
@@ -83,10 +78,9 @@ $(document).ready(function() {
         $.ajax({
            type: "POST",
            url: url,
-           data: $('form').serialize(),
+           data: $("#contact-form").serialize(),
            success: function(data)
            {
-                 $('.success').fadeTo(400, 1);
                  $('form input').val('');
                  $('textarea').val('');
            }
@@ -94,6 +88,35 @@ $(document).ready(function() {
         return false;
       }
   });
+
+  // Email Validation
+  window.validateEmail = function( emails ) {
+
+        var errors       = 0;
+        var emailArray   = (emails == null) ? [] :emails.split(',');
+        var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        $(emailArray).each(function(index, email){
+
+          if( !expression.test( email.trim() ) ){
+
+            errors++;
+
+          }
+
+        });
+
+        if( errors > 0 ){
+
+          return false;
+
+        }else{
+
+          return true;
+
+        }
+
+    }
 
   
 
