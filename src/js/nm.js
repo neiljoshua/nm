@@ -18,7 +18,6 @@ $(document).ready(function() {
       e.preventDefault();
         $(this).toggleClass('is-active');
         $('header').toggleClass('active');
-        $('.wrapper').toggleClass('fixed');
         $('.site-nav').toggleClass('active');
     });
     

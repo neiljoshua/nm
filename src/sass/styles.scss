@@ -371,12 +371,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	    opacity: 0.6;
 	}
 
-	.fixed{
-		position:fixed;
-		right: 0;
-		left: 0;
-	}
-
 	.hero {
 		max-width: 980px;
 	}
@@ -424,12 +418,8 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 	body{
 		a.home {
-			left: 20px;
+			left: 10px;
 		}
-	}
-
-	.hero {
-		max-width: 760px;
 	}
 
 	.center.hero-text {
