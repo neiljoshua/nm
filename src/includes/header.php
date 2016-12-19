@@ -4,6 +4,7 @@
 		<title>Neil Joshua Web Developer <?php if ($thisPage!="")echo " | $thisPage"; ?> </title>
 		<meta name="title" content="Neil Joshua <?php if ($thisPage!="") echo " | $thisPage"; ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="vendors.css">
