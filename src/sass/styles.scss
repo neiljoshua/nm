@@ -52,7 +52,7 @@ a {
 .site-content {
 	width:100%;
 	clear: both;
-	@include animation('show-elemet 1.3s ease-in');
+	@include animation('show-elemet .9s ease-in');
 }
 
 .site-nav {

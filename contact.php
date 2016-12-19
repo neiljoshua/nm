@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $mailBody="Name: $senderFullName \nEmail: $senderEmail\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    mail($recipient, $subject, $mailBody, "From: $senderFullName <$senderEmail>");
 }
 
 ?>

@@ -57,39 +57,9 @@ $(document).ready(function() {
 
   }
 
-  //Sending form
-
-  $('form').submit(function(e) {
-
-      e.preventDefault();
-
-      var $form  = $(this);
-      console.log($form);
-      var $email = $('user-email');
-      if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
-        $email.parent().addClass('invalid');
-        $(".error").fadeTo(400, 1);
-      } else {
-      $email.parent().removeClass('invalid')
-      $(".error").fadeTo(400, 0);
-
-       var url = "contact.php"; // the script where you handle the form input.
-       console.log(url);
-        $.ajax({
-           type: "POST",
-           url: url,
-           data: $("#contact-form").serialize(),
-           success: function(data)
-           {
-                 $('form input').val('');
-                 $('textarea').val('');
-           }
-         });
-        return false;
-      }
-  });
 
   // Email Validation
+
   window.validateEmail = function( emails ) {
 
         var errors       = 0;
@@ -118,7 +88,35 @@ $(document).ready(function() {
 
     }
 
-  
+  //Sending form
+
+  $('form').submit(function(e) {
+
+      e.preventDefault();
+
+      var $form  = $(this);
+      var $email = $('user-email');
+      if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
+        $email.parent().addClass('invalid');
+        $(".error").fadeTo(400, 1);
+      } else {
+      $email.parent().removeClass('invalid')
+      $(".error").fadeTo(400, 0);
+
+       var url = "contact.php"; // the script where you handle the form input.
+        $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#contact-form").serialize(),
+           success: function(data)
+           {
+                 $('form input').val('');
+                 $('textarea').val('');
+           }
+         });
+        return false;
+      }
+  });
 
   $('.close-success').on('click', function(e) {
     e.preventDefault();
