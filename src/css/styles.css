@@ -293,11 +293,11 @@ a:hover, a:active {
 .site-content {
   width: 100%;
   clear: both;
-  -webkit-animation: show-elemet 1.3s ease-in;
-  -moz-animation: show-elemet 1.3s ease-in;
-  -ms-animation: show-elemet 1.3s ease-in;
-  -o-animation: show-elemet 1.3s ease-in;
-  animation: show-elemet 1.3s ease-in;
+  -webkit-animation: show-elemet .9s ease-in;
+  -moz-animation: show-elemet .9s ease-in;
+  -ms-animation: show-elemet .9s ease-in;
+  -o-animation: show-elemet .9s ease-in;
+  animation: show-elemet .9s ease-in;
 }
 
 /* line 58, ../sass/styles.scss */
