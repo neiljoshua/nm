@@ -22,7 +22,7 @@
 	   	<div class="portfolio-text pull-right">
 			<h2> Brandi </h2>
 			<ul>
-				<li>Single page dsesign</li>
+				<li>Single page design</li>
 				<li>Responsive</li>
 				<li>HMTL5</li>
 				<li>CSS3</li>
