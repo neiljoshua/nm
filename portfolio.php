@@ -56,7 +56,7 @@
 
 	<div class="row">
 		<div class="portfolio-image pull-left">
-	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/tarapoto.jpg" alt="tarapoto Resort" ></a>
+	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/lead.jpg" alt="tarapoto Resort" ></a>
 	   	</div>	
 
 	   	<div class="portfolio-text pull-right">
@@ -75,7 +75,7 @@
 
 	<div class="row">
 		<div class="portfolio-image pull-right">
-	   		<a href="#"><img src="src/images/building.jpg" alt="Wordpress" ></a>
+	   		<a href="#"><img src="src/images/sanisidro.jpg" alt="Wordpress" ></a>
 	   	</div>	
 
 	   	<div class="portfolio-text pull-left">
