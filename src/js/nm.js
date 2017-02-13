@@ -36,57 +36,35 @@ $(document).ready(function() {
 
 });   
 
-  // Form Validation
-  window.validateEmail = function( emails ) {
+// Email Validation
 
-    var errors       = 0;
-    var emailArray   = (emails == null) ? [] :emails.split(',');
-    var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+window.validateEmail = function( emails ) {
 
-    $(emailArray).each(function(index, email){
-      if( !expression.test( email.trim() ) ){
-        errors++;
-      }
-    });
+      var errors       = 0;
+      var emailArray   = (emails == null) ? [] :emails.split(',');
+      var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    if( errors > 0 ){
-      return false;
-    }else{
-      return true;
-    }
+      $(emailArray).each(function(index, email){
 
-  }
+        if( !expression.test( email.trim() ) ){
 
-
-  // Email Validation
-
-  window.validateEmail = function( emails ) {
-
-        var errors       = 0;
-        var emailArray   = (emails == null) ? [] :emails.split(',');
-        var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-        $(emailArray).each(function(index, email){
-
-          if( !expression.test( email.trim() ) ){
-
-            errors++;
-
-          }
-
-        });
-
-        if( errors > 0 ){
-
-          return false;
-
-        }else{
-
-          return true;
+          errors++;
 
         }
 
-    }
+      });
+
+      if( errors > 0 ){
+
+        return false;
+
+      }else{
+
+        return true;
+
+      }
+
+  }
 
   //Sending form
 

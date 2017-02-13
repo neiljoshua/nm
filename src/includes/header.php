@@ -13,6 +13,6 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<a href="/" class="home">N</a>
+			<a  <?php if ($thisPage=="index") echo " id=\"currentpage\""; ?> href="/" class="home">N</a>
 			<a href="#" class="c-hamburger c-hamburger--rot"> <span>toggle menu</span> </a> 
 	

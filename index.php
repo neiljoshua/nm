@@ -1,3 +1,4 @@
+<?php $thisPage="index"; ?>
 <?php 
 	include('src/includes/header.php')
 ?>
