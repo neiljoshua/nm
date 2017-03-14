@@ -86,7 +86,7 @@ button {
   font-family: 'Catamaran-Thin';
   font-style: normal;
   font-weight: 100;
-  src: url("src/font/Catamaran/Catamaran-Thin.ttf") format("truetype");
+  src: url("/src/font/Catamaran/Catamaran-Thin.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 /* Catamaran Regular */
@@ -94,7 +94,7 @@ button {
   font-family: 'Catamaran-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url("src/font/Catamaran/Catamaran-Regular.ttf") format("truetype");
+  src: url("/src/font/Catamaran/Catamaran-Regular.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 /* Catamaran SemiBold */
@@ -102,7 +102,7 @@ button {
   font-family: 'Catamaran-SemiBold';
   font-style: normal;
   font-weight: 600;
-  src: url("src/font/Catamaran/Catamaran-SemiBold.ttf") format("truetype");
+  src: url("/src/font/Catamaran/Catamaran-SemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 /* Merriweather Light */
@@ -350,7 +350,7 @@ h1, h2, h3, a {
 
 /* line 59, ../sass/styles.scss */
 p {
-  font-family: 'Catamaran-Regular';
+  font-family: 'Catamaran-Thin';
 }
 
 /** HomePage **/
