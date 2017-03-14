@@ -1,6 +1,20 @@
 $(document).ready(function() {
 
-  function addingBackgroundcolor(){
+  $(window).resize( function () {
+
+    var wWidth = $(window).width();
+    var navActive = $('header');
+    if (wWidth > 979){
+        if ( navActive.hasClass('active') ) {
+          navActive.removeClass('active');
+          $('nav').removeClass('active');
+          $('.wrapper').removeClass('fixed');
+          $('.c-hamburger--rot').removeClass('is-active');
+        } 
+    }
+  });  
+
+  function addingBackgroundcolor() {
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
@@ -21,21 +35,6 @@ $(document).ready(function() {
         $('.site-nav').toggleClass('active');
     });
     
-  $(window).resize( function () {
-
-    var wWidth = $(window).width();
-    var navActive = $('header');
-    if (wWidth > 768){
-        if ( navActive.hasClass('active') ) {
-          navActive.removeClass('active');
-          $('nav').removeClass('active');
-          $('.wrapper').removeClass('fixed');
-          $('.c-hamburger--rot').removeClass('is-active');
-        } 
-    }
-
-});   
-
 // Email Validation
 
 window.validateEmail = function( emails ) {

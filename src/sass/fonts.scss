@@ -1,0 +1,52 @@
+//Roboto Font
+
+/* Catamaran Thin */
+@font-face {
+  font-family: 'Catamaran-Thin';
+  font-style: normal;
+  font-weight: 100;
+  src: url('src/font/Catamaran/Catamaran-Thin.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Catamaran Regular */
+@font-face {
+  font-family: 'Catamaran-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('src/font/Catamaran/Catamaran-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Catamaran SemiBold */
+@font-face {
+  font-family: 'Catamaran-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('src/font/Catamaran/Catamaran-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+//Merriweather Font
+
+/* Merriweather Light */
+@font-face {
+  font-family: 'Merriweather-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('src/font/Merriweather/Merriweather-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Merriweather Extra Regular */
+@font-face {
+  font-family: 'Merriweather-Regular';
+  font-style: normal;
+  font-weight: 300;
+  src: url('src/font/Merriweather/Merriweather-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* OMerriweather  Bold */
+@font-face {
+  font-family: 'Merriweather-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('src/font/Merriweather/Merriweather-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
