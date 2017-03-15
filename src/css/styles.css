@@ -229,12 +229,13 @@ button:hover {
   border-radius: none;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
-/* line 27, ../sass/hamburger.scss */
+/* line 28, ../sass/hamburger.scss */
 .c-hamburger:focus {
   outline: none;
 }
-/* line 30, ../sass/hamburger.scss */
+/* line 31, ../sass/hamburger.scss */
 .c-hamburger span {
   display: block;
   position: absolute;
@@ -245,7 +246,7 @@ button:hover {
   border-radius: 20px;
   background: #fff;
 }
-/* line 39, ../sass/hamburger.scss */
+/* line 40, ../sass/hamburger.scss */
 .c-hamburger span::before, .c-hamburger span::after {
   position: absolute;
   display: block;
@@ -256,39 +257,39 @@ button:hover {
   background-color: #fff;
   content: "";
 }
-/* line 49, ../sass/hamburger.scss */
+/* line 50, ../sass/hamburger.scss */
 .c-hamburger span::before {
   top: -8px;
 }
-/* line 52, ../sass/hamburger.scss */
+/* line 53, ../sass/hamburger.scss */
 .c-hamburger span::after {
   bottom: -8px;
 }
 
-/* line 60, ../sass/hamburger.scss */
+/* line 61, ../sass/hamburger.scss */
 .c-hamburger--rot span {
   transition: background 0s;
 }
-/* line 62, ../sass/hamburger.scss */
+/* line 63, ../sass/hamburger.scss */
 .c-hamburger--rot span::before {
   transition-property: top, transform;
 }
-/* line 66, ../sass/hamburger.scss */
+/* line 67, ../sass/hamburger.scss */
 .c-hamburger--rot span::after {
   transition-property: bottom, transform;
 }
 
 /* active state, i.e. menu open */
-/* line 75, ../sass/hamburger.scss */
+/* line 76, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span {
   background: none;
 }
-/* line 77, ../sass/hamburger.scss */
+/* line 78, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span::before {
   top: 0;
   transform: rotate(45deg);
 }
-/* line 82, ../sass/hamburger.scss */
+/* line 83, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
