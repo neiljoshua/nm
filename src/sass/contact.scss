@@ -1,0 +1,25 @@
+/** Contact Page**/
+
+div.contact-hero {
+	background: url('/src/images/typewriter.jpg') center center no-repeat;
+	background-size: cover;
+	background-color: $black;
+	height: 55vh;
+	h1 {
+		color: $white;
+		font-weight: 300;
+		font-size: 40px;
+		letter-spacing: 3px;
+		margin-bottom: 50px;
+	}
+}
+
+
+.contact-hero, .about-hero {
+	overflow: hidden;
+	h1 {
+		width: 100%;
+		padding: 400px;
+		background: rgba(0 , 0, 0, 0.32);
+	}
+}

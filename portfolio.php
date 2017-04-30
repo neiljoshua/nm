@@ -2,7 +2,7 @@
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="portfolio-nav">
+<header class="nothome">
 <?php include('src/includes/navigation.php')
 ?>	
 </header>	

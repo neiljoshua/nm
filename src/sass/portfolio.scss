@@ -1,0 +1,99 @@
+/** Portfolio Layout **/
+
+header.portfolio-nav, footer.portfolio-footer, .button-background-color {
+	background-color: $black;
+}
+
+.page-title {
+	margin-top: 80px;
+	padding-top: 50px;
+	letter-spacing: 1px;
+	h1{ 
+		font-weight: 600;
+		font-size: 35px;
+	}
+	p{
+		max-width: 620px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 150%;
+		font-size: 20px;
+	}
+	h1, p {
+		margin-bottom: 40px;
+	}
+}
+
+.row {
+	width: 90%;
+	margin: 50px auto;
+	overflow: hidden;
+	clear: both;
+	padding: 50px 0;
+	border-bottom: 1px dotted #ddd;
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 20px;
+	}
+}
+
+.portfolio-image {
+	width: 70%;
+	a{
+		display: block;
+		width:100%;
+		img {
+			width: 98%;
+			max-height: 600px;
+			margin-bottom: 50px;
+		}
+		
+	}
+	.wordpress-site {
+		border: 1px solid $silver;
+		width: 98%;
+	}
+}
+
+.portfolio-text {
+	width: 30%;
+	h2 {
+		font-size: 18px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-weight: 600;
+		letter-spacing: 2.5px;
+		line-height: 30px;
+		span {
+		color: $silver;
+		}
+	}
+	
+	ul{
+		text-align: center;
+		li {
+			margin-bottom: 5px;
+			margin-left: 10px;
+			font-size: 18px;
+			letter-spacing: 2px;
+			line-height: 150%;
+		}
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.site-content, .title, .portfolio-text {
+	color: $black;
+}
+
+.portfolio-footer {
+	position: relative;
+	color: $white;
+}
