@@ -25,11 +25,13 @@
     border: none;
     cursor: pointer;
     text-align: center;
+    background-color: $black;
     z-index: 100;
-    // transition: background 0.3s;
+    transition: background 0.3s;
     &:focus {
       outline: none;
     }
+
     span {
       display: block;
       position: absolute;
@@ -44,7 +46,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: $white;
+        background: $white;
         content: "";
       }
       &::before {
@@ -53,13 +55,29 @@
       &::after{
         bottom: -11px;
       }
-    }  
+    } 
+
+    &.dark-burger {
+      background-color: $white;
+      // background: $black;
+      span {
+        background: $black;
+        // background-color: $black;
+        &::before, &::after{
+          background: $black;
+          // background-color:  /$black;
+        }  
+      } 
+    }
 }
 
 .c-hamburger--rot {
-    // background-color: $white;
+    background-color: $black;
     span {
-      transition: background 0s;
+      transition: all 0.6s;
+      background-color: $white;
+      &::before, &::after{
+      }
       &::before{
         @extend %animation;
         transition-property: top, transform;
@@ -72,9 +90,12 @@
 }
 /* active state, i.e. menu open */
 .c-hamburger--rot.is-active {
-    // background-color: $blue;
+    background-color: $white;
     span {
-        background: none;
+      background-color: $white;
+        &::before, &::after{
+           background-color: $black;
+        }
         &::before {
           top: 0;
           transform: rotate(45deg);

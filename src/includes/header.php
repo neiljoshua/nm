@@ -11,8 +11,9 @@
 		<script src="plugins.min.js"></script>
 		<script src="nm.min.js"></script>
 	</head>
-	<body>
+	<body <?php if ($thisPage=="index") echo " class=\"home\"";?>>
+
 		<div class="wrapper">
-			<a  <?php if ($thisPage=="index") echo " id=\"currentpage\""; ?> href="/" class="home">N</a>
-			<a href="#" class="c-hamburger c-hamburger--rot"> <span>toggle menu</span> </a> 
+			<a  id="logo" <?php if ($thisPage=="portfolio") echo " class=\"dark-logo\""; ?> href="/">N</a>
+			<a  href="#" class="c-hamburger <?php if ($thisPage=="index" OR $thisPage=="portfolio") echo "dark-burger"; ?> c-hamburger--rot"  > <span>toggle menu</span> </a> 
 	

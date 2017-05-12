@@ -2,9 +2,14 @@
 
 div.contact-hero {
 	background: url('/src/images/typewriter.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-size: cover;
-	background-color: $black;
+	position:relative;
+	width: 100%;
 	height: 55vh;
+	background-color: $black;
 	h1 {
 		color: $white;
 		font-weight: 300;

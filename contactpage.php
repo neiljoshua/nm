@@ -9,8 +9,8 @@
 
 <div class="site-content">	
 
-	<div class="hero contact-hero">
-		<h1 class="center"> Drop me a line!</h1>
+	<div class="contact-hero">
+		<h1 class="center" > Drop me a line!</h1>
 	</div>	
 	
 	<section>

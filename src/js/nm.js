@@ -31,8 +31,8 @@ $(document).ready(function() {
   $('.c-hamburger').on('click', function(e){
       e.preventDefault();
         $(this).toggleClass('is-active');
-        $('header').toggleClass('active');
-        $('.site-nav').toggleClass('active');
+        $('body').toggleClass('overlay-active');
+        $('.overlay').toggleClass('active');
     });
     
 // Email Validation
