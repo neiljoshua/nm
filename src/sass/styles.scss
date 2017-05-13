@@ -14,7 +14,7 @@
 body {
 	color: $white;
 	text-align: center;
-	
+
 	#logo {
 		position: fixed;
 		height: 40px;
@@ -86,6 +86,7 @@ p {
 /** HomePage **/
 
 .site-content {
+	position: relative;
 	width:100%;
 	clear: both;
 	@include animation('show-elemet .9s ease-in');
@@ -171,8 +172,6 @@ p {
 		font-size: 30px;
 	}
 }	
-
-
 
 .social {
 	a {
@@ -331,6 +330,10 @@ p {
 			text-align: center;
 		}
 	}
+
+	.projects-list {
+		font-size: 40px;
+	}	
 
 }
 

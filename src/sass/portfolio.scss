@@ -24,6 +24,21 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	}
 }
 
+.projects-list{
+	margin: 50px auto;
+	font-size: 70px;
+	.menu-item {
+		margin: 100px auto;
+		a {
+			font-family: 'Catamaran-Thin';
+			color: $black;
+			&:hover{
+				color: $green;
+			}
+		}
+	}
+}
+
 .row {
 	width: 90%;
 	margin: 50px auto;
@@ -39,14 +54,19 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 .portfolio-image {
 	width: 70%;
-	a{
+	a {
 		display: block;
 		width:100%;
+		filter: grayscale(100%);
 		img {
 			width: 98%;
 			max-height: 600px;
 			margin-bottom: 50px;
 		}
+	&:hover {
+		filter: grayscale(0);
+	}	
+
 		
 	}
 	.wordpress-site {
@@ -96,4 +116,5 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 .portfolio-footer {
 	position: relative;
 	color: $white;
+	z-index: 0;
 }

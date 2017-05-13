@@ -12,8 +12,16 @@
 		<h1 >Portfolio</h1>
 		<p> Some projects below may have been developed as prototypes or for demonstration purposes.</p>
 	</div>
+	
+	<ul class="projects-list">
+		<li class="menu-item"><a href="sanisidro-content">San Isidro Group</a></li>
+		<li class="menu-item"><a href="tarapoto-content">Tarapoto Resort</a></li>
+		<li class="menu-item"><a href="brandi-content">Brandi</a></li>
+		<li class="menu-item"><a href="weatherapp-content">Weather App - Beta</a></li>
+	</ul>
+	
 
-	<div class="row">
+	<!-- <div class="row">
 		<div class="portfolio-image pull-right">
 	   		<a href="http://sanisidro.neiljoshua.com" target="_blank" ><img src="src/images/sanisidro.jpg" alt="Wordpress" ></a>
 	   	</div>	
@@ -91,7 +99,7 @@
 			</ul>
 		</div>
 
-	</div>
+	</div> -->
 
 </div> 
 <footer class="portfolio-footer">
