@@ -2,10 +2,9 @@
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="nothome">
-	<?php include('src/includes/navigation.php')
+<?php include('src/includes/navigation.php')
 ?>		
-</header>	
+
 
 <div class="site-content">	
 
@@ -13,7 +12,7 @@
 		<h1 class="center" > Drop me a line!</h1>
 	</div>	
 	
-	<section>
+	<section id="#startchange">
 		<form id="contact-form" action="contact.php" method="POST" >
 			<fieldset>
 				<input type="text" name="user-name" placeholder="First Name" required>

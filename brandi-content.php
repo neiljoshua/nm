@@ -7,7 +7,7 @@
 ?>	
 </header>	
 
-<div class="site-content page-title">
+<div class="site-content">
 
 	<h1>Brandi</h1>
 	<div class="row">
@@ -17,7 +17,6 @@
 	   	</div>	
 
 	   	<div class="portfolio-text pull-left">
-			<h2> Brandi </h2>
 			<ul>
 				<li>Single page design</li>
 				<li>Responsive</li>

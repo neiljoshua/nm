@@ -2,20 +2,22 @@
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="nothome">
-	<?php include('src/includes/navigation.php')
+
+<?php include('src/includes/navigation.php')
 ?>	
-</header>	
+
 
 <div class="site-content">
 	<div class="about-hero">
-		<h1 class="center">Neil J. Malpartida</h1>
 	</div>	
 
 
-	<div class="about-content">
+	<div id="#startchange" class="about-content">
 		<h2>About Neil</h2>
-		<img src="/src/images/neilj.jpg">
+		<div class="photo-about-content">
+			<img src="/src/images/meforest.png">
+		</div>
+		
 		<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily related to front end development but I am working on more PHP projects to strengthen my back end skills.
 		</p>
 		

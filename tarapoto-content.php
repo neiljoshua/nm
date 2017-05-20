@@ -7,15 +7,14 @@
 ?>	
 </header>	
 
-<div class="site-content page-title">
+<div class="site-content">
 	<h1>Tarapoto Resort</h1>
 	<div class="row">
-		<div class="portfolio-image pull-left">
+		<div class="portfolio-image">
 	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/lead.jpg" alt="tarapoto Resort" ></a>
 	   	</div>	
 
-	   	<div class="portfolio-text pull-right">
-			<h2> Tarapoto Resort</h2>
+	   	<div class="portfolio-text">
 			<ul>
 				<li>Microsite</li>
 				<li>Responsive</li>

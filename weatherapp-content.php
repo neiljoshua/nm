@@ -7,17 +7,16 @@
 ?>	
 </header>	
 
-<div class="site-content page-title">
+<div class="site-content">
 
 	<h1>Weather App - Beta</h1>
 	<div class="row">
 		
-		<div class="portfolio-image pull-left">
+		<div class="portfolio-image">
 	   		<a href="http://weather.neiljoshua.com/" target="_blank" ><img src="src/images/weatherscreen.jpg" alt="Weather App" ></a>
 	   	</div>	
 	   	
-	   	<div class="portfolio-text pull-right">
-			<h2> Weather App - BETA </h2>
+	   	<div class="portfolio-text">
 			<ul>
 				<li>Responsive app</li>
 				<li>HMTL5</li>

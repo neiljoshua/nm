@@ -11,33 +11,21 @@
 
 /** General page layout**/
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	position: relative;
+	font-size: 0;
+	clear: both;
+	overflow: hidden;
+}
+
 body {
-	color: $white;
 	text-align: center;
-
-	#logo {
-		position: fixed;
-		height: 40px;
-		width: 40px;
-	  top: 8px;
-	  left: 10px;
-	  text-decoration: none;
-	  font-size: 35px;
-	  line-height: 40px;
-	  color: $white;
-	  background-color: $black;
-	  border: 2px solid $white;
-	  z-index: 90;
-	  &.dark-logo {
-			font-weight: 600;
-			color: $black;
-			background-color: $white;
-			border: 2px solid $black;
-		}
-	}
-
 	&.home {
-		background-color: $black;
 		overflow-y: hidden;
 	}
 
@@ -49,30 +37,33 @@ body {
 	}
 }
 
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 0%;
-	z-index: 50;
-	width: 100%;
-	background-color: $white;
-	transition: height .5s ease-in;
-	overflow-x: hidden;
-	&.home {
-		height: 100%;
-		right: 0;
-		left: 50%;
-		width: 50%;
-	}
+#logo {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  left: 0;
+  text-decoration: none;
+  line-height: 40px;
+  color: $white;
+  z-index: 90;
+  i {
+  	display: block;
+  	font-size: 40px;
+  	color: $white;
+  }
+  &.dark-logo {
+		color: $black;
+		background-color: $white;
+		i {
+	  	display: block;
+	  	color: $black;
+	  }
+  }
 }
 
 .invisible {
 	opacity: 0;
-}
-
-.black-background {
-    background-color: $black;
 }
 
 h1,h2,h3,a {
@@ -86,7 +77,6 @@ p {
 /** HomePage **/
 
 .site-content {
-	position: relative;
 	width:100%;
 	clear: both;
 	@include animation('show-elemet .9s ease-in');
@@ -101,6 +91,7 @@ p {
 	background-color: $white;
 	opacity: 0;
 	z-index: 52;
+	@include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
 	transition: all 0.7s ease-in-out ;
 	&.active {
 		width: 50%;
@@ -118,39 +109,93 @@ p {
 		transform: translateY(-50%);
 		#currentpage{
 			a {
-				font-size: 300%;
+				font-size: 42px;
 				font-weight: 600;
-				color: $black;
+				color: $green;
+				&.home-page-a {
+					color: $green;
+				}	
 			}
 		}
 		li{
 			margin-bottom: 30px;
 			a {
-				color: $green;
-				font-size: 300%;
+				color: $black;
+				font-size: 42px;
 				letter-spacing: 4px;
 				&:hover, &:active {
-					color: $black;
+					color: $green;
+				}
+				&.home-page-a {
+					color: $green;
+					&:hover, &:active {
+						color: $black;
+					}
 				}
 			}
 		}
 }	
 
+
+
 .hero {
-	position: fixed;
-	bottom: 40%;
-	left: 50px;
+	display: block;
+	float: left;
+	height: 100vh;
+	width: 50vw;
+	background-color: $black;
 	h1, p {
+		font-weight: 100;
+		color: $white;
 		text-align: left;
 		margin-bottom: 30px;
+		margin-left: 20px;
 	}
 	h1{
-		font-size: 300%;
+		font-size: 70px;
 	}
 	p {
-		font-size: 250%;
+		font-size: 40px;
+	}
+	div {
+		position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
 	}
 }
+
+.slider-container {
+	display: block;
+	float: left;
+	width: 50vw;
+	height: 100vh;
+	background-color: $black;
+}
+
+.slider-for {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.slick-track, .slick-container, .slick-slide, .slick-list {
+	width: 100%;
+	height: 100%;
+}
+
+
+.slick-slide {
+	height: 100%;
+	img {
+		filter: sepia(70%);
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
 
 .center {
 	position: absolute;
@@ -182,7 +227,7 @@ p {
 			font-size: 25px;
 			color: $white;
 			&:hover {
-				color: $gray;
+				color: $green;
 				border-bottom: none;
 			}	
 		}
@@ -192,7 +237,7 @@ p {
 			i{
 				color: $black;
 				&:hover{
-					color: $silver;
+					color: $green;
 				}
 			}
 		}
@@ -203,6 +248,11 @@ p {
 
 
 @include media(large) {
+	.hero {
+		h1 {
+			font-size: 55px;
+		}
+	}
 
 
 }

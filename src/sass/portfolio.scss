@@ -9,22 +9,22 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	padding-top: 50px;
 	letter-spacing: 1px;
 	h1{ 
-		font-weight: 600;
-		font-size: 35px;
+		font-weight: 100;
+		font-size: 70px;
 	}
 	p{
 		max-width: 620px;
 		margin: 0 auto;
 		text-align: center;
 		line-height: 150%;
-		font-size: 20px;
+		font-size: 50px;
 	}
 	h1, p {
 		margin-bottom: 40px;
 	}
 }
 
-.projects-list{
+.projects-list {
 	margin: 50px auto;
 	font-size: 70px;
 	.menu-item {
@@ -37,6 +37,12 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 			}
 		}
 	}
+}
+
+.project-title {
+	margin: 60px auto;
+	font-size: 70px;
+	font-weight: 100;
 }
 
 .row {
@@ -52,15 +58,26 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	}
 }
 
+.portfolio-text, .portfolio-image {
+	display: inline-block;
+	height: 100%;
+	&::before {
+	  content: "";
+	  display: inline-block;
+	  vertical-align: middle;
+	  height: 100%;
+	}  
+}
+
 .portfolio-image {
-	width: 70%;
+	width: 65%;
 	a {
 		display: block;
 		width:100%;
 		filter: grayscale(100%);
+		max-height: 600px;
 		img {
 			width: 98%;
-			max-height: 600px;
 			margin-bottom: 50px;
 		}
 	&:hover {
@@ -77,28 +94,24 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 
 .portfolio-text {
 	width: 30%;
-	h2 {
-		font-size: 18px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		font-weight: 600;
-		letter-spacing: 2.5px;
-		line-height: 30px;
-		span {
-		color: $silver;
-		}
-	}
+	vertical-align: center;
 	
 	ul{
 		text-align: center;
 		li {
 			margin-bottom: 5px;
 			margin-left: 10px;
-			font-size: 18px;
+			font-size: 28px;
 			letter-spacing: 2px;
 			line-height: 150%;
 		}
 	}
+}
+
+.paragraph {
+	font-size:18px;
+	margin: 35px auto;
+	color: $silver;
 }
 
 .pull-left {

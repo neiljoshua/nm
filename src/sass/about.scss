@@ -27,11 +27,7 @@
 		padding-right: 60px;
 		padding-left: 60px;
 	}
-	img{
-		margin: 40px auto;
-		border-radius: 220px;
-		height: 200px;
-	}
+	
 	h2 {
 		letter-spacing: 2px;
 		font-size: 33px;
@@ -41,5 +37,11 @@
 		line-height: 150%;
 		font-size: 20px;
 		font-weight: 100;
+	}
+	.photo-about-content{
+		width: 300px;
+		height: 300px;
+		margin: 30px auto;
+		overflow: hidden;
 	}
 }

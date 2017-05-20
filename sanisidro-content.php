@@ -7,16 +7,15 @@
 ?>	
 </header>	
 
-<div class="site-content page-title">
-	<h1>San Isidro Group</h1>
+<div class="site-content">
+	<h1 class="project-title">San Isidro Group</h1>
 	<div class="row">
 
-		<div class="portfolio-image pull-right">
+		<div class="portfolio-image">
 	   		<a href="http://sanisidro.neiljoshua.com" target="_blank" ><img src="src/images/sanisidro.jpg" alt="Wordpress" ></a>
 	   	</div>	
 
-	   	<div class="portfolio-text pull-left">
-			<h2> San Isidro Group<br> </h2>
+	   	<div class="portfolio-text">
 			<ul>
 				<li>WordPress</li>
 				<li>PHP</li>

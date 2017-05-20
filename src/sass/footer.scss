@@ -1,21 +1,18 @@
 footer {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	bottom:0;
-	padding-top: 30px;
-	padding-bottom: 15px;
+	padding: 40px 0;
+	clear: both;
 	z-index: 55;
 	overflow:hidden;
-	.copyright{
+	.email-container {
 		float: left;
 		margin-left: 50px;
-		h3, p {
-			text-align: left;
-			margin-bottom: 10px;
-		}
 		a{
+			font-size: 18px;
 			&:hover{
-				color: $white;
+				color: $green;
 			}
 		}
 		span {

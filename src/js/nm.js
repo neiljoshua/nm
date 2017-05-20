@@ -1,32 +1,18 @@
 $(document).ready(function() {
 
-  $(window).resize( function () {
+  var scrollStart = 0;
+  var startChange = $('#startchange');
+  var offset = 0;
 
-    var wWidth = $(window).width();
-    var navActive = $('header');
-    if (wWidth > 979){
-        if ( navActive.hasClass('active') ) {
-          navActive.removeClass('active');
-          $('nav').removeClass('active');
-          $('.wrapper').removeClass('fixed');
-          $('.c-hamburger--rot').removeClass('is-active');
-        } 
-    }
-  });  
-
-  function addingBackgroundcolor() {
-    var scroll_pos = 0;
-    $(document).scroll(function() { 
-        scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 10) {
-            $('header').addClass('button-background-color');
-        } else {
-            $('header').removeClass('button-background-color');
-        }
-    });
-  }
-
-  addingBackgroundcolor();
+  $('.slider-for').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    centerMode: true,
+    cssEase: 'linear'
+  });
+     
 
   $('.c-hamburger').on('click', function(e){
       e.preventDefault();

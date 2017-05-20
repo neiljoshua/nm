@@ -7,12 +7,18 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="vendors.css">
+		<link rel="stylesheet" type="text/css" href="src/css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/slick-theme.css"/>
 		<script src="plugins.min.js"></script>
 		<script src="nm.min.js"></script>
+		<script type="text/javascript" src="src/js/plugins/slick.min.js"></script>
 	</head>
 	<body <?php if ($thisPage=="index") echo " class=\"home\"";?>>
 
 		<div class="wrapper">
-			<a  id="logo" <?php if ($thisPage=="portfolio") echo " class=\"dark-logo\""; ?> href="/">N</a>
-			<a  href="#" class="c-hamburger <?php if ($thisPage=="index" OR $thisPage=="portfolio") echo "dark-burger"; ?> c-hamburger--rot"  > <span>toggle menu</span> </a> 
+			<header>
+				<a  id="logo" <?php if ($thisPage=="portfolio") echo " class=\"dark-logo\""; ?> href="/"><i class="demo-icon icon-home-circled"></i></a>
+				<a  href="#" class="c-hamburger <?php if ($thisPage=="portfolio") echo "dark-burger"; ?> c-hamburger--rot"  > 
+					<span>toggle menu</span> </a> 
+			</header>	
 	
