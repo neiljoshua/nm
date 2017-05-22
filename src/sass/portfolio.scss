@@ -34,68 +34,50 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 			color: $black;
 			&:hover{
 				color: $green;
+				padding: 0 40px;
+				border: 3px solid $green;
+    		border-radius: 10px;
 			}
 		}
 	}
 }
 
 .project-title {
-	margin: 60px auto;
+	margin: 80px auto;
 	font-size: 70px;
 	font-weight: 100;
 }
 
 .row {
-	width: 90%;
-	margin: 50px auto;
+	font-size: 0;
+	margin: 80px auto;
 	overflow: hidden;
-	clear: both;
-	padding: 50px 0;
-	border-bottom: 1px dotted #ddd;
-	&:last-child {
-		border-bottom: none;
-		padding-bottom: 20px;
-	}
-}
-
-.portfolio-text, .portfolio-image {
-	display: inline-block;
-	height: 100%;
-	&::before {
-	  content: "";
-	  display: inline-block;
-	  vertical-align: middle;
-	  height: 100%;
-	}  
 }
 
 .portfolio-image {
+	display: inline-block;
 	width: 65%;
+	height: 100%;
+	vertical-align: middle;
 	a {
-		display: block;
-		width:100%;
+	  display: block;
+	  width:100%;
 		filter: grayscale(100%);
 		max-height: 600px;
 		img {
 			width: 98%;
-			margin-bottom: 50px;
 		}
-	&:hover {
-		filter: grayscale(0);
+		&:hover {
+			filter: grayscale(0);
+		}	
 	}	
-
-		
-	}
-	.wordpress-site {
-		border: 1px solid $silver;
-		width: 98%;
-	}
 }
 
 .portfolio-text {
-	width: 30%;
-	vertical-align: center;
-	
+	display: inline-block;
+	width: 35%;
+	height: 100%;
+	vertical-align: middle;
 	ul{
 		text-align: center;
 		li {
@@ -112,14 +94,6 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 	font-size:18px;
 	margin: 35px auto;
 	color: $silver;
-}
-
-.pull-left {
-	float: left;
-}
-
-.pull-right {
-	float: right;
 }
 
 .site-content, .title, .portfolio-text {

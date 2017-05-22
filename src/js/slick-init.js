@@ -1,11 +1,11 @@
 (function ($, root, undefined) {
 
 	$(document).ready(function(){
-		$('.slider-for').slick({
+		$('.slider').slick({
 			autoplay: true,
 			dots: true,
 		  	infinite: true,
-		  	speed: 150,
+		  	speed: 1500,
 		  	fade: true,
 		  	cssEase: 'linear'
 		 });

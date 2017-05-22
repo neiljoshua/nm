@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="slider-container">
-		<div class="slider-for">
+		<div class="slider">
 			<div class="slick-container">
 				<img src="src/images/sanisidro.jpg" alt="Wordpress" >
 			</div>

@@ -4,21 +4,29 @@ $(document).ready(function() {
   var startChange = $('#startchange');
   var offset = 0;
 
-  $('.slider-for').slick({
-    dots: true,
+  $('.slider').slick({
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 150,
     fade: true,
     centerMode: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
   });
      
 
   $('.c-hamburger').on('click', function(e){
       e.preventDefault();
+      var $body = $('body');
         $(this).toggleClass('is-active');
         $('body').toggleClass('overlay-active');
-        $('.overlay').toggleClass('active');
+        if ( $body.hasClass('home') ){
+          $('.overlay').toggleClass('active-home');
+        } else {
+          $('.overlay').toggleClass('active');
+        }
     });
     
 // Email Validation
@@ -66,7 +74,7 @@ window.validateEmail = function( emails ) {
       $email.parent().removeClass('invalid')
       $(".error").fadeTo(400, 0);
 
-       var url = "contact.php"; // the script where you handle the form input.
+       var url = "contactfile.php"; // the script where you handle the form input.
         $.ajax({
            type: "POST",
            url: url,
