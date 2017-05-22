@@ -18,20 +18,27 @@ $(document).ready(function() {
      
 
   $('.c-hamburger').on('click', function(e){
+    
       e.preventDefault();
       var $body = $('body');
-        $(this).toggleClass('is-active');
-        $('body').toggleClass('overlay-active');
-        if ( $body.hasClass('home') ){
-          $('.overlay').toggleClass('active-home');
-        } else {
-          $('.overlay').toggleClass('active');
-        }
-    });
+      $(this).toggleClass('is-active');
+      $('body').toggleClass('overlay-active');
+      if ( $body.hasClass('home') ){
+        $('.overlay').toggleClass('active-home');
+        $('#logo').toggleClass('logo-white');
+      } else {
+        $('.overlay').toggleClass('active');
+      }
+
+  });
+
+  // $('.menu-item a').hover(function(){
+  //   $(this).
+  // })
     
 // Email Validation
 
-window.validateEmail = function( emails ) {
+  window.validateEmail = function( emails ) {
 
       var errors       = 0;
       var emailArray   = (emails == null) ? [] :emails.split(',');

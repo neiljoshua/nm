@@ -275,9 +275,10 @@ p {
 	}
 
 	.overlay {
-		&.active {
+		&.active, &.active-home {
 			width: 100%;
 		}
+
 	}
 
 	.site-header {
@@ -294,10 +295,7 @@ p {
 
 	.portfolio-image, .portfolio-text {
 		width: 100%;
-	}
-
-	.pull-right, .pull-left {
-		float: none;
+		margin-top: 80px;
 	}
 
 	fieldset *:first-child {
@@ -321,6 +319,25 @@ p {
 
 @include media(mobile) {
 
+	.hero {
+		width: 100vw;
+		height: 35vh;
+		div {
+			top: 20%;
+		}
+		h1 {
+			font-size: 35px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+
+	.slider {
+		width: 100vw;
+		height: 65vh;
+	}
+
 	section {
 		margin: 0;
 	}
@@ -338,13 +355,23 @@ p {
 		}
 	}
 
+	.project-title {
+		font-size: 45px;
+		margin-bottom: 0;
+	}
 
-	.about-hero {
-		h1{
-			font-size:25px;
-			letter-spacing: 2px;
+	.projects-list  {
+		.menu-item {
+			a {
+				font-size: 45px;
+			}
 		}
 	}
+
+	.portfolio-image, .portfolio-text {
+		margin-top: 25px;
+	}	
+	
 
 	.about-content h2 {
 		font-size: 30px;
