@@ -9,14 +9,14 @@
 
 <div class="site-content">
 
-	<h1>Brandi</h1>
+	<h1 class="project-title">Brandi</h1>
 	<div class="row">
 
-		<div class="portfolio-image pull-right">
+		<div class="projects-image">
 	   		<a href="http://www.brandi.neiljoshua.com" target="_blank" ><img src="src/images/brandiscreen.jpg" alt="Brandi Project" ></a>
 	   	</div>	
 
-	   	<div class="portfolio-text pull-left">
+	   	<div class="projects-text">
 			<ul>
 				<li>Single page design</li>
 				<li>Responsive</li>
@@ -31,7 +31,7 @@
 
 </div>	
 
-<footer class="portfolio-footer">
+<footer class="projects-footer">
 <?php
 	include('src/includes/footer.php')
 ?>	
