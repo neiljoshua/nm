@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.slider').slick({
     infinite: true,
     autoplay: true,
-    speed: 150,
+    speed: 200,
     fade: true,
     centerMode: true,
     cssEase: 'linear',
@@ -16,6 +16,11 @@ $(document).ready(function() {
     nextArrow: false
   });
      
+  $('.slick-container').each(function() {
+    var imgURL = $(this).find('img').attr('src');
+    console.log(imgURL);
+    $(this).css('background-image', 'url(' + imgURL + ')');
+  });   
 
   $('.c-hamburger').on('click', function(e){
     
@@ -32,9 +37,7 @@ $(document).ready(function() {
 
   });
 
-  // $('.menu-item a').hover(function(){
-  //   $(this).
-  // })
+
     
 // Email Validation
 

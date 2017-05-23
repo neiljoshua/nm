@@ -9,14 +9,14 @@
 
 <div class="site-content">
 
-	<h1>Weather App - Beta</h1>
+	<h1 class="project-title">Weather App</h1>
 	<div class="row">
 		
-		<div class="portfolio-image">
+		<div class="projects-image">
 	   		<a href="http://weather.neiljoshua.com/" target="_blank" ><img src="src/images/weatherscreen.jpg" alt="Weather App" ></a>
 	   	</div>	
 	   	
-	   	<div class="portfolio-text">
+	   	<div class="projects-text">
 			<ul>
 				<li>Responsive app</li>
 				<li>HMTL5</li>
@@ -32,7 +32,7 @@
 
 </div>
 
-<footer class="portfolio-footer">
+<footer class="projects-footer">
 <?php
 	include('src/includes/footer.php')
 ?>			

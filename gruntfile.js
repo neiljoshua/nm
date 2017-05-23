@@ -12,7 +12,7 @@ grunt.initConfig({
     }
   },
 
-	concat: {
+  concat: {
     dist: {
       src: ['src/css/vendors/owl.carousel.css', 'src/css/vendors/owl.theme.css',
           'src/css/vendors/animate.css', 'src/css/vendors/fontello.css'],
@@ -20,14 +20,14 @@ grunt.initConfig({
     },
   },
 
-	uglify: {
-	  my_target: {
+  uglify: {
+    my_target: {
       files: {
         'nm.min.js': ['src/js/nm.js'],
         'plugins.min.js': ['src/js/plugins/*.min.js']
       }
     }
-	},
+  },
 
   watch: {
     css: {

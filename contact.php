@@ -12,7 +12,7 @@
 		<h1 class="center" > Drop me a line!</h1>
 	</div>	
 	
-	<section id="#startchange">
+	<section>
 		<form id="contact-form" action="contact.php" method="POST" >
 			<fieldset>
 				<input type="text" name="user-name" placeholder="First Name" required>

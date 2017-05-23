@@ -1,4 +1,4 @@
-<?php $thisPage="portfolio"; ?>
+<?php $thisPage="projects"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
@@ -9,7 +9,7 @@
 <div class="site-content">		
 
 	<div class="page-title">
-		<h1 >Portfolio</h1>
+		<h1 >Projects</h1>
 	</div>
 	
 	<ul class="projects-list">

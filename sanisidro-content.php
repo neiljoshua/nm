@@ -11,11 +11,11 @@
 	<h1 class="project-title">San Isidro Group</h1>
 	<div class="row">
 
-		<div class="portfolio-image">
+		<div class="projects-image">
 	   		<a href="http://sanisidro.neiljoshua.com" target="_blank" ><img src="src/images/sanisidro.jpg" alt="Wordpress" ></a>
 	   	</div>	
 
-	   	<div class="portfolio-text">
+	   	<div class="projects-text">
 			<ul>
 				<li>WordPress</li>
 				<li>PHP</li>
@@ -31,7 +31,7 @@
 
 </div>
 
-<footer class="portfolio-footer">
+<footer class="projects-footer">
 <?php
 	include('src/includes/footer.php')
 ?>			

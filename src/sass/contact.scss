@@ -1,7 +1,7 @@
 /** Contact Page**/
 
 div.contact-hero {
-	background: url('/src/images/typewriter.jpg') center center no-repeat;
+	background: url('/src/images/macbook.jpeg') center center no-repeat;
 	-webkit-background-size: cover;
  	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -13,9 +13,10 @@ div.contact-hero {
 	h1 {
 		color: $white;
 		font-weight: 300;
-		font-size: 40px;
+		font-size: 80px;
 		letter-spacing: 3px;
 		margin-bottom: 50px;
+		font-family: 'Catamaran-Thin';
 	}
 }
 

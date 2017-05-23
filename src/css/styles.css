@@ -318,24 +318,24 @@ button:hover {
   transform: rotate(-45deg);
 }
 
-/** Portfolio Layout **/
-/* line 3, ../sass/portfolio.scss */
-header.portfolio-nav, footer.portfolio-footer, .button-background-color {
+/** projects Layout **/
+/* line 3, ../sass/projects.scss */
+header.projects-nav, footer.projects-footer, .button-background-color {
   background-color: #000;
 }
 
-/* line 7, ../sass/portfolio.scss */
+/* line 7, ../sass/projects.scss */
 .page-title {
   margin-top: 80px;
   padding-top: 50px;
   letter-spacing: 1px;
 }
-/* line 11, ../sass/portfolio.scss */
+/* line 11, ../sass/projects.scss */
 .page-title h1 {
   font-weight: 100;
   font-size: 70px;
 }
-/* line 15, ../sass/portfolio.scss */
+/* line 15, ../sass/projects.scss */
 .page-title p {
   max-width: 620px;
   margin: 0 auto;
@@ -343,32 +343,32 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
   line-height: 150%;
   font-size: 50px;
 }
-/* line 22, ../sass/portfolio.scss */
+/* line 22, ../sass/projects.scss */
 .page-title h1, .page-title p {
   margin-bottom: 40px;
 }
 
-/* line 27, ../sass/portfolio.scss */
+/* line 27, ../sass/projects.scss */
 .projects-list {
   margin: 50px auto;
 }
-/* line 29, ../sass/portfolio.scss */
+/* line 29, ../sass/projects.scss */
 .projects-list .menu-item {
   margin: 100px auto;
   font-size: 0;
 }
-/* line 32, ../sass/portfolio.scss */
+/* line 32, ../sass/projects.scss */
 .projects-list .menu-item a {
   display: inline-block;
   font-size: 70px;
   font-family: 'Catamaran-Thin';
   color: #000;
 }
-/* line 37, ../sass/portfolio.scss */
+/* line 37, ../sass/projects.scss */
 .projects-list .menu-item a:hover {
   color: #4fb584;
 }
-/* line 39, ../sass/portfolio.scss */
+/* line 39, ../sass/projects.scss */
 .projects-list .menu-item a:hover i {
   font-size: 25px;
   color: #4fb584;
@@ -376,7 +376,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
   padding-left: 10px;
   transition: all .4s ease-in;
 }
-/* line 47, ../sass/portfolio.scss */
+/* line 47, ../sass/projects.scss */
 .projects-list .menu-item a i {
   display: inline-block;
   width: 0;
@@ -388,57 +388,58 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
   transition: all .1s ease-in;
 }
 
-/* line 61, ../sass/portfolio.scss */
+/* line 61, ../sass/projects.scss */
 .project-title {
   margin: 80px auto;
   font-size: 70px;
   font-weight: 100;
 }
 
-/* line 67, ../sass/portfolio.scss */
+/* line 67, ../sass/projects.scss */
 .row {
   font-size: 0;
   margin: 80px auto;
-  padding: 80px 0;
+  padding-top: 40px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 
-/* line 74, ../sass/portfolio.scss */
-.portfolio-image {
+/* line 75, ../sass/projects.scss */
+.projects-image {
   display: inline-block;
   width: 65%;
   height: 100%;
   vertical-align: middle;
 }
-/* line 79, ../sass/portfolio.scss */
-.portfolio-image a {
+/* line 80, ../sass/projects.scss */
+.projects-image a {
   display: block;
   width: 100%;
   filter: grayscale(100%);
   max-height: 600px;
 }
-/* line 84, ../sass/portfolio.scss */
-.portfolio-image a img {
-  width: 98%;
+/* line 85, ../sass/projects.scss */
+.projects-image a img {
+  width: 90%;
 }
-/* line 87, ../sass/portfolio.scss */
-.portfolio-image a:hover {
+/* line 88, ../sass/projects.scss */
+.projects-image a:hover {
   filter: grayscale(0);
 }
 
-/* line 93, ../sass/portfolio.scss */
-.portfolio-text {
+/* line 94, ../sass/projects.scss */
+.projects-text {
   display: inline-block;
   width: 35%;
   height: 100%;
   vertical-align: middle;
 }
-/* line 98, ../sass/portfolio.scss */
-.portfolio-text ul {
+/* line 99, ../sass/projects.scss */
+.projects-text ul {
   text-align: center;
 }
-/* line 100, ../sass/portfolio.scss */
-.portfolio-text ul li {
+/* line 101, ../sass/projects.scss */
+.projects-text ul li {
   margin-bottom: 5px;
   margin-left: 10px;
   font-size: 28px;
@@ -446,23 +447,16 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
   line-height: 150%;
 }
 
-/* line 110, ../sass/portfolio.scss */
+/* line 111, ../sass/projects.scss */
 .paragraph {
   font-size: 18px;
   margin: 35px auto;
   color: #C0C0C0;
 }
 
-/* line 116, ../sass/portfolio.scss */
-.site-content, .title, .portfolio-text {
+/* line 117, ../sass/projects.scss */
+.site-content, .title, .projects-text {
   color: #000;
-}
-
-/* line 120, ../sass/portfolio.scss */
-.portfolio-footer {
-  position: relative;
-  color: #fff;
-  z-index: 0;
 }
 
 /** About section**/
@@ -502,7 +496,7 @@ header.portfolio-nav, footer.portfolio-footer, .button-background-color {
 /** Contact Page**/
 /* line 3, ../sass/contact.scss */
 div.contact-hero {
-  background: url("/src/images/typewriter.jpg") center center no-repeat;
+  background: url("/src/images/macbook.jpeg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -516,16 +510,17 @@ div.contact-hero {
 div.contact-hero h1 {
   color: #fff;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 80px;
   letter-spacing: 3px;
   margin-bottom: 50px;
+  font-family: 'Catamaran-Thin';
 }
 
-/* line 23, ../sass/contact.scss */
+/* line 24, ../sass/contact.scss */
 .contact-hero, .about-hero {
   overflow: hidden;
 }
-/* line 25, ../sass/contact.scss */
+/* line 26, ../sass/contact.scss */
 .contact-hero h1, .about-hero h1 {
   width: 100%;
   padding: 400px;
@@ -534,32 +529,33 @@ div.contact-hero h1 {
 
 /* line 1, ../sass/footer.scss */
 footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 40px 0;
+  padding: 50px 0;
   clear: both;
   z-index: 55;
   overflow: hidden;
+  margin-top: 40px;
+  background-color: #000;
 }
-/* line 9, ../sass/footer.scss */
+/* line 10, ../sass/footer.scss */
 footer .email-container {
   float: left;
-  margin-left: 20px;
+  margin: 0 20px;
 }
-/* line 12, ../sass/footer.scss */
+/* line 13, ../sass/footer.scss */
 footer .email-container a {
   font-size: 18px;
 }
-/* line 14, ../sass/footer.scss */
+/* line 15, ../sass/footer.scss */
 footer .email-container a:hover {
   color: #4fb584;
 }
-/* line 18, ../sass/footer.scss */
+/* line 19, ../sass/footer.scss */
 footer .email-container span {
   font-size: 60%;
 }
-/* line 22, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
 footer .social {
   float: right;
   margin-right: 20px;
@@ -754,10 +750,23 @@ p {
   float: left;
   width: 50vw;
   height: 100vh;
-  background-color: #000;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
+.slick-container {
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(50%);
+}
+/* line 179, ../sass/styles.scss */
+.slick-container img {
+  visibility: hidden;
+}
+
+/* line 184, ../sass/styles.scss */
 .slider {
   display: block;
   float: left;
@@ -766,24 +775,18 @@ p {
   margin: 0 auto;
 }
 
-/* line 184, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .slick-track, .slick-container, .slick-slide, .slick-list {
   width: 100%;
   height: 100%;
 }
 
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .slick-slide {
   height: 100%;
 }
-/* line 191, ../sass/styles.scss */
-.slick-slide img {
-  filter: grayscale(80%);
-  height: 100%;
-  width: 100%;
-}
 
-/* line 200, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -791,7 +794,7 @@ p {
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .center.hero-text {
   -webkit-animation: show-elemet 0.7s ease-in;
   -moz-animation: show-elemet 0.7s ease-in;
@@ -799,77 +802,77 @@ p {
   -o-animation: show-elemet 0.7s ease-in;
   animation: show-elemet 0.7s ease-in;
 }
-/* line 210, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .center.hero-text h1, .center.hero-text p {
   margin-bottom: 40px;
 }
-/* line 213, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .center.hero-text h1 {
   font-size: 48px;
 }
-/* line 216, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 .center.hero-text p {
   font-size: 30px;
 }
 
-/* line 222, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .social a {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 225, ../sass/styles.scss */
+/* line 226, ../sass/styles.scss */
 .social a i {
   display: block;
   font-size: 25px;
   color: #fff;
 }
-/* line 229, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .social a i:hover {
   color: #4fb584;
   border-bottom: none;
 }
-/* line 237, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .social.dark-logo a i {
   color: #000;
 }
-/* line 239, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .social.dark-logo a i:hover {
   color: #4fb584;
 }
 
 /* Media Queries */
 @media (max-width: 980px) {
-  /* line 252, ../sass/styles.scss */
+  /* line 253, ../sass/styles.scss */
   .hero h1 {
     font-size: 55px;
   }
 }
 @media (max-width: 768px) {
-  /* line 263, ../sass/styles.scss */
+  /* line 264, ../sass/styles.scss */
   body a.home {
     left: 10px;
   }
 
-  /* line 269, ../sass/styles.scss */
+  /* line 270, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 45px;
   }
-  /* line 272, ../sass/styles.scss */
+  /* line 273, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 28px;
   }
 
-  /* line 278, ../sass/styles.scss */
+  /* line 279, ../sass/styles.scss */
   .overlay.active, .overlay.active-home {
     width: 100%;
   }
 
-  /* line 284, ../sass/styles.scss */
+  /* line 285, ../sass/styles.scss */
   .site-header {
     padding: 20px;
   }
 
-  /* line 288, ../sass/styles.scss */
+  /* line 289, ../sass/styles.scss */
   .row {
     width: 98%;
     margin: 30px auto;
@@ -878,98 +881,98 @@ p {
     padding-top: 30px;
   }
 
-  /* line 296, ../sass/styles.scss */
-  .portfolio-image, .portfolio-text {
+  /* line 297, ../sass/styles.scss */
+  .projects-image, .projects-text {
     width: 100%;
     margin-top: 80px;
   }
 
-  /* line 301, ../sass/styles.scss */
+  /* line 302, ../sass/styles.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 305, ../sass/styles.scss */
+  /* line 306, ../sass/styles.scss */
   input[type="text"] {
     width: 235px;
   }
 
-  /* line 309, ../sass/styles.scss */
+  /* line 310, ../sass/styles.scss */
   textarea {
     max-width: 485px;
   }
 
-  /* line 313, ../sass/styles.scss */
+  /* line 314, ../sass/styles.scss */
   input[type="text"], textarea {
     border-radius: 0;
   }
 }
 @media (max-width: 600px) {
-  /* line 322, ../sass/styles.scss */
+  /* line 323, ../sass/styles.scss */
   .hero {
     width: 100vw;
     height: 35vh;
   }
-  /* line 325, ../sass/styles.scss */
+  /* line 326, ../sass/styles.scss */
   .hero div {
     top: 20%;
   }
-  /* line 328, ../sass/styles.scss */
+  /* line 329, ../sass/styles.scss */
   .hero h1 {
     font-size: 35px;
   }
-  /* line 331, ../sass/styles.scss */
+  /* line 332, ../sass/styles.scss */
   .hero p {
     font-size: 20px;
   }
 
-  /* line 336, ../sass/styles.scss */
+  /* line 337, ../sass/styles.scss */
   .slider {
     width: 100vw;
     height: 65vh;
   }
 
-  /* line 341, ../sass/styles.scss */
+  /* line 342, ../sass/styles.scss */
   section {
     margin: 0;
   }
 
-  /* line 345, ../sass/styles.scss */
+  /* line 346, ../sass/styles.scss */
   .center {
     width: 100%;
   }
 
-  /* line 350, ../sass/styles.scss */
+  /* line 351, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 30px;
   }
-  /* line 353, ../sass/styles.scss */
+  /* line 354, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 15px;
   }
 
-  /* line 358, ../sass/styles.scss */
+  /* line 359, ../sass/styles.scss */
   .project-title {
     font-size: 45px;
     margin-bottom: 0;
   }
 
-  /* line 365, ../sass/styles.scss */
+  /* line 366, ../sass/styles.scss */
   .projects-list .menu-item a {
     font-size: 45px;
   }
 
-  /* line 371, ../sass/styles.scss */
-  .portfolio-image, .portfolio-text {
+  /* line 372, ../sass/styles.scss */
+  .projects-image, .projects-text {
     margin-top: 25px;
   }
 
-  /* line 376, ../sass/styles.scss */
+  /* line 377, ../sass/styles.scss */
   .about-content h2 {
     font-size: 30px;
   }
 
-  /* line 380, ../sass/styles.scss */
+  /* line 381, ../sass/styles.scss */
   .contact-form {
     border: none;
     width: 100%;
@@ -977,37 +980,39 @@ p {
     padding: 0;
   }
 
-  /* line 387, ../sass/styles.scss */
+  /* line 388, ../sass/styles.scss */
   fieldset {
     margin: 0;
   }
-  /* line 389, ../sass/styles.scss */
+  /* line 390, ../sass/styles.scss */
   fieldset *:first-child {
     margin: 0;
   }
 
-  /* line 394, ../sass/styles.scss */
+  /* line 395, ../sass/styles.scss */
   input[type="text"] {
     margin: 20px 0;
   }
 
-  /* line 398, ../sass/styles.scss */
+  /* line 399, ../sass/styles.scss */
   input[type="text"], textarea {
     width: 90%;
   }
 
-  /* line 402, ../sass/styles.scss */
-  footer .copyright, footer .social {
+  /* line 403, ../sass/styles.scss */
+  footer .email-container, footer .social {
+    width: 100%;
     float: none;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
-  /* line 406, ../sass/styles.scss */
-  footer .copyright h3, footer .copyright p, footer .copyright a, footer .social h3, footer .social p, footer .social a {
+  /* line 409, ../sass/styles.scss */
+  footer .email-container h3, footer .email-container p, footer .email-container a, footer .social h3, footer .social p, footer .social a {
     text-align: center;
   }
 
-  /* line 411, ../sass/styles.scss */
+  /* line 414, ../sass/styles.scss */
   .projects-list {
     font-size: 40px;
   }

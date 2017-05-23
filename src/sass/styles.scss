@@ -4,7 +4,7 @@
 @import 'form';
 @import 'mixin';
 @import 'hamburger';
-@import 'portfolio';
+@import 'projects';
 @import 'about';
 @import 'contact';
 @import 'footer';
@@ -170,7 +170,15 @@ p {
 	float: left;
 	width: 50vw;
 	height: 100vh;
-	background-color: $black;
+}
+
+.slick-container {
+	@include prefix(background-size, cover, webkit ms o );
+	background-position: center center;
+	filter: grayscale(50%);
+	img {
+		visibility: hidden;
+	}
 }
 
 .slider {
@@ -188,14 +196,7 @@ p {
 
 .slick-slide {
 	height: 100%;
-	img {
-		filter: grayscale(80%);
-		height: 100%;
-		width: 100%;
-	}
 }
-
-
 
 .center {
 	position: absolute;
@@ -293,7 +294,7 @@ p {
 		padding-top: 30px;
 	}
 
-	.portfolio-image, .portfolio-text {
+	.projects-image, .projects-text {
 		width: 100%;
 		margin-top: 80px;
 	}
@@ -368,7 +369,7 @@ p {
 		}
 	}
 
-	.portfolio-image, .portfolio-text {
+	.projects-image, .projects-text {
 		margin-top: 25px;
 	}	
 	
@@ -399,10 +400,12 @@ p {
 		width: 90%;
 	}
 
-	footer .copyright, footer .social {
+	footer .email-container, footer .social {
+		width: 100%;
 		float: none;
 		margin: 0;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
 		h3, p, a {
 			text-align: center;
 		}

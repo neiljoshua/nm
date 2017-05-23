@@ -17,8 +17,8 @@
 
 		<div class="wrapper">
 			<header>
-				<a  id="logo" <?php if ( $thisPage=="index" || $thisPage=="contact" ) echo " class=\"logo-white\""; ?> href="/"><i class="demo-icon icon-home-circled"></i></a>
-				<a  href="#" class="c-hamburger <?php if ($thisPage=="index" || $thisPage=="contact") echo "white-burger"; ?> c-hamburger--rot"  > 
+				<a  id="logo" <?php if ( $thisPage=="index" ) echo " class=\"logo-white\""; ?> href="/"><i class="demo-icon icon-home-circled"></i></a>
+				<a  href="#" class="c-hamburger <?php if ($thisPage=="index") echo "white-burger"; ?> c-hamburger--rot"  > 
 					<span>toggle menu</span> </a> 
 			</header>	
 	

@@ -16,16 +16,16 @@
 	<div class="slider-container">
 		<div class="slider">
 			<div class="slick-container">
-				<img src="src/images/sanisidro.jpg" alt="Wordpress" >
+				<img class="source" src="src/images/sanisidro.jpg" alt="Wordpress" >
 			</div>
 			<div class="slick-container"> 
-				<img src="src/images/lead.jpg" alt="tarapoto Resort" >
+				<img class="source" src="src/images/lead.jpg" alt="tarapoto Resort" >
 			</div>
 			<div class="slick-container"> 
-				<img src="src/images/brandiscreen.jpg" alt="Brandi Project" >
+				<img class="source" src="src/images/brandiscreen.jpg" alt="Brandi Project" >
 			</div>
 			<div class="slick-container"> 
-				<img src="src/images/weatherscreen.jpg" alt="Weather App" >
+				<img class="source" src="src/images/weatherscreen.jpg" alt="Weather App" >
 			</div>
 		</div>
 		
