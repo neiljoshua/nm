@@ -475,7 +475,7 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 /* line 13, ../sass/about.scss */
 .about-content h2 {
   letter-spacing: 2px;
-  font-size: 33px;
+  font-size: 55px;
 }
 /* line 17, ../sass/about.scss */
 .about-content p {
@@ -524,7 +524,6 @@ div.contact-hero h1 {
 .contact-hero h1, .about-hero h1 {
   width: 100%;
   padding: 400px;
-  background: rgba(0, 0, 0, 0.32);
 }
 
 /* line 1, ../sass/footer.scss */

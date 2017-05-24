@@ -9,7 +9,7 @@
 
 <div class="site-content">
 		
-	<div id="#startchange" class="about-content">
+	<div class="about-content">
 		<h2>About Neil</h2>
 		<div class="photo-about-content">
 			<img src="/src/images/meforest.png">
