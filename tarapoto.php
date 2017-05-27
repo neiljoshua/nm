@@ -1,30 +1,32 @@
-<?php $thisPage="sanisidro"; ?>
+<?php $thisPage="Tarapoto"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
-<header class="nothome">
 <?php include('src/includes/navigation.php')
 ?>	
-</header>	
 
-<div class="site-content">
-	<h1 class="project-title">Tarapoto Resort</h1>
-	<div class="row">
-		<div class="projects-image">
-	   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/lead.jpg" alt="tarapoto Resort" ></a>
-	   	</div>	
+<h1 class="project-title">Tarapoto Resort</h1>
 
-	   	<div class="projects-text">
-			<ul>
-				<li>Microsite</li>
-				<li>Responsive</li>
-				<li>HMTL5</li>
-				<li>Sass</li>
-				<li>PHP</li>
-				<li>JavaScript</li>
-			</ul>
-		</div>
+<div class="buttons">
+	<a href="projects.php">Back to Projects</a>
+	<a href="http://tarapoto.neiljoshua.com" target="_blank">Go to Tarapoto</a>		
+</div>
 
+<div class="row">
+
+	<div class="projects-image">
+   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="src/images/lead.jpg" alt="tarapoto Resort" ></a>
+   	</div>	
+
+   	<div class="projects-text">
+		<ul>
+			<li>Microsite</li>
+			<li>Responsive</li>
+			<li>HMTL5</li>
+			<li>Sass</li>
+			<li>PHP</li>
+			<li>JavaScript</li>
+		</ul>
 	</div>
 
 </div>

@@ -59,23 +59,19 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 }
 
 .project-title {
-	margin: 80px auto;
+	margin: 50px auto;
 	font-size: 70px;
-	font-weight: 100;
 }
 
 .row {
 	font-size: 0;
-	margin: 80px auto;
-	padding-top: 40px;
-	padding-bottom: 50px;
-	overflow: hidden;
+	margin: 40px auto;
+	padding: 40px 0;
 }
 
 .projects-image {
 	display: inline-block;
 	width: 65%;
-	height: 100%;
 	vertical-align: middle;
 	a {
 	 	display: block;
@@ -116,4 +112,23 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 
 .site-content, .title, .projects-text {
 	color: $black;
+}
+
+.buttons {
+	display: block;
+	width: 350px;
+	margin: 30px auto;
+	a {
+		display: inline-block;
+		width: 150px;
+		height: 20px;
+		padding: 5px;
+		font-size: 20px;
+		background-color: $black;
+		color: $white;
+		border-radius: 5px;
+		&:hover {
+			color: $green;
+		}
+	}
 }

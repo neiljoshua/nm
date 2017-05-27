@@ -20,6 +20,7 @@ html, body {
 	position: relative;
 	clear: both;
 	overflow: hidden;
+	@include animation('show-elemet .9s ease-in');
 }
 
 body {
@@ -71,12 +72,6 @@ p {
 }
 
 /** HomePage **/
-
-.site-content {
-	width:100%;
-	clear: both;
-	@include animation('show-elemet .9s ease-in');
-}
 
 .overlay {
 	position: fixed;
@@ -300,6 +295,12 @@ p {
 		margin-top: 80px;
 	}
 
+	.contact-hero, .about-content {
+		h1 {
+			font-size: 45px;
+		}
+	}
+
 	fieldset *:first-child {
     	margin-right: 20px;
 	}
@@ -335,9 +336,14 @@ p {
 		}
 	}
 
+	.slider-container, .hero {
+		float: none;
+		width: 100vw;
+	}
+
 	.slider {
 		width: 100vw;
-		height: 65vh;
+		height: 60vh;
 	}
 
 	section {
@@ -385,6 +391,12 @@ p {
 		margin: 30px 0;
 		padding: 0;
 	}	
+
+	.page-title {
+		h1 {
+			font-size: 60px;
+		}
+	}
 
 	fieldset {
 		margin: 0;

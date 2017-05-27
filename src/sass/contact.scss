@@ -1,6 +1,6 @@
 /** Contact Page**/
 
-div.contact-hero {
+.contact-hero {
 	background: url('/src/images/macbook.jpeg') center center no-repeat;
 	-webkit-background-size: cover;
  	-moz-background-size: cover;
@@ -26,6 +26,6 @@ div.contact-hero {
 	h1 {
 		width: 100%;
 		padding: 400px;
-		// background: rgba(0 , 0, 0, 0.32);
+		background: rgba(0 , 0, 0, 0.32);
 	}
 }

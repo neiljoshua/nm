@@ -10,7 +10,6 @@
 			<h1> Neil Malpartida</h1>
 			<p> Web Developer</p>
 		</div>		
-		
 	</div>
 
 	<div class="slider-container">
@@ -32,9 +31,8 @@
 	</div>
 
 </div>
+
 <footer class="invisible">
 <?php
-
 	include('src/includes/footer.php')
-
 ?>
