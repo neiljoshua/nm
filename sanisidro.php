@@ -6,7 +6,9 @@
 <?php include('src/includes/navigation.php')
 ?>	
 
-<h1 class="project-title">San Isidro Group</h1>
+<div class="page-title">
+	<h1 >San Isidro</h1>
+</div>
 	
 <div class="buttons">
 	<a href="projects.php">Back to Projects</a>

@@ -6,12 +6,16 @@
 <?php include('src/includes/navigation.php')
 ?>	
 
-<div class="about-content">
+<div class="page-title">
 	<h1>About Neil</h1>
+</div>
+
+	
+<div class="about-content">
+
 	<div class="photo-about-content">
 		<img src="/src/images/meforest.png">
 	</div>
-	
 	<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily related to front end development. I am currently working on more PHP projects to strengthen my back end skills.
 	</p>
 	

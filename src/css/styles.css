@@ -326,7 +326,7 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 
 /* line 7, ../sass/projects.scss */
 .page-title {
-  margin-top: 80px;
+  margin-top: 60px;
   padding-top: 50px;
   letter-spacing: 1px;
 }
@@ -397,44 +397,43 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 /* line 66, ../sass/projects.scss */
 .row {
   font-size: 0;
-  margin: 40px auto;
   padding: 40px 0;
 }
 
-/* line 72, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 .projects-image {
   display: inline-block;
   width: 65%;
   vertical-align: middle;
 }
-/* line 76, ../sass/projects.scss */
+/* line 75, ../sass/projects.scss */
 .projects-image a {
   display: block;
   width: 100%;
   filter: grayscale(80%);
   max-height: 600px;
 }
-/* line 81, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 .projects-image a img {
   width: 90%;
 }
-/* line 84, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 .projects-image a:hover {
   filter: grayscale(0);
 }
 
-/* line 90, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 .projects-text {
   display: inline-block;
   width: 35%;
   height: 100%;
   vertical-align: middle;
 }
-/* line 95, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 .projects-text ul {
   text-align: center;
 }
-/* line 97, ../sass/projects.scss */
+/* line 96, ../sass/projects.scss */
 .projects-text ul li {
   margin-bottom: 5px;
   margin-left: 10px;
@@ -443,28 +442,28 @@ header.projects-nav, footer.projects-footer, .button-background-color {
   line-height: 150%;
 }
 
-/* line 107, ../sass/projects.scss */
+/* line 106, ../sass/projects.scss */
 .paragraph {
   font-size: 18px;
   margin: 35px auto;
   color: #C0C0C0;
 }
 
-/* line 113, ../sass/projects.scss */
+/* line 112, ../sass/projects.scss */
 .site-content, .title, .projects-text {
   color: #000;
 }
 
-/* line 117, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 .buttons {
   display: block;
-  width: 350px;
+  width: 100%;
   margin: 30px auto;
 }
-/* line 121, ../sass/projects.scss */
+/* line 120, ../sass/projects.scss */
 .buttons a {
   display: inline-block;
-  width: 150px;
+  width: 140px;
   height: 20px;
   padding: 5px;
   font-size: 20px;
@@ -472,7 +471,7 @@ header.projects-nav, footer.projects-footer, .button-background-color {
   color: #fff;
   border-radius: 5px;
 }
-/* line 130, ../sass/projects.scss */
+/* line 129, ../sass/projects.scss */
 .buttons a:hover {
   color: #4fb584;
 }
@@ -482,32 +481,22 @@ header.projects-nav, footer.projects-footer, .button-background-color {
 .about-content {
   margin: 40px auto;
   max-width: 720px;
-  padding: 20px 0;
 }
 /* line 7, ../sass/about.scss */
-.about-content h2, .about-content p {
-  margin: 50px auto;
+.about-content p {
+  margin: 60px auto;
   padding-right: 60px;
   padding-left: 60px;
-}
-/* line 13, ../sass/about.scss */
-.about-content h2 {
-  letter-spacing: 2px;
-  font-size: 55px;
-}
-/* line 17, ../sass/about.scss */
-.about-content p {
   letter-spacing: 1.5px;
   line-height: 150%;
   font-size: 20px;
   font-weight: 100;
 }
-/* line 23, ../sass/about.scss */
+/* line 16, ../sass/about.scss */
 .about-content .photo-about-content {
-  margin: 40px auto;
+  margin: 30px auto 50px;
   width: 300px;
   height: 300px;
-  margin: 30px auto;
   overflow: hidden;
 }
 
@@ -736,21 +725,21 @@ p {
 .hero h1, .hero p {
   font-weight: 100;
   color: #fff;
-  text-align: left;
+  text-align: center;
   margin-bottom: 30px;
-  margin-left: 20px;
 }
-/* line 150, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .hero h1 {
   font-size: 70px;
 }
-/* line 153, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .hero p {
   font-size: 40px;
 }
-/* line 156, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .hero div {
   position: absolute;
+  width: 50vw;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -761,9 +750,10 @@ p {
   float: left;
   width: 50vw;
   height: 100vh;
+  background-color: #000;
 }
 
-/* line 170, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .slick-container {
   -webkit-background-size: cover;
   -ms-background-size: cover;
@@ -772,12 +762,12 @@ p {
   background-position: center center;
   filter: grayscale(50%);
 }
-/* line 174, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .slick-container img {
   visibility: hidden;
 }
 
-/* line 179, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .slider {
   display: block;
   float: left;
@@ -786,18 +776,18 @@ p {
   margin: 0 auto;
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .slick-track, .slick-container, .slick-slide, .slick-list {
   width: 100%;
   height: 100%;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .slick-slide {
   height: 100%;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .center {
   position: absolute;
   top: 50%;
@@ -805,7 +795,7 @@ p {
   transform: translateY(-50%) translateX(-50%);
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .center.hero-text {
   -webkit-animation: show-elemet 0.7s ease-in;
   -moz-animation: show-elemet 0.7s ease-in;
@@ -813,77 +803,100 @@ p {
   -o-animation: show-elemet 0.7s ease-in;
   animation: show-elemet 0.7s ease-in;
 }
-/* line 206, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .center.hero-text h1, .center.hero-text p {
   margin-bottom: 40px;
 }
-/* line 209, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .center.hero-text h1 {
   font-size: 48px;
 }
-/* line 212, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 .center.hero-text p {
   font-size: 30px;
 }
 
-/* line 218, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .social a {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 221, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .social a i {
   display: block;
   font-size: 25px;
   color: #fff;
 }
-/* line 225, ../sass/styles.scss */
+/* line 226, ../sass/styles.scss */
 .social a i:hover {
   color: #4fb584;
   border-bottom: none;
 }
-/* line 233, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .social.dark-logo a i {
   color: #000;
 }
-/* line 235, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .social.dark-logo a i:hover {
   color: #4fb584;
 }
 
+/* line 244, ../sass/styles.scss */
+.page-title {
+  margin-top: 60px;
+  letter-spacing: 5px;
+}
+/* line 247, ../sass/styles.scss */
+.page-title h1 {
+  font-weight: 100;
+  font-size: 60px;
+}
+/* line 251, ../sass/styles.scss */
+.page-title p {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 150%;
+  font-size: 50px;
+}
+/* line 258, ../sass/styles.scss */
+.page-title h1, .page-title p {
+  margin-bottom: 40px;
+}
+
 /* Media Queries */
 @media (max-width: 980px) {
-  /* line 249, ../sass/styles.scss */
+  /* line 269, ../sass/styles.scss */
   .hero h1 {
     font-size: 43px;
   }
 }
 @media (max-width: 768px) {
-  /* line 260, ../sass/styles.scss */
+  /* line 280, ../sass/styles.scss */
   body a.home {
     left: 10px;
   }
 
-  /* line 266, ../sass/styles.scss */
+  /* line 286, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 45px;
   }
-  /* line 269, ../sass/styles.scss */
+  /* line 289, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 28px;
   }
 
-  /* line 275, ../sass/styles.scss */
+  /* line 295, ../sass/styles.scss */
   .overlay.active, .overlay.active-home {
     width: 100%;
   }
 
-  /* line 281, ../sass/styles.scss */
+  /* line 301, ../sass/styles.scss */
   .site-header {
     padding: 20px;
   }
 
-  /* line 285, ../sass/styles.scss */
+  /* line 305, ../sass/styles.scss */
   .row {
     width: 98%;
     margin: 30px auto;
@@ -892,109 +905,126 @@ p {
     padding-top: 30px;
   }
 
-  /* line 293, ../sass/styles.scss */
+  /* line 313, ../sass/styles.scss */
   .projects-image, .projects-text {
     width: 100%;
-    margin-top: 80px;
   }
 
-  /* line 299, ../sass/styles.scss */
+  /* line 317, ../sass/styles.scss */
+  .projects-text {
+    margin-top: 50px;
+  }
+
+  /* line 322, ../sass/styles.scss */
   .contact-hero h1, .about-content h1 {
     font-size: 45px;
   }
 
-  /* line 304, ../sass/styles.scss */
+  /* line 327, ../sass/styles.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 308, ../sass/styles.scss */
+  /* line 331, ../sass/styles.scss */
   input[type="text"] {
     width: 235px;
   }
 
-  /* line 312, ../sass/styles.scss */
+  /* line 335, ../sass/styles.scss */
   textarea {
     max-width: 485px;
   }
 
-  /* line 316, ../sass/styles.scss */
+  /* line 339, ../sass/styles.scss */
   input[type="text"], textarea {
     border-radius: 0;
   }
 }
 @media (max-width: 600px) {
-  /* line 325, ../sass/styles.scss */
+  /* line 348, ../sass/styles.scss */
+  .slider-container, .hero {
+    float: none;
+  }
+
+  /* line 352, ../sass/styles.scss */
   .hero {
     width: 100vw;
-    height: 35vh;
+    height: 45vh;
   }
-  /* line 328, ../sass/styles.scss */
+  /* line 355, ../sass/styles.scss */
   .hero div {
-    top: 20%;
+    width: 100vw;
+    top: 18%;
   }
-  /* line 331, ../sass/styles.scss */
+  /* line 359, ../sass/styles.scss */
   .hero h1 {
     font-size: 35px;
   }
-  /* line 334, ../sass/styles.scss */
+  /* line 362, ../sass/styles.scss */
   .hero p {
     font-size: 20px;
   }
 
-  /* line 339, ../sass/styles.scss */
-  .slider-container, .hero {
-    float: none;
-    width: 100vw;
+  /* line 368, ../sass/styles.scss */
+  .slider-container {
+    width: 90vw;
+    padding: 0 5vw;
   }
 
-  /* line 344, ../sass/styles.scss */
+  /* line 373, ../sass/styles.scss */
   .slider {
-    width: 100vw;
-    height: 60vh;
+    display: block;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
   }
 
-  /* line 349, ../sass/styles.scss */
+  /* line 380, ../sass/styles.scss */
   section {
     margin: 0;
   }
 
-  /* line 353, ../sass/styles.scss */
+  /* line 384, ../sass/styles.scss */
   .center {
     width: 100%;
   }
 
-  /* line 358, ../sass/styles.scss */
+  /* line 389, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 30px;
   }
-  /* line 361, ../sass/styles.scss */
+  /* line 392, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 15px;
   }
 
-  /* line 366, ../sass/styles.scss */
+  /* line 397, ../sass/styles.scss */
   .project-title {
     font-size: 45px;
     margin-bottom: 0;
   }
 
-  /* line 373, ../sass/styles.scss */
+  /* line 404, ../sass/styles.scss */
   .projects-list .menu-item a {
     font-size: 45px;
   }
 
-  /* line 379, ../sass/styles.scss */
+  /* line 410, ../sass/styles.scss */
   .projects-image, .projects-text {
     margin-top: 25px;
   }
 
-  /* line 384, ../sass/styles.scss */
+  /* line 415, ../sass/styles.scss */
   .about-content h2 {
     font-size: 30px;
   }
 
-  /* line 388, ../sass/styles.scss */
+  /* line 419, ../sass/styles.scss */
+  .contact-hero h1 {
+    font-size: 40px;
+  }
+
+  /* line 424, ../sass/styles.scss */
   .contact-form {
     border: none;
     width: 100%;
@@ -1002,31 +1032,40 @@ p {
     padding: 0;
   }
 
-  /* line 396, ../sass/styles.scss */
+  /* line 432, ../sass/styles.scss */
   .page-title h1 {
-    font-size: 60px;
+    font-size: 45px;
   }
 
-  /* line 401, ../sass/styles.scss */
+  /* line 436, ../sass/styles.scss */
+  .projects-list {
+    font-size: 40px;
+  }
+  /* line 439, ../sass/styles.scss */
+  .projects-list .menu-item a {
+    font-size: 40px;
+  }
+
+  /* line 445, ../sass/styles.scss */
   fieldset {
     margin: 0;
   }
-  /* line 403, ../sass/styles.scss */
+  /* line 447, ../sass/styles.scss */
   fieldset *:first-child {
     margin: 0;
   }
 
-  /* line 408, ../sass/styles.scss */
+  /* line 452, ../sass/styles.scss */
   input[type="text"] {
     margin: 20px 0;
   }
 
-  /* line 412, ../sass/styles.scss */
+  /* line 456, ../sass/styles.scss */
   input[type="text"], textarea {
     width: 90%;
   }
 
-  /* line 416, ../sass/styles.scss */
+  /* line 460, ../sass/styles.scss */
   footer .email-container, footer .social {
     width: 100%;
     float: none;
@@ -1034,13 +1073,8 @@ p {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  /* line 422, ../sass/styles.scss */
+  /* line 466, ../sass/styles.scss */
   footer .email-container h3, footer .email-container p, footer .email-container a, footer .social h3, footer .social p, footer .social a {
     text-align: center;
-  }
-
-  /* line 427, ../sass/styles.scss */
-  .projects-list {
-    font-size: 40px;
   }
 }
