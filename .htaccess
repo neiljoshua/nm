@@ -1,4 +1,18 @@
+Options +FollowSymLinks -MultiViews
+
+DirectoryIndex index.php
 
 RewriteEngine On
+
+# RewriteRule ^projects/([^/\.]+)/?$ /projects/index.php [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{DOCUMENT_ROOT}/projects/$1\.php -f
+RewriteRule /([^/]+)/?$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^projects/(.*)$ /projects/index.php [L,NC]
+
+

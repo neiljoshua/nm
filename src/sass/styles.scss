@@ -13,7 +13,6 @@
 
 html, body {
 	width: 100%;
-	height: 100%;
 }
 
 .wrapper {
@@ -42,7 +41,7 @@ body {
   height: 40px;
   width: 40px;
   top: 10px;
-  left: 0;
+  left: 15px;
   text-decoration: none;
   line-height: 40px;
   color: $black;
@@ -242,7 +241,7 @@ p {
 }
 
 .page-title {
-	margin-top: 60px;
+	margin: 80px auto 50px;
 	letter-spacing: 5px;
 	h1{ 
 		font-weight: 100;
@@ -401,6 +400,7 @@ p {
 
 	.projects-list  {
 		.menu-item {
+			margin: 10% auto;
 			a {
 				font-size: 45px;
 			}

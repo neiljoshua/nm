@@ -1,15 +1,18 @@
-<?php $thisPage="sanisidro"; ?>
+<?php $thisPage="Brandi"; ?>
 <?php
 	include('../src/includes/header.php')
 ?>
-<header class="nothome">
 <?php include('../src/includes/navigation.php')
 ?>	
-</header>	
-
-<div class="site-content">
-
-	<h1 class="project-title">Brandi</h1>
+	<div class="page-title">
+		<h1 >Brandi</h1>
+	</div>
+	
+	<div class="buttons">
+		<a href="projects.php">Back to Projects</a>
+		<a href="http://www.brandi.neiljoshua.com" target="_blank">Visit Page</a>		
+	</div>
+	
 	<div class="row">
 
 		<div class="projects-image">
@@ -28,8 +31,6 @@
 			</ul>
 		</div>
 	</div>	
-
-</div>	
 
 <footer class="projects-footer">
 <?php
