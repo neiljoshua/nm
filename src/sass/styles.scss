@@ -241,7 +241,7 @@ p {
 }
 
 .page-title {
-	margin: 80px auto 50px;
+	margin: 80px auto 65px;
 	letter-spacing: 5px;
 	h1{ 
 		font-weight: 100;
@@ -302,11 +302,10 @@ p {
 	}
 	
 	.row {
-		width: 98%;
-		margin: 30px auto;
 		overflow: hidden;
 		clear: both;
-		padding-top: 30px;
+		margin: 0;
+		padding: 0;
 	}
 
 	.projects-image, .projects-text {
@@ -322,6 +321,7 @@ p {
 			font-size: 45px;
 		}
 	}
+
 
 	fieldset *:first-child {
     	margin-right: 20px;
@@ -399,8 +399,9 @@ p {
 	}
 
 	.projects-list  {
+		padding: 0;
 		.menu-item {
-			margin: 10% auto;
+			margin: 15% auto;
 			a {
 				font-size: 45px;
 			}
@@ -410,6 +411,12 @@ p {
 	.projects-image, .projects-text {
 		margin-top: 25px;
 	}	
+
+	.buttons {
+		a {
+			margin: 5px 0;
+		}
+	}
 	
 
 	.about-content h2 {
