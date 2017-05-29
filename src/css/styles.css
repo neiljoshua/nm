@@ -361,59 +361,69 @@ button:hover {
 
 /* line 38, ../sass/projects.scss */
 .project-title {
-  margin: 50px auto 30px;
-  font-size: 70px;
+  margin: 80px 0 10px;
+}
+/* line 40, ../sass/projects.scss */
+.project-title h1 {
+  font-size: 75px;
 }
 
-/* line 43, ../sass/projects.scss */
+/* line 45, ../sass/projects.scss */
 .row {
-  height: 40%;
-  padding: 10% 0;
+  padding: 5% 0;
   font-size: 0;
 }
+/* line 48, ../sass/projects.scss */
+.row p {
+  padding: 0 10% 5%;
+  font-size: 22px;
+  color: #000;
+  line-height: 1.5;
+}
 
-/* line 49, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 .projects-image {
   display: inline-block;
-  width: 65%;
+  width: 75%;
   vertical-align: middle;
 }
-/* line 53, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 .projects-image a {
   display: block;
-  padding: 5% 0;
+  padding: 0 0 0 5%;
   filter: grayscale(0);
 }
-/* line 57, ../sass/projects.scss */
+/* line 64, ../sass/projects.scss */
 .projects-image a img {
-  width: 90%;
+  width: 100%;
 }
-/* line 60, ../sass/projects.scss */
+/* line 67, ../sass/projects.scss */
 .projects-image a:hover {
   filter: grayscale(80%);
 }
 
-/* line 66, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 .projects-text {
   display: inline-block;
-  width: 35%;
+  width: 25%;
   height: 100%;
   vertical-align: middle;
 }
-/* line 71, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 .projects-text ul {
   text-align: center;
 }
-/* line 73, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 .projects-text ul li {
   margin-bottom: 5px;
   margin-left: 10px;
   font-size: 28px;
   letter-spacing: 2px;
   line-height: 150%;
+  font-family: 'Catamaran-Thin';
 }
 
-/* line 83, ../sass/projects.scss */
+/* line 91, ../sass/projects.scss */
 .paragraph {
   margin: 35px auto;
   padding: 20px;
@@ -421,30 +431,31 @@ button:hover {
   color: #C0C0C0;
 }
 
-/* line 90, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 .buttons {
   display: block;
   width: 100%;
-  margin: 10px auto;
+  margin: 5px auto;
 }
-/* line 94, ../sass/projects.scss */
+/* line 102, ../sass/projects.scss */
 .buttons a {
   display: inline-block;
   margin: 0 10px;
   padding: 10px;
-  width: 170px;
-  height: 25px;
-  background-color: #C0C0C0;
-  color: #fff;
-  line-height: 25px;
-  text-transform: uppercase;
-  font-size: 20px;
+  width: 50px;
+  height: 10px;
+  color: #C0C0C0;
+  line-height: 10px;
+  font-size: 18px;
   font-family: 'Catamaran-Thin';
-  font-weight: 600;
+  font-weight: 100;
+  border: 1px solid #C0C0C0;
+  border-radius: 15px;
 }
-/* line 107, ../sass/projects.scss */
+/* line 115, ../sass/projects.scss */
 .buttons a:hover {
-  background-color: #4fb584;
+  color: #000;
+  border-color: #000;
 }
 
 /** About section**/
@@ -873,74 +884,93 @@ p {
     margin: 0;
     padding: 0;
   }
+  /* line 309, ../sass/styles.scss */
+  .row p {
+    font-size: 20px;
+  }
 
-  /* line 311, ../sass/styles.scss */
-  .projects-image, .projects-text {
+  /* line 314, ../sass/styles.scss */
+  .project-title {
+    margin: 80px 0 10px;
+  }
+  /* line 316, ../sass/styles.scss */
+  .project-title h1 {
+    font-size: 45px;
+  }
+
+  /* line 321, ../sass/styles.scss */
+  .projects-image,
+  .projects-text {
     width: 100%;
   }
 
-  /* line 315, ../sass/styles.scss */
+  /* line 327, ../sass/styles.scss */
+  .projects-image a {
+    padding: 5%;
+  }
+
+  /* line 332, ../sass/styles.scss */
   .projects-text {
     margin-top: 50px;
   }
 
-  /* line 320, ../sass/styles.scss */
+  /* line 337, ../sass/styles.scss */
   .contact-hero h1, .about-content h1 {
     font-size: 45px;
   }
 
-  /* line 326, ../sass/styles.scss */
+  /* line 343, ../sass/styles.scss */
   fieldset *:first-child {
     margin-right: 20px;
   }
 
-  /* line 330, ../sass/styles.scss */
+  /* line 347, ../sass/styles.scss */
   input[type="text"] {
     width: 235px;
   }
 
-  /* line 334, ../sass/styles.scss */
+  /* line 351, ../sass/styles.scss */
   textarea {
     max-width: 485px;
   }
 
-  /* line 338, ../sass/styles.scss */
+  /* line 355, ../sass/styles.scss */
   input[type="text"], textarea {
     border-radius: 0;
   }
 }
 @media (max-width: 600px) {
-  /* line 347, ../sass/styles.scss */
+  /* line 364, ../sass/styles.scss */
   .slider-container, .hero {
     float: none;
   }
 
-  /* line 351, ../sass/styles.scss */
+  /* line 368, ../sass/styles.scss */
   .hero {
     width: 100vw;
     height: 45vh;
   }
-  /* line 354, ../sass/styles.scss */
+  /* line 371, ../sass/styles.scss */
   .hero div {
     width: 100vw;
     top: 18%;
   }
-  /* line 358, ../sass/styles.scss */
+  /* line 375, ../sass/styles.scss */
   .hero h1 {
     font-size: 35px;
   }
-  /* line 361, ../sass/styles.scss */
+  /* line 378, ../sass/styles.scss */
   .hero p {
     font-size: 20px;
   }
 
-  /* line 367, ../sass/styles.scss */
+  /* line 384, ../sass/styles.scss */
   .slider-container {
     width: 90vw;
     padding: 0 5vw;
   }
 
-  /* line 372, ../sass/styles.scss */
+  /* line 389, ../sass/styles.scss */
   .slider {
     display: block;
     width: 90vw;
@@ -948,65 +978,65 @@ p {
     margin: 0 auto;
   }
 
-  /* line 379, ../sass/styles.scss */
+  /* line 396, ../sass/styles.scss */
   section {
     margin: 0;
   }
 
-  /* line 383, ../sass/styles.scss */
+  /* line 400, ../sass/styles.scss */
   .center {
     width: 100%;
   }
 
-  /* line 388, ../sass/styles.scss */
+  /* line 405, ../sass/styles.scss */
   .center.hero-text h1 {
     font-size: 30px;
   }
-  /* line 391, ../sass/styles.scss */
+  /* line 408, ../sass/styles.scss */
   .center.hero-text p {
     font-size: 15px;
   }
 
-  /* line 396, ../sass/styles.scss */
+  /* line 413, ../sass/styles.scss */
   .project-title {
     font-size: 45px;
     margin-bottom: 0;
   }
 
-  /* line 401, ../sass/styles.scss */
+  /* line 418, ../sass/styles.scss */
   .projects-list {
     padding: 0;
   }
-  /* line 403, ../sass/styles.scss */
+  /* line 420, ../sass/styles.scss */
   .projects-list .menu-item {
     margin: 15% auto;
   }
-  /* line 405, ../sass/styles.scss */
+  /* line 422, ../sass/styles.scss */
   .projects-list .menu-item a {
     font-size: 45px;
   }
 
-  /* line 411, ../sass/styles.scss */
-  .projects-image, .projects-text {
-    margin-top: 25px;
+  /* line 428, ../sass/styles.scss */
+  .projects-text {
+    margin: 25px 0;
   }
 
-  /* line 416, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   .buttons a {
     margin: 5px 0;
   }
 
-  /* line 422, ../sass/styles.scss */
+  /* line 439, ../sass/styles.scss */
   .about-content h2 {
     font-size: 30px;
   }
 
-  /* line 426, ../sass/styles.scss */
+  /* line 443, ../sass/styles.scss */
   .contact-hero h1 {
     font-size: 40px;
   }
 
-  /* line 431, ../sass/styles.scss */
+  /* line 448, ../sass/styles.scss */
   .contact-form {
     border: none;
     width: 100%;
@@ -1014,40 +1044,40 @@ p {
     padding: 0;
   }
 
-  /* line 439, ../sass/styles.scss */
+  /* line 456, ../sass/styles.scss */
   .page-title h1 {
     font-size: 45px;
   }
 
-  /* line 443, ../sass/styles.scss */
+  /* line 460, ../sass/styles.scss */
   .projects-list {
     font-size: 40px;
   }
-  /* line 446, ../sass/styles.scss */
+  /* line 463, ../sass/styles.scss */
   .projects-list .menu-item a {
     font-size: 40px;
   }
 
-  /* line 452, ../sass/styles.scss */
+  /* line 469, ../sass/styles.scss */
   fieldset {
     margin: 0;
   }
-  /* line 454, ../sass/styles.scss */
+  /* line 471, ../sass/styles.scss */
   fieldset *:first-child {
     margin: 0;
   }
 
-  /* line 459, ../sass/styles.scss */
+  /* line 476, ../sass/styles.scss */
   input[type="text"] {
     margin: 20px 0;
   }
 
-  /* line 463, ../sass/styles.scss */
+  /* line 480, ../sass/styles.scss */
   input[type="text"], textarea {
     width: 90%;
   }
 
-  /* line 467, ../sass/styles.scss */
+  /* line 484, ../sass/styles.scss */
   footer .email-container, footer .social {
     width: 100%;
     float: none;
@@ -1055,7 +1085,7 @@ p {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  /* line 473, ../sass/styles.scss */
+  /* line 490, ../sass/styles.scss */
   footer .email-container h3, footer .email-container p, footer .email-container a, footer .social h3, footer .social p, footer .social a {
     text-align: center;
   }

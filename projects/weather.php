@@ -5,13 +5,13 @@
 <?php include('../src/includes/navigation.php')
 ?>	
 
-<div class="page-title">
+<div class="project-title">
 	<h1 >Weather</h1>
 </div>
 
 <div class="buttons">
-	<a href="projects.php">Back to Projects</a>
-	<a href="http://weather.neiljoshua.com/" target="_blank">Visit Page</a>		
+	<a href="projects.php">Back</a>
+	<a href="http://weather.neiljoshua.com/" target="_blank">View</a>		
 </div>
 
 <div class="row">
@@ -30,6 +30,12 @@
 			<li>JSON</li>
 			<li>Weather Underground API</li>
 		</ul>
+	</div>
+
+	<div class="row">
+		<p>
+			Weather is a responsive web app. Weather lets you check the weather on diferent cities. This weather app uses web technologies like Ajax, Json, and JS.
+		</p>
 	</div>
 
 </div>

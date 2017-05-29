@@ -306,10 +306,27 @@ p {
 		clear: both;
 		margin: 0;
 		padding: 0;
+		p {
+			font-size: 20px;
+		}
 	}
 
-	.projects-image, .projects-text {
+	.project-title {
+		margin: 80px 0 10px;
+		h1{
+			font-size: 45px;
+		}
+	}
+
+	.projects-image, 
+	.projects-text {
 		width: 100%;
+	}
+
+	.projects-image {
+		a {
+			padding: 5%;
+		}
 	}
 
 	.projects-text {
@@ -408,8 +425,8 @@ p {
 		}
 	}
 
-	.projects-image, .projects-text {
-		margin-top: 25px;
+	.projects-text {
+		margin: 25px 0;
 	}	
 
 	.buttons {
