@@ -1,15 +1,15 @@
 footer {
 	width: 100%;
+	margin-top: 60px;
 	padding: 60px 0;
+	background-color: $black;
 	clear: both;
 	z-index: 55;
-	overflow:hidden;
-	margin-top: 60px;
-	background-color: $black;
 	.email-container {
 		float: left;
 		margin: 0 20px;
 		a{
+			color: $white;
 			font-size: 18px;
 			&:hover{
 				color: $green;

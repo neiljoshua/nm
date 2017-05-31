@@ -11,8 +11,8 @@
 </div>
 
 <div class="buttons">
-	<a href="projects.php">Back</a>
-	<a href="http://tarapoto.neiljoshua.com" target="_blank">View</a>		
+	<a href="projects.php">Back to Projects</a>
+	<a href="http://tarapoto.neiljoshua.com" target="_blank">View Project</a>		
 </div>
 
 <div class="row">
@@ -32,15 +32,9 @@
 		</ul>
 	</div>
 
-	<div class="row">
-		<p>
-			Tarapoto is a responsive website. This is the ideal webiste for a portfolio or a small business. Tarapoto adapts to show beautfully on a big screen, as well as on your mobile device. 
-		</p>
-	</div>
-
 </div>
 
-<footer class="projects-footer">
+<footer>
 <?php
 	include('../src/includes/footer.php')
 ?>	

@@ -11,8 +11,8 @@
 </div>
 	
 <div class="buttons">
-	<a href="projects.php"> Back</a>
-	<a href="http://sanisidro.neiljoshua.com" target="_blank">View</a>		
+	<a href="projects.php"> Back to Projects</a>
+	<a href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>		
 </div>
 
 <div class="row">
@@ -35,13 +35,7 @@
 
 </div>
 
-<div class="row">
-	<p>
-		San Isidro is a responsive website. This website was developed powered by WordPress. This is the ideal webiste for companies that are expanding and want to show its products. San Isidro adapts to show its elegant interface on a big screen, as well as on your mobile device.
-	</p>
-</div>
-
-<footer class="projects-footer">
+<footer>
 <?php
 	include('../src/includes/footer.php')
 ?>			

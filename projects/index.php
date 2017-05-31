@@ -19,7 +19,7 @@
 	
 <p class="paragraph"> Some projects below may have been developed as prototypes or for demonstration purposes.</p>
 
-<footer class="portfolio-footer">
+<footer>
 <?php
 	include('../src/includes/footer.php')
 ?>			

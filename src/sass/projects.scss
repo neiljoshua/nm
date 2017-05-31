@@ -2,10 +2,13 @@
 
 
 .projects-list {
-	padding: 20px 0;
+	padding: 30px 0;
 	.menu-item {
-		margin: 70px auto;
+		margin: 90px auto;
 		font-size: 0;
+		&:first-child {
+			margin: 20px auto 100px;
+		}
 		a {
 			display: inline-block;
 			font-size: 70px;
@@ -43,7 +46,7 @@
 }
 
 .row {
-    padding: 5% 0;
+    padding: 10px 0 5% 0;
     font-size: 0;
     p {
     	padding: 0 10% 5%;
@@ -83,14 +86,13 @@
 			font-size: 28px;
 			letter-spacing: 2px;
 			line-height: 150%;
-			font-family: 'Catamaran-Thin';
 		}
 	}
 }
 
 .paragraph {
     margin: 35px auto;
-	padding: 20px;
+	padding: 30px;
     font-size: 18px;
 	color: $silver;
 }
@@ -98,23 +100,21 @@
 .buttons {
 	display: block;
 	width: 100%;
-	margin: 5px auto;
+	margin: 30px auto 100px;
 	a {
 		display: inline-block;
 	    margin: 0 10px;
 	    padding: 10px;
-	    width: 50px;
+	    width: 120px;
 	    height: 10px;
-	    color: $silver;
+	    color: $white;
 	    line-height: 10px;
 	    font-size: 18px;
 	    font-family: 'Catamaran-Thin';
 	    font-weight: 100;
-	    border: 1px solid $silver;
-	    border-radius: 15px;
+	    background-color: $silver;
 		&:hover {
-			color: $black;
-			border-color: $black;
+			background-color: $black;
 		}
 	}
 }

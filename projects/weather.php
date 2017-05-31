@@ -10,8 +10,8 @@
 </div>
 
 <div class="buttons">
-	<a href="projects.php">Back</a>
-	<a href="http://weather.neiljoshua.com/" target="_blank">View</a>		
+	<a href="projects.php">Back to Projects</a>
+	<a href="http://weather.neiljoshua.com/" target="_blank">View Project</a>		
 </div>
 
 <div class="row">
@@ -32,15 +32,9 @@
 		</ul>
 	</div>
 
-	<div class="row">
-		<p>
-			Weather is a responsive web app. Weather lets you check the weather on diferent cities. This weather app uses web technologies like Ajax, Json, and JS.
-		</p>
-	</div>
-
 </div>
 
-<footer class="projects-footer">
+<footer>
 <?php
 	include('../src/includes/footer.php')
 ?>			

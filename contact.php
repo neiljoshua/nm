@@ -10,7 +10,7 @@
 </div>	
 
 <section>
-	<form id="contact-form" action="contact.php" method="POST" >
+	<form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
 		<fieldset>
 			<input type="text" name="user-name" placeholder="First Name" required>
 			<input type="text" name="user-last-name" placeholder="Last Name" required>
@@ -21,10 +21,13 @@
 		</fieldset>
 		<textarea id="user-message-text" name="user-message" required> </textarea>
 		<button>Submit</button>
+		<div class="contact-message">
+			<p class="center">Thank you for the message!</p>
+		</div>
 	</form>
 </section>	
 
-<footer class="portfolio-footer">
+<footer>
 <?php
 	include('src/includes/footer.php')
 ?>		

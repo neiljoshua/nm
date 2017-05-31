@@ -10,20 +10,21 @@
 	<h1>About Neil</h1>
 </div>
 
+<div class="photo-about-content">
+	<img src="/src/images/meforest.png">
+</div>
 	
 <div class="about-content">
 
-	<div class="photo-about-content">
-		<img src="/src/images/meforest.png">
-	</div>
-	<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily related to front end development. I am working on more PHP projects to strengthen my back end skills.
+	<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily front end development. However, I have experience with back end development, particularly with PHP. When not coding, I seek out new web technologies and explore ways to improve the development process. 
 	</p>
-	
-	<p>I have a strong interest in new web technologies and ways to improve the development process. I enjoy projects that challenge me to learn something new and push me beyond my confort zone. Currently, I am exploring deployment automation and Ruby on Rails.
+
+	<p> Check out some projects I've worked on <a href="/projects">here</a>.
 	</p>
+
 </div>	
 
-<footer class="portfolio-footer">
+<footer>
 <?php
 	include('src/includes/footer.php')
 ?>	

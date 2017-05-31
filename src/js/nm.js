@@ -77,6 +77,7 @@ $(document).ready(function() {
 
       var $form  = $(this);
       var $email = $('user-email');
+
       if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
         $email.parent().addClass('invalid');
         $(".error").fadeTo(400, 1);
@@ -84,7 +85,7 @@ $(document).ready(function() {
       $email.parent().removeClass('invalid')
       $(".error").fadeTo(400, 0);
 
-       var url = "contactfile.php"; // the script where you handle the form input.
+        var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
         $.ajax({
            type: "POST",
            url: url,
@@ -93,15 +94,21 @@ $(document).ready(function() {
            {
                  $('form input').val('');
                  $('textarea').val('');
+                 $('.contact-message').addClass('visible');
+                 $('body').addClass('submitted')
            }
-         });
+         })
+        // .done(setTimeout(function(){
+        //       $('.contact-message').removeClass('visible');
+        //     }, 500)
+        //  );
         return false;
       }
   });
 
-  $('.close-success').on('click', function(e) {
-    e.preventDefault();
-    $('.success').fadeTo(400, 0);
+  $(document).on('click', function() {
+    $('.contact-message').removeClass('visible');
+    $('body').removeClass('submitted');
   })
 
   

@@ -9,8 +9,8 @@
 	</div>
 	
 	<div class="buttons">
-		<a href="projects.php">Back</a>
-		<a href="http://www.brandi.neiljoshua.com" target="_blank">View</a>		
+		<a href="projects.php">Back to Projects</a>
+		<a href="http://www.brandi.neiljoshua.com" target="_blank">View Project</a>		
 	</div>
 	
 	<div class="row">
@@ -32,13 +32,7 @@
 		</div>
 	</div>	
 
-	<div class="row">
-		<p>
-			Bardi is a responsive single page website. This is the ideal webiste for a portfolio or a small business. Brandi adapts to show beautfully on a big screen, as well as on your mobile device. 
-		</p>
-	</div>
-
-<footer class="projects-footer">
+<footer>
 <?php
 	include('../src/includes/footer.php')
 ?>	
