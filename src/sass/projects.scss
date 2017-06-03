@@ -39,14 +39,15 @@
 }
 
 .project-title {
-	margin: 80px 0 10px;
+	margin: 90px 0 15px;
 	h1{
 		font-size: 75px;
 	}
 }
 
 .row {
-    padding: 10px 0 5% 0;
+	margin-bottom: 100px;
+    padding: 5% 0 8%;
     font-size: 0;
     p {
     	padding: 0 10% 5%;
@@ -100,7 +101,7 @@
 .buttons {
 	display: block;
 	width: 100%;
-	margin: 30px auto 100px;
+	margin: 30px auto 50px;
 	a {
 		display: inline-block;
 	    margin: 0 10px;

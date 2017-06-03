@@ -347,7 +347,7 @@ p {
 	}
 
 	.projects-text {
-		margin-top: 50px;
+		margin: 50px 0;
 	}
 
 	.contact-hero, .about-content {
@@ -387,7 +387,7 @@ p {
 		height: 45vh;
 		div {
 			width: 100vw;
-			top: 18%;
+			top: 30%;
 		}
 		h1 {
 			font-size: 35px;
@@ -400,6 +400,7 @@ p {
 
 	.slider-container {
 		width: 90vw;
+		height: 55vh;
 		padding: 0 5vw;
 	}
 
@@ -444,11 +445,6 @@ p {
 			}
 		}
 	}
-
-	.projects-text {
-		margin: 25px 0;
-	}	
-
 
 	.buttons {
 		margin: 30px auto;
@@ -506,18 +502,20 @@ p {
 		font-size: 16px;
 	}
 
-	footer .email-container, 
-	footer .social {
-		width: 100%;
-		float: none;
-		margin: 0;
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-		h3, p, a {
-			text-align: center;
+	footer {
+		padding: 40px 0;
+		.email-container, 
+		.social {
+			width: 100%;
+			float: none;
+			margin: 0;
+			padding: 10px 0;
+			h3, p, a {
+				text-align: center;
+				margin-left: 0;
+			}
 		}
-	}
-
+	}	
 
 }
 
