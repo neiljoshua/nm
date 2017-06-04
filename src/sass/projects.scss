@@ -46,8 +46,8 @@
 }
 
 .row {
-	margin-bottom: 100px;
-    padding: 5% 0 8%;
+	min-height: 55vh;
+    padding: 5vh 0;
     font-size: 0;
     p {
     	padding: 0 10% 5%;
@@ -59,8 +59,8 @@
 
 .projects-image {
 	display: inline-block;
-	width: 75%;
 	vertical-align: middle;
+	width: 75%;
 	a {
 	 	display: block;
 	  	padding: 0 0 0 5%;
@@ -76,9 +76,8 @@
 
 .projects-text {
 	display: inline-block;
-	width: 25%;
-	height: 100%;
 	vertical-align: middle;
+	width: 25%;
 	ul{
 		text-align: center;
 		li {
@@ -92,6 +91,7 @@
 }
 
 .paragraph {
+	min-height: 5vh;
     margin: 35px auto;
 	padding: 30px;
     font-size: 18px;

@@ -9,7 +9,7 @@
 	<h1 class="center" > Drop me a line!</h1>
 </div>	
 
-<section>
+<div class="contact-form-container">
 	<form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
 		<fieldset>
 			<input type="text" name="user-name" placeholder="First Name" required>
@@ -25,7 +25,7 @@
 			<p class="center">Thank you for the message!</p>
 		</div>
 	</form>
-</section>	
+</div>	
 
 <footer>
 <?php
