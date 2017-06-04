@@ -24,6 +24,9 @@ html, body {
 	@include animation('show-elemet .9s ease-in');
 }
 
+.home {
+	height: 100vh;
+}
 body {
 	text-align: center;
 	&.home {
