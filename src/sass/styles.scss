@@ -150,6 +150,7 @@ p {
 
 
 .hero {
+	@include animation('show-elemet 0.7s ease-in');
 	display: block;
 	float: left;
 	height: 100vh;
@@ -217,7 +218,7 @@ p {
 }
 
 .center.hero-text {
-	@include animation('show-elemet 0.7s ease-in');
+	// @include animation('show-elemet 0.7s ease-in');
 
 	h1, p {
 		margin-bottom: 40px;
