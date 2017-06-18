@@ -1,6 +1,7 @@
 /** Contact Page**/
 #contact-form {
 	position: relative;
+	z-index: 10;
 }
 .contact-hero {
 	background: url('/src/images/macbook.jpg') center center no-repeat;
@@ -30,8 +31,6 @@
 	overflow: hidden;
 	h1 {
 		width: 100%;
-		padding: 400px;
-		background: rgba(0 , 0, 0, 0.32);
 	}
 }
 

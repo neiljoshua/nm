@@ -18,10 +18,10 @@ html, body {
 }
 
 .wrapper {
+	@include animation('show-elemet .9s ease-in');
 	position: relative;
 	height: 100%;
 	overflow-y: scroll;
-	@include animation('show-elemet .9s ease-in');
 }
 
 body {
@@ -30,12 +30,14 @@ body {
 		position: fixed;
 		height: 100vh;
 		top: 0;
-		// left: 0;
+		left: 0;
 		overflow-y: hidden;
 	}
 
 	&.overlay-active{
+		position: fixed;
 		overflow-y: hidden;
+		height: auto;
 	}
 	a {
 		color: $black;
