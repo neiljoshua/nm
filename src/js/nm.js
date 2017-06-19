@@ -71,7 +71,7 @@ $(document).ready(function() {
 
   //Sending form
 
-  $('form').submit(function(e) {
+  $('#contact-form').submit(function(e) {
 
       e.preventDefault();
 
@@ -89,7 +89,7 @@ $(document).ready(function() {
         $.ajax({
            type: "POST",
            url: url,
-           data: $("#contact-form").serialize(),
+           data: $($form).serialize(),
            success: function(data)
            {
                  $('form input').val('');

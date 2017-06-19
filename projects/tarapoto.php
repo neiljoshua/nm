@@ -18,7 +18,7 @@
 <div class="row">
 
 	<div class="projects-image">
-   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="../src/images/lead.jpg" alt="tarapoto Resort" ></a>
+   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="../src/images/tarapoto.jpg" alt="tarapoto Resort" ></a>
    	</div>	
 
    	<div class="projects-text">

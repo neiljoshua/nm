@@ -62,12 +62,12 @@
 // media queries
 @mixin min-width($type) {
     @if $type == large {
-        @media (min-width: 980px) { @content; }
+        @media (min-width: 980px + 1) { @content; }
     }
     @if $type == tablet {
-        @media (min-width: 768px)  { @content; }
+        @media (min-width: 768px + 1)  { @content; }
     }
     @else if $type == mobile {
-        @media (min-width: 600px)  { @content; }
+        @media (min-width: 600px + 1)  { @content; }
     }
 }

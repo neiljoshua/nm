@@ -17,7 +17,7 @@
 <div class="row">
 	
 	<div class="projects-image">
-   		<a href="http://weather.neiljoshua.com/" target="_blank" ><img src="../src/images/weatherscreen.jpg" alt="Weather App" ></a>
+   		<a href="http://weather.neiljoshua.com/" target="_blank" ><img src="../src/images/weather.jpg" alt="Weather App" ></a>
    	</div>	
    	
    	<div class="projects-text">
