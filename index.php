@@ -6,13 +6,14 @@
 	?>
 
 	<div class="hero">
-		<div>
+		<div class="hero-text">
 			<h1> Neil Malpartida</h1>
 			<p> Web Developer</p>
 		</div>		
 	</div>
 
 	<div class="slider-container">
+
 		<div class="slider">
 			<div class="slick-container">
 				<img class="source" src="src/images/slider1.jpg" alt="Wordpress" >
@@ -22,9 +23,6 @@
 			</div>
 			<div class="slick-container"> 
 				<img class="source" src="src/images/slider3.jpg" alt="Brandi Project" >
-			</div>
-			<div class="slick-container"> 
-				<img class="source" src="src/images/slider4.jpg" alt="Weather App" >
 			</div>
 		</div>
 		

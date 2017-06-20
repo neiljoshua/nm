@@ -86,10 +86,11 @@ $(document).ready(function() {
       $(".error").fadeTo(400, 0);
 
         var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
+        var formdata = $($form).serialize();
         $.ajax({
            type: "POST",
            url: url,
-           data: $($form).serialize(),
+           data: formdata,
            success: function(data)
            {
                  $('form input').val('');

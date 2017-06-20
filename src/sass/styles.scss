@@ -59,15 +59,25 @@ header {
   height: 40px;
   width: 40px;
   top: 10px;
-  left: 15px;
+  @include media-min-width(mobile) {
+    left:15px;
+  }
+  @include media-max-width(mobile) {
+    left:7px;
+  }
   text-decoration: none;
   line-height: 40px;
   color: $black;
   z-index: 90;
   i {
   	display: block;
-  	font-size: 40px;
-  	color: $black;
+    font-size: 40px;
+    color: $black;
+    height: 40px;
+    line-height: 40px;
+    &::before{
+    	margin: 0;
+    }
   }
   &.logo-white {
 	i {
@@ -102,12 +112,22 @@ p {
 	@include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
 	transition: all 0.7s ease-in-out ;
 	&.active {
-		width: 30%;
+		@include media-min-width(large) {
+			width: 30%;
+		}
+		@include media-max-width(large) {
+			width: 100%;
+		}
 		opacity: 1;
 		transition: all 0.7s ease-in-out ;
 	}	
 	&.active-home {
-		width: 50%;
+		@include media-min-width(large) {
+			width: 50%;
+		}
+		@include media-max-width(large) {
+			width: 100%;
+		}
 		opacity: 1;
 		transition: all 0.7s ease-in-out ;
 	}
@@ -154,9 +174,15 @@ p {
 .hero {
 	@include animation('show-elemet 0.7s ease-in');
 	display: block;
-	float: left;
-	height: 100vh;
-	width: 50vw;
+	@include media-min-width(large) {
+		float: left;
+		height: 100vh;
+		width: 50vw;
+	}
+	@include media-max-width(large) {
+		width: 100vw;
+		height: 45vh;
+	}
 	background-color: $black;
 	h1, p {
 		font-weight: 100;
@@ -164,25 +190,52 @@ p {
 		text-align: center;
 		margin-bottom: 30px;
 	}
-	h1{
-		font-size: 70px;
+	h1 {
+		@include media-max-width (large) {
+			font-size: 45px;
+		} 
+		@include media-max-width (mobile) {
+			font-size: 32px;
+		}
+		@include media-min-width (large) {
+			font-size: 70px;
+		}
 	}
 	p {
-		font-size: 40px;
+		@include media-max-width (mobile) {
+			font-size: 25px;
+		}
+		@include media-min-width (mobile) {
+			font-size: 40px;
+		}
 	}
-	div {
-		position: absolute;
-		width: 50vw;
-	    top: 50%;
-	    transform: translateY(-50%);
+}
+
+.hero-text {
+	position: absolute;
+	@include media-min-width (large) {
+		width: 50%;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
+	@include media-max-width (large) {
+		width: 100vw;
+		top: 18%;
 	}
 }
 
 .slider-container {
 	display: block;
-	float: left;
-	width: 50vw;
-	height: 100vh;
+	@include media-min-width (large) {
+		float: left;
+		width: 50vw;
+		height: 100vh;
+	}
+	@include media-max-width(large) {
+		width: 90vw;
+		height: 55vh;
+		padding: 0 5vw;
+	}
 	background-color: $black;
 }
 
@@ -197,10 +250,17 @@ p {
 
 .slider {
 	display: block;
-	float: left;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+	@include media-min-width(large) {
+		float: left;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	@include media-max-width(large) {
+		width: 90vw;
+		height: 50vh;
+		margin: 0 auto;
+	}
 }
 
 .slick-track, .slick-container, .slick-slide, .slick-list {
@@ -218,20 +278,6 @@ p {
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
 }
-
-.center.hero-text {
-	// @include animation('show-elemet 0.7s ease-in');
-
-	h1, p {
-		margin-bottom: 40px;
-	}
-	h1 {
-		font-size: 48px;
-	}
-	p {
-		font-size: 30px;
-	}
-}	
 
 .social {
 	a {
@@ -280,46 +326,8 @@ p {
 
 /* Media Queries */
 
-
-@include media(large) {
-
-	.hero {
-		h1 {
-			font-size: 43px;
-		}
-	}
-
-
-}
-
 @include media(tablet) {
 
-	body{
-		a.home {
-			left: 10px;
-		}
-	}
-
-	.center.hero-text {
-		h1{
-			font-size: 45px;
-		}
-		p {
-			font-size: 28px;
-		}
-	}
-
-	.overlay {
-		&.active, &.active-home {
-			width: 100%;
-		}
-
-	}
-
-	.site-header {
-	padding: 20px;
-	}
-	
 	.row {
 		overflow: hidden;
 		clear: both;
@@ -385,38 +393,6 @@ p {
 
 @include media(mobile) {
 
-	.slider-container, .hero {
-		float: none;
-	}
-
-	.hero {
-		width: 100vw;
-		height: 45vh;
-		div {
-			width: 100vw;
-			top: 30%;
-		}
-		h1 {
-			font-size: 35px;
-		}
-		p{
-			font-size: 20px;
-		}
-	}
-
-
-	.slider-container {
-		width: 90vw;
-		height: 55vh;
-		padding: 0 5vw;
-	}
-
-	.slider {
-		display: block;
-		width: 90vw;
-		height: 40vh;
-		margin: 0 auto;
-	}
 
 	section {
 		margin: 0;
@@ -426,14 +402,14 @@ p {
 		width: 100%;
 	}
 
-	.center.hero-text {
-		h1{
-			font-size: 30px;
-		}
-		p {
-			font-size: 15px;
-		}
-	}
+	// .center.hero-text {
+	// 	h1{
+	// 		font-size: 30px;
+	// 	}
+	// 	p {
+	// 		font-size: 15px;
+	// 	}
+	// }
 
 	.project-title {
 		font-size: 45px;
