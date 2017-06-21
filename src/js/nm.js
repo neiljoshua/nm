@@ -18,7 +18,6 @@ $(document).ready(function() {
      
   $('.slick-container').each(function() {
     var imgURL = $(this).find('img').attr('src');
-    console.log(imgURL);
     $(this).css('background-image', 'url(' + imgURL + ')');
   });   
 
@@ -88,15 +87,16 @@ $(document).ready(function() {
         var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
         var formdata = $($form).serialize();
         $.ajax({
-           url: url,
            type: "POST",
+           url: url,
            data: formdata,
-           success: function(data)
+           // dataType: "json",
+           success: function(response)
            {
-                 $('form input').val('');
-                 $('textarea').val('');
-                 $('.contact-message').addClass('visible');
-                 $('body').addClass('submitted')
+              $('form input').val('');
+              $('textarea').val('');
+              $('.contact-message').addClass('visible');
+              $('body').addClass('submitted')
            }
          })
         // .done(setTimeout(function(){

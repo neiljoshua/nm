@@ -46,6 +46,6 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 
 // Default task(s).
 grunt.registerTask('default', [ 'concat', 'uglify', 'watch']);
-grunt.registerTask('dev', ['compass']);
+grunt.registerTask('dev', ['compass'], ['uglify']);
 }
  
