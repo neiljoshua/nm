@@ -71,7 +71,7 @@ $(document).ready(function() {
 
   //Sending form
 
-  $('#contact-form').submit(function(e) {
+  $('form').submit(function(e) {
 
       e.preventDefault();
 
@@ -88,8 +88,8 @@ $(document).ready(function() {
         var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
         var formdata = $($form).serialize();
         $.ajax({
-           type: "POST",
            url: url,
+           type: "POST",
            data: formdata,
            success: function(data)
            {
