@@ -11,6 +11,11 @@
 .projects__item {
 	margin: 90px auto;
 	font-size: 0;
+	@include media-min-width(tablet) {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 }	
 .projects__link {
 	display: inline-block;

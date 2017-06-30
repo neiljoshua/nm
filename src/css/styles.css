@@ -474,29 +474,29 @@ button:hover {
   margin: 90px auto;
   font-size: 0;
 }
+@media (min-width: 769px) {
+  /* line 15, ../sass/projects.scss */
+  .projects__item:first-child {
+    margin-top: 0;
+  }
+}
 
-/* line 15, ../sass/projects.scss */
+/* line 20, ../sass/projects.scss */
 .projects__link {
   display: inline-block;
   font-family: 'Catamaran-Thin';
   color: #000;
 }
 @media (max-width: 600px) {
-  /* line 15, ../sass/projects.scss */
+  /* line 20, ../sass/projects.scss */
   .projects__link {
     font-size: 42px;
   }
 }
 @media (min-width: 601px) {
-  /* line 15, ../sass/projects.scss */
+  /* line 20, ../sass/projects.scss */
   .projects__link {
     font-size: 70px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 26, ../sass/projects.scss */
-  .projects__link:hover {
-    color: #4fb584;
   }
 }
 @media (min-width: 769px) {
@@ -504,7 +504,13 @@ button:hover {
   .projects__link:hover {
     color: #4fb584;
   }
-  /* line 33, ../sass/projects.scss */
+}
+@media (min-width: 769px) {
+  /* line 36, ../sass/projects.scss */
+  .projects__link:hover {
+    color: #4fb584;
+  }
+  /* line 38, ../sass/projects.scss */
   .projects__link:hover .projects__icon {
     font-size: 25px;
     color: #4fb584;
@@ -514,7 +520,7 @@ button:hover {
   }
 }
 
-/* line 44, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 .projects__icon {
   display: inline-block;
   width: 0;
@@ -526,7 +532,7 @@ button:hover {
   transition: all .1s ease-in;
 }
 
-/* line 55, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 .projects_copy {
   min-height: 5vh;
   margin: 35px auto;
