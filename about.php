@@ -7,24 +7,23 @@
 ?>	
 
 <div class="page-title">
-	<h1>About Neil</h1>
+	<h1 class="page-title__title" >About Neil</h1>
 </div>
 
-<div class="photo-about-content">
-	<img src="/src/images/meforest.png">
+<div class="photo">
+	<img class="photo__image" src="/src/images/meforest.png">
 </div>
 	
 <div class="about-content">
 
-	<p>I am a web developer who specializes in responsive and CMS development. My experience is primarily front end development. However, I have experience with back end development, particularly with PHP. When not coding, I seek out new web technologies and explore ways to improve the development process. 
+	<p class="about-content__copy" >I am a web developer who specializes in responsive and CMS development. My experience is primarily front end development. However, I have experience with back end development, particularly with PHP. When not coding, I seek out new web technologies and explore ways to improve the development process. 
 	</p>
 
-	<p> Check out some projects I've worked on <a href="/projects">here</a>.
-	</p>
+	<p class="about-content__copy"> Check out some projects I've worked on <a href="/projects">here</a>. </p>
 
 </div>	
 
-<footer>
+<footer class="footer-site">
 <?php
 	include('src/includes/footer.php')
 ?>	

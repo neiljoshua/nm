@@ -5,34 +5,37 @@
 <?php include('../src/includes/navigation.php')
 ?>	
 	<div class="project-title">
-		<h1 >Brandi</h1>
+		<h1 class="project-title__text" >Brandi</h1>
 	</div>
 	
-	<div class="buttons">
-		<a href="projects.php">Back to Projects</a>
-		<a href="http://www.brandi.neiljoshua.com" target="_blank">View Project</a>		
+	<div class="button">
+		<a class="button__link" href="projects.php">Back to Projects</a>
+		<a class="button__link" href="http://www.brandi.neiljoshua.com" target="_blank">View Project</a>		
 	</div>
 	
-	<div class="row">
+	<div class="project-row ">
 
-		<div class="projects-image">
-	   		<a href="http://www.brandi.neiljoshua.com" target="_blank" ><img src="../src/images/brandiscreen.jpg" alt="Brandi Project" ></a>
+		<div class="project-iamge">
+	   		<a class="project-image__link" href="http://www.brandi.neiljoshua.com" target="_blank" >
+	   			<img class="project-image__img" src="../src/images/brandiscreen.jpg" alt="Brandi Project" >
+	   		</a>
 	   	</div>	
 
-	   	<div class="projects-text">
-			<ul>
-				<li>Single page design</li>
-				<li>Responsive</li>
-				<li>HMTL5</li>
-				<li>CSS3</li>
-				<li>JavaScript</li>
-				<li>AJAX</li>
-				<li>JSON</li>
+	   	<div class="project-copy">
+			<ul class="project-copy__list">
+				<li class="project-copy__item" >Single page design</li>
+				<li class="project-copy__item" >Responsive</li>
+				<li class="project-copy__item" >HMTL5</li>
+				<li class="project-copy__item" >CSS3</li>
+				<li class="project-copy__item" >JavaScript</li>
+				<li class="project-copy__item" >AJAX</li>
+				<li class="project-copy__item" >JSON</li>
 			</ul>
 		</div>
+
 	</div>	
 
-<footer>
+<footer class="footer-site">
 <?php
 	include('../src/includes/footer.php')
 ?>	

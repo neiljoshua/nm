@@ -1,0 +1,74 @@
+// / .overlay {
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 0%;
+	background-color: $white;
+	opacity: 0;
+	z-index: 52;
+	@include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
+	transition: all 0.7s ease-in-out ;
+	&.menu-active {
+		@include media-min-width(large) {
+			width: 30%;
+		}
+		@include media-max-width(large) {
+			width: 100%;
+		}
+		opacity: 1;
+		transition: all 0.7s ease-in-out ;
+	}	
+	&.menu-active-home {
+		@include media-min-width(large) {
+			width: 50%;
+		}
+		@include media-max-width(large) {
+			width: 100%;
+		}
+		opacity: 1;
+		transition: all 0.7s ease-in-out ;
+	}
+}
+
+// .site-nav {
+.menu__list {	
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}	
+		
+#currentpage {
+	.menu__link {
+		font-size: 42px;
+		font-weight: 600;
+		color: $green;
+		&.home-page-a {
+			color: $green;
+		}	
+	}
+}
+		
+.menu__item {
+	margin-bottom: 30px;
+	
+}	
+
+.menu__link {
+	color: $black;
+	font-size: 42px;
+	letter-spacing: 4px;
+	&:hover, &:active {
+		color: $green;
+	}
+	&.menu__link-homepage {
+		color: $green;
+		&:hover, &:active {
+			color: $black;
+		}
+	}
+}

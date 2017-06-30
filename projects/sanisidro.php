@@ -7,35 +7,37 @@
 ?>	
 
 <div class="project-title">
-	<h1 >San Isidro</h1>
+	<h1 class="project-title__text" >San Isidro</h1>
 </div>
 	
-<div class="buttons">
-	<a href="projects.php"> Back to Projects</a>
-	<a href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>		
+<div class="button">
+	<a class="button__link" href="projects.php"> Back to Projects</a>
+	<a class="button__link" href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>		
 </div>
 
-<div class="row">
+<div class="project-row">
 
-	<div class="projects-image">
-   		<a href="http://sanisidro.neiljoshua.com" target="_blank" ><img src="../src/images/sanisidro.jpg" alt="Wordpress" ></a>
+	<div class="project-image">
+   		<a class="project-image__link" href="http://sanisidro.neiljoshua.com" target="_blank" >
+   			<img class="project-image__img" src="../src/images/sanisidro.jpg" alt="Wordpress" >
+   		</a>
    	</div>	
 
-   	<div class="projects-text">
-		<ul>
-			<li>WordPress</li>
-			<li>PHP</li>
-			<li>ACF</li>
-			<li>Sass</li>
-			<li>JavaScript</li>
-			<li>HTML5</li>
-			<li>Responsive</li>
+   	<div class="project-copy">
+		<ul class="project-copy__list">
+			<li class="project-copy__item" >WordPress</li>
+			<li class="project-copy__item" >PHP</li>
+			<li class="project-copy__item" >ACF</li>
+			<li class="project-copy__item" >Sass</li>
+			<li class="project-copy__item" >JavaScript</li>
+			<li class="project-copy__item" >HTML5</li>
+			<li class="project-copy__item" >Responsive</li>
 		</ul>
 	</div>
 
 </div>
 
-<footer>
+<footer class="footer-site">
 <?php
 	include('../src/includes/footer.php')
 ?>			

@@ -1,12 +1,18 @@
 		    
-		    	<div class="email-container">
-			    	<a href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
+		    	<div class="footer-site__email">
+			    	<a class="footer-site__link" href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
 		    	</div>
 		    	
-        		<div class="social">	
-                  <a href="http://twitter.com/NeilJMV" target="_blank"><i class="icon-twitter"></i></a>
-                  <a href="http://www.linkedin.com/in/neiljoshua" target="_blank"><i class="icon-linkedin-squared"></i></a>
-                  <a href="http://www.instagram.com/neiljoshua/" target="_blank"><i class="demo-icon icon-instagram"></i></a>
+        		<div class="footer-site__social">	
+                  <a class="footer-site__link" href="http://twitter.com/NeilJMV" target="_blank">
+                  	<i class="footer-site__icon icon-twitter"></i>
+                  </a>
+                  <a class="footer-site__link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">
+                  	<i class="footer-site__icon icon-linkedin-squared"></i>
+                  </a>
+                  <a class="footer-site__link" href="http://www.instagram.com/neiljoshua/" target="_blank">
+                  	<i class="footer-site__icon icon-instagram"></i>
+                  </a>
                 </div>  
 		    </footer>	
 	    </div>

@@ -1,4 +1,4 @@
-<?php $thisPage="contact"; ?>
+ <?php $thisPage="contact"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
@@ -6,7 +6,6 @@
 ?>		
 
 <div class="contact-hero">
-	<h1 class="center" > Drop me a line!</h1>
 </div>	
 
 <div class="contact-form-container">
@@ -22,12 +21,12 @@
 		<textarea id="user-message-text" name="user-message" required> </textarea>
 		<button>Submit</button>
 		<div class="contact-message">
-			<p class="center">Thank you for the message!</p>
+			<p class="contact-message__message center">Thank you for the message!</p>
 		</div>
 	</form>
 </div>	
 
-<footer>
+<footer class="footer-site">
 <?php
 	include('src/includes/footer.php')
 ?>		

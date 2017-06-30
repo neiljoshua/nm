@@ -10,12 +10,19 @@ section {
 input[type="text"], select, textarea {
 	font-family: 'catamaran-Thin';
 	font-size: 22px;
+	border-radius: 0;
 }
 
 input[type="text"] {
-	border-bottom: 1px solid $gray;
-	width: 320px;
+	@include media-min-width(mobile) { 
+		width: 320px;
+	}
+	@include media-max-width(mobile) {
+		width: 95%;
+		margin:25px 0;
+	}
 	padding: 10px 0;
+	border-bottom: 1px solid $gray;
 }
 
 
@@ -28,19 +35,32 @@ select {
 }
 
 fieldset {
-	margin-top:50px;
-	margin-bottom: 40px;
-	*:first-child {
-		margin-right: 40px;
+	@include media-min-width(mobile) {
+		margin-top:50px;
+		margin-bottom: 40px;
+		*:first-child {
+			margin-right: 40px;
+		}
+	}
+	@include media-max-width(mobile) {
+		margin: 0;
+		// *:first-child {
+		// 	margin: 0;
+		// }
 	}
 }
 
 textarea {
     display: block;
-    width: 100%;
+    @include media-max-width(mobile) {
+    	width: 90%
+    }
+    @include media-min-width(mobile) {
+	    width: 100%;
+    }
 	border: 1px solid;
     padding: 20px 10px 80px;
-    margin: 50px auto 0;
+    margin: 70px auto 0;
     max-width: 675px;
 }
 

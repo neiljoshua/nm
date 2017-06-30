@@ -1,31 +1,38 @@
 /** About section**/
 
-.photo-about-content{
-	margin: 30px auto;
-	width: 350px;
+.photo {
+	@include media-min-width (mobile) {
+		margin: 30px auto;
+		width: 350px;
+	}
+	@include media-max-width(mobile) {
+		width: 90%;
+		margin: 0 auto;
+	}
 	height: 350px;
 	overflow: hidden;
-	a {
-		text-decoration: underline;
-	}
+}
+
+.photo_image {
+	text-decoration: underline;
 }
 
 .about-content {
 	min-height: 32vh;
 	margin: 40px auto;
 	padding: 30px 0 40px;
-	p {
-		max-width: 720px;
-		margin: 60px auto;
-		@include media-max-width(large) {
-			padding: 0 25px;
-		}
-		@include media-min-width(large) {
-			padding: 0 60px;
-		}
-		letter-spacing: 1.5px;
-		line-height: 150%;
-		font-size: 20px;
-		font-weight: 100;
+}	
+.about-content__copy {
+	max-width: 720px;
+	margin: 60px auto;
+	@include media-max-width(large) {
+		padding: 0 25px;
 	}
+	@include media-min-width(large) {
+		padding: 0 60px;
+	}
+	letter-spacing: 1.5px;
+	line-height: 150%;
+	font-size: 20px;
+	font-weight: 100;
 }

@@ -13,12 +13,18 @@
 		<script src="/nm.min.js"></script>
 		<script type="text/javascript" src="/src/js/plugins/slick.min.js"></script>
 	</head>
-	<body <?php if ($thisPage=="index") echo " class=\"home\"";?>>
+	<body <?php if ($thisPage=="index") {
+			echo "class=\"home\"";
+		} else {
+			echo "class=\"$thisPage\"";
+		}?>>
 
 		<div class="wrapper">
 			<header>
-				<a  id="logo" <?php if ( $thisPage=="index" ) echo " class=\"logo-white\""; ?> href="/"><i class="demo-icon icon-home-circled"></i></a>
-				<a  href="#" class="c-hamburger <?php if ($thisPage=="index") echo "white-burger"; ?> c-hamburger--rot"  > 
-					<span>toggle menu</span> </a> 
+				<a class="logo <?php if ( $thisPage=="index" ) echo "logo--white"; ?>" href="/" >
+					<i class="logo__icon icon-home-circled"></i>
+				</a>
+				<a  href="#" class="c-hamburger <?php if ($thisPage=="index") echo "white-burger"; ?> c-hamburger--rot"  > 	<span>toggle menu</span> 
+				</a> 
 			</header>	
 	

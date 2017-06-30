@@ -26,12 +26,12 @@ $(document).ready(function() {
       e.preventDefault();
       var $body = $('body');
       $(this).toggleClass('is-active');
-      $('body').toggleClass('overlay-active');
+      $($body).toggleClass('menu-active');
       if ( $body.hasClass('home') ){
-        $('.overlay').toggleClass('active-home');
-        $('#logo').toggleClass('logo-white');
+        $('.menu').toggleClass('menu-active-home');
+        // $('.logo').toggleClass('logo--white');
       } else {
-        $('.overlay').toggleClass('active');
+        $('.menu').toggleClass('menu-active');
       }
 
   });
@@ -95,7 +95,7 @@ $(document).ready(function() {
            {
               $('form input').val('');
               $('textarea').val('');
-              $('.contact-message').addClass('visible');
+              $('.contact-message__message').addClass('contact-message--visible');
               $('body').addClass('submitted')
            }
          })
@@ -108,8 +108,8 @@ $(document).ready(function() {
   });
 
   $(document).on('click', function() {
-    $('.contact-message').removeClass('visible');
-    $('body').removeClass('submitted');
+    $('.contact-message__message').removeClass('contact-message--visible');
+    $('.wrapper').removeClass('submitted');
   })
 
   

@@ -1,118 +1,61 @@
 /** projects Layout **/
 
-
-.projects-list {
-	padding: 30px 0;
-	.menu-item {
-		margin: 90px auto;
-		font-size: 0;
-		&:first-child {
-			margin: 20px auto 100px;
-		}
-		a {
-			display: inline-block;
-			font-size: 70px;
-			font-family: 'Catamaran-Thin';
-			color: $black;
-			&:hover{
-				color: $green;
-				i {
-					font-size: 25px;
-					color: $green;
-					visibility: visible;
-					padding-left: 10px;
-					transition: all .4s ease-in;
-				}
-			}
-		i {
-			display: inline-block;
-			width: 0;
-			font-size: 10px;
-			color: $green;
-			vertical-align: middle;
-			padding-left: 0;
-			visibility: hidden;
-			transition: all .1s ease-in;
-		  }	
-		}
-	}
-}
-
-.project-title {
-	margin: 90px 0 15px;
-	h1{
-		font-size: 75px;
-	}
-}
-
-.row {
-	min-height: 55vh;
-    padding: 5vh 0;
-    font-size: 0;
-    p {
-    	padding: 0 10% 5%;
-    	font-size: 22px;
-    	color: $black;
-    	line-height: 1.5;
-    }
-}
-
-.projects-image {
-	display: inline-block;
-	vertical-align: middle;
-	width: 75%;
-	a {
-	 	display: block;
-	  	padding: 0 0 0 5%;
-		filter: grayscale(0);
-		img {
-			width: 100%;
-		}
+.projects {
+	@include media-min-width (tablet) {
+		padding: 30px 0;
 	}	
-}
-
-.projects-text {
-	display: inline-block;
-	vertical-align: middle;
-	width: 25%;
-	ul{
-		text-align: center;
-		li {
-			margin-bottom: 5px;
-			margin-left: 10px;
-			font-size: 28px;
-			letter-spacing: 2px;
-			line-height: 150%;
-		}
+	@include media-max-width(mobile) {
+		padding-bottom: 0;
 	}
 }
+.projects__item {
+	margin: 90px auto;
+	font-size: 0;
+}	
+.projects__link {
+	display: inline-block;
+	font-family: 'Catamaran-Thin';
+	color: $black;
+	@include media-max-width( mobile ) {
+		font-size: 42px;
+	}
+	@include media-min-width ( mobile ) {
+		font-size: 70px;
+	}
+	@include media-min-width( tablet ) {
+		&:hover {
+			color: $green;
+		}
+	}
+	@include media-min-width( tablet ) {
+		&:hover{
+			color: $green;
+			.projects__icon {
+				font-size: 25px;
+				color: $green;
+				visibility: visible;
+				padding-left: 10px;
+				transition: all .4s ease-in;
+			}
+		}
+	}
+}	
 
-.paragraph {
+.projects__icon {
+	display: inline-block;
+	width: 0;
+	font-size: 10px;
+	color: $green;
+	vertical-align: middle;
+	padding-left: 0;
+	visibility: hidden;
+	transition: all .1s ease-in;
+}
+
+.projects_copy {
 	min-height: 5vh;
     margin: 35px auto;
 	padding: 30px;
     font-size: 18px;
 	color: $silver;
-}
-
-.buttons {
-	display: block;
-	width: 100%;
-	margin: 30px auto 50px;
-	a {
-		display: inline-block;
-	    margin: 0 10px;
-	    padding: 10px;
-	    width: 120px;
-	    height: 10px;
-	    color: $white;
-	    line-height: 10px;
-	    font-size: 18px;
-	    font-family: 'Catamaran-Thin';
-	    font-weight: 100;
-	    background-color: $silver;
-		&:hover {
-			background-color: $black;
-		}
-	}
 }

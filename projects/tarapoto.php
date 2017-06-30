@@ -7,34 +7,36 @@
 
 
 <div class="project-title">
-	<h1 >Tarapoto Resort</h1>
+	<h1 class="project-title__text" >Tarapoto Resort</h1>
 </div>
 
-<div class="buttons">
-	<a href="projects.php">Back to Projects</a>
-	<a href="http://tarapoto.neiljoshua.com" target="_blank">View Project</a>		
+<div class="button">
+	<a class="button__link" href="projects.php">Back to Projects</a>
+	<a class="button__link" href="http://tarapoto.neiljoshua.com" target="_blank">View Project</a>		
 </div>
 
-<div class="row">
+<div class="project-row">
 
-	<div class="projects-image">
-   		<a href="http://tarapoto.neiljoshua.com" target="_blank" ><img src="../src/images/tarapoto.jpg" alt="tarapoto Resort" ></a>
+	<div class="project-image">
+   		<a class="project-image__link" href="http://tarapoto.neiljoshua.com" target="_blank" >
+   			<img class="project-image__img" src="../src/images/tarapoto.jpg" alt="tarapoto Resort" >
+   		</a>
    	</div>	
 
-   	<div class="projects-text">
-		<ul>
-			<li>Microsite</li>
-			<li>Responsive</li>
-			<li>HMTL5</li>
-			<li>Sass</li>
-			<li>PHP</li>
-			<li>JavaScript</li>
+   	<div class="project-copy">
+		<ul class="project-copy__list" >
+			<li class="project-copy__item" >Microsite</li>
+			<li class="project-copy__item" >Responsive</li>
+			<li class="project-copy__item" >HMTL5</li>
+			<li class="project-copy__item" >Sass</li>
+			<li class="project-copy__item" >PHP</li>
+			<li class="project-copy__item" >JavaScript</li>
 		</ul>
 	</div>
 
 </div>
 
-<footer>
+<footer class="footer-site">
 <?php
 	include('../src/includes/footer.php')
 ?>	
