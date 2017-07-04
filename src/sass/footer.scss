@@ -48,7 +48,9 @@
 
 .footer-site__link {
 		display: inline-block;
-		margin-left: 20px;
+		@include media-min-width (mobile) {
+			margin-left: 20px;
+		}	
 }
 
 .footer-site__icon {

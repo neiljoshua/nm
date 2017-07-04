@@ -45,13 +45,13 @@
 }
 
 .project-row {
-	@include media-min-width (tablet) {
+	@include media-min-width (large) {
 		min-height: 55vh;
 	  	padding: 4vh 0;
 	  	margin-bottom: 8vh;
 	  	font-size: 0;
 	}
-  	@include media-max-width (mobile) {
+  	@include media-max-width (large) {
   		overflow: hidden;
 		clear: both;
 		margin: 0;
@@ -62,10 +62,10 @@
 .project-image {
 	display: inline-block;
 	vertical-align: middle;
-	@include media-min-width (tablet) {
-		width: 75%;
+	@include media-min-width (large) {
+		width: 70%;
 	}
-	@include media-max-width (tablet) {
+	@include media-max-width (large) {
 		width: 100%;
 		margin: 25px auto;
 	}
@@ -73,10 +73,10 @@
 
 .project-image__link {
  	display: block;
-  	@include media-min-width (tablet) {
+  	@include media-min-width (large) {
   		padding: 0 0 0 5%;
   	}
- 	@include media-max-width (tablet) {
+ 	@include media-max-width (large) {
  		padding: 0 20px;
  	}
 }
@@ -88,10 +88,10 @@
 .project-copy {
 	display: inline-block;
 	vertical-align: middle;
-	@include media-min-width (tablet) {
-		width: 25%;
+	@include media-min-width (large) {
+		width: 30%;
 	}
-	@include media-max-width (tablet) {
+	@include media-max-width (large) {
 		width: 100%;
 		margin: 25px auto 50px;
 	}
@@ -108,4 +108,8 @@
 	font-size: 28px;
 	letter-spacing: 2px;
 	line-height: 150%;
+	@include media-min-width(tablet) {
+		width: 90%;
+		margin: 0 auto;
+	}
 }

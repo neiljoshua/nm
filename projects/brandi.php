@@ -13,9 +13,9 @@
 		<a class="button__link" href="http://www.brandi.neiljoshua.com" target="_blank">View Project</a>		
 	</div>
 	
-	<div class="project-row ">
+	<div class="project-row">
 
-		<div class="project-iamge">
+		<div class="project-image">
 	   		<a class="project-image__link" href="http://www.brandi.neiljoshua.com" target="_blank" >
 	   			<img class="project-image__img" src="../src/images/brandiscreen.jpg" alt="Brandi Project" >
 	   		</a>
