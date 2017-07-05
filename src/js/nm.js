@@ -9,8 +9,8 @@ $(document).ready(function() {
     autoplay: true,
     speed: 200,
     fade: true,
-    centerMode: true,
     cssEase: 'linear',
+    pauseOnHover: false,
     dots: false,
     prevArrow: false,
     nextArrow: false

@@ -166,33 +166,27 @@ p {
 .slick-container {
 	@include prefix(background-size, cover, webkit ms o );
 	background-position: center center;
-	filter: grayscale(50%);
-	img {
-		visibility: hidden;
-	}
+}
+
+.source {
+	visibility: hidden;
 }
 
 .slider {
 	display: block;
 	margin: 0 auto;
+	@include media-min-width(large) {
+		height: 100vh;
+	}
 	@include media-max-width(large) {
 		width: 90vw;
 		height: 50vh;
 		padding-bottom: 10vh;
 	}
-	@include media-min-width(large) {
-		float: left;
-		width: 100vw;
-		height: 100vh;
-	}
 }
 
 .slick-track, .slick-container, .slick-slide, .slick-list {
 	width: 100%;
-	height: 100%;
-}
-
-.slick-slide {
 	height: 100%;
 }
 
