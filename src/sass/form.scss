@@ -14,15 +14,13 @@ input[type="text"], select, textarea {
 }
 
 input[type="text"] {
+	width: 95%;
+	margin:25px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid $gray;
 	@include media-min-width(mobile) { 
 		width: 320px;
 	}
-	@include media-max-width(mobile) {
-		width: 95%;
-		margin:25px 0;
-	}
-	padding: 10px 0;
-	border-bottom: 1px solid $gray;
 }
 
 
@@ -35,6 +33,7 @@ select {
 }
 
 fieldset {
+	margin: 0;
 	@include media-min-width(mobile) {
 		margin-top:50px;
 		margin-bottom: 40px;
@@ -42,26 +41,18 @@ fieldset {
 			margin-right: 40px;
 		}
 	}
-	@include media-max-width(mobile) {
-		margin: 0;
-		// *:first-child {
-		// 	margin: 0;
-		// }
-	}
 }
 
 textarea {
     display: block;
-    @include media-max-width(mobile) {
-    	width: 90%
-    }
+    width: 90%;
+    max-width: 675px;
+    padding: 20px 10px 80px;
+    margin: 70px auto 0;
+	border: 1px solid;
     @include media-min-width(mobile) {
 	    width: 100%;
     }
-	border: 1px solid;
-    padding: 20px 10px 80px;
-    margin: 70px auto 0;
-    max-width: 675px;
 }
 
 button {

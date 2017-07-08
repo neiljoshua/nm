@@ -29,7 +29,7 @@ $(document).ready(function() {
       $($body).toggleClass('menu-active');
       if ( $body.hasClass('home') ){
         $('.menu').toggleClass('menu-active-home');
-        // $('.logo').toggleClass('logo--white');
+        $('.logo').toggleClass('logo--white');
       } else {
         $('.menu').toggleClass('menu-active');
       }

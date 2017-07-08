@@ -30,17 +30,17 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-}	
 
-.contact-message__message {
-	font-size: 25px;
-	padding: 50px 30px;
-	color: $white;
-	background: $silver;
-	letter-spacing: 3px;
-	border: 1px solid $black;
-	@include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
-	&.contact-message--visible {
-		visibility: visible;
+	&__message {
+		font-size: 25px;
+		padding: 50px 30px;
+		color: $white;
+		background: $silver;
+		letter-spacing: 3px;
+		border: 1px solid $black;
+		@include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
+		&.contact-message--visible {
+			visibility: visible;
+		}
 	}
-}
+}	

@@ -4,13 +4,13 @@
 		    	</div>
 		    	
         		<div class="footer-site__social">	
-                  <a class="footer-site__link" href="http://twitter.com/NeilJMV" target="_blank">
+                  <a class="footer-site__link social--link" href="http://twitter.com/NeilJMV" target="_blank">
                   	<i class="footer-site__icon icon-twitter"></i>
                   </a>
-                  <a class="footer-site__link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">
+                  <a class="footer-site__link social--link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">
                   	<i class="footer-site__icon icon-linkedin-squared"></i>
                   </a>
-                  <a class="footer-site__link" href="http://www.instagram.com/neiljoshua/" target="_blank">
+                  <a class="footer-site__link social--link" href="http://www.instagram.com/neiljoshua/" target="_blank">
                   	<i class="footer-site__icon icon-instagram"></i>
                   </a>
                 </div>  
