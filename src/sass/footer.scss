@@ -1,12 +1,10 @@
 .footer-site {
 	width: 100%;
-	padding: 90px 0;
-	// @include media-min-width(tablet) {
-	// 	padding: 90px 0;
-	// }
-	background-color: $black;
 	clear: both;
 	overflow: hidden;
+	margin-top: 10%;
+	padding: 90px 0;
+	background-color: $black;
 	z-index: 55;
 	&__email {
 		display: block;

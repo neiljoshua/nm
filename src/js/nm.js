@@ -28,8 +28,8 @@ $(document).ready(function() {
       $(this).toggleClass('is-active');
       $($body).toggleClass('menu-active');
       if ( $body.hasClass('home') ){
-        $('.menu').toggleClass('menu-active-home');
         $('.logo').toggleClass('logo--white');
+        $('.menu').toggleClass('menu-active-home');
       } else {
         $('.menu').toggleClass('menu-active');
       }
