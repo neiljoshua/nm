@@ -19,7 +19,7 @@
 				<img class="source" src="/src/images/slider1.jpg" alt="Wordpress" >
 			</div>
 			<div class="slick-container"> 
-				<img class="source" src="/src/images/slider2.jpg" alt="tarapoto Resort" >
+				<img class="source" src="/src/images/slider21.jpg" alt="tarapoto Resort" >
 			</div>
 			<div class="slick-container"> 
 				<img class="source" src="/src/images/slider3.jpg" alt="Brandi Project" >

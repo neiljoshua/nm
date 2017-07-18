@@ -19,7 +19,7 @@
 
 	<div class="project-image">
    		<a class="project-image__link" href="http://tarapoto.neiljoshua.com" target="_blank" >
-   			<img class="project-image__img" src="../src/images/tarapoto.jpg" alt="tarapoto Resort" >
+   			<img class="project-image__img" src="../src/images/darktarapoto.jpg" alt="tarapoto Resort" >
    		</a>
    	</div>	
 
