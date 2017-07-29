@@ -1,61 +1,61 @@
 .footer-site {
-	width: 100%;
-	clear: both;
-	overflow: hidden;
-	margin-top: 10%;
-	padding: 90px 0;
-	background-color: $black;
-	z-index: 55;
-	&__email {
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		@include media-min-width (mobile) {
-			float: left;
-			text-align: left;
-			width: 30%;
-			padding: 0 30px;
-			margin-bottom: 0;
-		}
-	}
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  margin-top: 10%;
+  padding: 90px 0;
+  background-color: $black;
+  z-index: 55;
+  &__email {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    @include media-min-width (mobile) {
+      float: left;
+      text-align: left;
+      width: 30%;
+      padding: 0 30px;
+      margin-bottom: 0;
+    }
+  }
 
-	&__link {
-		display: inline-block;
-		color: $white;
-		font-size: 20px;
-		&:hover{
-			color: $green;
-		}
-		span {
-			font-size: 60%;
-		}
-	}
-	&__social {
-		display: block;
-		width: 100%;
-		@include media-min-width (mobile) {
-			float: right;
-			width: 30%;
-			text-align: right;
-			padding-right: 30px;
-		}
-	}
+  &__link {
+    display: inline-block;
+    color: $white;
+    font-size: 20px;
+    &:hover{
+      color: $green;
+    }
+    span {
+      font-size: 60%;
+    }
+  }
+  &__social {
+    display: block;
+    width: 100%;
+    @include media-min-width (mobile) {
+      float: right;
+      width: 30%;
+      text-align: right;
+      padding-right: 30px;
+    }
+  }
 
-	&__icon {
-		display: block;
-		font-size: 25px;
-		color: $white;
-		&:hover {
-			color: $green;
-			border-bottom: none;
-		}
-		&.footer-site__icon--dark {
-			color: $black;
-		}
-	}
+  &__icon {
+    display: block;
+    font-size: 25px;
+    color: $white;
+    &:hover {
+      color: $green;
+      border-bottom: none;
+    }
+    &.footer-site__icon--dark {
+      color: $black;
+    }
+  }
 
-	.social--link {
-		margin: 0 10px;
-	}
+  .social--link {
+    margin: 0 10px;
+  }
 }
 

@@ -1,67 +1,67 @@
 /** projects Layout **/
 
 .projects {
-	@include media-min-width (tablet) {
-		padding: 30px 0;
-	}
-	@include media-max-width(mobile) {
-		padding-bottom: 0;
-	}
+  @include media-min-width (tablet) {
+    padding: 30px 0;
+  }
+  @include media-max-width(mobile) {
+    padding-bottom: 0;
+  }
 
-	&__item {
-		margin: 90px auto;
-		font-size: 0;
-		@include media-min-width(tablet) {
-			&:first-child {
-				margin-top: 10px;
-			}
-		}
-	}
+  &__item {
+    margin: 90px auto;
+    font-size: 0;
+    @include media-min-width(tablet) {
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
 
-	&__link {
-		display: inline-block;
-		font-family: 'Catamaran-Thin';
-		color: $black;
-		font-size: 42px;
-		@include media-min-width (mobile) {
-			font-size: 70px;
-		}
-		@include media-min-width(tablet) {
-			&:hover {
-				color: $green;
-			}
-		}
-		@include media-min-width(tablet) {
-			&:hover{
-				color: $green;
-				.projects__icon {
-					font-size: 25px;
-					color: $green;
-					visibility: visible;
-					padding-left: 10px;
-					transition: all .4s ease-in;
-				}
-			}
-		}
-	}
+  &__link {
+    display: inline-block;
+    font-family: 'Catamaran-Thin';
+    color: $black;
+    font-size: 42px;
+    @include media-min-width (mobile) {
+      font-size: 70px;
+    }
+    @include media-min-width(tablet) {
+      &:hover {
+        color: $green;
+      }
+    }
+    @include media-min-width(tablet) {
+      &:hover{
+        color: $green;
+        .projects__icon {
+          font-size: 25px;
+          color: $green;
+          visibility: visible;
+          padding-left: 10px;
+          transition: all .4s ease-in;
+        }
+      }
+    }
+  }
 
-	&__icon {
-		display: inline-block;
-		width: 0;
-		font-size: 10px;
-		color: $green;
-		vertical-align: middle;
-		padding-left: 0;
-		visibility: hidden;
-		transition: all .1s ease-in;
-	}
+  &__icon {
+    display: inline-block;
+    width: 0;
+    font-size: 10px;
+    color: $green;
+    vertical-align: middle;
+    padding-left: 0;
+    visibility: hidden;
+    transition: all .1s ease-in;
+  }
 
-	&__copy {
-		min-height: 5vh;
-	    margin: 35px auto;
-		padding: 30px;
-	    font-size: 18px;
-		color: $silver;
-	}
+  &__copy {
+    min-height: 5vh;
+      margin: 35px auto;
+    padding: 30px;
+      font-size: 18px;
+    color: $silver;
+  }
 
 }

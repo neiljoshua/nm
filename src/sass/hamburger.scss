@@ -75,38 +75,38 @@
 }
 
 .c-hamburger--rot {
-    // background-color: $black;
-    span {
-      transition: all 0.6s;
-      &::before, &::after{
-      }
-      &::before{
-        @extend %animation;
-        transition-property: top, transform;
-      }
-      &::after{
-        @extend %animation;
-        transition-property: bottom, transform;
-      }
+  // background-color: $black;
+  span {
+    transition: all 0.6s;
+    &::before, &::after{
     }
+    &::before{
+      @extend %animation;
+      transition-property: top, transform;
+    }
+    &::after{
+      @extend %animation;
+      transition-property: bottom, transform;
+    }
+  }
 }
 /* active state, i.e. menu open */
 .c-hamburger--rot.is-active {
+  background-color: $white;
+  span {
     background-color: $white;
-    span {
-      background-color: $white;
-        &::before, &::after{
-           background-color: $black;
-        }
-        &::before {
-          top: 0;
-          transform: rotate(45deg);
-          @extend %animation-active;
-        }
-        &::after {
-          bottom: 0;
-          transform: rotate(-45deg);
-          @extend %animation-active;
-        }
+    &::before, &::after{
+       background-color: $black;
     }
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+      @extend %animation-active;
+    }
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+      @extend %animation-active;
+    }
+  }
 }

@@ -1,76 +1,76 @@
 // / .overlay {
 .menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 0%;
-	background-color: $white;
-	opacity: 0;
-	z-index: 52;
-	@include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
-	transition: all 0.7s ease-in-out ;
-	&.menu-active {
-		width: 100%;
-		@include media-min-width(desktop) {
-			width: 30%;
-		}
-		opacity: 1;
-		transition: all 0.6s ease-in-out ;
-	}
-	&.menu-active-home {
-		width: 100%;
-		@include media-min-width(desktop) {
-			width: 50%;
-		}
-		opacity: 1;
-		transition: all 0.6s ease-in-out ;
-	}
-	&__list {
-		position: absolute;
-		display: block;
-		width: 100%;
-		text-align: center;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0%;
+  background-color: $white;
+  opacity: 0;
+  z-index: 52;
+  @include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms o );
+  transition: all 0.7s ease-in-out ;
+  &.menu-active {
+    width: 100%;
+    @include media-min-width(desktop) {
+      width: 30%;
+    }
+    opacity: 1;
+    transition: all 0.6s ease-in-out ;
+  }
+  &.menu-active-home {
+    width: 100%;
+    @include media-min-width(desktop) {
+      width: 50%;
+    }
+    opacity: 1;
+    transition: all 0.6s ease-in-out ;
+  }
+  &__list {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-	&__item {
-		margin-bottom: 30px;
+  &__item {
+    margin-bottom: 30px;
 
-	}
+  }
 
-	&__link {
-		color: $black;
-		font-size: 42px;
-		@include media-min-width(mobile) {
-			font-size: 60px;
-		}
-		letter-spacing: 4px;
-		&:hover, &:active {
-			color: $green;
-		}
-		&.menu__link-homepage {
-			color: $green;
-			&:hover, &:active {
-				color: $black;
-			}
-		}
-	}
+  &__link {
+    color: $black;
+    font-size: 42px;
+    @include media-min-width(mobile) {
+      font-size: 60px;
+    }
+    letter-spacing: 4px;
+    &:hover, &:active {
+      color: $green;
+    }
+    &.menu__link-homepage {
+      color: $green;
+      &:hover, &:active {
+        color: $black;
+      }
+    }
+  }
 }
 
 #currentpage {
-	.menu__link {
-		font-size: 42px;
-		font-weight: 600;
-		color: $green;
-		@include media-min-width(mobile) {
-			font-size: 60px;
-		}
-		&.home-page-a {
-			color: $green;
-		}
-	}
+  .menu__link {
+    font-size: 42px;
+    font-weight: 600;
+    color: $green;
+    @include media-min-width(mobile) {
+      font-size: 60px;
+    }
+    &.home-page-a {
+      color: $green;
+    }
+  }
 }
 
 
