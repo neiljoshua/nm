@@ -15,14 +15,14 @@ $(document).ready(function() {
     prevArrow: false,
     nextArrow: false
   });
-     
+
   $('.slick-container').each(function() {
     var imgURL = $(this).find('img').attr('src');
     $(this).css('background-image', 'url(' + imgURL + ')');
-  });   
+  });
 
   $('.c-hamburger').on('click', function(e){
-    
+
       e.preventDefault();
       var $body = $('body');
       $(this).toggleClass('is-active');
@@ -37,7 +37,7 @@ $(document).ready(function() {
   });
 
 
-    
+
 // Email Validation
 
   window.validateEmail = function( emails ) {
@@ -112,6 +112,6 @@ $(document).ready(function() {
     $('.wrapper').removeClass('submitted');
   })
 
-  
 
-}); // End of doc ready.  
+
+}); // End of doc ready.

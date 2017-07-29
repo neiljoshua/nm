@@ -78,7 +78,7 @@ p {
 	    	margin-left: 0;
 	    }
 	}
-}	
+}
 
 .logo--white {
 	.logo__icon {
@@ -118,7 +118,7 @@ p {
 		font-size: 40px;
 		@include media-min-width (mobile) {
 			font-size: 55px;
-		} 
+		}
 		@include media-min-width (desktop) {
 			font-size: 70px;
 		}
@@ -131,7 +131,7 @@ p {
 		}
 	}
 
-	&__title, 
+	&__title,
 	&__copy {
 		font-weight: 100;
 		color: $white;
@@ -150,7 +150,7 @@ p {
 .page-title {
 	margin: 80px auto;
 	letter-spacing: 5px;
-	&__title { 
+	&__title {
 		font-weight: 100;
 		font-size: 50px;
 		@include media-min-width (mobile) {
