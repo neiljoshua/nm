@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="slider-container">
+<!--   <div class="slider-container"> -->
 
     <div class="slider">
       <div class="slick-container">
@@ -26,11 +26,9 @@
       </div>
     </div>
 
-  </div>
+  <!-- </div> -->
 
-</div>
-
-<footer class="invisible">
+<footer class="hidden">
 <?php
     include('src/includes/footer.php')
 ?>

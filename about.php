@@ -24,7 +24,7 @@
 
 </div>
 
-<footer class="footer-site">
+<footer class="footer">
 <?php
   include('src/includes/footer.php')
 ?>

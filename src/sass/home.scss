@@ -1,0 +1,123 @@
+.home {
+	overflow: hidden;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $black;
+}
+
+.menu-active {
+	overflow: hidden;
+}
+
+.logo {
+	position: fixed;
+	top: 10px;
+	left:3px;
+	z-index: 90;
+	text-decoration: none;
+	cursor: pointer;
+	@include media-min-width(mobile) {
+		left:5px;
+	}
+	&__icon {
+			display: block;
+			font-size: 35px;
+			color: $black;
+			height: 40px;
+			line-height: 40px;
+			&::before, &::after {
+				margin-right: 0;
+				margin-left: 0;
+			}
+	}
+}
+
+.logo--white {
+	.logo__icon {
+	 color: $white;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.home-hero {
+	display: block;
+	width: 100vw;
+	height: 40vh;
+	color: $white;
+	text-align: center;
+	@include animation('show-elemet 0.7s ease-in');
+	@include media-min-width(desktop) {
+		float: left;
+		height: 100vh;
+		width: 50vw;
+	}
+	&__item {
+		position: absolute;
+		width: 100%;
+		top: 10%;
+		@include media-min-width (desktop) {
+			width: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__title {
+		font-size: 35px;
+		@include media-min-width (mobile) {
+			font-size: 55px;
+		}
+		@include media-min-width (desktop) {
+			font-size: 70px;
+		}
+	}
+
+	&__copy {
+		font-size: 25px;
+		@include media-min-width (mobile) {
+			font-size: 40px;
+		}
+	}
+
+	&__title,
+	&__copy {
+		color: $white;
+		margin-bottom: 20px;
+	}
+
+}
+
+.slider {
+	display: block;
+	margin: 0 auto;
+	width: 90vw;
+	height: 50vh;
+	@include media-min-width(mobile) {
+		width: 80vw;
+	}
+	@include media-min-width(desktop) {
+		float: left;
+		width: 50vw;
+		height: 100vh;
+	}
+	.slick-container {
+		@include prefix(background-size, cover, webkit ms o );
+		background-position: center center;
+	}
+}
+
+.slick-track,
+.slick-list {
+	width: 100%;
+	height: 100%;
+}
+
+.source {
+	visibility: hidden;
+}

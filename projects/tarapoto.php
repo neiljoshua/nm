@@ -17,12 +17,12 @@
 <div class="project-row">
 
 	<div class="project-image">
-   		<a class="project-image__link" href="http://tarapoto.neiljoshua.com" target="_blank" >
-   			<img class="project-image__img" src="../src/images/darktarapoto.jpg" alt="tarapoto Resort" >
-   		</a>
-   	</div>
+			<a class="project-image__link" href="http://tarapoto.neiljoshua.com" target="_blank" >
+				<img class="project-image__img" src="../src/images/darktarapoto.jpg" alt="tarapoto Resort" >
+			</a>
+		</div>
 
-   	<div class="project-copy">
+		<div class="project-copy">
 		<ul class="project-copy__list" >
 			<li class="project-copy__item" >Microsite</li>
 			<li class="project-copy__item" >Responsive</li>
@@ -35,7 +35,7 @@
 
 </div>
 
-<footer class="footer-site">
+<footer class="footer">
 <?php
 	include('../src/includes/footer.php')
 ?>

@@ -1,20 +1,19 @@
-		    
-		    	<div class="footer-site__email">
-			    	<a class="footer-site__link" href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
-		    	</div>
-		    	
-        		<div class="footer-site__social">	
-                  <a class="footer-site__link social--link" href="http://twitter.com/NeilJMV" target="_blank">
-                  	<i class="footer-site__icon icon-twitter"></i>
-                  </a>
-                  <a class="footer-site__link social--link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">
-                  	<i class="footer-site__icon icon-linkedin-squared"></i>
-                  </a>
-                  <a class="footer-site__link social--link" href="http://www.instagram.com/neiljoshua/" target="_blank">
-                  	<i class="footer-site__icon icon-instagram"></i>
-                  </a>
-                </div>  
-		    </footer>	
+
+			    	<a class="footer__email" href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
+
+        		<div class="footer-social">
+	            <a class="footer-social__link" href="http://twitter.com/NeilJMV" target="_blank">
+	            	<i class="footer-social__icon icon-twitter"></i>
+	            </a>
+	            <a class="footer-social__link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">
+	            	<i class="footer-social__icon icon-linkedin-squared"></i>
+	            </a>
+	            <a class="footer-social__link" href="http://www.instagram.com/neiljoshua/" target="_blank">
+	            	<i class="footer-social__icon icon-instagram"></i>
+	            </a>
+             </div>
+
+		    </footer>
 	    </div>
 
       <script>

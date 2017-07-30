@@ -4,15 +4,15 @@
 ?>
 
 <?php include('../src/includes/navigation.php')
-?>	
+?>
 
 <div class="project-title">
 	<h1 class="project-title__text" >San Isidro</h1>
 </div>
-	
+
 <div class="button">
 	<a class="button__link" href="projects.php"> Back to Projects</a>
-	<a class="button__link" href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>		
+	<a class="button__link" href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>
 </div>
 
 <div class="project-row">
@@ -21,7 +21,7 @@
    		<a class="project-image__link" href="http://sanisidro.neiljoshua.com" target="_blank" >
    			<img class="project-image__img" src="../src/images/sanisidro.jpg" alt="Wordpress" >
    		</a>
-   	</div>	
+   	</div>
 
    	<div class="project-copy">
 		<ul class="project-copy__list">
@@ -37,7 +37,7 @@
 
 </div>
 
-<footer class="footer-site">
+<footer class="footer">
 <?php
 	include('../src/includes/footer.php')
-?>			
+?>

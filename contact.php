@@ -3,10 +3,10 @@
 	include('src/includes/header.php')
 ?>
 <?php include('src/includes/navigation.php')
-?>		
+?>
 
 <div class="contact-hero">
-</div>	
+</div>
 
 <div class="contact-form-container">
 	<form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
@@ -20,13 +20,13 @@
 		</fieldset>
 		<textarea id="user-message-text" name="user-message" required> </textarea>
 		<button>Submit</button>
-		<div class="contact-message">
-			<p class="contact-message__message center">Thank you for the message!</p>
+		<div class="success">
+			<p class="success__message center">Thank you for the message!</p>
 		</div>
 	</form>
-</div>	
+</div>
 
-<footer class="footer-site">
+<footer class="footer">
 <?php
 	include('src/includes/footer.php')
-?>		
+?>

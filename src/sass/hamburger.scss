@@ -61,21 +61,16 @@
   }
 
   &.white-burger {
-    // background-color: $black;
-    // background: $white;
     span {
       background: $white;
-      // background-color: $black;
       &::before, &::after{
         background: $white;
-        // background-color:  /$black;
       }
     }
   }
 }
 
 .c-hamburger--rot {
-  // background-color: $black;
   span {
     transition: all 0.6s;
     &::before, &::after{

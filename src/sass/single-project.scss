@@ -1,11 +1,10 @@
 .project-title {
 
-	margin: 90px 0 15px;
+	margin-top: 50px;
 	&__text {
 		font-size: 50px;
-		@include media-min-width (tablet) {
+		@include media-min-width(tablet) {
 			font-size: 70px;
-		  margin-bottom: 40px;
 		}
 	}
 }
@@ -13,7 +12,7 @@
 .button {
 	display: block;
 	width: 100%;
-	margin: 30px auto 50px;
+	margin: 20px auto;
 	&__link {
 		display: inline-block;
 		margin: 5px 0;
@@ -30,7 +29,7 @@
 	    height: 10px;
 	    color: $white;
 	    line-height: 10px;
-	    font-size: 21px;
+	    font-size: 22px;
 	    font-family: 'Catamaran-thin';
 	    background-color: $silver;
 
@@ -43,32 +42,33 @@
 	clear: both;
 	margin: 0;
 	padding: 0;
-	@include media-min-width (desktop) {
-		min-height: 55vh;
-	  	padding: 4vh 0;
-	  	margin-bottom: 8vh;
-	  	font-size: 0;
+	@include media-min-width(desktop) {
+		margin-bottom: 80px;
+		font-size: 0;
 	}
 }
 
 .project-image {
-	width: 100%;
 	margin: 25px auto;
 	display: inline-block;
 	vertical-align: middle;
-	@include media-min-width (desktop) {
+	@include media-min-width(desktop) {
 		width: 70%;
 	}
 	&__link {
 	 	display: block;
 	 	padding: 0 20px;
-	  	@include media-min-width (desktop) {
+	  	@include media-min-width(desktop) {
 	  		padding: 0 0 0 5%;
 	  	}
 	}
 
 	&__img {
 		width: 100%;
+		@include calc(min-height,100vw/(1200/694));
+		// @include media-max-width(tablet) {
+		// 	@include calc(min-height,100vw/(1200/700));
+		// }
 	}
 }
 
@@ -77,7 +77,7 @@
 	margin: 25px auto 50px;
 	display: inline-block;
 	vertical-align: middle;
-	@include media-min-width (desktop) {
+	@include media-min-width(desktop) {
 		width: 30%;
 	}
 	&__list {
@@ -86,11 +86,10 @@
 
 	&__item  {
 		margin-bottom: 5px;
-		font-family: 'Catamaran-Thin';
 		color: $black;
 		font-size: 28px;
-		letter-spacing: 2px;
-		line-height: 150%;
+		letter-spacing: 5px;
+		line-height: 1.8;
 		@include media-min-width(tablet) {
 			width: 90%;
 			margin: 0 auto;

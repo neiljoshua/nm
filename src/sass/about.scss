@@ -1,38 +1,30 @@
-/** About section**/
-
 .photo {
-  width: 90%;
-  margin: 0 auto;
-  height: 350px;
-  overflow: hidden;
-  @include media-min-width (mobile) {
-    width: 350px;
-    margin: 30px auto;
-  }
-  &_image {
-    text-decoration: underline;
-  }
+	overflow: hidden;
+	margin: 0 auto;
+	max-height: 300px;
+	@include media-min-width(mobile) {
+		max-height: 450px;
+	}
+	&__image {
+		margin: 10px auto;
+		@include calc(min-height,100vw/(720/264));
+	}
 }
 
 .about-content {
-  min-height: 32vh;
-  margin: 40px auto;
-  padding: 30px 0 40px;
-  &__copy {
-    max-width: 720px;
-    margin: 60px auto;
-    padding: 0 25px;
-    @include media-min-width(desktop) {
-      padding: 0 60px;
-    }
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 1.5px;
-    line-height: 150%;
-  }
+	padding: 30px 0 40px;
+	&__copy {
+		max-width: 720px;
+		margin: 60px auto;
+		padding: 0 25px;
+		font-size: 22px;
+		font-weight: 100;
+		letter-spacing: 1.5px;
+		line-height: 1.8;
+	}
 
-  &__link {
-    color: $black;
-    text-decoration: underline;
-  }
+	&__link {
+		color: $black;
+		text-decoration: underline;
+	}
 }
