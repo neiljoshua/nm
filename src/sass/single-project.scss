@@ -66,9 +66,6 @@
 	&__img {
 		width: 100%;
 		@include calc(min-height,100vw/(1200/694));
-		// @include media-max-width(tablet) {
-		// 	@include calc(min-height,100vw/(1200/700));
-		// }
 	}
 }
 

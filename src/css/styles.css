@@ -897,7 +897,7 @@ button:hover {
   min-height: calc(57.83333vw);
 }
 
-/* line 75, ../sass/single-project.scss */
+/* line 72, ../sass/single-project.scss */
 .project-copy {
   width: 100%;
   margin: 25px auto 50px;
@@ -905,16 +905,16 @@ button:hover {
   vertical-align: middle;
 }
 @media (min-width: 981px) {
-  /* line 75, ../sass/single-project.scss */
+  /* line 72, ../sass/single-project.scss */
   .project-copy {
     width: 30%;
   }
 }
-/* line 83, ../sass/single-project.scss */
+/* line 80, ../sass/single-project.scss */
 .project-copy__list {
   text-align: center;
 }
-/* line 87, ../sass/single-project.scss */
+/* line 84, ../sass/single-project.scss */
 .project-copy__item {
   margin-bottom: 5px;
   color: #000;
@@ -923,7 +923,7 @@ button:hover {
   line-height: 1.8;
 }
 @media (min-width: 769px) {
-  /* line 87, ../sass/single-project.scss */
+  /* line 84, ../sass/single-project.scss */
   .project-copy__item {
     width: 90%;
     margin: 0 auto;

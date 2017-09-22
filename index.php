@@ -7,7 +7,7 @@
 
   <div class="home-hero">
     <div class="home-hero__item">
-      <h1 class="home-hero__title" > Neil Malpartida</h1>
+      <h1 class="home-hero__title" > Neil McGrath</h1>
       <p class="home-hero__copy" > Web Developer</p>
     </div>
   </div>
