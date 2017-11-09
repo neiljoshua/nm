@@ -32,6 +32,8 @@
 			<li class="project-copy__item" >JavaScript</li>
 			<li class="project-copy__item" >HTML5</li>
 			<li class="project-copy__item" >Responsive</li>
+			<li class="project-copy__item" >Http/Ajax</li>
+			<li class="project-copy__item" >JSON</li>
 		</ul>
 	</div>
 
