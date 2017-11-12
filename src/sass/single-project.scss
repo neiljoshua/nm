@@ -43,6 +43,7 @@
 	margin: 0;
 	padding: 0;
 	@include media-min-width(desktop) {
+		margin-top: 60px;
 		margin-bottom: 80px;
 		font-size: 0;
 	}
@@ -65,7 +66,7 @@
 
 	&__img {
 		width: 100%;
-		@include calc(min-height,100vw/(1200/694));
+		@include calc(min-height,100vh/(1200/694));
 	}
 }
 

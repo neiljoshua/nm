@@ -53,6 +53,7 @@
 	text-align: center;
 	@include animation('show-elemet 0.7s ease-in');
 	@include media-min-width(desktop) {
+		position: relative;
 		float: left;
 		height: 100vh;
 		width: 50vw;
@@ -62,7 +63,6 @@
 		width: 100%;
 		top: 10%;
 		@include media-min-width (desktop) {
-			width: 50%;
 			top: 50%;
 			transform: translateY(-50%);
 		}

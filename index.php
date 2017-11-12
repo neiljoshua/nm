@@ -14,13 +14,13 @@
 
   <div class="slider">
     <div class="slick-container">
-      <img class="source" src="/src/images/slider/slider1.jpg" alt="Wordpress" >
+      <img class="source" src="/src/images/slider/slide1.jpg" alt="Wordpress" >
     </div>
     <div class="slick-container">
-      <img class="source" src="/src/images/slider/slider2.jpg" alt="Tarapoto Resort" >
+      <img class="source" src="/src/images/slider/slide2.jpg" alt="Tarapoto Resort" >
     </div>
     <div class="slick-container">
-      <img class="source" src="/src/images/slider/slider3.jpg" alt="Brandi Project" >
+      <img class="source" src="/src/images/slider/slide3.jpg" alt="Brandi Project" >
     </div>
   </div>
 
