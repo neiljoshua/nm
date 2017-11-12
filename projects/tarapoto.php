@@ -18,18 +18,18 @@
 
 	<div class="project-image">
 			<a class="project-image__link" href="http://tarapoto.neiljoshua.com" target="_blank" >
-				<img class="project-image__img" src="../src/images/darktarapoto.jpg" alt="tarapoto Resort" >
+				<img class="project-image__img" src="../src/images/projects/tarapoto.jpg" alt="Tarapoto Resort" >
 			</a>
 		</div>
 
 		<div class="project-copy">
 		<ul class="project-copy__list" >
-			<li class="project-copy__item" >Microsite</li>
-			<li class="project-copy__item" >Responsive</li>
-			<li class="project-copy__item" >HMTL5</li>
-			<li class="project-copy__item" >Sass</li>
-			<li class="project-copy__item" >PHP</li>
-			<li class="project-copy__item" >JavaScript</li>
+			<li class="project-copy__item">Microsite</li>
+			<li class="project-copy__item">Responsive</li>
+			<li class="project-copy__item">HMTL5</li>
+			<li class="project-copy__item">Sass</li>
+			<li class="project-copy__item">PHP</li>
+			<li class="project-copy__item">JavaScript</li>
 		</ul>
 	</div>
 

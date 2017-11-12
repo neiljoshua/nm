@@ -11,7 +11,7 @@
 </div>
 
 <div class="photo">
-  <img class="photo__image" src="/src/images/meforest.png">
+  <img class="photo__image" src="/src/images/about/meforest.png">
 </div>
 
 <div class="about-content">

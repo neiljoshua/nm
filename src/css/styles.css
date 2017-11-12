@@ -600,33 +600,37 @@ button:hover {
 }
 /* line 8, ../sass/projects.scss */
 .projects__item {
-  margin: 90px auto;
+  margin: 30px auto;
 }
 @media (min-width: 769px) {
-  /* line 11, ../sass/projects.scss */
+  /* line 8, ../sass/projects.scss */
+  .projects__item {
+    margin: 90px auto;
+  }
+  /* line 12, ../sass/projects.scss */
   .projects__item:first-child {
     margin-top: 10px;
   }
 }
-/* line 17, ../sass/projects.scss */
+/* line 18, ../sass/projects.scss */
 .projects__link {
   display: inline-block;
   color: #000;
   font-family: "Catamaran-thin";
-  font-size: 42px;
+  font-size: 30px;
 }
 @media (min-width: 601px) {
-  /* line 17, ../sass/projects.scss */
+  /* line 18, ../sass/projects.scss */
   .projects__link {
     font-size: 70px;
   }
 }
 @media (min-width: 769px) {
-  /* line 26, ../sass/projects.scss */
+  /* line 27, ../sass/projects.scss */
   .projects__link:hover {
     color: #4fb584;
   }
-  /* line 28, ../sass/projects.scss */
+  /* line 29, ../sass/projects.scss */
   .projects__link:hover .projects__icon {
     font-size: 25px;
     color: #4fb584;
@@ -635,7 +639,7 @@ button:hover {
     transition: all .4s ease-in;
   }
 }
-/* line 39, ../sass/projects.scss */
+/* line 40, ../sass/projects.scss */
 .projects__icon {
   visibility: hidden;
   display: inline-block;
@@ -646,7 +650,7 @@ button:hover {
   vertical-align: middle;
   transition: all .1s ease-in;
 }
-/* line 50, ../sass/projects.scss */
+/* line 51, ../sass/projects.scss */
 .projects__copy {
   margin: 35px auto;
   padding: 30px;
@@ -696,7 +700,7 @@ button:hover {
 
 /* line 2, ../sass/contact.scss */
 .contact-hero {
-  background: url("/src/images/macbook.jpg") center center no-repeat;
+  background: url("/src/images/contact/macbook.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;

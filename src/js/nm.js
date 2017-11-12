@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
   var scrollStart = 0;
-  var startChange = $('#startchange');
   var offset = 0;
 
   $('.slider').slick({
@@ -90,7 +89,6 @@ $(document).ready(function() {
            type: "POST",
            url: url,
            data: formdata,
-           // dataType: "json",
            success: function(response)
            {
               $('form input').val('');
@@ -99,10 +97,6 @@ $(document).ready(function() {
               $('body').addClass('submitted')
            }
          })
-        // .done(setTimeout(function(){
-        //       $('.contact-message').removeClass('visible');
-        //     }, 500)
-        //  );
         return false;
       }
   });

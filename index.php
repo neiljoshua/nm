@@ -7,26 +7,22 @@
 
   <div class="home-hero">
     <div class="home-hero__item">
-      <h1 class="home-hero__title" > Neil McGrath</h1>
-      <p class="home-hero__copy" > Web Developer</p>
+      <h1 class="home-hero__title"> Neil McGrath</h1>
+      <p class="home-hero__copy"> Web Developer</p>
     </div>
   </div>
 
-<!--   <div class="slider-container"> -->
-
-    <div class="slider">
-      <div class="slick-container">
-        <img class="source" src="/src/images/slider1.jpg" alt="Wordpress" >
-      </div>
-      <div class="slick-container">
-        <img class="source" src="/src/images/slider21.jpg" alt="tarapoto Resort" >
-      </div>
-      <div class="slick-container">
-        <img class="source" src="/src/images/slider3.jpg" alt="Brandi Project" >
-      </div>
+  <div class="slider">
+    <div class="slick-container">
+      <img class="source" src="/src/images/slider/slider1.jpg" alt="Wordpress" >
     </div>
-
-  <!-- </div> -->
+    <div class="slick-container">
+      <img class="source" src="/src/images/slider/slider2.jpg" alt="Tarapoto Resort" >
+    </div>
+    <div class="slick-container">
+      <img class="source" src="/src/images/slider/slider3.jpg" alt="Brandi Project" >
+    </div>
+  </div>
 
 <footer class="hidden">
 <?php
