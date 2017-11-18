@@ -64,7 +64,7 @@
 		top: 10%;
 		@include media-min-width (desktop) {
 			top: 50%;
-			@include prefix(transform, translateY(-50%));
+			@include prefix(transform, translateY(-50%), webkit ms);
 		}
 	}
 
@@ -107,7 +107,7 @@
 		height: 100vh;
 	}
 	.slick-container {
-		@include prefix(background-size, cover, webkit ms o );
+		@include prefix(background-size, cover, webkit ms);
 		background-position: center center;
 	}
 }

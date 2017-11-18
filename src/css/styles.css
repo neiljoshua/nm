@@ -335,11 +335,15 @@ button:hover {
 /* line 96, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span::before {
   top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 /* line 101, ../sass/hamburger.scss */
 .c-hamburger--rot.is-active span::after {
   bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -355,7 +359,6 @@ button:hover {
   z-index: 60;
   -webkit-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
   -ms-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
-  -o-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
   transition: all 0.7s ease-in-out;
 }
@@ -390,6 +393,8 @@ button:hover {
   width: 100%;
   text-align: center;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 /* line 37, ../sass/navigation.scss */
@@ -514,6 +519,8 @@ button:hover {
   /* line 61, ../sass/home.scss */
   .home-hero__item {
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 }
@@ -574,7 +581,6 @@ button:hover {
 .slider .slick-container {
   -webkit-background-size: cover;
   -ms-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
@@ -758,7 +764,6 @@ button:hover {
   border: 1px solid #000;
   -webkit-box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
   -ms-box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
-  -o-box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
 }
 /* line 34, ../sass/contact.scss */
