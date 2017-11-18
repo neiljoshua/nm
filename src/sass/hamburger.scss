@@ -95,12 +95,12 @@
     }
     &::before {
       top: 0;
-      transform: rotate(45deg);
+      @include prefix(transform, rotate(45deg));
       @extend %animation-active;
     }
     &::after {
       bottom: 0;
-      transform: rotate(-45deg);
+      @include prefix(transform, rotate(-45deg));
       @extend %animation-active;
     }
   }

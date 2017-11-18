@@ -24,7 +24,8 @@
 
 		<div class="project-copy">
 		<ul class="project-copy__list" >
-			<li class="project-copy__item">Microsite</li>
+			<li class="project-copy__item">Animation</li>
+			<li class="project-copy__item">SVG</li>
 			<li class="project-copy__item">Responsive</li>
 			<li class="project-copy__item">HMTL5</li>
 			<li class="project-copy__item">Sass</li>
