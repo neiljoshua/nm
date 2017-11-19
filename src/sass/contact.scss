@@ -2,7 +2,13 @@
 .contact-hero {
 	background: url('/src/images/contact/macbook.jpg') center center no-repeat;
 	@include prefix(background-size, cover, webkit ms o );
-	@include calc(min-height,100vw/(1200/694));
+	@include calc(min-height,125vw/(1200/694));
+	@include media-min-width(mobile) {
+		@include calc(min-height,120vw/(1200/694));
+	}
+	@include media-min-width(tablet) {
+		@include calc(min-height,80vw/(1200/694));
+	}
 }
 
 #contact-form {

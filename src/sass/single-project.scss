@@ -58,7 +58,6 @@
 	}
 	&__link {
 	 	display: block;
-	 	padding: 0 20px;
 	  	@include media-min-width(desktop) {
 	  		padding: 0 0 0 5%;
 	  	}
@@ -66,7 +65,7 @@
 
 	&__img {
 		width: 100%;
-		@include calc(min-height,100vh/(1200/694));
+		@include calc(min-height,80vw/(1200/694));
 	}
 }
 
