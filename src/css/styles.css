@@ -989,9 +989,7 @@ button:hover {
 /* line 66, ../sass/single-project.scss */
 .project-image__img {
   width: 100%;
-  min-height: -webkit-calc(46.26667vw);
-  min-height: -moz-calc(46.26667vw);
-  min-height: calc(46.26667vw);
+  padding: 20px 0;
 }
 
 /* line 72, ../sass/single-project.scss */
