@@ -4,7 +4,8 @@
 		<title>Neil McGrath Web Developer <?php if ($thisPage!="")echo " | $thisPage"; ?> </title>
 		<meta name="title" content="Neil McGrath <?php if ($thisPage!="") echo " | $thisPage"; ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<link rel="shortcut icon" href="/src/images/favicon/nm.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="/src/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="/vendors.css">
 		<script src="/plugins.min.js"></script>
