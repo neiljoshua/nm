@@ -1,4 +1,4 @@
-<?php $thisPage="sanisidro"; ?>
+<?php $thisPage="San Isidro"; ?>
 <?php
 	include('../src/includes/header.php')
 ?>

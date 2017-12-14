@@ -1,4 +1,4 @@
-<?php $thisPage="about"; ?>
+<?php $thisPage= "About"; ?>
 <?php
   include('src/includes/header.php')
 ?>

@@ -1,4 +1,4 @@
-<?php $thisPage="projects"; ?>
+<?php $thisPage= "Projects"; ?>
 <?php
 	include('../src/includes/header.php')
 ?>

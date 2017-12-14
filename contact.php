@@ -1,4 +1,4 @@
- <?php $thisPage="contact"; ?>
+ <?php $thisPage="Contact"; ?>
 <?php
 	include('src/includes/header.php')
 ?>
