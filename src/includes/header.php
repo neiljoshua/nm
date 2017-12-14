@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " | $thisPage"; ?> </title>
-		<meta name="title" content="Neil McGrath <?php if ($thisPage!="index") echo " | $thisPage"; ?>" />
+		<title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
+		<meta name="title" content=" Web Developer - <?php if ($thisPage!="index") echo " $thisPage"; ?> | Neil McGrath" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<link rel="shortcut icon" href="/src/images/favicon/nm.ico" type="image/x-icon" />
