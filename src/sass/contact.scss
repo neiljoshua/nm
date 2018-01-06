@@ -14,13 +14,20 @@
 #contact-form {
 	position: relative;
 	z-index: 10;
+	.error {
+		color: red;
+		font-size: 18px;
+	}
+	.invalid {
+		border: 1px solid red;
+	}
 }
 
 .contact-form-container {
 	margin:20px 0;
 }
 
-.success{
+.success {
 	visibility: hidden;
 	position: absolute;
 	opacity: 0.9;
@@ -37,8 +44,8 @@
 		letter-spacing: 3px;
 		border: 1px solid $black;
 		@include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
-		&.success-message--visible {
-			visibility: visible;
-		}
+	}
+	&.visible {
+		visibility: visible;
 	}
 }

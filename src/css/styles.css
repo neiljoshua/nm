@@ -809,13 +809,22 @@ button:hover {
   position: relative;
   z-index: 10;
 }
+/* line 17, ../sass/contact.scss */
+#contact-form .error {
+  color: red;
+  font-size: 18px;
+}
+/* line 21, ../sass/contact.scss */
+#contact-form .invalid {
+  border: 1px solid red;
+}
 
-/* line 19, ../sass/contact.scss */
+/* line 26, ../sass/contact.scss */
 .contact-form-container {
   margin: 20px 0;
 }
 
-/* line 23, ../sass/contact.scss */
+/* line 30, ../sass/contact.scss */
 .success {
   visibility: hidden;
   position: absolute;
@@ -826,7 +835,7 @@ button:hover {
   bottom: 0;
   right: 0;
 }
-/* line 32, ../sass/contact.scss */
+/* line 39, ../sass/contact.scss */
 .success__message {
   font-size: 25px;
   padding: 50px 30px;
@@ -838,8 +847,8 @@ button:hover {
   -ms-box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: -6px 3px 5px 0px rgba(0, 0, 0, 0.33);
 }
-/* line 40, ../sass/contact.scss */
-.success__message.success-message--visible {
+/* line 48, ../sass/contact.scss */
+.success.visible {
   visibility: visible;
 }
 

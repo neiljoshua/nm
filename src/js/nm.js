@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   var scrollStart = 0;
   var offset = 0;
+  var $emailplaceholder = $('input[name=user-email]').attr('placeholder');
 
   $('.slider').slick({
     infinite: true,
@@ -39,6 +40,7 @@ $(document).ready(function() {
 
 // Email Validation
 
+
   window.validateEmail = function( emails ) {
 
       var errors       = 0;
@@ -69,20 +71,21 @@ $(document).ready(function() {
 
   //Sending form
 
-  $('form').submit(function(e) {
-
+  $('#contact-form').submit(function(e) {
+  		debugger
       e.preventDefault();
-
       var $form  = $(this);
-      var $email = $('user-email');
+      var $email = $('input[name=user-email]');
+      var $wrongemailmessage = "Enter a valid email";
 
       if ( !window.validateEmail( $email.val() ) &&  ( $email.prop('required') ) ) {
-        $email.parent().addClass('invalid');
-        $(".error").fadeTo(400, 1);
+        $email.addClass('invalid');
+        $email.val('');
+        $email.focus();
+        $email.attr('placeholder',$wrongemailmessage);
       } else {
-      $email.parent().removeClass('invalid')
-      $(".error").fadeTo(400, 0);
-
+      	$email.attr('placeholder',$emailplaceholder);
+	      $email.removeClass('invalid')
         var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
         var formdata = $($form).serialize();
         $.ajax({
@@ -93,7 +96,7 @@ $(document).ready(function() {
            {
               $('form input').val('');
               $('textarea').val('');
-              $('.contact-message__message').addClass('contact-message--visible');
+              $('.success').addClass('visible');
               $('body').addClass('submitted')
            }
          })
@@ -102,7 +105,7 @@ $(document).ready(function() {
   });
 
   $(document).on('click', function() {
-    $('.contact-message__message').removeClass('contact-message--visible');
+    $('.success').removeClass('visible');
     $('.wrapper').removeClass('submitted');
   })
 
