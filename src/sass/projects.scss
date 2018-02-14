@@ -34,11 +34,11 @@
       &:hover{
         color: $green;
         .projects__icon {
-          font-size: 25px;
+          font-size: 40px;
           color: $green;
           visibility: visible;
           padding-left: 10px;
-          transition: all .4s ease-in;
+          transition: all .3s ease-in;
         }
       }
     }
@@ -49,10 +49,10 @@
     display: inline-block;
     width: 0;
     padding-left: 0;
-    font-size: 10px;
-    color: $green;
+    font-size: 20px;
+    color: $black;
     vertical-align: middle;
-    transition: all .1s ease-in;
+    transition: all .4s ease-in;
   }
 
   &__copy {
