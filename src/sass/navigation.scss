@@ -2,27 +2,34 @@
   position: fixed;
   top: 0;
   right: 0;
+  left: 100%;
   height: 100%;
-  width: 0%;
+  width: 100%;
   background-color: $white;
   opacity: 0;
   z-index: 60;
   @include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
-  transition: all 0.7s ease-in-out ;
+  @include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
   &.menu-active {
-    width: 100%;
+   	left: 0;
+   	width: 100%;
     opacity: 1;
-    transition: all 0.6s ease-in-out ;
+    @include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
     @include media-min-width(desktop) {
-      width: 30%;
+    	width: 30%;
+      left: 70%;
+      @include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
     }
   }
   &.menu-active-home {
-    width: 100%;
-    transition: all 0.6s ease-in-out ;
+  	left: 0;
+  	width: 100%;
     opacity: 1;
+    @include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
     @include media-min-width(desktop) {
+      left: 50%;
       width: 50%;
+      @include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
     }
   }
   &__list {
@@ -46,28 +53,30 @@
     font-size: 45px;
     letter-spacing: 4px;
     @include media-min-width(mobile) {
-      font-size: 50px;
+      font-size: 40px;
     }
     @include media-min-width(tablet) {
-    	font-size: 55px;
+    	font-size: 45px;
     }
     @include media-min-width(desktop) {
-    	font-size: 60px;
+    	font-size: 50px;
+    	@include prefix(transition, all 0.6s ease-in-out 0s, webkit ms );
 	    &::after {
 		    content: "";
 		    position: absolute;
 		    display: block;
 			  width: 100%;
 			  height: 3px;
-			  bottom: -5px;
+			  bottom: 15px;
 			  left: 0;
 			  background-color: $green;
 			  visibility: hidden;
 			  @include prefix(transform, scaleX(0), webkit ms );
-			 	@include prefix(transition, all 0.3s ease-in-out 0s, webkit ms );
+			 	@include prefix(transition, all 0.4s ease-in-out 0s, webkit ms );
 			}
 			&:hover{
 				color: $green;
+				@include prefix(transition, all 0.4s ease-in-out 0s, webkit ms );
 				&::after {
 				  visibility: visible;
 				  @include prefix(transform, scaleX(1), webkit ms );
@@ -79,12 +88,11 @@
 
 #currentpage {
   .menu__link {
-    font-size: 42px;
-    font-weight: 600;
     color: $green;
-    @include media-min-width(mobile) {
-      font-size: 60px;
-    }
+    &::after {
+		  visibility: visible;
+		  @include prefix(transform, scaleX(1), webkit ms );
+		}
   }
 }
 

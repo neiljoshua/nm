@@ -33,7 +33,7 @@
 	</li>
 </ul>
 
-<p class="projects__copy"> Some projects below may have been developed as prototypes or for demonstration purposes.</p>
+<p class="projects__copy"> Some projects above may have been developed as prototypes or for demonstration purposes.</p>
 
 <footer class="footer">
 <?php

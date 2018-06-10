@@ -1,5 +1,4 @@
 .project-title {
-
 	margin-top: 50px;
 	&__text {
 		font-size: 50px;
@@ -16,23 +15,24 @@
 	&__link {
 		display: inline-block;
 		margin: 5px 0;
+		padding: 15px 5px;
+		width: 145px;
+    height: 10px;
+    color: $white;
+    line-height: 10px;
+    font-size: 22px;
+    font-family: 'Catamaran-thin';
+    background-color: $silver;
+    @include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
 		@include media-min-width(mobile) {
-		    margin: 0 10px;
+		  margin: 0 10px;
 		}
 		@include media-min-width(tablet) {
 			&:hover {
 				background-color: $black;
+				@include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
 			}
 		}
-	    padding: 15px 5px;
-	    width: 145px;
-	    height: 10px;
-	    color: $white;
-	    line-height: 10px;
-	    font-size: 22px;
-	    font-family: 'Catamaran-thin';
-	    background-color: $silver;
-
 	}
 }
 

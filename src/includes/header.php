@@ -20,8 +20,7 @@
 
 		<div class="wrapper">
 			<header>
-				<a class="logo <?php if ( $thisPage=="index" ) echo "logo--white"; ?>" href="/" >
-					<i class="logo__icon icon-home-circled"></i>
+				<a class="logo <?php if ( $thisPage=="index" ) echo "logo--white"; ?> icon-home-circled" href="/" >
 				</a>
 				<a  href="#" class="c-hamburger <?php if ($thisPage=="index") echo "white-burger"; ?> c-hamburger--rot"  > 	<span></span>
 				</a>
