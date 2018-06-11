@@ -18,6 +18,8 @@
 			echo "class=\"$thisPage\"";
 		}?>>
 
+		<?php include('pre-loader.php')
+		?>
 		<div class="wrapper">
 			<header>
 				<a class="logo <?php if ( $thisPage=="index" ) echo "logo--white"; ?> icon-home-circled" href="/" >

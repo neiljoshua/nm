@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'mixin';
 @import 'form';
+@import 'preloader';
 @import 'hamburger';
 @import 'navigation';
 @import 'home';
@@ -22,10 +23,6 @@ html, body {
 }
 
 body {
-	@include animation('show-elemet .9s ease-in');
-}
-
-body {
 	width: 100%;
 	text-align: center;
 }
@@ -34,6 +31,14 @@ header {
 	position: fixed;
 	height: 60px;
 	z-index: 100;
+}
+
+.wrapper {
+	opacity: 0;
+	&.loaded {
+		opacity: 1;
+		 @include prefix(transition, opacity 0.7s linear 0.6s , webkit ms );
+	}
 }
 
 h1,
@@ -73,5 +78,3 @@ p {
 		margin-bottom: 40px;
 	}
 }
-
-

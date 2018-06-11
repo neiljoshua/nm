@@ -1,8 +1,24 @@
 $(document).ready(function() {
 
-  var scrollStart = 0;
-  var offset = 0;
-  var $emailplaceholder = $('input[name=user-email]').attr('placeholder');
+  var scrollStart = 0,
+  		offset = 0,
+  		preloader = $('.preloader-wrapper'),
+  		wrapper =$('.wrapper')
+   		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
+
+  $(window).on("load", function() {
+		hidePreloader();
+	});
+
+	function hidePreloader() {
+		preloader.fadeOut('slow');
+	}
+
+	function showWrapper() {
+		$(wrapper).addClass('loaded');
+	}
+
+	showWrapper();
 
   $('.slider').slick({
     infinite: true,
@@ -36,11 +52,7 @@ $(document).ready(function() {
 
   });
 
-
-
-// Email Validation
-
-
+	// Email Validation
   window.validateEmail = function( emails ) {
 
       var errors       = 0;
@@ -109,6 +121,6 @@ $(document).ready(function() {
     $('.wrapper').removeClass('submitted');
   })
 
-
-
 }); // End of doc ready.
+
+
