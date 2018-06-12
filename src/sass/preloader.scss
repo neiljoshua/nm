@@ -46,7 +46,7 @@
 	&.inactive {
 		bottom: 100%;
 		opacity: 0;
-		@include prefix(transition, all 2s linear, webkit ms );
+		@include prefix(transition, all 0.3s linear 3s, webkit ms );
 	}
 }
 

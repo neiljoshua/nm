@@ -37,7 +37,7 @@ header {
 	opacity: 0;
 	&.loaded {
 		opacity: 1;
-		 @include prefix(transition, opacity 0.7s linear 0.6s , webkit ms );
+		 @include prefix(transition, opacity 0.5s linear 0.7s , webkit ms );
 	}
 }
 
