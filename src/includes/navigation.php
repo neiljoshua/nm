@@ -1,5 +1,9 @@
 <!-- Navigation -->
-<div class="menu">
+<div <?php if ($thisPage=="index") {
+			echo "class=\"menu menu-home\"";
+		} else {
+			echo "class=\"menu\"";
+		}?>>
 
 <ul class="menu__list">
 	<li class="menu__item" <?php if ($thisPage=="Projects") echo " id=\"currentpage\""; ?>>

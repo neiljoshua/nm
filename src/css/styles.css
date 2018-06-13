@@ -258,7 +258,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #C0C0C0;
+  background-color: #E4E4E4;
   z-index: 999999;
 }
 /* line 15, ../sass/preloader.scss */
@@ -486,54 +486,58 @@ button:hover {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  opacity: 0;
+  opacity: 1;
   z-index: 60;
   -webkit-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
   -ms-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.33);
-  -webkit-transition: all 0.6s ease-in-out 0s;
-  -ms-transition: all 0.6s ease-in-out 0s;
-  transition: all 0.6s ease-in-out 0s;
+  -webkit-transition: left 0.6s ease-in-out;
+  -ms-transition: left 0.6s ease-in-out;
+  transition: left 0.6s ease-in-out;
 }
-/* line 13, ../sass/navigation.scss */
+@media (min-width: 981px) {
+  /* line 1, ../sass/navigation.scss */
+  .menu {
+    width: 30%;
+  }
+}
+/* line 14, ../sass/navigation.scss */
+.menu.menu-home {
+  width: 100%;
+}
+@media (min-width: 981px) {
+  /* line 14, ../sass/navigation.scss */
+  .menu.menu-home {
+    width: 50%;
+  }
+}
+/* line 23, ../sass/navigation.scss */
 .menu.menu-active {
   left: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.7s ease-in-out 0s;
-  -ms-transition: all 0.7s ease-in-out 0s;
-  transition: all 0.7s ease-in-out 0s;
+  -webkit-transition: left 0.6s ease-in-out;
+  -ms-transition: left 0.6s ease-in-out;
+  transition: left 0.6s ease-in-out;
 }
 @media (min-width: 981px) {
-  /* line 13, ../sass/navigation.scss */
+  /* line 23, ../sass/navigation.scss */
   .menu.menu-active {
-    width: 30%;
     left: 70%;
-    -webkit-transition: all 0.7s ease-in-out 0s;
-    -ms-transition: all 0.7s ease-in-out 0s;
-    transition: all 0.7s ease-in-out 0s;
   }
 }
-/* line 24, ../sass/navigation.scss */
+/* line 30, ../sass/navigation.scss */
 .menu.menu-active-home {
   left: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.7s ease-in-out 0s;
-  -ms-transition: all 0.7s ease-in-out 0s;
-  transition: all 0.7s ease-in-out 0s;
+  -webkit-transition: left 0.6s ease-in-out;
+  -ms-transition: left 0.6s ease-in-out;
+  transition: left 0.6s ease-in-out;
 }
 @media (min-width: 981px) {
-  /* line 24, ../sass/navigation.scss */
+  /* line 30, ../sass/navigation.scss */
   .menu.menu-active-home {
     left: 50%;
-    width: 50%;
-    -webkit-transition: all 0.7s ease-in-out 0s;
-    -ms-transition: all 0.7s ease-in-out 0s;
-    transition: all 0.7s ease-in-out 0s;
   }
 }
-/* line 35, ../sass/navigation.scss */
+/* line 37, ../sass/navigation.scss */
 .menu__list {
   position: absolute;
   display: block;
@@ -544,13 +548,13 @@ button:hover {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 44, ../sass/navigation.scss */
+/* line 46, ../sass/navigation.scss */
 .menu__item {
   display: block;
   text-align: center;
   margin: 20px auto;
 }
-/* line 50, ../sass/navigation.scss */
+/* line 52, ../sass/navigation.scss */
 .menu__link {
   position: relative;
   color: #000;
@@ -558,26 +562,26 @@ button:hover {
   letter-spacing: 4px;
 }
 @media (min-width: 601px) {
-  /* line 50, ../sass/navigation.scss */
+  /* line 52, ../sass/navigation.scss */
   .menu__link {
     font-size: 40px;
   }
 }
 @media (min-width: 769px) {
-  /* line 50, ../sass/navigation.scss */
+  /* line 52, ../sass/navigation.scss */
   .menu__link {
     font-size: 45px;
   }
 }
 @media (min-width: 981px) {
-  /* line 50, ../sass/navigation.scss */
+  /* line 52, ../sass/navigation.scss */
   .menu__link {
     font-size: 50px;
-    -webkit-transition: color 0.6s ease-in-out 0s;
-    -ms-transition: color 0.6s ease-in-out 0s;
-    transition: color 0.6s ease-in-out 0s;
+    -webkit-transition: color 0.6s ease-in-out;
+    -ms-transition: color 0.6s ease-in-out;
+    transition: color 0.6s ease-in-out;
   }
-  /* line 64, ../sass/navigation.scss */
+  /* line 66, ../sass/navigation.scss */
   .menu__link::after {
     content: "";
     position: absolute;
@@ -591,18 +595,18 @@ button:hover {
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: transform 0.6s ease-in-out 0s;
+    -ms-transition: transform 0.6s ease-in-out 0s;
+    transition: transform 0.6s ease-in-out 0s;
   }
-  /* line 77, ../sass/navigation.scss */
+  /* line 79, ../sass/navigation.scss */
   .menu__link:hover {
     color: #4fb584;
-    -webkit-transition: color 0.4s ease-in-out 0s;
-    -ms-transition: color 0.4s ease-in-out 0s;
-    transition: color 0.4s ease-in-out 0s;
+    -webkit-transition: color 0.6s ease-in-out 0s;
+    -ms-transition: color 0.6s ease-in-out 0s;
+    transition: color 0.6s ease-in-out 0s;
   }
-  /* line 80, ../sass/navigation.scss */
+  /* line 82, ../sass/navigation.scss */
   .menu__link:hover::after {
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -611,11 +615,11 @@ button:hover {
   }
 }
 
-/* line 90, ../sass/navigation.scss */
+/* line 92, ../sass/navigation.scss */
 #currentpage .menu__link {
   color: #4fb584;
 }
-/* line 92, ../sass/navigation.scss */
+/* line 94, ../sass/navigation.scss */
 #currentpage .menu__link::after {
   visibility: visible;
   -webkit-transform: scaleX(1);
