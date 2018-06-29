@@ -2,8 +2,6 @@ $(document).ready(function() {
 
   var scrollStart = 0,
   		offset = 0,
-  		preloader = $('.preloader-wrapper'),
-  		wrapper = $('.wrapper'),
    		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
 
   $(window).on("load", function() {
@@ -11,11 +9,11 @@ $(document).ready(function() {
 	});
 
 	function hidePreloader() {
-		$(preloader).delay(600).fadeOut("fast");
+		$(".preloader-wrapper").delay(600).fadeOut("fast");
 	}
 
 	function showWrapper() {
-		$(wrapper).addClass('loaded');
+		$(".wrapper").addClass('loaded');
 	}
 
 	showWrapper();
