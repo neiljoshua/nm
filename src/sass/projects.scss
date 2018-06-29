@@ -4,6 +4,7 @@
   @include media-min-width(tablet) {
     padding-top: 30px;
   }
+
   &__item {
     margin: 30px auto;
     @include media-min-width(mobile) {

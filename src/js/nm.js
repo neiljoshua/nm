@@ -6,17 +6,17 @@ $(document).ready(function() {
   		wrapper =$('.wrapper')
    		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
 
-  $(window).on("load", function() {
-		hidePreloader();
-	});
-
-	function hidePreloader() {
+	var hidePreloader = function() {
 		preloader.fadeOut('slow');
 	}
 
-	function showWrapper() {
+	var showWrapper = function() {
 		$(wrapper).addClass('loaded');
 	}
+
+	$(window).on("load", function() {
+		hidePreloader();
+	});
 
 	showWrapper();
 
