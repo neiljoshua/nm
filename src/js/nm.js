@@ -3,20 +3,20 @@ $(document).ready(function() {
   var scrollStart = 0,
   		offset = 0,
   		preloader = $('.preloader-wrapper'),
-  		wrapper =$('.wrapper')
+  		wrapper = $('.wrapper'),
    		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
 
-	var hidePreloader = function() {
-		preloader.fadeOut('slow');
-	}
-
-	var showWrapper = function() {
-		$(wrapper).addClass('loaded');
-	}
-
-	$(window).on("load", function() {
+  $(window).on("load", function() {
 		hidePreloader();
 	});
+
+	function hidePreloader() {
+		$(preloader).delay(600).fadeOut("fast");
+	}
+
+	function showWrapper() {
+		$(wrapper).addClass('loaded');
+	}
 
 	showWrapper();
 
