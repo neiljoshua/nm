@@ -1,14 +1,18 @@
+(function($){
+  'use strict';
+    $(window).on('load', function () {
+        if ($(".preloader-wrapper").length > 0)
+        {
+          $(".preloader-wrapper").fadeOut("slow");
+        }
+    });
+})(jQuery)
+
 $(document).ready(function() {
 
   var scrollStart = 0,
   		offset = 0,
-  		preloader = $('.preloader-wrapper'),
-  		wrapper =$('.wrapper')
    		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
-
-  $(window).on("load", function() {
-		preloader.delay(500).fadeOut("fast");
-	});
 
 	function showWrapper() {
 		$('.wrapper').addClass('loaded');

@@ -14,68 +14,60 @@
 	margin: 20px auto;
 	&__link {
 		display: inline-block;
-		margin: 5px 0;
-		padding: 15px 5px;
+		margin: 4px;
+		padding: 5px;
 		width: 145px;
-    height: 10px;
     color: $white;
-    line-height: 10px;
     font-size: 22px;
     font-family: 'Catamaran-thin';
     background-color: $silver;
     @include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
 		@include media-min-width(mobile) {
 		  margin: 0 10px;
+		  padding: 8px 5px;
 		}
 		@include media-min-width(tablet) {
 			&:hover {
-				background-color: $black;
+				background-color: $green;
 				@include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
 			}
 		}
 	}
 }
 
-
 .project-row {
-	overflow: hidden;
-	clear: both;
-	margin: 0;
-	padding: 0;
+	margin: 20px;
+	font-size: 0;
+	@include media-min-width(tablet) {
+		margin: 40px 30px;
+	}
 	@include media-min-width(desktop) {
-		margin-top: 60px;
-		margin-bottom: 80px;
-		font-size: 0;
+		margin: 40px;
 	}
 }
 
 .project-image {
-	margin: 25px auto;
 	display: inline-block;
+	margin: 40px 0;
 	vertical-align: middle;
 	@include media-min-width(desktop) {
-		width: 70%;
+		width: 65%;
 	}
 	&__link {
 	 	display: block;
-	  	@include media-min-width(desktop) {
-	  		padding: 0 0 0 5%;
-	  	}
 	}
-
 	&__img {
 		width: 100%;
-		padding: 20px 0;
 	}
 }
 
 .project-copy {
 	width: 100%;
-	margin: 25px auto 50px;
+	margin: 40px 0;
 	display: inline-block;
 	vertical-align: middle;
 	@include media-min-width(desktop) {
-		width: 30%;
+		width: 35%;
 	}
 	&__list {
 		text-align: center;
