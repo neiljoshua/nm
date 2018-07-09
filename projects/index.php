@@ -17,6 +17,11 @@
 		</a>
 	</li>
 	<li class="projects__item">
+		<a class="projects__link" href="photology">Photology
+			<i class="projects__icon icon-right"></i>
+		</a>
+	</li>
+	<li class="projects__item">
 		<a class="projects__link" href="tarapoto">Tarapoto Resort
 			<i class="projects__icon icon-right"></i>
 		</a>

@@ -23,6 +23,9 @@
     <div class="slick-container">
       <img class="source" src="/src/images/slider/slide3.jpg" alt="Brandi Project" >
     </div>
+    <div class="slick-container">
+      <img class="source" src="/src/images/slider/slide4.jpg" alt="Photology Project" >
+    </div>
   </div>
 
 <footer class="hidden">

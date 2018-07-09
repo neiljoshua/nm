@@ -1,16 +1,16 @@
-@import 'reset';
-@import 'fonts';
-@import 'variables';
-@import 'mixin';
-@import 'form';
-@import 'preloader';
-@import 'hamburger';
-@import 'navigation';
+@import 'globals/reset';
+@import 'globals/fonts';
+@import 'globals/variables';
+@import 'globals/mixin';
+@import 'globals/form';
+@import 'globals/footer';
+@import 'globals/preloader';
+@import 'globals/navigation';
+@import 'globals/hamburger';
 @import 'home';
 @import 'projects';
 @import 'about';
 @import 'contact';
-@import 'footer';
 @import 'single-project';
 
 /** General page layout**/
