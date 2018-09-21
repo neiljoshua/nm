@@ -25,7 +25,7 @@
 			<p class="slider-copy">Brandi</p>
 		</div>
 		<div>
-			<img class="source" src="/src/images/slider/slide4" alt="Tarapoto Project">
+			<img class="source" src="/src/images/slider/slide4.jpeg" alt="Tarapoto Project">
 			<p class="slider-copy">Tarapoto</p>
 		</div>
 
