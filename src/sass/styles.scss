@@ -7,74 +7,11 @@
 @import 'globals/preloader';
 @import 'globals/navigation';
 @import 'globals/hamburger';
+@import 'globals/slider';
 @import 'home';
 @import 'projects';
 @import 'about';
 @import 'contact';
 @import 'single-project';
+@import 'layout';
 
-/** General page layout**/
-
-html, body {
-	position: relative;
-	margin: 0;
-	width: 100%;
-	line-height: 1.5;
-}
-
-body {
-	width: 100%;
-	text-align: center;
-}
-
-header {
-	position: fixed;
-	height: 60px;
-	z-index: 100;
-}
-
-.wrapper {
-	opacity: 0;
-	&.loaded {
-		opacity: 1;
-		 @include prefix(transition, opacity 0.7s ease-in-out .6s, webkit ms );
-	}
-}
-
-h1,
-h2,
-h3,
-a {
-	font-family: $serif;
-}
-
-p {
-	font-family: $sanSerif;
-}
-
-.center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.page-title {
-	margin: 60px auto;
-	letter-spacing: 2px;
-	&__title {
-		font-size: 50px;
-		@include media-min-width (mobile) {
-			font-size: 70px;
-			margin-bottom: 40px;
-		}
-	}
-	&__copy{
-		max-width: 620px;
-		margin: 0 auto;
-		text-align: center;
-		line-height: 150%;
-		font-size: 50px;
-		margin-bottom: 40px;
-	}
-}

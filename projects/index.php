@@ -1,44 +1,31 @@
-<?php $thisPage= "Projects"; ?>
-<?php
-	include('../src/includes/header.php')
-?>
+	<?php $thisPage= "projects"; ?>
+	<?php
+		include('../src/includes/header.php')
+	?>
 
-<?php include('../src/includes/navigation.php')
-?>
+		<?php include('../src/includes/navigation.php')
+		?>
 
-<div class="page-title">
-	<h1 class="page-title__title" >Projects</h1>
-</div>
+		<ul class="project-list">
+			<li class="project-list__item">
+				<a class="project-list__link" href="sanisidro">San Isidro Group</a>
+			</li>
+			<li class="project-list__item">
+				<a class="project-list__link" href="photology">Photology</a>
+			</li>
+			<li class="project-list__item">
+				<a class="project-list__link" href="tarapoto">Tarapoto Resort</a>
+			</li>
+			<li class="project-list__item">
+				<a class="project-list__link" href="brandi">Brandi</a>
+			</li>
+			<li class="project-list__item">
+				<a class="project-list__link" href="weather">Weather App</a>
+			</li>
+		</ul>
 
-<ul class="projects">
-	<li class="projects__item">
-		<a class="projects__link" href="sanisidro">San Isidro Group
-			<i class="projects__icon icon-right"></i>
-		</a>
-	</li>
-	<li class="projects__item">
-		<a class="projects__link" href="photology">Photology
-			<i class="projects__icon icon-right"></i>
-		</a>
-	</li>
-	<li class="projects__item">
-		<a class="projects__link" href="tarapoto">Tarapoto Resort
-			<i class="projects__icon icon-right"></i>
-		</a>
-	</li>
-	<li class="projects__item">
-		<a class="projects__link" href="brandi">Brandi
-			<i class="projects__icon icon-right"></i>
-		</a>
-	</li>
-	<li class="projects__item">
-		<a class="projects__link" href="weather">Weather App
-			<i class="projects__icon icon-right"></i>
-		</a>
-	</li>
-</ul>
-
-<p class="projects__copy"> Some projects above may have been developed as prototypes or for demonstration purposes.</p>
+		<p class="projects__copy"> Some projects above may have been developed as prototypes or for demonstration purposes.</p>
+	</main>
 
 <footer class="footer">
 <?php

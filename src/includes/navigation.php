@@ -1,19 +1,14 @@
-<!-- Navigation -->
-<div <?php if ($thisPage=="index") {
-			echo "class=\"menu menu-home\"";
-		} else {
-			echo "class=\"menu\"";
-		}?>>
+<div class="menu">
 
 <ul class="menu__list">
-	<li class="menu__item" <?php if ($thisPage=="Projects") echo " id=\"currentpage\""; ?>>
-		<a class="menu__link" href="/projects">Projects</a>
+	<li class="menu__item" <?php if ($thisPage=="projects") echo "id=\"currentpage\""; ?>>
+		<a class="menu__link" href="/projects" data-color="#5C415D">Projects</a>
 	</li>
-	<li class="menu__item" <?php if ($thisPage=="About") echo " id=\"currentpage\""; ?>>
-		<a class="menu__link" href="/about">About</a>
+	<li class="menu__item" <?php if ($thisPage=="about") echo "id=\"currentpage\"";?>>
+		<a class="menu__link" href="/about" data-color="#1789FC">About</a>
 	</li>
-	<li class="menu__item"<?php if ($thisPage=="Contact") echo " id=\"currentpage\""; ?>>
-		<a class="menu__link" href="/contact">Contact</a>
+	<li class="menu__item"<?php if ($thisPage=="contact") echo "id=\"currentpage\"";?>>
+		<a class="menu__link" href="/contact" data-color="#F4442E">Contact</a>
 	</li>
 </ul>
 

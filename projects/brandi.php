@@ -1,4 +1,4 @@
-<?php $thisPage="Brandi"; ?>
+<?php $thisPage="projects"; ?>
 <?php
 	include('../src/includes/header.php')
 ?>

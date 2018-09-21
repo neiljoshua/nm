@@ -4,52 +4,45 @@
         if ($(".preloader-wrapper").length > 0)
         {
           $(".preloader-wrapper").fadeOut("slow");
+          $('.wrapper').addClass('loaded');
         }
     });
 })(jQuery)
+
 
 $(document).ready(function() {
 
   var scrollStart = 0,
   		offset = 0,
+  		$turquoise ='#2DC2BD',
    		$emailplaceholder = $('input[name=user-email]').attr('placeholder');
 
-	function showWrapper() {
-		$('.wrapper').addClass('loaded');
-	}
-
-	showWrapper();
-
   $('.slider').slick({
-    infinite: true,
-    autoplay: true,
-    speed: 150,
-    fade: true,
-    cssEase: 'linear',
-    pauseOnHover: false,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false
-  });
+  	autoplay: true,
+  	autoplaySpeed: 1500,
+  	arrows: false,
+	  dots: false,
+	  infinite: true,
+	  fade: true,
+	  cssEase: 'linear'
+	});
 
-  $('.slick-container').each(function() {
-    var imgURL = $(this).find('img').attr('src');
-    $(this).css('background-image', 'url(' + imgURL + ')');
-  });
+	$('.slick-slide').each(function() {
+      var link = $(this).find("img").attr("src");
+      console.log('variable link', link);
+      $(this).css("background-image", "url(" + link + ")")
+  }),
 
-  $('.c-hamburger').on('click', function(e){
+  $('.hamburger').on('click', function(e){
 
       e.preventDefault();
       var $body = $('body');
       $(this).toggleClass('is-active');
       $($body).toggleClass('menu-active');
-      if ( $body.hasClass('home') ){
-        $('.logo').toggleClass('logo--white');
-        $('.menu').toggleClass('menu-active-home');
-      } else {
-        $('.menu').toggleClass('menu-active');
+      $('.menu').toggleClass('menu-active');
+      if( !$('.wrapper').hasClass('home') ) {
+      	$('.logo').toggleClass('menu-active');
       }
-
   });
 
 	// Email Validation

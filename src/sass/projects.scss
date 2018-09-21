@@ -1,67 +1,51 @@
-/** projects Layout **/
-
 .projects {
-  @include media-min-width(tablet) {
-    padding-top: 30px;
-  }
+	main {
+		margin: 50px 0;
+	}
 
-  &__item {
-    margin: 30px auto;
-    @include media-min-width(mobile) {
-     	margin: 60px auto;
-    }
-    @include media-min-width(tablet) {
-      margin: 80px auto;
-      &:first-child {
-        margin-top: 10px;
-      }
-    }
-    @include media-min-width(desktop) {
-    	margin: 80px auto;
-    }
-  }
+	.project-list {
+		padding: 40px 0 20px;
+		@include media-min-width(tablet) {
+			padding: 60px 0 30px;
+		}
+		&__item {
+	    margin: 30px auto;
+	    @include media-min-width(mobile) {
+	     	margin: 40px auto;
+	    }
+	    @include media-min-width(tablet) {
+	      margin: 45px auto;
+	    }
+	    @include media-min-width(desktop) {
+	    	margin: 50px auto;
+	    }
+	  }
 
-  &__link {
-    display: inline-block;
-    color: $black;
-    font-family: $sanSerif;
-    font-size: 30px;
-    @include media-min-width(mobile) {
-      font-size: 55px;
-    }
-    @include media-min-width(tablet) {
-    	font-size: 75px;
-    	@include prefix(transition, all 0.5s ease-in-out 0.3s, webkit ms );
-      &:hover{
-        color: $green;
-        @include prefix(transition, all 0.5s ease-in-out, webkit ms );
-        .projects__icon {
-          font-size: 40px;
-          color: $green;
-          visibility: visible;
-          padding-left: 10px;
-          @include prefix(transition, all 0.4s ease-in-out, webkit ms );
-        }
-      }
-    }
-  }
+	  &__link {
+	    display: inline-block;
+	    color: $black;
+	    font-family: $sanSerif;
+	    font-size: 30px;
+	    @include media-min-width(mobile) {
+	      font-size: 55px;
+	    }
+	    @include media-min-width(tablet) {
+	    	font-size: 75px;
+	    	@include prefix(transition, all 0.5s ease-in-out 0.3s, webkit ms );
+	      &:hover{
+	        color: $green;
+	        @include prefix(transition, all 0.5s ease-in-out, webkit ms );
+	      }
+	    }
+	  }
 
-  &__icon {
-    visibility: hidden;
-    display: inline-block;
-    width: 0;
-    padding-left: 0;
-    font-size: 20px;
-    color: $black;
-    vertical-align: middle;
-    @include prefix(transition, all 0.6s linear 0s, webkit ms );
-  }
+	}
 
-  &__copy {
-    margin: 35px auto;
-    padding: 30px;
-    font-size: 18px;
-    color: $silver;
-  }
-
+	.projects__copy {
+	  margin: 35px auto;
+	  font-size: 18px;
+	  color: $silver;
+	}
 }
+
+

@@ -7,7 +7,7 @@ grunt.initConfig({
       options: {
         sassDir: 'src/sass/',
         specify: 'src/sass/styles.scss',
-        cssDir: 'src/css/'
+        cssDir: 'dist/css/'
       }
     }
   },
@@ -16,15 +16,15 @@ grunt.initConfig({
     dist: {
       src: ['src/css/vendors/slick-theme.css', 'src/css/vendors/slick.css',
           'src/css/vendors/animate.css', 'src/css/vendors/fontello.css'],
-      dest: 'vendors.css',
+      dest: 'dist/css/vendors.css',
     },
   },
 
   uglify: {
     my_target: {
       files: {
-        'nm.min.js': ['src/js/nm.js'],
-        'plugins.min.js': ['src/js/plugins/*.min.js']
+        'dist/js/nm.min.js': ['src/js/nm.js'],
+        'dist/js/plugins.min.js': ['src/js/plugins/*.min.js']
       }
     }
   },
@@ -48,4 +48,3 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.registerTask('default', [ 'concat', 'uglify', 'watch']);
 grunt.registerTask('dev', ['compass'], ['uglify']);
 }
- 

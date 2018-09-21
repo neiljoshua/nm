@@ -1,38 +1,56 @@
-.photo {
-	overflow: hidden;
-	max-height: 300px;
-	@include media-min-width(mobile) {
-		max-height: 450px;
+.about {
+	main {
+		margin: 80px 0;
 	}
-	&__image {
-		margin: 10px auto;
-		@include calc(min-height,100vw/(720/264));
-	}
-}
-
-.about-content {
-	&__copy {
-		max-width: 720px;
-		margin: 60px auto;
-		font-size: 22px;
-		font-weight: 100;
-		letter-spacing: 1.5px;
-		line-height: 1.8;
+	.photo {
+		overflow: hidden;
+		max-height: 300px;
+		@include media-min-width(mobile) {
+			max-height: 450px;
+		}
+		&__image {
+			margin: 10px auto;
+			@include calc(min-height,100vw/(720/264));
+		}
 	}
 
-	&__link {
-		color: $green;
-		text-decoration: underline;
+	.page-title {
+		margin: 30px auto;
+		.page-title__title {
+			font-size: 26px;
+			@include media-min-width(mobile) {
+				font-size: 32px;
+			}
+			@include media-min-width(tablet) {
+				font-size: 38px;
+			}
+			@include media-min-width(desktop) {
+				font-size: 48px;
+			}
+		}
 	}
-}
 
-.photo,
-.about-content {
-	margin: 20px 15px;
-	@include media-min-width(mobile) {
-		margin: 20px 30px;
+	.about-content {
+		&__copy {
+			max-width: 720px;
+			margin: 10px auto 20px;
+			font-size: 22px;
+			font-weight: 100;
+			letter-spacing: 1.5px;
+			line-height: 1.8;
+		}
+
+		&__link {
+			color: $green;
+			text-decoration: underline;
+		}
 	}
-	@include media-min-width(tablet) {
-		margin: 50px 40px;
+
+	.about-content {
+		padding: 0 30px;
+		@include media-min-width(mobile) {
+			padding: 0 40px;
+		}
 	}
+
 }
