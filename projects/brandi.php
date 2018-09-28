@@ -23,6 +23,7 @@
 	 </div>
 
 	<div class="project-copy">
+			<h2 class="project-copy__title">Technologies</h2>
 			<ul class="project-copy__list">
 				<li class="project-copy__item">Single page design</li>
 				<li class="project-copy__item">Responsive</li>

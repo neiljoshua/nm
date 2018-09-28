@@ -14,11 +14,11 @@
 	margin: 20px auto;
 	&__link {
 		display: inline-block;
-		margin: 4px;
-		padding: 5px;
-		width: 145px;
+		margin: 5px;
+		padding: 5px 0;
+		width: 140px;
     color: $white;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Catamaran-thin';
     background-color: $silver;
     @include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
@@ -51,7 +51,7 @@
 	margin: 40px 0;
 	vertical-align: middle;
 	@include media-min-width(desktop) {
-		width: 65%;
+		width: 70%;
 	}
 	&__link {
 	 	display: block;
@@ -67,7 +67,19 @@
 	display: inline-block;
 	vertical-align: middle;
 	@include media-min-width(desktop) {
-		width: 35%;
+		width: 30%;
+	}
+	&__title {
+		color: $black;
+		font-size: 25px;
+		margin: 20px 0;
+		font-family: $serif;
+		@include media-min-width(tablet) {
+			font-size: 35px;
+		}
+		@include media-min-width(desktop) {
+			font-size: 40px;
+		}
 	}
 	&__list {
 		text-align: center;
@@ -75,8 +87,9 @@
 
 	&__item  {
 		margin-bottom: 5px;
+		font-family: $sanSerif;
 		color: $black;
-		font-size: 28px;
+		font-size: 20px;
 		letter-spacing: 5px;
 		line-height: 1.8;
 		@include media-min-width(tablet) {

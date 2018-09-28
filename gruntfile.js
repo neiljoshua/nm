@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
-// Project configuration.
+
 grunt.initConfig({
- // Tasks
+
  compass: {
     dist: {
       options: {
@@ -33,18 +33,20 @@ grunt.initConfig({
     css: {
       files: ['src/sass/*.scss'],
       tasks: ['compass']
+    },
+    js: {
+    	files: ['src/js/*.js'],
+    	tasks: ['uglify']
     }
   }
 
 });
 
-// Load the plugin that provides the tasks.
 grunt.loadNpmTasks('grunt-contrib-compass');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 
-// Default task(s).
 grunt.registerTask('default', [ 'concat', 'uglify', 'watch']);
 grunt.registerTask('dev', ['compass'], ['uglify']);
 }

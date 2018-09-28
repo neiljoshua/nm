@@ -23,15 +23,16 @@
 		   	</div>
 
 		   	<div class="project-copy">
-				<ul class="project-copy__list">
-					<li class="project-copy__item">Responsive app</li>
-					<li class="project-copy__item">HMTL5</li>
-					<li class="project-copy__item">CSS3</li>
-					<li class="project-copy__item">JavaScript</li>
-					<li class="project-copy__item">AJAX</li>
-					<li class="project-copy__item">JSON</li>
-					<li class="project-copy__item">Weather Underground API</li>
-				</ul>
+		   		<h2 class="project-copy__title">Technologies</h2>
+					<ul class="project-copy__list">
+						<li class="project-copy__item">Responsive app</li>
+						<li class="project-copy__item">HMTL5</li>
+						<li class="project-copy__item">CSS3</li>
+						<li class="project-copy__item">JavaScript</li>
+						<li class="project-copy__item">AJAX</li>
+						<li class="project-copy__item">JSON</li>
+						<li class="project-copy__item">Weather Underground API</li>
+					</ul>
 			</div>
 
 		</div>

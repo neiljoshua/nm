@@ -24,16 +24,17 @@
 		   	</div>
 
 		   	<div class="project-copy">
-				<ul class="project-copy__list">
-					<li class="project-copy__item">WordPress</li>
-					<li class="project-copy__item">Responsive</li>
-					<li class="project-copy__item">Ajax</li>
-					<li class="project-copy__item">JSON</li>
-					<li class="project-copy__item">PHP</li>
-					<li class="project-copy__item">ACF</li>
-					<li class="project-copy__item">HTML5</li>
-					<li class="project-copy__item">Sass</li>
-					<li class="project-copy__item">JavaScript</li>
+		   		<h2 class="project-copy__title">Technologies</h2>
+					<ul class="project-copy__list">
+						<li class="project-copy__item">WordPress</li>
+						<li class="project-copy__item">Responsive</li>
+						<li class="project-copy__item">Ajax</li>
+						<li class="project-copy__item">JSON</li>
+						<li class="project-copy__item">PHP</li>
+						<li class="project-copy__item">ACF</li>
+						<li class="project-copy__item">HTML5</li>
+						<li class="project-copy__item">Sass</li>
+						<li class="project-copy__item">JavaScript</li>
 				</ul>
 			</div>
 

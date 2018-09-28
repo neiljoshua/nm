@@ -1,14 +1,12 @@
 (function($){
   'use strict';
     $(window).on('load', function () {
-        if ($(".preloader-wrapper").length > 0)
-        {
-          $(".preloader-wrapper").fadeOut("slow");
+        if ($('.preloader-wrapper').length > 0) {
+          $('.preloader-wrapper').fadeOut('slow');
           $('.wrapper').addClass('loaded');
         }
     });
 })(jQuery)
-
 
 $(document).ready(function() {
 
@@ -24,60 +22,28 @@ $(document).ready(function() {
 	  dots: false,
 	  infinite: true,
 	  fade: true,
-	  cssEase: 'linear'
+	  cssEase: 'linear',
+	  pauseOnHover: false
 	});
 
 	$('.slick-slide').each(function() {
       var link = $(this).find("img").attr("src");
-      console.log('variable link', link);
-      $(this).css("background-image", "url(" + link + ")")
-  }),
+      $(this).css("background-image", "url(" + link + ")");
+  });
 
   $('.hamburger').on('click', function(e){
-
       e.preventDefault();
       var $body = $('body');
       $(this).toggleClass('is-active');
       $($body).toggleClass('menu-active');
       $('.menu').toggleClass('menu-active');
+
       if( !$('.wrapper').hasClass('home') ) {
       	$('.logo').toggleClass('menu-active');
       }
   });
 
-	// Email Validation
-  window.validateEmail = function( emails ) {
-
-      var errors       = 0;
-      var emailArray   = (emails == null) ? [] :emails.split(',');
-      var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-      $(emailArray).each(function(index, email){
-
-        if( !expression.test( email.trim() ) ){
-
-          errors++;
-
-        }
-
-      });
-
-      if( errors > 0 ){
-
-        return false;
-
-      }else{
-
-        return true;
-
-      }
-
-  }
-
-  //Sending form
-
   $('#contact-form').submit(function(e) {
-  		debugger
       e.preventDefault();
       var $form  = $(this);
       var $email = $('input[name=user-email]');
@@ -90,8 +56,7 @@ $(document).ready(function() {
         $email.attr('placeholder',$wrongemailmessage);
       } else {
       	$email.attr('placeholder',$emailplaceholder);
-	      $email.removeClass('invalid')
-        var url = "/src/includes/sendForm.php"; // the script where you handle the form input.
+	      $email.removeClass('invalid');
         var formdata = $($form).serialize();
         $.ajax({
            type: "POST",
@@ -102,7 +67,7 @@ $(document).ready(function() {
               $('form input').val('');
               $('textarea').val('');
               $('.success').addClass('visible');
-              $('body').addClass('submitted')
+              $('body').addClass('submitted');
            }
          })
         return false;
@@ -112,8 +77,34 @@ $(document).ready(function() {
   $(document).on('click', function() {
     $('.success').removeClass('visible');
     $('.wrapper').removeClass('submitted');
-  })
+  });
 
-}); // End of doc ready.
+  window.validateEmail = function( emails ) {
 
+    var errors       = 0;
+    var emailArray   = (emails == null) ? [] :emails.split(',');
+    var expression   = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    $(emailArray).each(function(index, email){
+
+      if( !expression.test( email.trim() ) ){
+
+        errors++;
+
+      }
+
+    });
+
+    if( errors > 0 ){
+
+      return false;
+
+    }else{
+
+      return true;
+
+    }
+
+  }
+
+});
