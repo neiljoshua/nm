@@ -18,7 +18,7 @@
 		<div class="about-content">
 
 		  <p class="about-content__copy">
-		    I am a web developer who specializes in responsive and CMS development. My experience is primarily front end development. However, I have experience with back end development. When not coding, I seek out new web technologies and explore ways to improve the development process.
+		    I am a web developer who specializes in responsive and CMS development. My experience and area of expertise is in front end development. On the side, I continue to seek out new web technologies, dabble in some of the back end, and explore new ways to improve the development process.
 		  </p>
 
 		  <p class="about-content__copy"> Check out some projects I've worked on <a class="about-content__link" href="/projects">here</a>. </p>
