@@ -27,10 +27,10 @@
 
 	.logo {
 		background-color: $white;
-	 	@include animation('pulsewhite 2s ease-in infinite');
-	 	.active-path {
-	 		fill: $green;
-	 	}
+		@include animation('pulsewhite 2s ease-in infinite');
+		.active-path {
+			fill: $green;
+		}
 	}
 
 	.menu {

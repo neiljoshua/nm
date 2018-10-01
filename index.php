@@ -7,8 +7,8 @@
 	?>
 	<div class="home-hero">
 		<div class="home--item">
-		  <h1 class="home--item__title"> Neil McGrath</h1>
-		  <p class="home--item__copy"> Web Developer</p>
+			<h1 class="home--item__title"> Neil McGrath</h1>
+			<p class="home--item__copy"> Web Developer</p>
 		</div>
 	</div>
 	<div class="slider">
@@ -33,6 +33,6 @@
 </main>
 <footer class="hidden">
 <?php
-    include('src/includes/footer.php')
+		include('src/includes/footer.php')
 ?>
 

@@ -17,14 +17,14 @@
 		margin: 5px;
 		padding: 5px 0;
 		width: 140px;
-    color: $white;
-    font-size: 18px;
-    font-family: 'Catamaran-thin';
-    background-color: $silver;
-    @include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
+		color: $white;
+		font-size: 18px;
+		font-family: 'Catamaran-thin';
+		background-color: $silver;
+		@include prefix(transition, background-color 0.6s ease-in-out 0s, webkit ms );
 		@include media-min-width(mobile) {
-		  margin: 0 10px;
-		  padding: 8px 5px;
+			margin: 0 10px;
+			padding: 8px 5px;
 		}
 		@include media-min-width(tablet) {
 			&:hover {
@@ -54,7 +54,7 @@
 		width: 70%;
 	}
 	&__link {
-	 	display: block;
+		display: block;
 	}
 	&__img {
 		width: 100%;
