@@ -1,51 +1,51 @@
 .projects {
-	main {
-		padding: 50px 0;
-	}
+  main {
+    padding: 50px 0;
+  }
 
-	.project-list {
-		padding: 40px 0 20px;
-		@include media-min-width(tablet) {
-			padding: 60px 0 30px;
-		}
-		&__item {
-			margin: 30px auto;
-			@include media-min-width(mobile) {
-				margin: 40px auto;
-			}
-			@include media-min-width(tablet) {
-				margin: 45px auto;
-			}
-			@include media-min-width(desktop) {
-				margin: 50px auto;
-			}
-		}
+  .project-list {
+    padding: 40px 0 20px;
+    @include media-min-width(tablet) {
+      padding: 60px 0 30px;
+    }
+    &__item {
+      margin: 30px auto;
+      @include media-min-width(mobile) {
+        margin: 40px auto;
+      }
+      @include media-min-width(tablet) {
+        margin: 45px auto;
+      }
+      @include media-min-width(desktop) {
+        margin: 50px auto;
+      }
+    }
 
-		&__link {
-			display: inline-block;
-			color: $black;
-			font-family: $sanSerif;
-			font-size: 30px;
-			@include media-min-width(mobile) {
-				font-size: 55px;
-			}
-			@include media-min-width(tablet) {
-				font-size: 75px;
-				@include prefix(transition, all 0.5s ease-in-out 0.3s, webkit ms );
-				&:hover{
-					color: $green;
-					@include prefix(transition, all 0.5s ease-in-out, webkit ms );
-				}
-			}
-		}
+    &__link {
+      display: inline-block;
+      color: $black;
+      font-family: $sanSerif;
+      font-size: 30px;
+      @include media-min-width(mobile) {
+        font-size: 55px;
+      }
+      @include media-min-width(tablet) {
+        font-size: 75px;
+        @include prefix(transition, all 0.5s ease-in-out 0.3s, webkit ms );
+        &:hover{
+          color: $green;
+          @include prefix(transition, all 0.5s ease-in-out, webkit ms );
+        }
+      }
+    }
 
-	}
+  }
 
-	.projects__copy {
-		margin: 35px auto;
-		font-size: 18px;
-		color: $silver;
-	}
+  .projects__copy {
+    margin: 35px auto;
+    font-size: 18px;
+    color: $silver;
+  }
 }
 
 
