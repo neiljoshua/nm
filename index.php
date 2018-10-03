@@ -2,7 +2,6 @@
 
 <?php include('src/includes/header.php')
 ?>
-
   <?php include('src/includes/navigation.php')
   ?>
   <div class="home-hero">
@@ -35,4 +34,3 @@
 <?php
     include('src/includes/footer.php')
 ?>
-

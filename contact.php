@@ -4,10 +4,7 @@
   ?>
     <?php include('src/includes/navigation.php')
     ?>
-
-    <div class="contact-hero">
-    </div>
-
+    <div class="contact-hero"></div>
     <div class="contact-form-container">
       <form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
         <fieldset>

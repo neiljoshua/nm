@@ -17,7 +17,7 @@
   .page-title {
     margin: 30px auto;
     .page-title__title {
-      font-size: 26px;
+      font-size: 22px;
       @include media-min-width(mobile) {
         font-size: 32px;
       }
@@ -34,12 +34,14 @@
     &__copy {
       max-width: 720px;
       margin: 10px auto 20px;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 100;
       letter-spacing: 1.5px;
       line-height: 1.8;
+      @include media-min-width(mobile) {
+        font-size: 22px;
+      }
     }
-
     &__link {
       color: $green;
       text-decoration: underline;
@@ -52,5 +54,4 @@
       padding: 0 40px;
     }
   }
-
 }

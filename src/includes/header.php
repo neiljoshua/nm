@@ -12,8 +12,7 @@
     <script src="/dist/js/nm.min.js"></script>
   </head>
   <body>
-
-    <?php include('pre-loader.php')
+  <?php include('pre-loader.php')
     ?>
     <div <?php if ($thisPage=="index") {
       echo "class=\"wrapper home\"";
@@ -34,4 +33,3 @@
         </a>
       </header>
       <main>
-
