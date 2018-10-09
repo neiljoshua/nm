@@ -31,6 +31,9 @@
     .active-path {
       fill: $green;
     }
+    &:hover {
+      @include animation('none');
+    }
   }
 
   .menu {

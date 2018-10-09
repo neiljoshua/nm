@@ -8,10 +8,13 @@
 
     <ul class="project-list">
       <li class="project-list__item">
-        <a class="project-list__link" href="sanisidro">San Isidro Group</a>
+        <a class="project-list__link" href="stocks">Stocks App</a>
       </li>
       <li class="project-list__item">
         <a class="project-list__link" href="photology">Photology</a>
+      </li>
+      <li class="project-list__item">
+        <a class="project-list__link" href="sanisidro">San Isidro Group</a>
       </li>
       <li class="project-list__item">
         <a class="project-list__link" href="tarapoto">Tarapoto Resort</a>

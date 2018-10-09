@@ -4,9 +4,9 @@
   }
 
   .project-list {
-    padding: 40px 0 20px;
+    padding: 40px 0 0;
     @include media-min-width(tablet) {
-      padding: 60px 0 30px;
+      padding: 60px 0 0;
     }
     &__item {
       margin: 30px auto;
