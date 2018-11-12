@@ -12,19 +12,19 @@
   </div>
   <div class="slider">
     <div>
-      <img class="source" src="/src/images/slider/slide1.jpeg" alt="Photology Project">
+      <img class="source" src="/src/images/slider/slide1.jpg" alt="Photology Project">
       <p class="slider-copy">Photology</p>
     </div>
     <div>
-      <img class="source" src="/src/images/slider/slide2.jpeg" alt="San Isisdro Project">
+      <img class="source" src="/src/images/slider/slide2.jpg" alt="San Isisdro Project">
       <p class="slider-copy">San Isisdro</p>
     </div>
     <div>
-      <img class="source" src="/src/images/slider/slide3.jpeg" alt="Brandi Project">
+      <img class="source" src="/src/images/slider/slide3.jpg" alt="Brandi Project">
       <p class="slider-copy">Brandi</p>
     </div>
     <div>
-      <img class="source" src="/src/images/slider/slide4.jpeg" alt="Tarapoto Project">
+      <img class="source" src="/src/images/slider/slide4.jpg" alt="Tarapoto Project">
       <p class="slider-copy">Tarapoto</p>
     </div>
 

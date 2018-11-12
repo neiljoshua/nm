@@ -5,7 +5,7 @@
     <?php include('src/includes/navigation.php')
     ?>
     <div class="photo">
-      <img class="photo__image" src="/src/images/about/meforest.png" alt="Photo">
+      <img class="photo__image" src="/src/images/about/meforest.jpg" alt="Photo">
     </div>
     <div class="page-title">
       <h1 class="page-title__title" >Web Developer in New York City</h1>

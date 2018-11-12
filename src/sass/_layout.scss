@@ -1,0 +1,123 @@
+html, body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  text-align: center;
+  &.menu-active {
+    overflow: hidden;
+  }
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  z-index: 100;
+}
+
+.wrapper {
+  opacity: 0;
+  &.loaded {
+    opacity: 1;
+     @include prefix(transition, opacity 0.7s ease-in-out .6s, webkit ms );
+  }
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: $serif;
+}
+
+p {
+  font-family: $sanSerif;
+}
+
+.logo {
+  position: fixed;
+  display: inline-block;
+  vertical-align: middle;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $charcoal;
+  z-index: 300;
+  @include prefix(border-radius, 40px, webkit ms 0);
+  @include animation('pulse 2s ease-in infinite');
+  @include media-min-width(mobile) {
+    top: 20px;
+    left: 20px;
+  }
+  @include media-min-width(tablet) {
+    @include prefix(border-radius, 50px, webkit ms 0);
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left:30px;
+  }
+  &::before {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  &:hover {
+    @include animation('none');
+  }
+  &-image {
+    width: 30px;
+    height: 100%;
+    .active-path {
+      fill: $white;
+    }
+    @include media-min-width(tablet) {
+      width: 40px;
+    }
+  }
+  &.menu-active {
+    background-color: $white;
+    border: 1px $green solid;
+    .active-path {
+      fill: $green;
+    }
+  }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  margin: 60px 20px;
+  @include prefix(calc, '100% - 40px' , webkit ms);
+  letter-spacing: 1px;
+  @include media-min-width(tablet) {
+    margin: 60px auto;
+    width: 100%;
+  }
+  &__title {
+    font-size: 50px;
+    @include media-min-width (mobile) {
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+  }
+  &__copy{
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150%;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+}

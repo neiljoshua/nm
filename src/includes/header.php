@@ -4,12 +4,9 @@
     <title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
     <meta name="Description" content=" Web Developer <?php if ($thisPage!="index") echo " - $thisPage"; ?> | Neil McGrath" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/src/images/favicon/nm.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="/dist/css/vendors.css">
-    <link rel="stylesheet" type="text/css" href="/dist/css/styles.css">
-    <script src="/dist/js/jquery.min.js"></script>
-    <script src="/dist/js/plugins.min.js"></script>
-    <script src="/dist/js/nm.min.js"></script>
+    <link rel="shortcut icon" href="/dist/images/favicon/nm.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/dist/css/styles.min.css">
+    <script src="/dist/js/scripts.min.js"></script>
   </head>
   <body>
   <?php include('pre-loader.php')
