@@ -32,16 +32,16 @@
     &__link {
       display: inline-block;
       font-size: 0;
-      color: $white;
-      @include prefix(transition, color 0.6s linear, webkit ms );
+    }
+    &__icon {
+      display: inline-block;
+      width: 28px;
+      margin: 5px;
+      fill: $white;
+      @include prefix(transition, fill 0.6s linear, webkit ms );
       &:hover {
-        color: $green;
-        @include prefix(transition, color 0.6s linear, webkit ms );
-      }
-      &:before {
-        margin: 0 10px;
-        display: inline-block;
-        font-size: 30px;
+        fill: $green;
+        @include prefix(transition, fill 0.6s linear, webkit ms );
       }
     }
   }

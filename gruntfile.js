@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
     concat: {
       css: {
-        src: ['src/css/vendors/slick-theme.css', 'src/css/vendors/slick.css','src/css/vendors/fontello.css'],
+        src: ['src/css/vendors/slick-theme.css', 'src/css/vendors/slick.css'],
         dest: 'src/css/vendors.css'
       },
       js: {

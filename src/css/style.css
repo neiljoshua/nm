@@ -289,23 +289,23 @@ button:hover {
 .footer-social__link {
   display: inline-block;
   font-size: 0;
-  color: #fff;
-  -webkit-transition: color 0.6s linear;
-  -ms-transition: color 0.6s linear;
-  transition: color 0.6s linear;
 }
-/* line 37, ../sass/globals/_footer.scss */
-.footer-social__link:hover {
-  color: #4DCBCB;
-  -webkit-transition: color 0.6s linear;
-  -ms-transition: color 0.6s linear;
-  transition: color 0.6s linear;
-}
-/* line 41, ../sass/globals/_footer.scss */
-.footer-social__link:before {
-  margin: 0 10px;
+/* line 36, ../sass/globals/_footer.scss */
+.footer-social__icon {
   display: inline-block;
-  font-size: 30px;
+  width: 28px;
+  margin: 5px;
+  fill: #fff;
+  -webkit-transition: fill 0.6s linear;
+  -ms-transition: fill 0.6s linear;
+  transition: fill 0.6s linear;
+}
+/* line 42, ../sass/globals/_footer.scss */
+.footer-social__icon:hover {
+  fill: #4DCBCB;
+  -webkit-transition: fill 0.6s linear;
+  -ms-transition: fill 0.6s linear;
+  transition: fill 0.6s linear;
 }
 
 @keyframes stretchdelay {

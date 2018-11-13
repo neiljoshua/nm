@@ -2,9 +2,35 @@
         <a class="footer__email" href="mailto:neil@neiljoshua.com">neil@neiljoshua.com</a>
 
         <div class="footer-social">
-          <a class="footer-social__link icon-twitter" href="http://twitter.com/NeilJMV" target="_blank">Twitter</a>
-          <a class="footer-social__link icon-linkedin-squared" href="http://www.linkedin.com/in/neiljoshua" target="_blank">LinkedIn</a>
-          <a class="footer-social__link icon-instagram" href="http://www.instagram.com/neiljoshua/" target="_blank">Instagram</a>
+          <a class="footer-social__link" href="http://twitter.com/NeilJMV" target="_blank">Twitter
+          <?php if ($thisPage=="projects") {
+            include('../src/images/icons/twitter.php');
+          } else {
+            include('src/images/icons/twitter.php');
+          }
+          ?>
+          </a>
+          <a class="footer-social__link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">LinkedIn
+          <?php if ($thisPage=="projects") {
+            include('../src/images/icons/linkedin.php');
+          } else {
+            include('src/images/icons/linkedin.php');
+          }
+          ?></a>
+          <a class="footer-social__link" href="http://www.instagram.com/neiljoshua/" target="_blank">Instagram
+          <?php if ($thisPage=="projects") {
+            include('../src/images/icons/instagram.php');
+          } else {
+            include('src/images/icons/instagram.php');
+          }
+          ?></a>
+          <a class="footer-social__link" href="http://www.github.com/neiljoshua/" target="_blank">Instagram
+          <?php if ($thisPage=="projects") {
+            include('../src/images/icons/github.php');
+          } else {
+            include('src/images/icons/github.php');
+          }
+          ?></a>
         </div>
       </footer>
     </div>
