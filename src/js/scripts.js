@@ -54,17 +54,19 @@ $(document).ready(function() {
       email.focus();
       email.attr('placeholder',wrongEmailMessage);
     } else {
+      var url = "/src/includes/sendForm.php",
+          formdata = $(form).serialize();
+
       email.attr('placeholder',emailPlaceHolder);
       email.removeClass('invalid');
-      var formdata = $(form).serialize();
       $.ajax({
          type: "POST",
          url: url,
          data: formdata,
          success: function(response)
          {
-            $('form input').val('');
-            $('textarea').val('');
+            $('form input[type=text]').val('');
+            $('#user-message-text').val('');
             $('.success').addClass('visible');
             $('body').addClass('submitted');
          }

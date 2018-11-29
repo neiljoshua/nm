@@ -1,6 +1,6 @@
 .contact {
   .contact-hero {
-    background: url('/src/images/contact/macbook.jpg') center center no-repeat;
+    background: image('contact/macbook.jpg') center center no-repeat;
     @include prefix(background-size, cover, webkit ms o );
     @include calc(min-height,125vw/(1200/694));
     @include media-min-width(mobile) {

@@ -91,21 +91,21 @@ button {
   font-family: 'Catamaran-Thin';
   font-style: normal;
   font-weight: 100;
-  src: url(/src/font/Catamaran/Catamaran-Thin.ttf) format("truetype"), url(/src/font/Catamaran/Catamaran-Thin.ttf) format("truetype");
+  src: font("Catamaran/Catamaran-Thin.ttf") format("truetype"), font("Catamaran/Catamaran-Thin.ttf") format("truetype");
 }
 /* Catamaran Regular */
 @font-face {
   font-family: 'Catamaran-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url(/src/font/Catamaran/Catamaran-Regular.ttf) format("truetype"), url(/src/font/Catamaran/Catamaran-Regular.ttf) format("truetype");
+  src: font("Catamaran/Catamaran-Regular.ttf") format("truetype"), font("Catamaran/Catamaran-Regular.ttf") format("truetype");
 }
 /* Catamaran SemiBold */
 @font-face {
   font-family: 'Catamaran-SemiBold';
   font-style: normal;
   font-weight: 600;
-  src: url(/src/font/Catamaran/Catamaran-SemiBold.ttf) format("truetype"), url(/src/font/Catamaran/Catamaran-SemiBold.ttf) format("truetype");
+  src: font("Catamaran/Catamaran-SemiBold.ttf") format("truetype"), font("Catamaran/Catamaran-SemiBold.ttf") format("truetype");
 }
 /*Halant*/
 /* Halant Light */
@@ -113,14 +113,14 @@ button {
   font-family: 'Halant-Light';
   font-style: normal;
   font-weight: 300;
-  src: url(/src/font/Halant/Halant-Light.ttf) format("truetype"), url(/src/font/Halant/Halant-Light.ttf) format("truetype");
+  src: font("Halant/Halant-Light.ttf") format("truetype"), font("Halant/Halant-Light.ttf") format("truetype");
 }
 /* Halant Regular */
 @font-face {
   font-family: 'Halant-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url(/src/font/Halant/Halant-Regular.ttf) format("truetype"), url(/src/font/Halant/Halant-Regular.ttf) format("truetype");
+  src: font("Halant/Halant-Regular.ttf") format("truetype"), font("Halant/Halant-Regular.ttf") format("truetype");
 }
 @keyframes pulse {
   0% {
@@ -280,7 +280,7 @@ button:hover {
   /* line 23, ../sass/globals/_footer.scss */
   .footer-social {
     float: right;
-    width: 200px;
+    width: 220px;
     text-align: right;
     padding-right: 30px;
   }
@@ -293,19 +293,32 @@ button:hover {
 /* line 36, ../sass/globals/_footer.scss */
 .footer-social__icon {
   display: inline-block;
-  width: 28px;
+  width: 22px;
   margin: 5px;
   fill: #fff;
-  -webkit-transition: fill 0.6s linear;
-  -ms-transition: fill 0.6s linear;
-  transition: fill 0.6s linear;
+  -webkit-transition: fill 0.6s linear 0.2s;
+  -ms-transition: fill 0.6s linear 0.2s;
+  transition: fill 0.6s linear 0.2s;
 }
-/* line 42, ../sass/globals/_footer.scss */
+@media (min-width: 601px) {
+  /* line 36, ../sass/globals/_footer.scss */
+  .footer-social__icon {
+    width: 24px;
+    margin: 0 10px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 36, ../sass/globals/_footer.scss */
+  .footer-social__icon {
+    width: 28px;
+  }
+}
+/* line 49, ../sass/globals/_footer.scss */
 .footer-social__icon:hover {
   fill: #4DCBCB;
-  -webkit-transition: fill 0.6s linear;
-  -ms-transition: fill 0.6s linear;
-  transition: fill 0.6s linear;
+  -webkit-transition: fill 0.6s linear 0.1s;
+  -ms-transition: fill 0.6s linear 0.1s;
+  transition: fill 0.6s linear 0.1s;
 }
 
 @keyframes stretchdelay {
@@ -854,41 +867,59 @@ button:hover {
 
 /* line 2, ../sass/_projects.scss */
 .projects main {
-  padding: 50px 0;
+  padding: 50px 30px;
 }
-/* line 6, ../sass/_projects.scss */
+@media (min-width: 601px) {
+  /* line 2, ../sass/_projects.scss */
+  .projects main {
+    padding: 50px 40px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 2, ../sass/_projects.scss */
+  .projects main {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 981px) {
+  /* line 2, ../sass/_projects.scss */
+  .projects main {
+    padding: 50px;
+  }
+}
+/* line 15, ../sass/_projects.scss */
 .projects .project-list {
   padding: 40px 0 0;
 }
 @media (min-width: 769px) {
-  /* line 6, ../sass/_projects.scss */
+  /* line 15, ../sass/_projects.scss */
   .projects .project-list {
     padding: 60px 0 0;
   }
 }
-/* line 11, ../sass/_projects.scss */
+/* line 20, ../sass/_projects.scss */
 .projects .project-list__item {
   margin: 30px auto;
 }
 @media (min-width: 601px) {
-  /* line 11, ../sass/_projects.scss */
+  /* line 20, ../sass/_projects.scss */
   .projects .project-list__item {
     margin: 40px auto;
   }
 }
 @media (min-width: 769px) {
-  /* line 11, ../sass/_projects.scss */
+  /* line 20, ../sass/_projects.scss */
   .projects .project-list__item {
     margin: 45px auto;
   }
 }
 @media (min-width: 981px) {
-  /* line 11, ../sass/_projects.scss */
+  /* line 20, ../sass/_projects.scss */
   .projects .project-list__item {
     margin: 50px auto;
   }
 }
-/* line 23, ../sass/_projects.scss */
+/* line 32, ../sass/_projects.scss */
 .projects .project-list__link {
   display: inline-block;
   color: #000;
@@ -896,20 +927,20 @@ button:hover {
   font-size: 30px;
 }
 @media (min-width: 601px) {
-  /* line 23, ../sass/_projects.scss */
+  /* line 32, ../sass/_projects.scss */
   .projects .project-list__link {
     font-size: 55px;
   }
 }
 @media (min-width: 769px) {
-  /* line 23, ../sass/_projects.scss */
+  /* line 32, ../sass/_projects.scss */
   .projects .project-list__link {
     font-size: 75px;
     -webkit-transition: all 0.5s ease-in-out 0.3s;
     -ms-transition: all 0.5s ease-in-out 0.3s;
     transition: all 0.5s ease-in-out 0.3s;
   }
-  /* line 34, ../sass/_projects.scss */
+  /* line 43, ../sass/_projects.scss */
   .projects .project-list__link:hover {
     color: #4DCBCB;
     -webkit-transition: all 0.5s ease-in-out;
@@ -917,7 +948,7 @@ button:hover {
     transition: all 0.5s ease-in-out;
   }
 }
-/* line 42, ../sass/_projects.scss */
+/* line 51, ../sass/_projects.scss */
 .projects .projects__copy {
   margin: 35px auto;
   font-size: 18px;
@@ -1005,7 +1036,7 @@ button:hover {
 
 /* line 2, ../sass/_contact.scss */
 .contact .contact-hero {
-  background: url("/src/images/contact/macbook.jpg") center center no-repeat;
+  background: url("..//images/contact/macbook.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
