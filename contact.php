@@ -4,7 +4,9 @@
   ?>
     <?php include('src/includes/navigation.php')
     ?>
-    <div class="contact-hero"></div>
+    <div class="contact-hero">
+      <img class="contact-hero__image" src="/src/images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
+    </div>
     <div class="contact-form-container">
       <form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
         <fieldset>
@@ -17,8 +19,9 @@
         </fieldset>
         <textarea id="user-message-text" name="user-message" required> </textarea>
         <button>Submit</button>
-        <div class="success">
-          <p class="success__message center">Thank you for the message!</p>
+        <div class="message">
+          <p class="message__status center">Sending message </p>
+          <p class="message__success center">Thank you for the message!</p>
         </div>
       </form>
     </div>

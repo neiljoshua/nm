@@ -4,9 +4,7 @@
   ?>
     <?php include('src/includes/navigation.php')
     ?>
-    <div class="photo">
-      <img class="photo__image" src="/src/images/about/meforest.jpg" alt="Photo">
-    </div>
+    <img class="about-image" src="/src/images/about/meforest.jpg" alt="Neil McGrath. Front End Developer living in New York City, exploring the world, loves web technologies, animals, plants, and enjoy gardening.">
     <div class="page-title">
       <h1 class="page-title__title" >Web Developer in New York City</h1>
     </div>

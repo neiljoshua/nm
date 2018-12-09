@@ -2,15 +2,14 @@
   main {
     margin: 80px 0;
   }
-  .photo {
-    overflow: hidden;
-    max-height: 300px;
+
+  .about-image {
+    margin: 10px auto;
     @include media-min-width(mobile) {
-      max-height: 450px;
+      margin: 20px auto;
     }
-    &__image {
-      margin: 10px auto;
-      @include calc(min-height,100vw/(720/264));
+    @include media-min-width(tablet) {
+      margin: 50px auto;
     }
   }
 

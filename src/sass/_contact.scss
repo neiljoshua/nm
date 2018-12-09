@@ -1,13 +1,22 @@
 .contact {
   .contact-hero {
-    background: image('contact/macbook.jpg') center center no-repeat;
+    position: relative;
     @include prefix(background-size, cover, webkit ms o );
-    @include calc(min-height,125vw/(1200/694));
-    @include media-min-width(mobile) {
-      @include calc(min-height,120vw/(1200/694));
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-bottom: 56.25%;
+      @include media-min-width(tablet) {
+        padding-bottom: 46.25%;
+      }
     }
-    @include media-min-width(tablet) {
-      @include calc(min-height,80vw/(1200/694));
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -24,29 +33,39 @@
   }
 
   .contact-form-container {
-    margin:20px 0;
+    margin: 20px;
+    @include calc(width, "100% - 40px" );
+    @include media-min-width(tablet) {
+      max-width: 768px;
+      margin: 20px auto;
+    }
   }
 
-  .success {
-    visibility: hidden;
+  .message {
     position: absolute;
-    opacity: 0.9;
-    margin: 20%;
     top:0;
     left: 0;
     bottom: 0;
     right: 0;
-    &__message {
-      font-size: 25px;
-      padding: 50px 30px;
-      color: $white;
-      background: $silver;
-      letter-spacing: 3px;
-      border: 1px solid $black;
-      @include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
-    }
+    display: none;
     &.visible {
-      visibility: visible;
+      display: block;
+    }
+    &__status,
+    &__success {
+      opacity: 0;
+      padding: 50px;
+      font-size: 30px;
+      color: $white;
+      background-color: $clearblack;
+      border: 1px solid $black;
+      letter-spacing: 3px;
+      @include animation('pulse 1.5s ease-in infinite');
+      @include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
+      &.visible {
+        @include prefix(transition, opacity 0.6s ease-in 1s, webkit ms );
+        opacity: 1;
+      }
     }
   }
 }

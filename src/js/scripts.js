@@ -45,10 +45,12 @@ $(document).ready(function() {
   $('#contact-form').submit(function(e) {
     e.preventDefault();
     var form  = $(this),
-        email = $('input[name=user-email]'),
+        email = $('input[name="user-email]'),
         wrongEmailMessage = "Enter a valid email";
 
-    if ( !window.validateEmail( email.val() ) &&  ( email.prop('required') ) ) {
+    $('.message').addClass('visible');
+    $('.message__status').addClass('visible');
+    if ( !window.validateEmail( email.val() ) && ( email.prop('required') ) ) {
       email.addClass('invalid');
       email.val('');
       email.focus();
@@ -67,8 +69,8 @@ $(document).ready(function() {
          {
             $('form input[type=text]').val('');
             $('#user-message-text').val('');
-            $('.success').addClass('visible');
-            $('body').addClass('submitted');
+            $('.message__status').removeClass('visible');
+            $('.message__success').addClass('visible');
          }
        });
       return false;
@@ -76,9 +78,8 @@ $(document).ready(function() {
   });
 
   $(document).on('click', function() {
-
-    $('.success').removeClass('visible');
-    $('.wrapper').removeClass('submitted');
+    $('.message__success').removeClass('visible');
+    $('.message').removeClass('visible');
   });
 
   window.validateEmail = function( emails ) {
