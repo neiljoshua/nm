@@ -36,13 +36,12 @@
     }
   }
 
-  .menu {
-    &-active {
-      @include media-min-width(tablet) {
-      background-color: $clearblack;
-        left: 50%;
-        @include prefix(transition, left 0.6s ease-in-out, webkit ms );
-      }
+  .menu-active {
+    overflow: hidden;
+    @include media-min-width(tablet) {
+    background-color: $clearblack;
+      left: 50%;
+      @include prefix(transition, left 0.6s ease-in-out, webkit ms );
     }
   }
 
@@ -89,10 +88,6 @@
       font-size: 25px;
     }
   }
-}
-
-.menu-active {
-  overflow: hidden;
 }
 
 .hidden {

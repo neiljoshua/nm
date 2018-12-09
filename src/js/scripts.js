@@ -36,10 +36,6 @@ $(document).ready(function() {
       $(this).toggleClass('is-active');
       $(pageBody).toggleClass('menu-active');
       $('.menu').toggleClass('menu-active');
-
-      if( !$('.wrapper').hasClass('home') ) {
-        $('.logo').toggleClass('menu-active');
-      }
   });
 
   $('#contact-form').submit(function(e) {

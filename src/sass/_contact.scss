@@ -63,7 +63,7 @@
       @include animation('pulse 1.5s ease-in infinite');
       @include prefix(box-shadow, -6px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
       &.visible {
-        @include prefix(transition, opacity 0.6s ease-in 1s, webkit ms );
+        @include prefix(transition, opacity 0.6s ease-in 0.2s, webkit ms );
         opacity: 1;
       }
     }
