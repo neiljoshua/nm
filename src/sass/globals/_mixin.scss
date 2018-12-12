@@ -25,7 +25,6 @@
   animation: #{$str};
 }
 
-// CSS3 calc() function to perform calculations
 @mixin calc($property, $expression) {
   #{$property}: -webkit-calc(#{$expression});
   #{$property}: -moz-calc(#{$expression});
@@ -46,7 +45,6 @@
   #{$property}: $value;
 }
 
-// media queries
 @mixin media($type) {
   @if $type == desktop {
     @media (max-width: 980px) { @content; }
@@ -71,7 +69,6 @@
   }
 }
 
-// media queries
 @mixin media-min-width($type) {
   @if $type == desktop {
     @media (min-width: 980px + 1) { @content; }
@@ -83,8 +80,6 @@
     @media (min-width: 600px + 1)  { @content; }
   }
 }
-
-// animations
 
 @keyframes pulse {
   0% {
@@ -113,4 +108,13 @@
 @keyframes stretchdelay {
   0%, 40%, 100% { transform: scaleY(0.4) }
   20% { transform: scaleY(1.0) }
+}
+
+@include keyframes(fade-out) {
+ 33% {
+   opacity: 1;
+ }
+ 43% {
+   opacity: 0;
+ }
 }

@@ -13,18 +13,7 @@ $(document).ready(function() {
 
   var emailPlaceHolder = $('input[name=user-email]').attr('placeholder');
 
-  $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    infinite: true,
-    fade: true,
-    cssEase: 'linear',
-    pauseOnHover: false
-  });
-
-  $('.slick-slide').each(function() {
+  $('.slider__slide').each(function() {
       var link = $(this).find("img").attr("src");
       $(this).css("background-image", "url(" + link + ")");
   });

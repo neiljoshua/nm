@@ -11,23 +11,22 @@
     </div>
   </div>
   <div class="slider">
-    <div>
+    <div class="slider__slide">
       <img class="source" src="/src/images/slider/slide1.jpg" alt="Photology Project">
-      <p class="slider-copy">Photology</p>
+      <p class="slider__copy">Photology</p>
     </div>
-    <div>
+    <div class="slider__slide">
       <img class="source" src="/src/images/slider/slide2.jpg" alt="San Isisdro Project">
-      <p class="slider-copy">San Isisdro</p>
+      <p class="slider__copy">San Isisdro</p>
     </div>
-    <div>
+    <div class="slider__slide">
       <img class="source" src="/src/images/slider/slide3.jpg" alt="Brandi Project">
-      <p class="slider-copy">Brandi</p>
+      <p class="slider__copy">Brandi</p>
     </div>
-    <div>
+    <div class="slider__slide">
       <img class="source" src="/src/images/slider/slide4.jpg" alt="Tarapoto Project">
-      <p class="slider-copy">Tarapoto</p>
+      <p class="slider__copy">Tarapoto</p>
     </div>
-
   </div>
 </main>
 <footer class="hidden">

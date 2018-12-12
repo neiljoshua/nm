@@ -12,20 +12,6 @@ module.exports = function(grunt) {
       }
     },
 
-    concat: {
-      css: {
-        src: ['src/css/vendors/slick-theme.css', 'src/css/vendors/slick.css'],
-        dest: 'src/css/vendors.css'
-      },
-      js: {
-        options: {
-          separator: ';',
-        },
-        src: ['src/js/plugins/jquery.js', 'src/js/plugins/slick.js'],
-        dest: 'src/js/plugins.js',
-      }
-    },
-
     jshint: {
       all: ['src/js/scripts.js']
     },
@@ -38,7 +24,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         files: {
-          'dist/js/scripts.min.js': ['src/js/plugins.js', 'src/js/scripts.js']
+          'dist/js/scripts.min.js': ['src/js/plugins/jquery.js', 'src/js/scripts.js']
         }
       }
     },
@@ -61,12 +47,8 @@ module.exports = function(grunt) {
 
     watch: {
       css: {
-        files: ['src/sass/*.scss', 'src/css/*.css'],
-        tasks: ['compass','concat']
-      },
-      js: {
-        files: ['src/js/**/*.js'],
-        tasks: ['concat']
+        files: ['src/sass/*.scss'],
+        tasks: ['compass']
       }
     }
 
@@ -82,8 +64,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['compass','jshint', 'concat', 'watch']);
-  grunt.registerTask('dev', ['compass', 'jshint', 'concat', 'watch']);
+  grunt.registerTask('default', ['compass','jshint', 'watch']);
+  grunt.registerTask('dev', ['compass', 'jshint', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'uglify', 'cssmin']);
 
 };
