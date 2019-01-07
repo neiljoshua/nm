@@ -1,0 +1,35 @@
+mkcert nm.local localhost 127.0.0.1 ::1
+
+/Users/neiljoshua/Library/Application Support/mkcert
+
+sudo openssl genrsa -out ~/'Library/Application Support/mkcert/rootCA-key.pem' 2048
+
+openssl rsa -outform der -in nm.local+3-key.pem -out /private/etc.apache2/localhost.key
+
+openssl x509 -outform der -in nm.local+3.pem -out server.crt
+
+
+req.cnf #config file
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+  [req_distinguished_name]
+C = US
+ST = VA
+L = SomeCity
+O = MyCompany
+OU = MyDivision
+CN = nm.local
+  [v3_req]
+keyUsage = critical, digitalSignature, keyAgreement
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+  [alt_names]
+DNS.1 = nm.local
+IP.1 = 127.0.0.1
+
+
+ openssl req -x509 -nodes -days 730 -newkey rsa:2048 -keyout nm.local.key -out nm.local.cert -config req.cnf -sha256
+
+

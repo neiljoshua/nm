@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "dist"
+		},
+		{
+			"path": "node_modules"
+		},
+		{
+			"path": "projects"
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "static"
+		}
+	]
+}

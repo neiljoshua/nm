@@ -1,14 +1,14 @@
    <?php $thisPage="contact"; ?>
   <?php
-    include('src/includes/header.php')
+    include('static/includes/header.php')
   ?>
-    <?php include('src/includes/navigation.php')
+    <?php include('static/includes/navigation.php')
     ?>
     <div class="contact-hero">
-      <img class="contact-hero__image" src="/src/images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
+      <img class="contact-hero__image" src="/static/images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
     </div>
     <div class="contact-form-container">
-      <form id="contact-form" action="/src/includes/sendForm.php" method="POST" >
+      <form id="contact-form" action="/static/includes/sendForm.php" method="POST" >
         <fieldset>
           <input type="text" name="user-name" placeholder="First Name" required>
           <input type="text" name="user-last-name" placeholder="Last Name" required>
@@ -28,5 +28,5 @@
   </main>
 <footer class="footer">
 <?php
-  include('src/includes/footer.php')
+  include('static/includes/footer.php')
 ?>

@@ -1,8 +1,8 @@
 <?php $thisPage="index"; ?>
 
-<?php include('src/includes/header.php')
+<?php include('static/includes/header.php')
 ?>
-  <?php include('src/includes/navigation.php')
+  <?php include('static/includes/navigation.php')
   ?>
   <div class="home-hero">
     <div class="home--item">
@@ -12,24 +12,24 @@
   </div>
   <div class="slider">
     <div class="slider__slide">
-      <img class="source" src="/src/images/slider/slide1.jpg" alt="Photology Project">
+      <img class="source" src="/static/images/slider/slide1.jpg" alt="Photology Project">
       <p class="slider__copy">Photology</p>
     </div>
     <div class="slider__slide">
-      <img class="source" src="/src/images/slider/slide2.jpg" alt="San Isisdro Project">
-      <p class="slider__copy">San Isisdro</p>
+      <img class="source" src="/static/images/slider/slide2.jpg" alt="San Isisdro Project">
+      <p class="slider__copy">San Isidro</p>
     </div>
     <div class="slider__slide">
-      <img class="source" src="/src/images/slider/slide3.jpg" alt="Brandi Project">
+      <img class="source" src="/static/images/slider/slide3.jpg" alt="Brandi Project">
       <p class="slider__copy">Brandi</p>
     </div>
     <div class="slider__slide">
-      <img class="source" src="/src/images/slider/slide4.jpg" alt="Tarapoto Project">
+      <img class="source" src="/static/images/slider/slide4.jpg" alt="Tarapoto Project">
       <p class="slider__copy">Tarapoto</p>
     </div>
   </div>
 </main>
 <footer class="hidden">
 <?php
-    include('src/includes/footer.php')
+    include('static/includes/footer.php')
 ?>

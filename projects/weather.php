@@ -1,8 +1,8 @@
   <?php $thisPage="projects"; ?>
   <?php
-    include('../src/includes/header.php')
+    include('../static/includes/header.php')
   ?>
-    <?php include('../src/includes/navigation.php')
+    <?php include('../static/includes/navigation.php')
     ?>
 
     <div class="project-title">
@@ -18,7 +18,7 @@
 
       <div class="project-image">
           <a class="project-image__link" href="http://weather.neiljoshua.com/" target="_blank" >
-            <img class="project-image__img" src="../src/images/projects/weather.jpg" alt="Weather App" >
+            <img class="project-image__img" src="../static/images/projects/weather.jpg" alt="Weather App" >
           </a>
         </div>
 
@@ -40,5 +40,5 @@
 
 <footer class="footer">
 <?php
-  include('../src/includes/footer.php')
+  include('../static/includes/footer.php')
 ?>

@@ -9,11 +9,15 @@
       padding-bottom: 56.25%;
       background-color: $green;
       opacity: 0.5;
+      @include media-min-width(tablet){
+        padding-bottom: 46.25%;
+      }
     }
     &__image {
       position: absolute;
       @include calc(width, "100% / 3" );
-      height: 60%;
+      max-width: 260px;
+      max-height: 260px;
       top: 50%;
       left: 50%;
       @include prefix(transform, translate(-50%, -50%), webkit ms );

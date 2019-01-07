@@ -1,9 +1,9 @@
   <?php $thisPage="projects";?>
   <?php
-    include('../src/includes/header.php')
+    include('../static/includes/header.php')
   ?>
 
-    <?php include('../src/includes/navigation.php')
+    <?php include('../static/includes/navigation.php')
     ?>
 
     <ul class="project-list">
@@ -32,5 +32,5 @@
 
 <footer class="footer">
 <?php
-  include('../src/includes/footer.php')
+  include('../static/includes/footer.php')
 ?>
