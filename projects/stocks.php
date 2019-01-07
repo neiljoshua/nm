@@ -11,13 +11,13 @@
 
     <div class="button">
       <a class="button__link" href="/projects">Back to Projects</a>
-      <a class="button__link" href="http://www.stocks.neiljoshua.com" target="_blank">View Project</a>
+      <a class="button__link" href="http://stocks.neiljoshua.com" target="_blank">View Project</a>
     </div>
 
     <div class="project-row">
 
       <div class="project-image">
-        <a class="project-image__link" href="http://www.stocks.neiljoshua.com" target="_blank" >
+        <a class="project-image__link" href="http://stocks.neiljoshua.com" target="_blank" >
           <img class="project-image__img" src="../static/images/projects/stocks.jpg" alt="Brandi" >
         </a>
        </div>
