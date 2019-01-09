@@ -6,7 +6,7 @@
   "scripts": {
     "test": "/",
     "start": "webpack-dev-server --history-api-fallback --inline --progress --config dev.config.js",
-    "dev": "webpack --config dev.config.js",
+    "dev": "webpack --config dev.config.js --watch",
     "build": "webpack --config prod.config.js"
   },
   "repository": {

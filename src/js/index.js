@@ -42,7 +42,7 @@ $(document).ready(function() {
       email.focus();
       email.attr('placeholder',wrongEmailMessage);
     } else {
-      var url = "/src/includes/sendForm.php",
+      var url = "/static/includes/sendForm.php",
           formdata = $(form).serialize();
 
       email.attr('placeholder',emailPlaceHolder);
