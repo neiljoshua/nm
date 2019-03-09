@@ -22,9 +22,9 @@
       <li class="project-list__item">
         <a class="project-list__link" href="brandi">Brandi</a>
       </li>
-      <li class="project-list__item">
+      <!-- <li class="project-list__item">
         <a class="project-list__link" href="weather">Weather App</a>
-      </li>
+      </li> -->
     </ul>
 
     <p class="projects__copy"> Some projects above may have been developed as prototypes or for demonstration purposes.</p>
