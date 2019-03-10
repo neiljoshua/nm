@@ -27,6 +27,7 @@
           <ul class="project-copy__list">
             <li class="project-copy__item">Ruby On Rails</li>
             <li class="project-copy__item">Turbolinks</li>
+            <li class="project-copy__item">Haml</li>
             <li class="project-copy__item">Responsive</li>
             <li class="project-copy__item">HMTL5</li>
             <li class="project-copy__item">CSS3</li>
