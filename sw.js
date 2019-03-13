@@ -30,6 +30,7 @@ const filesToCache = [
   '/static/font/Halant/Halant-SemiBold.ttf',
   '/static/font/Halant/Halant-Bold.ttf',
   '/projects/',
+  '/projects',
   '/contact',
   '/about',
   '/projects/brandi',
