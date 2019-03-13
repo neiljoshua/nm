@@ -30,11 +30,10 @@ const filesToCache = [
   '/static/font/Halant/Halant-SemiBold.ttf',
   '/static/font/Halant/Halant-Bold.ttf',
   '/projects/',
-  '/projects',
   '/contact',
   '/about',
   '/projects/brandi',
-  '/projects/index',
+  '/projects/index.php',
   '/projects/photology',
   '/projects/sanisidro',
   '/projects/stocks',
@@ -58,13 +57,13 @@ self.addEventListener('install', function (event) {
 });
 
 self.addEventListener('fetch', function (event) {
-  // console.log('Fetch event for ', event.request.url);
+  console.log('Fetch event for ', event.request.url);
   event.respondWith(caches.match(event.request).then(function (response) {
     if (response) {
-      // console.log('Found ', event.request.url, ' in cache');
+      console.log('Found ', event.request.url, ' in cache');
       return response;
     }
-    // console.log('Network request for ', event.request.url);
+    console.log('Network request for ', event.request.url);
     return fetch(event.request);
 
     return caches.open(staticCacheName).then(function (cache) {
