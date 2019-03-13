@@ -20,15 +20,15 @@ const filesToCache = [
   '/static/images/slider/slide2.jpg',
   '/static/images/slider/slide3.jpg',
   '/static/images/slider/slide4.jpg',
-  '/static/font/catamaran/Catamaran-Regular.ttf',
-  '/static/font/catamaran/Catamaran-SemiBold.ttf',
-  '/static/font/catamaran/Catamaran-Thin.ttf',
-  '/static/font/catamaran/OFL.txt',
-  '/static/font/halant/Halant-Regular.ttf',
-  '/static/font/halant/Halant-Light.ttf',
-  '/static/font/halant/Halant-Medium.ttf',
-  '/static/font/halant/Halant-SemiBold.ttf',
-  '/static/font/halant/Halant-Bold.ttf',
+  '/static/font/Catamaran/Catamaran-Regular.ttf',
+  '/static/font/Catamaran/Catamaran-SemiBold.ttf',
+  '/static/font/Catamaran/Catamaran-Thin.ttf',
+  '/static/font/Catamaran/OFL.txt',
+  '/static/font/Halant/Halant-Regular.ttf',
+  '/static/font/Halant/Halant-Light.ttf',
+  '/static/font/Halant/Halant-Medium.ttf',
+  '/static/font/Halant/Halant-SemiBold.ttf',
+  '/static/font/Halant/Halant-Bold.ttf',
   '/projects/brandi.php',
   '/projects/index.php',
   '/projects/photology.php',
@@ -47,7 +47,7 @@ const filesToCache = [
 const staticCacheName = 'pages-cache-v1';
 
 self.addEventListener('install', function (event) {
-  // console.log('Attempting to install service worker and cache static assets');
+  console.log('Attempting to install service worker and cache static assets');
   event.waitUntil(caches.open(staticCacheName).then(function (cache) {
     return cache.addAll(filesToCache);
   }));
@@ -68,7 +68,7 @@ self.addEventListener('fetch', function (event) {
       return response;
     });
   }).catch(function (error) {
-
+    console.log("Service Worker failed to be installed");
     // TODO 6 - Respond with custom offline page
 
   }));
