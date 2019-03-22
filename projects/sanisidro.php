@@ -12,7 +12,7 @@
 
     <div class="button">
       <a class="button__link" href="/projects/"> Back to Projects</a>
-      <a class="button__link" href="http://sanisidro.neiljoshua.com" target="_blank">View Project</a>
+      <a class="button__link" href="https://sanisidro.neiljoshua.dev" target="_blank">View Project</a>
     </div>
 
     <div class="project-row">
