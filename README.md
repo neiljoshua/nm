@@ -7,6 +7,5 @@
 ## Grunt
 1. Run `grunt`
 
-## Environments
-
-* Url: http://www.neiljoshua.com/
+## Website
+Url: http://www.neiljoshua.com/
