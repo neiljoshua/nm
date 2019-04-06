@@ -4,8 +4,9 @@
 
 1. Run `npm install` or `npm update`
 
-## Grunt
-1. Run `grunt`
+## Enviroments
+1. Run `npm run  dev` to run on developemnt enviroment
+2. Run `npm run build` to run app
 
 ## Website
-Url: http://www.neiljoshua.com/
+Url: https://.neiljoshua.dev/

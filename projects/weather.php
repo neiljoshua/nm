@@ -17,7 +17,7 @@
     <div class="project-row">
 
       <div class="project-image">
-          <a class="project-image__link" href="http://weather.neiljoshua.com/" target="_blank" >
+          <a class="project-image__link" href="http://weather.neiljoshua.dev/" target="_blank" >
             <img class="project-image__img" src="../static/images/projects/weather.jpg" alt="Weather App" >
           </a>
         </div>
@@ -28,10 +28,10 @@
             <li class="project-copy__item">Responsive app</li>
             <li class="project-copy__item">HMTL5</li>
             <li class="project-copy__item">CSS3</li>
-            <li class="project-copy__item">JavaScript</li>
+            <li class="project-copy__item">jQuery</li>
             <li class="project-copy__item">AJAX</li>
             <li class="project-copy__item">JSON</li>
-            <li class="project-copy__item">Weather Underground API</li>
+            <li class="project-copy__item">AccueWeather API</li>
           </ul>
       </div>
 
