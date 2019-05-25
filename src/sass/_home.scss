@@ -11,10 +11,10 @@
   .hamburger {
     background-color: $white;
     span {
-      background: $charcoal;
+      background: $gray;
       &::before,
       &::after {
-        background: $charcoal;
+        background: $gray;
       }
     }
     &.is-active {
@@ -54,7 +54,7 @@
     z-index: 40;
     background: $clearblack;
     @include media-min-width(tablet) {
-      background: $charcoal;
+      background: $gray;
       float: left;
       width: 50%;
       height: 100vh;
@@ -71,7 +71,7 @@
     z-index: 10;
     &__title,
     &__copy {
-      font-family: sanserif;
+      font-family: $serif;
       color: $white;
       padding-bottom: 15px;
     }
@@ -81,7 +81,10 @@
         font-size: 60px;
       }
       @include media-min-width(tablet) {
-        font-size: 70px;
+        font-size: 62px;
+      }
+      @include media-min-width(desktop) {
+        font-size: 75px;
       }
     }
     &__copy {

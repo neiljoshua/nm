@@ -4,7 +4,7 @@
   right: 0;
   height: 100%;
   left: 100%;
-  background-color: $charcoal;
+  background-color: $gray;
   z-index: 60;
   @include prefix(box-shadow, -3px 3px 5px 0px rgba(0,0,0,0.33), webkit ms);
   @include prefix(transition, left 0.6s ease-in-out .1s, webkit ms);

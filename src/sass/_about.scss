@@ -7,8 +7,7 @@
       content: "";
       display: block;
       padding-bottom: 56.25%;
-      background-color: $green;
-      opacity: 0.5;
+      background-image: linear-gradient(to right bottom, #4bd8f5, #5fcef1, #70c3e9, #7eb9e0, #88afd4, #86aed2, #83add0, #81acce, #71b4d4, #61bcd5, #53c4d2, #4dcbcb);
       @include media-min-width(desktop) {
         padding-bottom: 46.25%;
       }

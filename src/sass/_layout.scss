@@ -16,8 +16,20 @@ body {
 
 header {
   position: fixed;
-  height: 60px;
+  width: calc(100% - 40px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
   z-index: 100;
+  @include media-min-width(tablet) {
+    width: calc(100% - 60px);
+    margin: 30px;
+  }
+  @include media-min-width(desktop) {
+    width: calc(100% - 80px);
+    margin: 40px;
+  }
 }
 
 .wrapper {
@@ -40,29 +52,20 @@ p {
 }
 
 .logo {
-  position: fixed;
-  display: inline-block;
   vertical-align: middle;
-  top: 15px;
-  left: 15px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   text-decoration: none;
   cursor: pointer;
-  background-color: $charcoal;
-  z-index: 300;
-  @include prefix(border-radius, 40px, webkit ms);
+  background-color: $gray;
+  border: 1px solid $silver;
+  @include prefix(border-radius, 50%, webkit ms);
   @include animation('pulse 2s ease-in infinite');
-  @include media-min-width(mobile) {
-    top: 20px;
-    left: 20px;
-  }
   @include media-min-width(tablet) {
-    @include prefix(border-radius, 50px, webkit ms);
-    width: 50px;
-    height: 50px;
-    top: 30px;
-    left:30px;
+    width: 34px;
+    height: 34px;
+    padding: 8px;
   }
   &::before {
     margin-right: 0;
@@ -72,13 +75,13 @@ p {
     @include animation('none');
   }
   &-image {
-    width: 30px;
+    width: 28px;
     height: 100%;
     .active-path {
       fill: $white;
     }
     @include media-min-width(tablet) {
-      width: 40px;
+      width: 34px;
     }
   }
   &.menu-active {

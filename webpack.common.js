@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -12,11 +12,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use :['css-loader', 'sass-loader']
-        })
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader:  MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+              reloadAll: true,
+            },
+          },
+          'css-loader',
+          'sass-loader'
+        ],
       },
       {
         test: /\.js$/,
@@ -49,6 +56,8 @@ module.exports = {
         jQuery: "jquery",
         "window.jQuery": "jquery"
     }),
-    new ExtractTextPlugin('styles.css')
+    new MiniCssExtractPlugin({
+      filename: 'styles.css'
+    })
   ]
 };
