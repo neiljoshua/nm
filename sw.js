@@ -60,7 +60,6 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('fetch', function (event) {
 
-  console.log(event);
   if (event.request.method === 'POST') {
     return;
   }
