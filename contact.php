@@ -8,7 +8,7 @@
       <img class="contact-hero__image" src="/static/images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
     </div>
     <div class="contact-form-container">
-      <form id="contact-form" action="/static/includes/sendForm.php" method="POST" >
+      <form id="contact-form" action="/static/includes/sendForm.php" method="post" >
         <fieldset>
           <input type="text" name="user-name" placeholder="First Name" required>
           <input type="text" name="user-last-name" placeholder="Last Name" required>
@@ -18,7 +18,7 @@
           <input type="text" name="user-phone" placeholder="Phone">
         </fieldset>
         <textarea id="user-message-text" name="user-message" required> </textarea>
-        <button>Submit</button>
+        <button type="submit" form="contact-form" value="submit">Submit</button>
         <div class="message">
           <p class="message__status center">Sending message </p>
           <p class="message__success center">Thank you for the message!</p>

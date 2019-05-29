@@ -1,6 +1,6 @@
 <?php
 phpinfo();
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if($_SERVER['REQUEST_METHOD'] == 'post') {
   $recipient="neil@neiljoshua.dev";
   $subject="Web Dev Inquiry";
   $sender=$_POST["user-name"];

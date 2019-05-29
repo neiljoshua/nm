@@ -4,10 +4,10 @@
 ?>
   <?php include('static/includes/navigation.php')
   ?>
-  <div class="home-hero">
-    <div class="home--item">
-      <h1 class="home--item__title"> Neil McGrath</h1>
-      <p class="home--item__copy"> Web Developer</p>
+  <div class="home__hero">
+    <div class="home-info">
+      <h1 class="home-info__title"> Neil McGrath</h1>
+      <p class="home-info__copy"> Web Developer</p>
     </div>
   </div>
   <div class="slider">

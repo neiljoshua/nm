@@ -45,7 +45,7 @@
     }
   }
 
-  .home-hero {
+  &__hero {
     display: block;
     position: relative;
     width: 100%;
@@ -61,7 +61,7 @@
     }
   }
 
-  .home--item {
+  .home-info{
     position: absolute;
     top: 50%;
     width: 100%;
