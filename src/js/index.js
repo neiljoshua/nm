@@ -32,7 +32,7 @@ $(document).ready(function() {
   $('#contact-form').submit(function(e) {
     e.preventDefault();
     var form  = $(this),
-        email = $('input[name="user-email]'),
+        email = $('input[name="user-email"]'),
         wrongEmailMessage = "Enter a valid email";
 
     $('.message').addClass('visible');
