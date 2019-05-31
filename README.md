@@ -9,4 +9,4 @@
 2. Run `npm run build` to run app
 
 ## Website
-Url: https://.neiljoshua.dev/
+Url: https://neiljoshua.dev/

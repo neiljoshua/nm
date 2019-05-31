@@ -41,12 +41,12 @@ $(document).ready(function() {
       email.addClass('invalid');
       email.val('');
       email.focus();
-      email.attr('placeholder',wrongEmailMessage);
+      email.attr('placeholder', wrongEmailMessage);
     } else {
-      var url = "/static/includes/sendForm.php",
+      var url = '/static/includes/sendForm.php',
           formdata = $(form).serialize();
 
-      email.attr('placeholder',emailPlaceHolder);
+      email.attr('placeholder', emailPlaceHolder);
       email.removeClass('invalid');
       $.ajax({
          type: "POST",

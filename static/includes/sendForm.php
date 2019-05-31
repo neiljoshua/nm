@@ -1,7 +1,6 @@
 <?php
-phpinfo();
-if($_SERVER['REQUEST_METHOD'] == 'post') {
-  $recipient="neil@neiljoshua.dev";
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $recipient="neilmalpartida@gmail.com";
   $subject="Web Dev Inquiry";
   $sender=$_POST["user-name"];
   $senderLastName=$_POST["user-last-name"];
@@ -10,7 +9,6 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
   $senderFullName=$sender . " " .$senderLastName;
 
   $mailBody="Name: $senderFullName \nEmail: $senderEmail\n$message";
-
   mail($recipient, $subject, $mailBody, "From: $senderFullName <$senderEmail>");
 }
 
