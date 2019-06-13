@@ -1,0 +1,17 @@
+{
+    "name": "neiljoshua/nm",
+    "description": "neiljoshua website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "neiljoshua",
+            "email": "neiljoshua@me.com"
+        }
+    ],
+    "require": {
+      "mailgun/mailgun-php": "^2.8.1",
+      "guzzlehttp/psr7":"^1.4",
+      "php-http/guzzle6-adapter":"^1.0",
+      "vlucas/phpdotenv": "^2.0.1"
+    }
+}

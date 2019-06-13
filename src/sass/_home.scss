@@ -39,9 +39,15 @@
   .menu-active {
     overflow: hidden;
     @include media-min-width(tablet) {
-    background-color: $clearblack;
+      background-color: $clearblack;
       left: 50%;
       @include prefix(transition, left 0.6s ease-in-out, webkit ms );
+    }
+  }
+
+  .menu__link{
+    @include media-min-width(desktop) {
+      font-size: 60px;
     }
   }
 
@@ -89,6 +95,9 @@
     }
     &__copy {
       font-size: 25px;
+    }
+    @include media-min-width(tablet) {
+      @include animation('slide-in .9s ease-in .9s');
     }
   }
 }

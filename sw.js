@@ -31,7 +31,7 @@ const filesToCache = [
   '/static/font/Halant/Halant-SemiBold.ttf',
   '/static/font/Halant/Halant-Bold.ttf',
   '/projects/',
-  // '/contact',
+  '/contact',
   '/about',
   '/projects/brandi',
   '/projects/index.php',
@@ -45,7 +45,7 @@ const filesToCache = [
   '/static/includes/header.php',
   '/static/includes/navigation.php',
   '/static/includes/pre-loader.php',
-  // '/static/includes/sendForm.php',
+  '/static/includes/sendForm.php',
   '/index.php',
 ];
 

@@ -7,10 +7,14 @@ npm_log
 npm-debug.log
 
 #Sass files
-.sass-cache
+.sass-cache/
 
 #Git flow
 gitflow-installer.sh
 gitflow/
 
 keysetups
+
+/vendor/
+
+.env

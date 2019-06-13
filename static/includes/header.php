@@ -3,9 +3,9 @@
   <head>
     <title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
     <meta name="description" content=" Web Developer <?php if ($thisPage!="index") echo " - $thisPage"; ?> | Neil McGrath" >
-    <meta name="keywords" content="front end developer, web developer, progressive websites, responsive websites, mobile first, html, css, js, vue.js, apache, web technologies, websites, investing">
+    <meta name="keywords" content="front end developer, web developer, progressive websites, responsive websites, mobile first, html, css, javascript, jQuery, vue.js, apache, web technologies, websites, investing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/static/images/favicon/nm.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/static/images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/dist/styles.css">
 
   </head>
