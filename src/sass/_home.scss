@@ -97,7 +97,7 @@
       font-size: 25px;
     }
     @include media-min-width(tablet) {
-      @include animation('slide-in .9s ease-in .9s');
+      @include animation('slide-in .9s ease-in .4s');
     }
   }
 }
