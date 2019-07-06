@@ -23,9 +23,6 @@
         <a class="project-list__link" href="brandi">Brandi</a>
       </li>
       <li class="project-list__item">
-        <a class="project-list__link" href="weather">Weather App</a>
-      </li>
-      <li class="project-list__item">
         <a class="project-list__link" href="neiljoshua">Neil Joshua</a>
       </li>
     </ul>
