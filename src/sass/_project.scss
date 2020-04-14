@@ -1,0 +1,101 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  @include media-min-width(desktop) {
+    width: 100vw;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    @include media-min-width(desktop) {
+      width: calc( 100vw - 80px );
+      padding: 0 40px;
+    }
+  }
+}
+
+.project-title {
+  padding-top: 60px;
+  &__text {
+    font-size: 50px;
+    @include media-min-width(tablet) {
+      font-size: 80px;
+    }
+  }
+  @include media-min-width(desktop) {
+    padding-top: 40px;
+    line-height: 1;
+  }
+}
+
+.project-row {
+  margin: 0 20px;
+  @include media-min-width(tablet) {
+    margin: 0 30px;
+  }
+  @include media-min-width(desktop) {
+    display: flex;
+    height: calc( 100vh - 200px);
+    align-items: center;
+    margin: 0 40px;
+  }
+}
+
+.project-image {
+  padding-top: 40px;
+  @include media-min-width(desktop) {
+    padding-top: 0;
+    width: 50%;
+  }
+  &__link {
+    display: block;
+  }
+  &__img {
+    width: 80%;
+    @include media-min-width(tablet) {
+      width: 70%;
+    }
+    @include media-min-width(desktop) {
+      width: 100%;
+    }
+    @include prefix( box-shadow,  0px 0px 15px 5px rgba(0,0,0,0.2), webkit ms);
+  }
+}
+
+.project-copy {
+  padding-top: 40px;
+  @include media-min-width(desktop) {
+    padding-top: 0;
+    width: 50%;
+  }
+  &__title {
+    color: $black;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: $serif;
+    @include media-min-width(tablet) {
+      margin-bottom: 0;
+      font-size: 35px;
+    }
+    @include media-min-width(desktop) {
+      font-size: 40px;
+    }
+  }
+  &__list {
+    text-align: center;
+  }
+
+  &__item  {
+    margin-bottom: 5px;
+    font-family: $sanSerif;
+    color: $black;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    @include media-min-width(tablet) {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 19px;
+    }
+  }
+}

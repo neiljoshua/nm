@@ -1,49 +1,45 @@
 .footer {
-  overflow: hidden;
-  width: 100%;
-  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 40px 0;
   background-color: $gray;
-  clear: both;
-  z-index: 55;
+  @include media-min-width(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
   &__email {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: $white;
-    font-size: 22px;
+    letter-spacing: 2px;
     @include media-min-width(mobile) {
-      float: left;
-      margin-bottom: 0;
-      padding: 0 30px;
-      width: 300px;
+      font-size: 20px;
+      padding-bottom: 40px;
+    }
+    @include media-min-width(desktop) {
+      font-size: 22px;
       text-align: left;
+      padding-bottom: 0;
+      padding-left: 40px;
     }
   }
   &-social {
-    display: block;
-    width: 100%;
-    @include media-min-width(mobile) {
-      float: right;
-      width: 220px;
-      text-align: right;
-      padding-right: 30px;
-    }
     &__link {
       display: inline-block;
       font-size: 0;
     }
     &__icon {
       display: inline-block;
-      width: 22px;
-      margin: 5px;
+      width: 24px;
+      margin: 6px;
       fill: $white;
       @include media-min-width(mobile) {
-        width: 24px;
-        margin: 0 10px;
-      }
-      @include media-min-width(tablet) {
         width: 28px;
+        margin: 0 10px;
       }
       @include prefix(transition, fill 0.6s linear 0.2s, webkit ms );
       &:hover {
@@ -51,6 +47,9 @@
         @include prefix(transition, fill 0.6s linear 0.1s, webkit ms );
       }
     }
+    @include media-min-width(desktop) {
+      text-align: right;
+      padding-right: 40px;
+    }
   }
 }
-

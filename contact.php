@@ -19,7 +19,7 @@
           <input type="text" name="user-phone" placeholder="Phone">
         </fieldset>
         <textarea id="user-message-text" name="user-message" required> </textarea>
-        <button type="submit" form="contact-form" value="submit">Submit</button>
+        <button class="button" type="submit" form="contact-form" value="submit">Submit</button>
         <div class="message">
           <p class="message__status center">Sending message </p>
           <p class="message__success center">Thank you for the message!</p>

@@ -20,7 +20,7 @@
     ?> >
       <header>
         <a class="logo" href="/">
-          <?php if ($thisPage=="projects") {
+          <?php if ($thisPage=="projects" || $thisPage=="project")  {
             include('../static/images/icons/turtle.php');
           } else {
             include('static/images/icons/turtle.php');

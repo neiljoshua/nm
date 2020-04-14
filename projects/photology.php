@@ -1,4 +1,4 @@
-  <?php $thisPage="projects"; ?>
+  <?php $thisPage="project"; ?>
   <?php
     include('../static/includes/header.php')
   ?>
@@ -9,18 +9,13 @@
       <h1 class="project-title__text">Photology</h1>
     </div>
 
-    <div class="button">
-      <a class="button__link" href="/projects/">Back to Projects</a>
-      <a class="button__link" href="https://photology.neiljoshua.dev/" target="_blank">View Project</a>
-    </div>
-
     <div class="project-row">
 
       <div class="project-image">
-        <a class="project-image__link" href="http://photology.neiljoshua.com/" target="_blank" >
+        <a class="project-image__link" href="https://photology.neiljoshua.dev/" target="_blank" >
           <img class="project-image__img" src="../static/images/projects/photology.jpg" alt="Photology" >
         </a>
-       </div>
+      </div>
 
       <div class="project-copy">
           <h2 class="project-copy__title">Technologies</h2>
@@ -34,6 +29,7 @@
             <li class="project-copy__item">MySQL</li>
             <li class="project-copy__item">CoffeeScript</li>
           </ul>
+          <a class="button" href="https://photology.neiljoshua.dev/" target="_blank" > Explore </a>
       </div>
 
     </div>
