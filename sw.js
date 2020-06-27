@@ -4,7 +4,7 @@ const filesToCache = [
   '/dist/build.js',
   '/dist/images/about/me.jpg',
   '/dist/images/contact/macbook.jpg',
-  '/dist/images/favicon/nm.ico',
+  '/dist/images/favicon/favicon.ico',
   '/dist/images/icons/github.php',
   '/dist/images/icons/instagram.php',
   '/dist/images/icons/linkedin.php',
