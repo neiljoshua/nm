@@ -49,7 +49,6 @@
   },
   "dependencies": {
     "compass": "^0.1.1",
-    "http-server": "^0.12.3",
     "jquery": "^3.5.1",
     "lodash": "^4.17.15"
   }
