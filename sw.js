@@ -44,7 +44,6 @@ const filesToCache = [
   '/src/includes/footer.php',
   '/src/includes/header.php',
   '/src/includes/navigation.php',
-  '/src/includes/pre-loader.php',
   '/index.php',
 ];
 
