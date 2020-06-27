@@ -24,7 +24,6 @@ const filesToCache = [
   '/dist/fonts/Catamaran-Regular.ttf',
   '/dist/fonts/Catamaran-SemiBold.ttf',
   '/dist/fonts/Catamaran-Thin.ttf',
-  '/dist/fonts/OFL.txt',
   '/dist/fonts/Halant-Regular.ttf',
   '/dist/fonts/Halant-Light.ttf',
   '/dist/fonts/Halant-Medium.ttf',
