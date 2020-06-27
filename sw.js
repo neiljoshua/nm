@@ -21,15 +21,15 @@ const filesToCache = [
   '/dist/images/slider/slide2.jpg',
   '/dist/images/slider/slide3.jpg',
   '/dist/images/slider/slide4.jpg',
-  '/dist/font/Catamaran/Catamaran-Regular.ttf',
-  '/dist/font/Catamaran/Catamaran-SemiBold.ttf',
-  '/dist/font/Catamaran/Catamaran-Thin.ttf',
-  '/dist/font/Catamaran/OFL.txt',
-  '/dist/font/Halant/Halant-Regular.ttf',
-  '/dist/font/Halant/Halant-Light.ttf',
-  '/dist/font/Halant/Halant-Medium.ttf',
-  '/dist/font/Halant/Halant-SemiBold.ttf',
-  '/dist/font/Halant/Halant-Bold.ttf',
+  '/dist/fonts/Catamaran/Catamaran-Regular.ttf',
+  '/dist/fonts/Catamaran/Catamaran-SemiBold.ttf',
+  '/dist/fonts/Catamaran/Catamaran-Thin.ttf',
+  '/dist/fonts/Catamaran/OFL.txt',
+  '/dist/fonts/Halant/Halant-Regular.ttf',
+  '/dist/fonts/Halant/Halant-Light.ttf',
+  '/dist/fonts/Halant/Halant-Medium.ttf',
+  '/dist/fonts/Halant/Halant-SemiBold.ttf',
+  '/dist/fonts/Halant/Halant-Bold.ttf',
   '/projects/',
   '/contact',
   '/about',
@@ -62,7 +62,7 @@ self.addEventListener('fetch', function (event) {
   if (event.request.method === 'POST') {
     return;
   }
-  // console.log('Fetch event for ', event.request.url);
+  console.log('Fetch event for ', event.request.url);
   event.respondWith(caches.match(event.request).then(function (response) {
     if (response) {
       // console.log('Found ', event.request.url, ' in cache');
