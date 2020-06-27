@@ -1,6 +1,8 @@
-var path = require('path');
-var webpack = require('webpack');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var path = require('path'),
+    webpack = require('webpack'),
+    MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+    { CleanWebpackPlugin } = require('clean-webpack-plugin'),
+    CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -31,6 +33,19 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        exclude: /images/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(png|svg|ico|jpg|gif)$/,
         use: [
          'file-loader'
@@ -41,16 +56,11 @@ module.exports = {
         use: [
           'csv-loader'
         ]
-      },
-      {
-        test: /\.xml$/,
-        use: [
-          'xml-loader'
-        ]
       }
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
@@ -58,6 +68,11 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/images/', to: 'images/' }
+      ],
     })
   ]
 };

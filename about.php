@@ -1,11 +1,11 @@
   <?php $thisPage= "about"; ?>
   <?php
-    include('static/includes/header.php')
+    include('src/includes/header.php')
   ?>
-    <?php include('static/includes/navigation.php')
+    <?php include('src/includes/navigation.php')
     ?>
     <div class="about-hero">
-      <img class="about-hero__image" src="/static/images/about/me.jpg" alt="Neil McGrath. Front End Developer living in New York City, exploring the world, loves web technologies, animals, plants, and enjoy gardening.">
+      <img class="about-hero__image" src="/dist/images/about/me.jpg" alt="Neil McGrath. Front End Developer living in New York City, exploring the world, loves web technologies, animals, plants, and enjoy gardening.">
     </div>
     <div class="about-content">
       <h1 class="about-content__title" >Web Developer</h1>
@@ -17,5 +17,5 @@
   </main>
 <footer class="footer">
 <?php
-  include('static/includes/footer.php')
+  include('src/includes/footer.php')
 ?>

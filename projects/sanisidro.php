@@ -1,9 +1,9 @@
     <?php $thisPage="project"; ?>
     <?php
-      include('../static/includes/header.php')
+      include('../src/includes/header.php')
     ?>
 
-    <?php include('../static/includes/navigation.php')
+    <?php include('../src/includes/navigation.php')
     ?>
 
     <div class="project-title">
@@ -14,7 +14,7 @@
 
       <div class="project-image">
         <a class="project-image__link" href="https://sanisidro.neiljoshua.dev" target="_blank" >
-          <img class="project-image__img" src="../static/images/projects/sanisidro.jpg" alt="San Isidro" >
+          <img class="project-image__img" src="../dist/images/projects/sanisidro.jpg" alt="San Isidro" >
         </a>
       </div>
 
@@ -39,5 +39,5 @@
 
 <footer class="footer">
 <?php
-  include('../static/includes/footer.php')
+  include('../src/includes/footer.php')
 ?>

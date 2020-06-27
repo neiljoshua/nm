@@ -4,31 +4,31 @@
         <div class="footer-social">
           <a class="footer-social__link" href="http://twitter.com/NeilJMV" target="_blank">Twitter
           <?php if ($thisPage=="projects" || $thisPage=="project") {
-            include('../static/images/icons/twitter.php');
+            include('../src/images/icons/twitter.php');
           } else {
-            include('static/images/icons/twitter.php');
+            include('src/images/icons/twitter.php');
           }
           ?>
           </a>
           <a class="footer-social__link" href="http://www.linkedin.com/in/neiljoshua" target="_blank">LinkedIn
           <?php if ($thisPage=="projects" || $thisPage=="project") {
-            include('../static/images/icons/linkedin.php');
+            include('../src/images/icons/linkedin.php');
           } else {
-            include('static/images/icons/linkedin.php');
+            include('src/images/icons/linkedin.php');
           }
           ?></a>
           <a class="footer-social__link" href="http://www.instagram.com/neiljoshua/" target="_blank">Instagram
           <?php if ($thisPage=="projects" || $thisPage=="project") {
-            include('../static/images/icons/instagram.php');
+            include('../src/images/icons/instagram.php');
           } else {
-            include('static/images/icons/instagram.php');
+            include('src/images/icons/instagram.php');
           }
           ?></a>
           <a class="footer-social__link" href="http://www.github.com/neiljoshua/" target="_blank">Instagram
           <?php if ($thisPage=="projects" || $thisPage=="project"){
-            include('../static/images/icons/github.php');
+            include('../src/images/icons/github.php');
           } else {
-            include('static/images/icons/github.php');
+            include('src/images/icons/github.php');
           }
           ?></a>
         </div>

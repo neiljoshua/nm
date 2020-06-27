@@ -76,7 +76,7 @@ self.addEventListener('fetch', function (event) {
       return response;
     });
   }).catch(function (error) {
-    console.log("Service Worker failed to be installed");
+    // console.log("Service Worker failed to be installed");
     // TODO 6 - Respond with custom offline page
 
   }));
