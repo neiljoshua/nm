@@ -1,7 +1,8 @@
 const filesToCache = [
   '/',
   '/dist/styles.css',
-  '/dist/build.js',
+  '/dist/jquery.bundle.js',
+  '/dist/main.bundle.js',
   '/dist/images/about/me.jpg',
   '/dist/images/contact/macbook.jpg',
   '/dist/images/favicon/favicon.ico',
