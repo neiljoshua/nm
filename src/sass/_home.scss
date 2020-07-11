@@ -95,9 +95,6 @@
     &__copy {
       font-size: 25px;
     }
-    @include media-min-width(tablet) {
-      @include animation('slide-in .6s ease-in .6s');
-    }
   }
 }
 

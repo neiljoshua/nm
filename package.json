@@ -1,12 +1,12 @@
 {
   "name": "neiljoshua",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Web developer",
   "main": "index.js",
   "scripts": {
     "test": "/",
     "start": "webpack-dev-server --history-api-fallback --inline --progress --config dev.config.js",
-    "dev": "webpack --config webpack.dev.js --watch --hot",
+    "dev": "webpack --config webpack.dev.js --watch",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
@@ -23,33 +23,22 @@
   },
   "homepage": "https://github.com/neiljoshua/nm#readme",
   "devDependencies": {
-    "@glidejs/glide": "^3.3.0",
-    "ajv": "^6.10.0",
-    "apache-webpack-plugin": "^0.2.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.0.2",
-    "css-loader": "^1.0.1",
-    "csv-loader": "^3.0.2",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.14.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "sass": "^0.5.0",
-    "sass-loader": "^7.1.0",
-    "scss-loader": "0.0.1",
-    "style-loader": "^0.23.1",
-    "terser-webpack-plugin": "^3.0.6",
-    "webpack": "^4.32.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^5.0.8"
   },
   "dependencies": {
-    "compass": "^0.1.1",
-    "jquery": "^3.5.1",
-    "lodash": "^4.17.15"
+    "jquery": "^3.5.1"
   }
 }

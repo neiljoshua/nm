@@ -7,25 +7,14 @@ var path = require('path'),
 module.exports = {
   entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
-      {
+       {
         test: /\.(sa|sc|c)ss$/,
-        use: [
-          {
-            loader:  MiniCssExtractPlugin.loader,
-            options: {
-              hmr: process.env.NODE_ENV === 'development',
-              reloadAll: true,
-            },
-          },
-          'css-loader',
-          'sass-loader'
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.js$/,
@@ -50,14 +39,24 @@ module.exports = {
         use: [
          'file-loader'
         ]
-       },
-      {
-        test: /\.(csv|tsv)$/,
-        use: [
-          'csv-loader'
-        ]
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      maxInitialRequests: Infinity,
+      minSize: 0,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+            return `${packageName.replace('@', '')}`;
+          },
+        }
+      }
+    }
   },
   plugins: [
     new CleanWebpackPlugin(),

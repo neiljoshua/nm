@@ -1,14 +1,5 @@
-import '../sass/style.scss';
+import '../sass/styles.scss';
 
-(function($) {
-  'use strict';
-    $(window).on('load', function () {
-      if ($('.preloader-wrapper').length > 0) {
-        $('.preloader-wrapper').fadeOut('slow');
-        $('.wrapper').addClass('loaded');
-      }
-    });
-})(jQuery);
 
 $(document).ready(function() {
 

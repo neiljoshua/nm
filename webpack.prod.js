@@ -1,14 +1,13 @@
-var merge = require('webpack-merge'),
+var {merge} = require('webpack-merge'),
+    path = require('path'),
     common = require('./webpack.common.js'),
-    TerserPlugin = require('terser-webpack-plugin'),
-    MiniCssExtractPlugin = require("mini-css-extract-plugin"),
-    OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+    TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin(),new OptimizeCSSAssetsPlugin({})],
+    minimizer: [new TerserPlugin()],
     splitChunks: {
       cacheGroups: {
         styles: {
@@ -20,21 +19,5 @@ module.exports = merge(common, {
       }
     }
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
-      }
-    ]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "styles.css",
-    })
-  ],
-  devtool: 'source-map'
+  devtool: 'none'
 });

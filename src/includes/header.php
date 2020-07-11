@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/dist/images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/dist/styles.css">
-
+    <script async src="/dist/jquery.bundle.js"></script>
+    <script src="/dist/main.bundle.js"></script>
   </head>
   <body>
     <div <?php if ($thisPage=="index") {
