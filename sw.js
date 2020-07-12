@@ -6,11 +6,6 @@ const filesToCache = [
   '/dist/images/about/me.jpg',
   '/dist/images/contact/macbook.jpg',
   '/dist/images/favicon/favicon.ico',
-  '/dist/images/icons/github.php',
-  '/dist/images/icons/instagram.php',
-  '/dist/images/icons/linkedin.php',
-  '/dist/images/icons/turtle.php',
-  '/dist/images/icons/twitter.php',
   '/dist/images/projects/brandi.jpg',
   '/dist/images/projects/photology.jpg',
   '/dist/images/projects/sanisidro.jpg',
@@ -41,6 +36,11 @@ const filesToCache = [
   '/src/includes/footer.php',
   '/src/includes/header.php',
   '/src/includes/navigation.php',
+  '/src/includes/github.php',
+  '/src/includes/instagram.php',
+  '/src/includes/linkedin.php',
+  '/src/includes/turtle.php',
+  '/src/includes/twitter.php',
   '/index.php',
 ];
 

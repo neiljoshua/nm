@@ -6,7 +6,7 @@
     <?php include('src/includes/navigation.php')
     ?>
     <div class="contact-hero">
-      <img class="contact-hero__image" src="/dist/images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
+      <img class="contact-hero__image" src="<?php echo cdnURL ?>images/contact/macbook.jpg" alt="Contact Neil McGrath - Front End Developer">
     </div>
     <div class="contact-form-container">
       <form id="contact-form" action="/src/includes/sendForm.php" method="POST" >

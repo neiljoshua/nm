@@ -2,13 +2,21 @@
 <html lang="en-US">
   <head>
     <title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
+    <?php
+    define('cdnURL', 'https://neiljoshua.s3.us-east-2.amazonaws.com/');
+    ?>
+
     <meta name="description" content=" Web Developer <?php if ($thisPage!="index") echo " - $thisPage"; ?> | Neil McGrath" >
     <meta name="keywords" content="front end developer, web developer, progressive websites, responsive websites, mobile first, html, css, javascript, jQuery, vue.js, apache, web technologies, websites, investing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/dist/images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="/dist/styles.css">
-    <script async src="/dist/jquery.bundle.js"></script>
-    <script src="/dist/main.bundle.js"></script>
+    <link rel="shortcut icon" href="<?php echo cdnURL ?>images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<?php echo cdnURL ?>styles.css">
+    <script type='text/javascript'>
+            /* Let’s define a javascript global for using the CDN inside scripts */
+            var cdnURL = '<?php echo cdnURL ?>';
+    </script>
+    <script async src="<?php echo cdnURL ?>jquery.bundle.js"></script>
+    <script src="<?php echo cdnURL ?>main.bundle.js"></script>
   </head>
   <body>
     <div <?php if ($thisPage=="index") {
@@ -18,15 +26,15 @@
     }
     ?> >
       <header>
-        <a class="logo" href="/">
+        <a class="logo" href="/" rel="noopener">
           <?php if ($thisPage=="projects" || $thisPage=="project")  {
-            include('../src/images/icons/turtle.php');
+            include('../src/includes/turtle.php');
           } else {
-            include('src/images/icons/turtle.php');
+            include('./src/includes/turtle.php');
           }
           ?>
         </a>
-        <a  href="/" class="hamburger hamburger--rot" ><span>Toggle Menu</span>
+        <a  href="/" class="hamburger hamburger--rot" rel="noopener"><span>Toggle Menu</span>
         </a>
       </header>
       <main>

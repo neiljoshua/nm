@@ -13,7 +13,7 @@
 
       <div class="project-image">
         <a class="project-image__link" href="https://tarapoto.neiljoshua.dev" target="_blank" >
-          <img class="project-image__img" src="../dist/images/projects/tarapoto.jpg" alt="Tarapoto Resort" >
+          <img class="project-image__img" src="<?php echo cdnURL ?>images/projects/tarapoto.jpg" alt="Tarapoto Resort" >
         </a>
       </div>
 

@@ -14,7 +14,7 @@
 
       <div class="project-image">
         <a class="project-image__link" href="https://sanisidro.neiljoshua.dev" target="_blank" >
-          <img class="project-image__img" src="../dist/images/projects/sanisidro.jpg" alt="San Isidro" >
+          <img class="project-image__img" src="<?php echo cdnURL ?>images/projects/sanisidro.jpg" alt="San Isidro" >
         </a>
       </div>
 

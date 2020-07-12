@@ -13,7 +13,7 @@
 
       <div class="project-image">
         <a class="project-image__link" href="https://neiljoshua.dev/" target="_blank" >
-          <img class="project-image__img" src="../dist/images/projects/neiljoshua.jpg" alt="Neil Joshua Web Developer" >
+          <img class="project-image__img" src="<?php echo cdnURL ?>images/projects/neiljoshua.jpg" alt="Neil Joshua Web Developer" >
         </a>
       </div>
 
