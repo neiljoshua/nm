@@ -3,7 +3,7 @@
   <head>
     <title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
     <?php
-    define('cdnURL', 'https://neiljoshua.s3.us-east-2.amazonaws.com/');
+    define('cdnURL', 'https://cdn.neiljoshua.dev/');
     ?>
 
     <meta name="description" content=" Web Developer <?php if ($thisPage!="index") echo " - $thisPage"; ?> | Neil McGrath" >
@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="<?php echo cdnURL ?>images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="<?php echo cdnURL ?>styles.css">
     <script type='text/javascript'>
-            /* Let’s define a javascript global for using the CDN inside scripts */
             var cdnURL = '<?php echo cdnURL ?>';
     </script>
     <script async src="<?php echo cdnURL ?>jquery.bundle.js"></script>
