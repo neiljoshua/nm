@@ -1,5 +1,5 @@
 
-        <a class="footer__email" href="mailto:neil@neiljoshua.dev">neil@neiljoshua.dev</a>
+        <p class="footer__copyright">neiljoshua.dev</p>
 
         <div class="footer-social">
           <a class="footer-social__link" href="http://twitter.com/NeilJMV" target="_blank" rel="noopener">Twitter

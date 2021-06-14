@@ -3,7 +3,9 @@
   <head>
     <title>Neil McGrath | Web Developer <?php if ($thisPage!="index")echo " - $thisPage"; ?> </title>
     <?php
-    define('cdnURL', 'https://cdn.neiljoshua.dev/');
+    define('cdnURL', 'https://d35ryp2emtb18s.cloudfront.net/');
+    // define('cdnURL', 'https://cdn.neiljoshua.dev/');
+    // define('cdnURL', 'https://d35ryp2emtb18s.cloudfront.net/'); local host
     ?>
 
     <meta name="description" content=" Web Developer <?php if ($thisPage!="index") echo " - $thisPage"; ?> | Neil McGrath" >
